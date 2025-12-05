@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:electric_printer"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "scuke_survive:ingot_lead"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "scuke_survive:mat_screw"
+      },
+      {
+        "item": "scuke_survive:mat_iron_wire"
+      },
+      {
+        "item": "scuke_survive:mat_plastic_board"
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:electric_printer",
+      "count": 1
+    }
+  }
+}
+

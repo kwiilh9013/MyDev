@@ -1,0 +1,71 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "ui_correct": "animation.scuke_zombie_ui.giant_correct",
+				"attackRemote": "animation.zombie_giant.attackRemote",
+				"attack": "animation.zombie_giant.attack",
+				"standby": "animation.zombie_giant.standby",
+				"walk": "animation.zombie_giant.walk",
+				"die": "animation.zombie_giant.die",
+				"ctl_scuke_zombie_giant": "controller.animation.scuke_zombie_giant",
+				"ctrl_red_eye": "controller.animation.scuke_survive_zombie_effects.red_eye"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.scuke_zombie_giant",
+                "baby": "geometry.scuke_zombie_giant_baby"
+            },
+            "spawn_egg": {
+                "base_color":"#4e4741",
+                "overlay_color":"#1c1d31"
+            },
+            "identifier": "scuke_survive:zombie_giant",
+            "materials": {
+                "default": "scuke_survive_zombie"
+            },
+            "render_controllers": [
+                {"controller.render.scuke_zombie_giant": "!variable.hurt_effect"},
+                {"controller.render.scuke_hurt_effect": "variable.hurt_effect"},
+                {"controller.render.scuke_zombie_giant_baby": "variable.is_alive && !variable.lowhealth"}
+            ],
+            "scripts": {
+                "initialize": [
+                    "variable.is_alive = 1;",
+                    "variable.lowhealth = 0;"
+                ],
+                "pre_animation": [
+                    "variable.lowhealth = query.mark_variant == 2;",
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.is_alive = query.mark_variant == 1 ? 0 : 1;",
+                    "variable.is_moving = query.ground_speed >= 0.01;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ctl_scuke_zombie_giant": "variable.not_in_ui"
+                    },
+                    {
+                        "ctrl_red_eye": "variable.lowhealth && variable.not_in_ui"
+                    },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "walk": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie/scuke_zombie_giant",
+                "baby": "textures/entity/scuke_survive/zombie/scuke_zombie_baby"
+            },
+            "particle_effects": {
+                "red_eye": "scuke_survive:zombie_red_eye"
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "scuke_survive:items_ladar",
+            "materials": {
+                "default": "scuke_survive_ladar_breathing_light",
+                "out_of_order": "scuke_survive_ladar_out_of_order"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/ladar/ladar"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_ladar"
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive.ladar"
+            ],
+            "animations": {
+                "first_idle": "animation.scuke_survive_ladar.first_idle",
+                "third_idle": "animation.scuke_survive_ladar.third_idle",
+                "scan": "animation.scuke_survive_ladar.scan",
+                "scan_hide": "animation.scuke_survive_ladar.scan_hide",
+                "self_rot": "animation.scuke_survive_ladar.self_rot",
+                "self_hide": "animation.scuke_survive_ladar.self_hide",
+                "target1_hide": "animation.scuke_survive_ladar.target1_hide",
+                "target1_show": "animation.scuke_survive_ladar.target1_show",
+                "target2_hide": "animation.scuke_survive_ladar.target2_hide",
+                "target2_show": "animation.scuke_survive_ladar.target2_show",
+                "target3_hide": "animation.scuke_survive_ladar.target3_hide",
+                "target3_show": "animation.scuke_survive_ladar.target3_show",
+                
+                "engine1_hide": "animation.scuke_survive_ladar.engine1_hide",
+                "engine1_show": "animation.scuke_survive_ladar.engine1_show",
+                "engine2_hide": "animation.scuke_survive_ladar.engine2_hide",
+                "engine2_show": "animation.scuke_survive_ladar.engine2_show",
+                "engine3_hide": "animation.scuke_survive_ladar.engine3_hide",
+                "engine3_show": "animation.scuke_survive_ladar.engine3_show",
+
+                "anim_ctrl": "controller.animation.scuke_survive.ladar",
+                "ui_correct": "animation.scuke_survive_ladar.scale_correct"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.is_out_of_order = 0;",
+                    "variable.lerp_t = 0.05;",
+                    "variable.player_body_rot = query.mod.scuke_servive_player_rot_yaw;",
+                    "variable.dist_lerp_t = 0.05;"
+                ],
+                "pre_animation": [
+                    "variable.is_out_of_order = query.mod.scuke_servive_ladar_out_of_order;",
+                    "variable.player_body_rot = math.lerp(variable.player_body_rot, query.mod.scuke_servive_player_rot_yaw, variable.lerp_t);",
+
+                    "variable.target1_dist_x = query.mod.scuke_servive_ladar_target1_dist_x;",
+                    "variable.target1_dist_z = query.mod.scuke_servive_ladar_target1_dist_z;",
+                    "variable.target2_dist_x = query.mod.scuke_servive_ladar_target2_dist_x;",
+                    "variable.target2_dist_z = query.mod.scuke_servive_ladar_target2_dist_z;",
+                    "variable.target3_dist_x = query.mod.scuke_servive_ladar_target3_dist_x;",
+                    "variable.target3_dist_z = query.mod.scuke_servive_ladar_target3_dist_z;",
+
+                    "variable.engine1_dist_x = query.mod.scuke_servive_ladar_engine1_dist_x;",
+                    "variable.engine1_dist_z = query.mod.scuke_servive_ladar_engine1_dist_z;",
+                    "variable.engine1_state = query.mod.scuke_servive_ladar_engine1_state;",
+                    "variable.engine1_scale = query.mod.scuke_servive_ladar_engine1_scale;",
+                    "variable.engine2_dist_x = query.mod.scuke_servive_ladar_engine2_dist_x;",
+                    "variable.engine2_dist_z = query.mod.scuke_servive_ladar_engine2_dist_z;",
+                    "variable.engine2_state = query.mod.scuke_servive_ladar_engine2_state;",
+                    "variable.engine2_scale = query.mod.scuke_servive_ladar_engine2_scale;",
+                    "variable.engine3_dist_x = query.mod.scuke_servive_ladar_engine3_dist_x;",
+                    "variable.engine3_dist_z = query.mod.scuke_servive_ladar_engine3_dist_z;",
+                    "variable.engine3_state = query.mod.scuke_servive_ladar_engine3_state;",
+                    "variable.engine3_scale = query.mod.scuke_servive_ladar_engine3_scale;",
+                    
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {"ui_correct":"variable.correct_pos == 1.0"},
+                    {"first_idle": "variable.correct_pos != 1.0 && c.is_first_person"},
+                    {"third_idle": "variable.correct_pos != 1.0 && !c.is_first_person"},
+                    {"anim_ctrl":"variable.correct_pos != 1.0"}
+                ]
+            }
+        }
+    }
+}

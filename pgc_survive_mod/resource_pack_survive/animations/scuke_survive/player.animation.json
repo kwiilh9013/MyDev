@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.scuke_survive_player.shaking_third": {
+            "loop": true,
+            "bones": {
+                "body": {
+                    "rotation": [
+                        0.0,
+                        "math.sin(math.mod(query.time_stamp, 30.0)/30.0*3600)*2*math.sin(math.mod(query.time_stamp, 30.0)/30.0*180)",
+                        0.0
+                    ]
+                }
+            }
+        },
+        "animation.scuke_survive_player.shaking_first": {
+            "loop": true,
+            "bones": {
+                "body": {
+                    "rotation": [
+                        0.0,
+                        "math.sin(math.mod(query.time_stamp, 60.0)/60.0*36000)*0.2*math.sin(math.mod(query.time_stamp, 30.0)/30.0*180)",
+                        0.0
+                    ]
+                }
+            }
+        },
+        "animation.scuke_survive_player.third_hand_up": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-78, 0, 0]
+				}
+			}
+		}
+    }
+}

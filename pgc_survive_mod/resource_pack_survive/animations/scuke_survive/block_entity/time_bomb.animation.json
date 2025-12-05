@@ -1,0 +1,211 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_time_bomb.place_anim": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.375,
+			"bones": {
+				"root": {
+					"scale": {
+						"0.0": [1, 0, 1],
+						"0.0417": [1, 0.05153, 1],
+						"0.0833": [1, 0.44847, 1],
+						"0.125": [1, 0.5, 1],
+						"0.1667": [1, 0.52576, 1],
+						"0.2083": [1, 0.72424, 1],
+						"0.25": [1, 0.75, 1],
+						"0.2917": [1, 0.77576, 1],
+						"0.3333": [1, 0.97424, 1],
+						"0.375": [1, 1, 1]
+					}
+				},
+				"base1": {
+					"scale": {
+						"0.0": [1, 2, 1],
+						"0.125": [1, 2, 1],
+						"0.1667": [1, 1.93096, 1],
+						"0.2083": [1, 1.39904, 1],
+						"0.25": [1, 1.33, 1],
+						"0.2917": [1, 1.29599, 1],
+						"0.3333": [1, 1.03401, 1],
+						"0.375": [1, 1, 1]
+					}
+				},
+				"base2": {
+					"scale": {
+						"0.0": [1, 2, 1],
+						"0.125": [1, 2, 1],
+						"0.1667": [1, 1.93096, 1],
+						"0.2083": [1, 1.39904, 1],
+						"0.25": [1, 1.33, 1],
+						"0.2917": [1, 1.29599, 1],
+						"0.3333": [1, 1.03401, 1],
+						"0.375": [1, 1, 1]
+					}
+				},
+				"base3": {
+					"scale": {
+						"0.0": [1, 2, 1],
+						"0.125": [1, 2, 1],
+						"0.1667": [1, 1.93096, 1],
+						"0.2083": [1, 1.39904, 1],
+						"0.25": [1, 1.33, 1],
+						"0.2917": [1, 1.29599, 1],
+						"0.3333": [1, 1.03401, 1],
+						"0.375": [1, 1, 1]
+					}
+				},
+				"base4": {
+					"scale": {
+						"0.0": [1, 2, 1],
+						"0.125": [1, 2, 1],
+						"0.1667": [1, 1.93096, 1],
+						"0.2083": [1, 1.39904, 1],
+						"0.25": [1, 1.33, 1],
+						"0.2917": [1, 1.29599, 1],
+						"0.3333": [1, 1.03401, 1],
+						"0.375": [1, 1, 1]
+					}
+				},
+				"timeGroup": {
+					"scale": {
+						"0.125": [0, 1, 1],
+						"0.1667": [0.05153, 1, 1],
+						"0.2083": [0.44847, 1, 1],
+						"0.25": [0.5, 1, 1],
+						"0.2917": [0.55153, 1, 1],
+						"0.3333": [0.94847, 1, 1],
+						"0.375": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0833": {
+					"effect": "build"
+				}
+			}
+		},
+		"animation.scuke_time_bomb.init_state": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "variable.block_type == 2 ? 30 : 0", "(variable.block_type == 1 ? 180 : 0)"],
+					"position": [0, "variable.block_type == 1 ? 8 : (variable.block_type == 2 ? 6 : 0)", "variable.block_type == 2 ? 3.5 : 0"]
+				},
+				"timeGroup": {
+					"rotation": [0, 0, "(variable.block_type == 1) ? 180 : 0"]
+				}
+			}
+		},
+		"animation.scuke_time_bomb.scale_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.anim_time * 30", "query.anim_time * -30", "query.anim_time * 30"],
+					"position": [8, 16, -8],
+					"scale": 2
+				}
+			}
+		},
+		"animation.scuke_time_bomb.time_flowing": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"timeGroupDivide": {
+					"scale": "(math.floor(math.sin(query.anim_time * 360)) == 0 && variable.has_set_time) ? 1 : 0"
+				},
+				"timeGroupSec2_1": {
+					"scale": "variable.sec2_comp1_visible"
+				},
+				"timeGroupSec2_2": {
+					"scale": "variable.sec2_comp2_visible"
+				},
+				"timeGroupSec2_3": {
+					"scale": "variable.sec2_comp3_visible"
+				},
+				"timeGroupSec2_4": {
+					"scale": "variable.sec2_comp4_visible"
+				},
+				"timeGroupSec2_5": {
+					"scale": "variable.sec2_comp5_visible"
+				},
+				"timeGroupSec2_6": {
+					"scale": "variable.sec2_comp6_visible"
+				},
+				"timeGroupSec2_7": {
+					"scale": "variable.sec2_comp7_visible"
+				},
+				"timeGroupSec1_1": {
+					"scale": "variable.sec1_comp1_visible"
+				},
+				"timeGroupSec1_2": {
+					"scale": "variable.sec1_comp2_visible"
+				},
+				"timeGroupSec1_3": {
+					"scale": "variable.sec1_comp3_visible"
+				},
+				"timeGroupSec1_4": {
+					"scale": "variable.sec1_comp4_visible"
+				},
+				"timeGroupSec1_5": {
+					"scale": "variable.sec1_comp5_visible"
+				},
+				"timeGroupSec1_6": {
+					"scale": "variable.sec1_comp6_visible"
+				},
+				"timeGroupSec1_7": {
+					"scale": "variable.sec1_comp7_visible"
+				},
+				"timeGroupMin2_1": {
+					"scale": "variable.min2_comp1_visible"
+				},
+				"timeGroupMin2_2": {
+					"scale": "variable.min2_comp2_visible"
+				},
+				"timeGroupMin2_3": {
+					"scale": "variable.min2_comp3_visible"
+				},
+				"timeGroupMin2_4": {
+					"scale": "variable.min2_comp4_visible"
+				},
+				"timeGroupMin2_5": {
+					"scale": "variable.min2_comp5_visible"
+				},
+				"timeGroupMin2_6": {
+					"scale": "variable.min2_comp6_visible"
+				},
+				"timeGroupMin2_7": {
+					"scale": "variable.min2_comp7_visible"
+				},
+				"timeGroupMin1_1": {
+					"scale": "variable.min1_comp1_visible"
+				},
+				"timeGroupMin1_2": {
+					"scale": "variable.min1_comp2_visible"
+				},
+				"timeGroupMin1_3": {
+					"scale": "variable.min1_comp3_visible"
+				},
+				"timeGroupMin1_4": {
+					"scale": "variable.min1_comp4_visible"
+				},
+				"timeGroupMin1_5": {
+					"scale": "variable.min1_comp5_visible"
+				},
+				"timeGroupMin1_6": {
+					"scale": "variable.min1_comp6_visible"
+				},
+				"timeGroupMin1_7": {
+					"scale": "variable.min1_comp7_visible"
+				},
+				"timeGroup": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.scuke_time_bomb.left_time": {
+			"loop": true,
+			"animation_length": 1.0833
+		}
+	}
+}

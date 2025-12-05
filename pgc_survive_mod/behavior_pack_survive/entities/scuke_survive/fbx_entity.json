@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scuke_survive:fbx_entity",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "component_groups": {
+        },
+        "components": {
+            "minecraft:conditional_bandwidth_optimization": {
+            },
+            "minecraft:fire_immune": {
+            },
+            "minecraft:movement": {
+                "value": 0.0
+            },
+            "minecraft:breathable": {
+                "total_supply": 150000,
+                "generates_bubbles": false,
+                "breathes_water": true,
+                "breathes_solids": true,
+                "suffocate_time": 0
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "fbx"
+                ]
+            }
+        },
+        "events": {
+        }
+    }
+}

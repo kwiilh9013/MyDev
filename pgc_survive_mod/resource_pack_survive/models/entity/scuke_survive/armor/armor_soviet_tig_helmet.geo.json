@@ -1,0 +1,103 @@
+{
+	"format_version": "1.10.0",
+	"geometry.scuke_survive_armor_soviet_tig_helmet": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 4,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 2, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "waist",
+				"parent": "root",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "SovietTig_helmet",
+				"parent": "hat",
+				"pivot": [0, 24, 0],
+				"rotation": [0, 180, 0]
+			},
+			{
+				"name": "SovietTigAhead",
+				"parent": "SovietTig_helmet",
+				"pivot": [5.5, 30, 1],
+				"rotation": [10, 0, 0]
+			},
+			{
+				"name": "SovietTigBone4",
+				"parent": "SovietTigAhead",
+				"pivot": [-5, 26.4, 5],
+				"cubes": [
+					{"origin": [-6, 25.4, 6], "size": [2, 3, 1], "uv": [40, 20]},
+					{"origin": [-4, 25.4, 6.1], "size": [8, 3, 0], "uv": [34, 29]},
+					{"origin": [-6, 28.4, 6], "size": [12, 1, 1], "uv": [22, 25]},
+					{"origin": [-6, 24.4, 6], "size": [12, 1, 1], "uv": [22, 27]},
+					{"origin": [4, 25.4, 6], "size": [2, 3, 1], "uv": [40, 16]},
+					{"origin": [5, 24.4, 4], "size": [1, 5, 2], "uv": [12, 38]},
+					{"origin": [-6, 24.4, 4], "size": [1, 5, 2], "uv": [40, 9]}
+				]
+			},
+			{
+				"name": "SovietTigBone3",
+				"parent": "SovietTigAhead",
+				"pivot": [5, 30, 1],
+				"cubes": [
+					{"origin": [-5.5, 23, 2], "size": [2, 8, 4], "uv": [0, 33]},
+					{"origin": [-5.5, 29, -1], "size": [1, 2, 3], "uv": [12, 33]},
+					{"origin": [4.5, 29, -1], "size": [1, 2, 3], "uv": [34, 35]},
+					{"origin": [-3.5, 29, 5], "size": [7, 2, 1], "uv": [32, 3]},
+					{"origin": [-3.5, 23, 5], "size": [7, 2, 1], "uv": [32, 6]},
+					{"origin": [3.5, 23, 2], "size": [2, 8, 4], "uv": [22, 29]}
+				]
+			},
+			{
+				"name": "SovietTigMain",
+				"parent": "SovietTig_helmet",
+				"pivot": [3.5, 32, -2]
+			},
+			{
+				"name": "SovietTigHead",
+				"parent": "SovietTigMain",
+				"pivot": [3.5, 32, -2],
+				"cubes": [
+					{"origin": [-5, 25, -4], "size": [1, 7, 9], "uv": [20, 9]},
+					{"origin": [4, 25, -4], "size": [1, 7, 9], "uv": [0, 9]},
+					{"origin": [-5, 25, -5], "size": [10, 7, 1], "uv": [0, 25]},
+					{"origin": [-4, 30, 4], "size": [8, 2, 1], "uv": [11, 9]},
+					{"origin": [-4, 32, -4], "size": [8, 1, 8], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "SovietTigBottom",
+				"parent": "SovietTigMain",
+				"pivot": [3.5, 23.9, 2],
+				"cubes": [
+					{"origin": [-2.5, 23.8, 3], "size": [5, 1, 2], "uv": [34, 32]},
+					{"origin": [-4.5, 23.9, 2], "size": [9, 0, 1], "uv": [32, 0]},
+					{"origin": [-4.5, 23.9, 2], "size": [0, 2, 1], "uv": [20, 36]},
+					{"origin": [4.5, 23.9, 2], "size": [0, 2, 1], "uv": [20, 33]}
+				]
+			}
+		]
+	}
+}

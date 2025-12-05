@@ -1,0 +1,327 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "Tips_Label" : {
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "font_type" : "default",
+               "layer" : 100,
+               "offset" : [ 0.0, -40.0 ],
+               "shadow" : true,
+               "size" : [ 400.0, 30.0 ],
+               "text" : "Tips",
+               "text_alignment" : "center",
+               "type" : "label",
+               "visible" : false
+            }
+         },
+         {
+            "snackbar" : {
+               "anchor_from" : "top_right",
+               "anchor_to" : "top_right",
+               "controls" : [
+                  {
+                     "bg" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "layer" : 1,
+                        "nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                        "texture" : "textures/ui/scuke_survive/common/slider_bg",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "itemRender" : {
+                        "anchor_from" : "left_middle",
+                        "anchor_to" : "left_middle",
+                        "layer" : 8,
+                        "offset" : [ 4.0, 0.0 ],
+                        "property_bag" : {
+                           "#item_id_aux" : 131072
+                        },
+                        "renderer" : "inventory_item_renderer",
+                        "size" : [ "100.0%y+0.0px", "100.0%+-7.0px" ],
+                        "type" : "custom"
+                     }
+                  },
+                  {
+                     "image" : {
+                        "anchor_from" : "left_middle",
+                        "anchor_to" : "left_middle",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "layer" : 1,
+                        "offset" : [ 4.0, 0.0 ],
+                        "size" : [ "100.0%y+0.0px", "100.0%+-7.0px" ],
+                        "texture" : "textures/netease/common/image/default",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "title" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "color" : [ 1.0, 1.0, 0.0 ],
+                        "font_type" : "default",
+                        "layer" : 2,
+                        "offset" : [ 27.0, 4.0 ],
+                        "text" : "完成任务",
+                        "type" : "label"
+                     }
+                  },
+                  {
+                     "content" : {
+                        "anchor_from" : "bottom_left",
+                        "anchor_to" : "bottom_left",
+                        "font_type" : "default",
+                        "layer" : 1,
+                        "offset" : [ 27.0, -4.0 ],
+                        "text" : "Hello World!",
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "layer" : 100,
+               "offset" : [ -2.0, 15.0 ],
+               "size" : [ 125.0, 28.0 ],
+               "type" : "panel"
+            }
+         },
+         {
+            "announce" : {
+               "anchor_from" : "top_middle",
+               "anchor_to" : "top_middle",
+               "controls" : [
+                  {
+                     "curtain0" : {
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "controls" : [
+                           {
+                              "label" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "总工头",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label1" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "Plant Foreman",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label2" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "老黄瓜",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label3" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "Pickled Cucumbers",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "size" : [ 100, "default" ],
+                        "type" : "stack_panel",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "curtain1" : {
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "controls" : [
+                           {
+                              "label" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "主演",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label1" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "Starring",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label2" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "史蒂夫",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label3" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "Steve",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label4" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "艾利克斯",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label5" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "Alex",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "size" : [ 100, "default" ],
+                        "type" : "stack_panel",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "curtain2" : {
+                        "anchor_from" : "bottom_middle",
+                        "anchor_to" : "bottom_middle",
+                        "controls" : [
+                           {
+                              "label" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "酸黄瓜罐头厂",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label1" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "荣誉出品",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label2" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "Pickle Canning Factory",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ 0.0, -15.0 ],
+                        "size" : [ 120.0, "default" ],
+                        "type" : "stack_panel",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "curtain3" : {
+                        "anchor_from" : "bottom_middle",
+                        "anchor_to" : "bottom_middle",
+                        "controls" : [
+                           {
+                              "label" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "你居然通关啦~！感谢~各位小股东，游玩我们的游戏！",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "label1" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "shadow" : true,
+                                 "size" : [ "100.0%+0.0px", 14.0 ],
+                                 "text" : "罐头厂后续，还会持续更新游戏内容，敬请期待~！",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ 0.0, -20.0 ],
+                        "size" : [ 260.0, "default" ],
+                        "type" : "stack_panel",
+                        "visible" : false
+                     }
+                  }
+               ],
+               "layer" : 20,
+               "size" : [ "100.0%+-30.0px", "100.0%+-40.0px" ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "offset" : [ -1.0, 0.0 ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_tips_ui"
+}

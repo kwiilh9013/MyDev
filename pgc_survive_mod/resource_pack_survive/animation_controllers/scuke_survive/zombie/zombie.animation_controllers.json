@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie.normal": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"moving": "query.ground_speed >= 0.01"
+						},
+						{
+							"attacking": "query.is_delayed_attacking == 1"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"moving": {
+					"animations": [
+						{
+							"move": "!query.has_target"
+						},
+						{
+							"hunting": "query.has_target"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					],
+					"transitions": [
+						{
+							"idle": "query.ground_speed < 0.01"
+						},
+						{
+							"attacking": "query.is_delayed_attacking == 1"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attacking": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"moving": "query.all_animations_finished"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"animations": [
+						"death"
+					]
+				}
+			}
+		},
+		"controller.animation.scuke_zombie_hurt_effect": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"hurt_effect"
+					],
+					"blend_transition": 0
+				}
+			}
+		}
+	}
+}

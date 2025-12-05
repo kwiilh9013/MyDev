@@ -1,0 +1,87 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroidUV.h"
+#include "uniformPerFrameConstants.h"
+#include "uniformWorldConstants.h"
+#include "uniformRenderChunkConstants.h"
+#include "scuke_utils.h"
+#line 9
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1;
+#if defined(BLOOM_START)
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_2;
+#endif
+
+uniform vec4 EXTRA_VECTOR1; // (uv_x, uv_y, radius, ?)
+
+const float EMISSIVE_MARKER = 0.2;
+const float EMISSIVE_MARKER_MIN = 0.1;
+const float BLOOM_SCALE = 1.125;
+
+vec4 down_blur_splited(vec2 uv, float uv_x, float uv_y, float radius){
+    vec4 sum = vec4(0.0);
+    vec2 uv_s = abs(uv - vec2(0.5));
+    float r = radius;
+    if (uv.x > 0.5) {
+        r *= BLOOM_SCALE;
+    }
+    if (uv.y > 0.5) {
+        r *= BLOOM_SCALE * BLOOM_SCALE;
+    }
+    if (uv_s.x < uv_x * r || uv_s.y < uv_y * r){
+        return vec4(0.0);
+    }
+    sum = texture2D(TEXTURE_0, uv) * 0.5;
+    r *= clamp(pow(sum.a * 20.0, 0.1), 0.1, 1.0);
+    sum += texture2D(TEXTURE_0, uv + vec2(uv_x * -1.0, uv_y * 1.0) * r) * 0.125;
+    sum += texture2D(TEXTURE_0, uv + vec2(uv_x * 1.0, uv_y * 1.0) * r) * 0.125;
+    sum += texture2D(TEXTURE_0, uv + vec2(uv_x * -1.0, uv_y * -1.0) * r) * 0.125;
+    sum += texture2D(TEXTURE_0, uv + vec2(uv_x * 1.0, uv_y * -1.0) * r) * 0.125;
+    return sum;
+}
+
+vec4 up_blur_splited(vec2 uv){
+    vec2 uv_s = uv * 0.5;
+    vec4 sum = texture2D(TEXTURE_0, uv_s) * 0.25;
+    sum += texture2D(TEXTURE_0, uv_s + vec2(0.5, 0.0)) * 0.25;
+    sum += texture2D(TEXTURE_0, uv_s + vec2(0.0, 0.5)) * 0.25;
+    sum += texture2D(TEXTURE_0, uv_s + vec2(0.5, 0.5)) * 0.25;
+    return sum;
+}
+
+vec4 up_blur(vec2 uv, float uv_x, float uv_y){
+    vec4 sum = up_blur_splited(uv);
+    sum += up_blur_splited(uv + vec2(uv_x * -1.0, uv_y * -1.0));
+    sum += up_blur_splited(uv + vec2(uv_x * 1.0, uv_y * 1.0));
+    sum += up_blur_splited(uv + vec2(uv_x * 1.0, uv_y * -1.0));
+    sum += up_blur_splited(uv + vec2(uv_x * -1.0, uv_y * 1.0));
+    return sum * 0.2;
+}
+
+void main() {
+    vec2 uv_color = uv;
+    float radius = EXTRA_VECTOR1.z;
+    float k = radius/10.0;
+#if defined(BLOOM_START)
+    uv_color = fract(uv * 2.0);
+#endif
+    vec4 color = texture2D(TEXTURE_0, uv_color);
+    vec4 clearColor = texture2D(TEXTURE_1, uv_color);
+#if defined(BLOOM_START)
+    float depth = get_linear_depth(texture2D(TEXTURE_2, uv_color).r, 0.025, FAR_CHUNKS_DISTANCE);
+    color = vec4(0.0, 0.0, 0.0, 0.0);
+    if (float_less_equal(EMISSIVE_MARKER_MIN, clearColor.a) && float_less_equal(clearColor.a, EMISSIVE_MARKER)) {
+        float densty = mix(2.0, 1.0, (clearColor.a-EMISSIVE_MARKER_MIN) / (EMISSIVE_MARKER-EMISSIVE_MARKER_MIN));
+        color = vec4(clearColor.rgb * pow(k, 0.3), densty * (1.0-pow(depth, 0.3)) * 0.5);
+    }
+#elif defined(BLOOM_END)
+    color = up_blur(uv_color, EXTRA_VECTOR1.x, EXTRA_VECTOR1.y);
+    color *= (1.0 + k);
+    color = vec4(clearColor.rgb+color.rgb, clearColor.a);
+#else
+    color = down_blur_splited(uv_color, EXTRA_VECTOR1.x, EXTRA_VECTOR1.y, radius);
+#endif
+    gl_FragColor = color;
+}

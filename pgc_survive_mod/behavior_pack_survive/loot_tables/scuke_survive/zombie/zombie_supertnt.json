@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:redstone",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:gunpowder",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:gold_ingot",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "scuke_survive:mat_plastic_board",
+                    "type": "item",
+                    "weight": 3
+                }
+            ],
+            "rolls": 2
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.scuke_zombie_giant_baby",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 35.11694, 1.38266]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 32.89694, 1.38266],
+					"rotation": [12.5, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 52.65316, 0.27266],
+					"rotation": [25, 0, 0]
+				},
+				{
+					"name": "baby",
+					"parent": "body",
+					"pivot": [0, 76.05473, 7]
+				},
+				{
+					"name": "waist2",
+					"parent": "baby",
+					"pivot": [0, 76.05473, 7],
+					"cubes": [
+						{"origin": [-1.67754, 76.05473, 6.16123], "size": [3.35507, 2.51631, 1.67754], "uv": [15, 0]}
+					]
+				},
+				{
+					"name": "body2",
+					"parent": "waist2",
+					"pivot": [0, 78.57104, 7],
+					"cubes": [
+						{"origin": [-1.67754, 78.57104, 6.16123], "size": [3.35507, 2.51631, 1.67754], "uv": [15, 10]}
+					]
+				},
+				{
+					"name": "head2",
+					"parent": "body2",
+					"pivot": [0, 80.69952, 7],
+					"cubes": [
+						{"origin": [-2.97981, 80.69952, 4.02019], "size": [5.95962, 5.95962, 5.95962], "uv": [0, 10]}
+					],
+					"locators": {
+						"headlocator2": [0, 62.82067, 7]
+					}
+				},
+				{
+					"name": "hat2",
+					"parent": "head2",
+					"pivot": [0, 62.82067, 7],
+					"cubes": [
+						{"origin": [-2.91605, 80.76328, 4.08395], "size": [5.83209, 5.83209, 5.83209], "inflate": 0.25, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "leftArm2",
+					"parent": "body2",
+					"pivot": [2.09692, 80.03888, 7],
+					"cubes": [
+						{"origin": [1.67754, 78.36134, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [8, 20]}
+					]
+				},
+				{
+					"name": "leftForeArm2",
+					"parent": "leftArm2",
+					"pivot": [2.26467, 78.36134, 6.91612],
+					"cubes": [
+						{"origin": [1.67754, 75.84504, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [4, 20]}
+					]
+				},
+				{
+					"name": "leftItem2",
+					"parent": "leftForeArm2",
+					"pivot": [2.09692, 77.10319, 7],
+					"locators": {
+						"leftitemlocator2": [2.51631, 76.05473, 7]
+					}
+				},
+				{
+					"name": "rightArm2",
+					"parent": "body2",
+					"pivot": [-2.09692, 80.03888, 7],
+					"cubes": [
+						{"origin": [-3.35507, 78.36134, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [20, 3]}
+					]
+				},
+				{
+					"name": "rightForeArm2",
+					"parent": "rightArm2",
+					"pivot": [-2.26467, 78.36134, 6.91612],
+					"cubes": [
+						{"origin": [-3.35507, 75.84504, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [0, 20]}
+					]
+				},
+				{
+					"name": "rightItem2",
+					"parent": "rightForeArm2",
+					"pivot": [-2.09692, 76.55799, 6.58062],
+					"locators": {
+						"rightitemlocator2": [-2.51631, 75.50953, 7]
+					}
+				},
+				{
+					"name": "leftLeg2",
+					"parent": "baby",
+					"pivot": [0.79683, 76.05473, 7],
+					"rotation": [-75, 0, 0],
+					"cubes": [
+						{"origin": [-0.04194, 73.53843, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [20, 6]}
+					]
+				},
+				{
+					"name": "leftForeLeg2",
+					"parent": "leftLeg2",
+					"pivot": [0.83877, 73.53843, 7],
+					"cubes": [
+						{"origin": [-0.04194, 71.02212, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [19, 19]}
+					]
+				},
+				{
+					"name": "rightLeg2",
+					"parent": "baby",
+					"pivot": [-0.79683, 76.05473, 7],
+					"rotation": [-77.5, 0, 0],
+					"cubes": [
+						{"origin": [-1.6356, 73.53843, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [0, 10]}
+					]
+				},
+				{
+					"name": "rightForeLeg2",
+					"parent": "rightLeg2",
+					"pivot": [-0.83877, 73.53843, 7],
+					"cubes": [
+						{"origin": [-1.6356, 71.02212, 6.16123], "size": [1.67754, 2.51631, 1.67754], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

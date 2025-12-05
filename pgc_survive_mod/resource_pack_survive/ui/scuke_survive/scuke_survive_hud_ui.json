@@ -1,0 +1,1144 @@
+{
+   "anim_hand_down" : {
+      "anim_type" : "offset",
+      "duration" : 1.0,
+      "from" : [ 3.0, -5.0 ],
+      "next" : "@scuke_survive_hud_ui.anim_hand_up",
+      "to" : [ 3.0, 0.0 ]
+   },
+   "anim_hand_up" : {
+      "anim_type" : "offset",
+      "duration" : 1.0,
+      "from" : [ 3.0, 0.0 ],
+      "next" : "@scuke_survive_hud_ui.anim_hand_down",
+      "to" : [ 3.0, -5.0 ]
+   },
+   "anim_hud_flash_in" : {
+      "anim_type" : "alpha",
+      "duration" : 1.0,
+      "from" : 0.0,
+      "next" : "@scuke_survive_hud_ui.anim_hud_flash_out",
+      "to" : 1.0
+   },
+   "anim_hud_flash_out" : {
+      "anim_type" : "alpha",
+      "duration" : 1.0,
+      "from" : 1.0,
+      "next" : "@scuke_survive_hud_ui.anim_hud_flash_in",
+      "to" : 0.0
+   },
+   "impact_days" : {
+      "anchor_from" : "right_middle",
+      "anchor_to" : "right_middle",
+      "controls" : [
+         {
+            "a0" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+               "layer" : 3,
+               "offset" : [ 23.0, -10.0 ],
+               "size" : [ 13.0, 25.0 ],
+               "texture" : "textures/ui/scuke_survive/numbers/num_a_3",
+               "type" : "image"
+            }
+         },
+         {
+            "a1" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+               "layer" : 3,
+               "offset" : [ 9.0, -10.0 ],
+               "size" : [ 13.0, 25.0 ],
+               "texture" : "textures/ui/scuke_survive/numbers/num_a_4",
+               "type" : "image"
+            }
+         },
+         {
+            "b0" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 3,
+               "offset" : [ -1.50, 19.0 ],
+               "size" : [ 5.0, 7.0 ],
+               "texture" : "textures/ui/scuke_survive/numbers/num_b_3",
+               "type" : "image"
+            }
+         },
+         {
+            "b1" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 3,
+               "offset" : [ -7.0, 19.0 ],
+               "size" : [ 5.0, 7.0 ],
+               "texture" : "textures/ui/scuke_survive/numbers/num_b_4",
+               "type" : "image"
+            }
+         },
+         {
+            "line" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+               "keep_ratio" : false,
+               "layer" : 1,
+               "offset" : [ -26.0, 7.0 ],
+               "size" : [ 2.0, 31.0 ],
+               "texture" : "textures/ui/scuke_survive/white",
+               "type" : "image"
+            }
+         }
+      ],
+      "layer" : 1,
+      "size" : [ 61.0, "default" ],
+      "type" : "panel"
+   },
+   "main@common.base_screen" : {
+      "$screen_content" : "scuke_survive_hud_ui.panel",
+      "always_accepts_input" : true
+   },
+   "namespace" : "scuke_survive_hud_ui",
+   "panel" : {
+      "controls" : [
+         {
+            "Panel_Common" : {
+               "controls" : [
+                  {
+                     "BloodMoon" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [
+                           {
+                              "BloodMoon_Text" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "color" : [ 0.8901960784313725, 0.9607843137254902, 0.3490196078431372 ],
+                                 "font_scale_factor" : 0.80,
+                                 "font_size" : "large",
+                                 "font_type" : "default",
+                                 "offset" : [ 0.0, 37.0 ],
+                                 "shadow" : true,
+                                 "size" : [ 400.0, 30.0 ],
+                                 "text" : "不祥的预感",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ 0.0, -10.0 ],
+                        "size" : [ 300.0, 45.0 ],
+                        "texture" : "textures/ui/scuke_survive/hud/redtide_strikes",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "panel_top_left" : {
+                        "controls" : [
+                           {
+                              "Button_Menu@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_texture" : "textures/ui/scuke_survive/hud/hud_menu",
+                                 "$hover_texture" : "textures/ui/scuke_survive/hud/hud_menu",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 1, 1, 1 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "large",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "Button",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0, 0, 0, 0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_texture" : "textures/ui/scuke_survive/hud/hud_menu",
+                                 "$texture_layer" : 2,
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "top_left",
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "Day_Image" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "controls" : [
+                                             {
+                                                "Unit2" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "layer" : 3,
+                                                   "offset" : [ 20.0, 0.0 ],
+                                                   "size" : [ 18.0, 27.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/hud/hud_0",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "Unit1" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 3,
+                                                   "offset" : [ 34.0, 0.0 ],
+                                                   "size" : [ 18.0, 27.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/hud/hud_0",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "Unit0" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "layer" : 3,
+                                                   "offset" : [ 48.0, 0.0 ],
+                                                   "size" : [ 18.0, 27.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/hud/hud_0",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "Day" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 3,
+                                                   "offset" : [ 2.0, 2.0 ],
+                                                   "size" : [ 18.0, 17.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/hud/hud_days",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "Planet" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [
+                                                      {
+                                                         "label" : {
+                                                            "anchor_from" : "bottom_middle",
+                                                            "anchor_to" : "top_middle",
+                                                            "font_type" : "default",
+                                                            "layer" : 4,
+                                                            "offset" : [ 0.0, 3.0 ],
+                                                            "shadow" : true,
+                                                            "text" : "距离撞击",
+                                                            "type" : "label"
+                                                         }
+                                                      }
+                                                   ],
+                                                   "layer" : 3,
+                                                   "offset" : [ 2.0, 0.0 ],
+                                                   "size" : [ 19.0, 19.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/task/img_p_mars",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "layer" : 4,
+                                          "offset" : [ 37.0, 7.0 ],
+                                          "size" : [ 78.0, 23.0 ],
+                                          "texture" : "textures/ui/scuke_survive/hud/hud_background",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {}
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {}
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {
+                                          "color" : [ 1.0, 1.0, 1.0 ]
+                                       }
+                                    },
+                                    {
+                                       "label" : {
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "top_middle",
+                                          "enabled" : false,
+                                          "font_type" : "default",
+                                          "layer" : 7,
+                                          "offset" : [ 2.0, 0.0 ],
+                                          "shadow" : true,
+                                          "size" : [ 25.0, 10.0 ],
+                                          "text" : "菜单",
+                                          "text_alignment" : "center",
+                                          "type" : "label",
+                                          "visible" : false
+                                       }
+                                    },
+                                    {
+                                       "image" : {
+                                          "anchor_from" : "left_middle",
+                                          "anchor_to" : "left_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "layer" : 10,
+                                          "nineslice_size" : [ 0.0, 0.0, 7.0, 0.0 ],
+                                          "offset" : [ 15.0, 3.0 ],
+                                          "size" : [ 37.0, 7.0 ],
+                                          "texture" : "textures/ui/scuke_survive/hud/hud_translate",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "flash" : {
+                                          "alpha" : "@scuke_survive_hud_ui.anim_hud_flash_in",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "controls" : [
+                                             {
+                                                "hand" : {
+                                                   "anchor_from" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 3,
+                                                   "offset" : "@scuke_survive_hud_ui.anim_hand_up",
+                                                   "size" : [ 12.0, 12.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/icon/icon_hand",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 36.0, 38.0 ],
+                                          "texture" : "textures/ui/scuke_survive/hud/hud_flash",
+                                          "type" : "image",
+                                          "visible" : false
+                                       }
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "layer" : 9,
+                                 "offset" : [ 8.0, 8.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ 36.0, 30.0 ],
+                                 "type" : "button"
+                              }
+                           }
+                        ],
+                        "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "DayNotify" : {
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "controls" : [
+                           {
+                              "mars" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [
+                                    {
+                                       "days@scuke_survive_hud_ui.impact_days" : {
+                                          "offset" : [ -31.0, 0.0 ]
+                                       }
+                                    }
+                                 ],
+                                 "enabled" : false,
+                                 "layer" : 22,
+                                 "offset" : [ -20.0, 0.0 ],
+                                 "size" : [ 122.0, 47.0 ],
+                                 "texture" : "textures/ui/scuke_survive/hud/hud_mars",
+                                 "type" : "image",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "asteroid_belt" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [
+                                    {
+                                       "days@scuke_survive_hud_ui.impact_days" : {
+                                          "offset" : [ -60.0, 0.0 ]
+                                       }
+                                    }
+                                 ],
+                                 "enabled" : false,
+                                 "layer" : 22,
+                                 "offset" : [ -20.0, 0.0 ],
+                                 "size" : [ 175.0, 47.0 ],
+                                 "texture" : "textures/ui/scuke_survive/hud/hud_meteorites",
+                                 "type" : "image",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "jupiter" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [
+                                    {
+                                       "days@scuke_survive_hud_ui.impact_days" : {
+                                          "offset" : [ -49.0, 0.0 ]
+                                       }
+                                    }
+                                 ],
+                                 "enabled" : false,
+                                 "layer" : 22,
+                                 "offset" : [ -20.0, 0.0 ],
+                                 "size" : [ 140.0, 47.0 ],
+                                 "texture" : "textures/ui/scuke_survive/hud/hud_jupiter",
+                                 "type" : "image",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "_earth_" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [
+                                    {
+                                       "days" : {
+                                          "anchor_from" : "right_middle",
+                                          "anchor_to" : "right_middle",
+                                          "controls" : [
+                                             {
+                                                "a0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                                   "layer" : 3,
+                                                   "offset" : [ 23.0, -10.0 ],
+                                                   "size" : [ 13.0, 25.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/numbers/num_a_3",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "a1" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                                   "layer" : 3,
+                                                   "offset" : [ 9.0, -10.0 ],
+                                                   "size" : [ 13.0, 25.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/numbers/num_a_4",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "a2" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                                   "layer" : 3,
+                                                   "offset" : [ -5.0, -10.0 ],
+                                                   "size" : [ 13.0, 25.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/numbers/num_a_4",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "b0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 3,
+                                                   "offset" : [ 3.50, 19.0 ],
+                                                   "size" : [ 5.0, 7.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/numbers/num_b_3",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "b1" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 3,
+                                                   "offset" : [ -2.0, 19.0 ],
+                                                   "size" : [ 5.0, 7.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/numbers/num_b_4",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "b2" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 3,
+                                                   "offset" : [ -7.50, 19.0 ],
+                                                   "size" : [ 5.0, 7.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/numbers/num_b_4",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "line" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "offset" : [ -27.0, 7.0 ],
+                                                   "size" : [ 2.0, 31.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "offset" : [ -17.0, 0.0 ],
+                                          "size" : [ 61.0, "default" ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "enabled" : false,
+                                 "layer" : 22,
+                                 "offset" : [ -20.0, 0.0 ],
+                                 "size" : [ 112.0, 47.0 ],
+                                 "texture" : "textures/ui/scuke_survive/hud/hud_earth",
+                                 "type" : "image",
+                                 "visible" : false
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ 0.0, -30.0 ],
+                        "size" : [ 200.0, 50.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "MeteoriteImpact" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [
+                           {
+                              "MeteoriteImpact_Text" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "color" : [ 0.8901960784313725, 0.9607843137254902, 0.3490196078431372 ],
+                                 "font_scale_factor" : 0.80,
+                                 "font_size" : "large",
+                                 "font_type" : "default",
+                                 "offset" : [ 0.0, 37.0 ],
+                                 "shadow" : true,
+                                 "size" : [ 400.0, 30.0 ],
+                                 "text" : "不祥的预感",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ 0.0, -10.0 ],
+                        "size" : [ 300.0, 45.0 ],
+                        "texture" : "textures/ui/scuke_survive/hud/meteorite_strikes",
+                        "type" : "image",
+                        "visible" : false
+                     }
+                  }
+               ],
+               "layer" : 36,
+               "type" : "panel"
+            }
+         },
+         {
+            "DebugPanel" : {
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "controls" : [
+                  {
+                     "Env_Text" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "color" : [ 0.0, 1.0, 0.0 ],
+                        "font_size" : "small",
+                        "font_type" : "default",
+                        "shadow" : true,
+                        "size" : [ "100.0%+0.0px", "default" ],
+                        "type" : "label"
+                     }
+                  },
+                  {
+                     "Attr_Text" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [],
+                        "font_size" : "small",
+                        "font_type" : "default",
+                        "shadow" : true,
+                        "size" : [ "100.0%+0.0px", "default" ],
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "layer" : 72,
+               "offset" : [ 32.0, 40.0 ],
+               "size" : [ 320.0, "default" ],
+               "type" : "stack_panel",
+               "visible" : false
+            }
+         },
+         {
+            "StatePanel" : {
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "controls" : [
+                  {
+                     "env_panel" : {
+                        "anchor_from" : "bottom_left",
+                        "anchor_to" : "bottom_right",
+                        "controls" : [
+                           {
+                              "temp_state" : {
+                                 "controls" : [
+                                    {
+                                       "p" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 1.0, 1.0 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "layer" : 5,
+                                          "offset" : [ 0.0, "-9.0%+0.0px" ],
+                                          "rotate_angle" : 90.0,
+                                          "rotate_pivot" : [ 0.50, 0.8100000000000001 ],
+                                          "size" : [ "38.12%+0.0px", "44.37%+0.0px" ],
+                                          "texture" : "textures/ui/scuke_survive/env/temp_p",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 1.0, 1.0 ],
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "texture" : "textures/ui/scuke_survive/common/slot",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "n" : {
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ 0.0, 4.0 ],
+                                          "size" : [ 4.0, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r1" : {
+                                          "anchor_from" : "top_right",
+                                          "anchor_to" : "top_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 0.1725490196078431, 0.0 ],
+                                          "controls" : [
+                                             {
+                                                "safe" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ "0.0%+0.0px", "default" ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ -4.0, 4.0 ],
+                                          "size" : [ 4.0, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r2" : {
+                                          "anchor_from" : "top_right",
+                                          "anchor_to" : "top_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 0.1725490196078431, 0.0 ],
+                                          "controls" : [
+                                             {
+                                                "safe" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ "default", "0.0%+0.0px" ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ -4.0, 8.0 ],
+                                          "size" : [ 3.0, 4.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r3" : {
+                                          "anchor_from" : "bottom_right",
+                                          "anchor_to" : "bottom_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 0.1725490196078431, 0.0 ],
+                                          "controls" : [
+                                             {
+                                                "safe" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ "default", "0.0%+0.0px" ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ -4.0, -3.0 ],
+                                          "size" : [ 3.0, 6.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l1" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.2470588235294118, 0.6823529411764706, 1.0 ],
+                                          "controls" : [
+                                             {
+                                                "safe" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ "0.0%+0.0px", "default" ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ 4.0, 4.0 ],
+                                          "size" : [ 4.0, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l2" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.2470588235294118, 0.6823529411764706, 1.0 ],
+                                          "controls" : [
+                                             {
+                                                "safe" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ "default", "0.0%+0.0px" ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ 4.0, 8.0 ],
+                                          "size" : [ 3.0, 4.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l3" : {
+                                          "anchor_from" : "bottom_left",
+                                          "anchor_to" : "bottom_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.2470588235294118, 0.6823529411764706, 1.0 ],
+                                          "controls" : [
+                                             {
+                                                "safe" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : [ 0.3294117647058823, 1.0, 0.0 ],
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "keep_ratio" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ "default", "0.0%+0.0px" ],
+                                                   "texture" : "textures/ui/scuke_survive/white",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 3,
+                                          "offset" : [ 4.0, -3.0 ],
+                                          "size" : [ 3.0, 6.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "c" : {
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 1.0, 1.0 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "layer" : 4,
+                                          "offset" : [ 0.0, -3.0 ],
+                                          "size" : [ 5.0, 5.0 ],
+                                          "texture" : "textures/ui/scuke_survive/env/temp_c",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "warn" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.6313725490196078, 0.9450980392156862, 0.9568627450980393 ],
+                                          "enabled" : false,
+                                          "layer" : 2,
+                                          "nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "size" : [ "100.0%+1.0px", "100.0%+1.0px" ],
+                                          "texture" : "textures/ui/scuke_survive/common/border04",
+                                          "type" : "image"
+                                       }
+                                    }
+                                 ],
+                                 "offset" : [ 0.0, 12.50 ],
+                                 "size" : [ 22.0, 22.0 ],
+                                 "type" : "panel"
+                              }
+                           },
+                           {
+                              "radiation_state" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "controls" : [
+                                    {
+                                       "l1" : {
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ -2.0, 4.0 ],
+                                          "size" : [ 3.0, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l2" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ 4.0, 4.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l3" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ 4.0, 8.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l4" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ 4.0, 12.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "l5" : {
+                                          "anchor_from" : "top_left",
+                                          "anchor_to" : "top_left",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ 4.0, 16.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r1" : {
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ 2.0, 4.0 ],
+                                          "size" : [ 3.0, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r2" : {
+                                          "anchor_from" : "top_right",
+                                          "anchor_to" : "top_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ -4.0, 4.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r3" : {
+                                          "anchor_from" : "top_right",
+                                          "anchor_to" : "top_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ -4.0, 8.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r4" : {
+                                          "anchor_from" : "top_right",
+                                          "anchor_to" : "top_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ -4.0, 12.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "r5" : {
+                                          "anchor_from" : "top_right",
+                                          "anchor_to" : "top_right",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.4117647058823529, 0.4392156862745098, 0.4392156862745098 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ -4.0, 16.0 ],
+                                          "size" : [ 2.50, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 1.0, 1.0 ],
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "texture" : "textures/ui/scuke_survive/common/slot",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "c" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 1.0, 1.0 ],
+                                          "controls" : [],
+                                          "enabled" : false,
+                                          "layer" : 4,
+                                          "offset" : [ 0.0, "10.0%+0.0px" ],
+                                          "size" : [ 8.0, 8.0 ],
+                                          "texture" : "textures/ui/scuke_survive/env/radiation",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "warn" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.9529411764705882, 0.80, 0.1921568627450981 ],
+                                          "enabled" : false,
+                                          "layer" : 3,
+                                          "nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "size" : [ "100.0%+1.0px", "100.0%+1.0px" ],
+                                          "texture" : "textures/ui/scuke_survive/common/border04",
+                                          "type" : "image",
+                                          "visible" : false
+                                       }
+                                    }
+                                 ],
+                                 "offset" : [ 0.0, -1.50 ],
+                                 "size" : [ 22.0, 22.0 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           }
+                        ],
+                        "offset" : [ 0.0, -13.0 ],
+                        "size" : [ 25.0, 24.0 ],
+                        "type" : "panel"
+                     }
+                  }
+               ],
+               "offset" : [ 10.0, 0.0 ],
+               "size" : [ 202.0, 40.0 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "panel"
+   }
+}

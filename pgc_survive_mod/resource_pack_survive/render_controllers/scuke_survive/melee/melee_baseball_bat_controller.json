@@ -1,0 +1,68 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_melee_baseball_bat": {
+            "geometry": "Geometry.scuke_survive_melee_baseball_bat",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_melee_baseball_bat"],
+            "part_visibility": [
+                { "*": true },
+                { "head": false },
+                { "body": false },
+                { "rightArm": false },
+                { "rightSleeve": false },
+                { "leftArm": false },
+                { "leftSleeve": false }
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        },
+        "controller.render.scuke_survive_melee_baseball_bat_m": {
+            "geometry": "Geometry.scuke_survive_melee_baseball_bat",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_melee_baseball_bat_m"],
+            "part_visibility": [
+                { "*": true },
+                { "head": false },
+                { "body": false },
+                { "rightArm": false },
+                { "rightSleeve": false },
+                { "leftArm": false },
+                { "leftSleeve": false }
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        },
+        "controller.render.scuke_survive_melee_baseball_bat_golden": {
+            "geometry": "Geometry.scuke_survive_melee_baseball_bat",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_melee_baseball_bat_golden"],
+            "part_visibility": [
+                { "*": true },
+                { "head": false },
+                { "body": false },
+                { "rightArm": false },
+                { "rightSleeve": false },
+                { "leftArm": false },
+                { "leftSleeve": false }
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        }
+    }
+}

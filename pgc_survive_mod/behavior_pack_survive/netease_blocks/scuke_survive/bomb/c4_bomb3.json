@@ -1,0 +1,48 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:c4_bomb3",
+            "register_to_creative_menu": false,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "minecraft:loot": {
+				"table": "loot_tables/scuke_survive/c4_bomb_loot.json"
+			},
+            "netease:aabb": {
+                "collision": {
+                    "min": [ -0.1875, -0.125, 0.5 ],
+                    "max": [ 1.1875, 1.125, 1.0 ]
+                },
+                "clip": {
+                    "min": [ -0.1875, -0.125, 0.5 ],
+                    "max": [ 1.1875, 1.125, 1.0 ]
+                }
+            },
+            "netease:custom_tips": {
+                "value": "可被遥控器在50格范围内引爆"
+            },
+//            "minecraft:explosion_resistance": {
+//                "value": 1200
+//            },
+            "netease:block_entity": {
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "minecraft:destroy_time": {
+                "value": 2
+            }
+        }
+    }
+}

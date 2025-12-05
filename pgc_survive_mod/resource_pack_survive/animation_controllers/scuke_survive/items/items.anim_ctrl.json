@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_item.use": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "use": "variable.use_item" }
+                    ]
+                },
+                "use": {
+                    "animations": [
+                        "use"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ]
+                }
+            }
+        }
+    }
+}

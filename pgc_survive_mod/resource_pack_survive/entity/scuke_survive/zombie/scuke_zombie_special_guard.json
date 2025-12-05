@@ -1,0 +1,65 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"animations": {
+				"standby": "animation.scuke_zombie.idle3",
+				"attacking": "animation.scuke_zombie_guard.attack",
+				"moving": "animation.scuke_zombie.walk",
+				"hurt_effect": "animation.scuke_zombie.hurt_effect",
+				"ctl_hurt_effect": "controller.animation.scuke_zombie_hurt_effect",
+				"ctl_scuke_zombie_guard": "controller.animation.scuke_zombie_guard",
+				"look_at_target": "animation.humanoid.look_at_target.default",
+				"ui_correct": "animation.scuke_zombie_ui.guard_correct"
+			},
+			"enable_attachables": true,
+			"geometry": {
+				"default": "geometry.scuke_zombie_guard"
+			},
+			"spawn_egg": {
+				"base_color": "#878e73",
+				"overlay_color": "#231f2a"
+			},
+			"identifier": "scuke_survive:zombie_special_guard",
+			"materials": {
+				"default": "scuke_survive_zombie"
+			},
+			"render_controllers": [
+				"controller.render.scuke_zombie_special_guard"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.standby_time = 0;",
+					"variable.moving_time = 0;"
+				],
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+					"variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+					"variable.is_moving = query.ground_speed >= 0.01;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+				],
+				"animate": [
+                    {
+                        "look_at_target": "variable.not_in_ui"
+                    },
+                    {
+                        "ctl_scuke_zombie_guard": "variable.not_in_ui"
+                    },
+                    {
+                        "ctl_hurt_effect": "variable.not_in_ui"
+                    },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "attacking": "variable.correct_pos == 1.0"
+                    }
+				]
+			},
+			"textures": {
+				"default": "textures/entity/scuke_survive/zombie/scuke_zombie_special_guard"
+			}
+		}
+	}
+}

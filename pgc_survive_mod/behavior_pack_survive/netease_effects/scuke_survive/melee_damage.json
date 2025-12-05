@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "scuke_survive_melee_damage",
+            "minecraft:particle_color": [
+                255,
+                127,
+                39
+            ]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_melee_damage"
+        }
+    }
+}

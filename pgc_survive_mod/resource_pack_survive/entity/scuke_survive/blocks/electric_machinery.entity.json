@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:electric_machinery_entity",
+            "materials": {
+                "default": "scuke_survive_electric_working"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/electric_machinery"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_electric_machinery"
+            },
+            "animations": {
+                "ui_correct": "animation.scuke_survive_electric_machinery.scale_correct"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

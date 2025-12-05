@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:items_oil_drum_small",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "minecraft:destroy_time": {
+                "value": 1
+            }
+        }
+    }
+}

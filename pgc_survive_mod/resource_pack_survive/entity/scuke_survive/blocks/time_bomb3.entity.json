@@ -1,0 +1,91 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:time_bomb3_entity",
+            "materials": {
+                "default": "scuke_survive_entity_light",
+                "blend": "scuke_survive_npc_golden_creeper_outer"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/time_bomb"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_time_bomb"
+            },
+            "animations": {
+                "ui_correct": "animation.scuke_time_bomb.scale_correct",
+                "init_state": "animation.scuke_time_bomb.init_state",
+                "time_flowing": "animation.scuke_time_bomb.time_flowing",
+                "place_anim": "animation.scuke_time_bomb.place_anim",
+                "left_time": "animation.scuke_time_bomb.left_time"
+            },
+            "scripts": {
+                "should_update_bones_and_effects_offscreen": true,
+                "initialize": [
+                    "variable.block_type = 2.0;",
+                    "variable.total_time = 0.0;",
+                    "variable.left_time = 0.0;",
+                    "variable.has_set_time = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;",
+
+//                    "variable.left_time = (-math.cos(query.life_time * 360) >= 0.9986 && variable.has_set_time == 1.0) ? math.max(variable.left_time - 1, 0) : variable.left_time;",
+                    "variable.min1 = math.floor(math.floor(math.floor(math.min(variable.left_time, 5999)) / 60) / 10);",
+                    "variable.min2 = math.mod(math.floor(math.floor(math.min(variable.left_time, 5999)) / 60), 10);",
+                    "variable.sec1 = math.floor(math.mod(math.floor(variable.left_time), 60) / 10);",
+                    "variable.sec2 = math.mod(math.mod(math.floor(variable.left_time), 60), 10);",
+
+                    "variable.min1_comp1_visible = (variable.min1 != 5 && variable.min1 != 6) && variable.has_set_time == 1.0;",
+                    "variable.min1_comp2_visible = (variable.min1 != 2) && variable.has_set_time == 1.0;",
+                    "variable.min1_comp3_visible = (variable.min1 != 1 && variable.min1 != 2 && variable.min1 != 3 && variable.min1 != 7) && variable.has_set_time == 1.0;",
+                    "variable.min1_comp4_visible = (variable.min1 == 2 || variable.min1 == 6 || variable.min1 == 8 || variable.min1 == 0) && variable.has_set_time == 1.0;",
+                    "variable.min1_comp5_visible = (variable.min1 != 1 && variable.min1 != 4) && variable.has_set_time == 1.0;",
+                    "variable.min1_comp6_visible = variable.has_set_time == 1.0 ? (variable.min1 != 0 && variable.min1 != 1 && variable.min1 != 7) : 1.0;",
+                    "variable.min1_comp7_visible = (variable.min1 != 1 && variable.min1 != 4 && variable.min1 != 7) && variable.has_set_time == 1.0;",
+
+                    "variable.min2_comp1_visible = (variable.min2 != 5 && variable.min2 != 6) && variable.has_set_time == 1.0;",
+                    "variable.min2_comp2_visible = (variable.min2 != 2) && variable.has_set_time == 1.0;",
+                    "variable.min2_comp3_visible = (variable.min2 != 1 && variable.min2 != 2 && variable.min2 != 3 && variable.min2 != 7) && variable.has_set_time == 1.0;",
+                    "variable.min2_comp4_visible = (variable.min2 == 2 || variable.min2 == 6 || variable.min2 == 8 || variable.min2 == 0) && variable.has_set_time == 1.0;",
+                    "variable.min2_comp5_visible = (variable.min2 != 1 && variable.min2 != 4) && variable.has_set_time == 1.0;",
+                    "variable.min2_comp6_visible = variable.has_set_time == 1.0 ? (variable.min2 != 0 && variable.min2 != 1 && variable.min2 != 7) : 1.0;",
+                    "variable.min2_comp7_visible = (variable.min2 != 1 && variable.min2 != 4 && variable.min2 != 7) && variable.has_set_time == 1.0;",
+
+                    "variable.sec1_comp1_visible = (variable.sec1 != 5 && variable.sec1 != 6) && variable.has_set_time == 1.0;",
+                    "variable.sec1_comp2_visible = (variable.sec1 != 2) && variable.has_set_time == 1.0;",
+                    "variable.sec1_comp3_visible = (variable.sec1 != 1 && variable.sec1 != 2 && variable.sec1 != 3 && variable.sec1 != 7) && variable.has_set_time == 1.0;",
+                    "variable.sec1_comp4_visible = (variable.sec1 == 2 || variable.sec1 == 6 || variable.sec1 == 8 || variable.sec1 == 0) && variable.has_set_time == 1.0;",
+                    "variable.sec1_comp5_visible = (variable.sec1 != 1 && variable.sec1 != 4) && variable.has_set_time == 1.0;",
+                    "variable.sec1_comp6_visible = variable.has_set_time == 1.0 ? (variable.sec1 != 0 && variable.sec1 != 1 && variable.sec1 != 7) : 1.0;",
+                    "variable.sec1_comp7_visible = (variable.sec1 != 1 && variable.sec1 != 4 && variable.sec1 != 7) && variable.has_set_time == 1.0;",
+
+                    "variable.sec2_comp1_visible = (variable.sec2 != 5 && variable.sec2 != 6) && variable.has_set_time == 1.0;",
+                    "variable.sec2_comp2_visible = (variable.sec2 != 2) && variable.has_set_time == 1.0;",
+                    "variable.sec2_comp3_visible = (variable.sec2 != 1 && variable.sec2 != 2 && variable.sec2 != 3 && variable.sec2 != 7) && variable.has_set_time == 1.0;",
+                    "variable.sec2_comp4_visible = (variable.sec2 == 2 || variable.sec2 == 6 || variable.sec2 == 8 || variable.sec2 == 0) && variable.has_set_time == 1.0;",
+                    "variable.sec2_comp5_visible = (variable.sec2 != 1 && variable.sec2 != 4) && variable.has_set_time == 1.0;",
+                    "variable.sec2_comp6_visible = variable.has_set_time == 1.0 ? (variable.sec2 != 0 && variable.sec2 != 1 && variable.sec2 != 7) : 1.0;",
+                    "variable.sec2_comp7_visible = (variable.sec2 != 1 && variable.sec2 != 4 && variable.sec2 != 7) && variable.has_set_time == 1.0;"
+                ],
+                "animate": [
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    "place_anim", "init_state", "time_flowing",
+                    {
+                        "left_time": "variable.has_set_time == 1.0"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive_time_bomb"
+            ],
+            "spawn_egg": {
+                "base_color":"#DF7E34",
+                "overlay_color":"#72342A"
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.13.0",
+	"netease:block_geometry": 
+		{
+			"description": {
+				"identifier": "scuke_survive:electric_photoetching_model",
+				"item_texture": "scuke_survive:electric_photoetching",
+				"textures": [
+					"scuke_survive:electric_photoetching"
+				],
+				"use_ao": true
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [-8, 1, 8],
+					"cubes": [
+						{"origin": [2.5, 27, -7], "size": [11, 3, 0], "uv": [0, 89]},
+						{"origin": [-30.5, 2, -7], "size": [7, 10, 1], "uv": [103, 132]},
+						{"origin": [-30.5, 19, -7], "size": [7, 12, 1], "uv": [4, 123]},
+						{"origin": [-31.75, 32.25, -6.25], "size": [1, 1, 30.5], "inflate": -0.25, "uv": [137, 92]},
+						{"origin": [-31.75, 31.75, -6.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63]},
+						{"origin": [-31.75, 31.75, 23.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63]},
+						{"origin": [-29.75, 31.75, 23.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63]},
+						{"origin": [-29.75, 31.75, -6.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63]},
+						{"origin": [-29.75, 32.25, -6.25], "size": [1, 1, 30.5], "inflate": -0.25, "uv": [137, 92]},
+						{"origin": [12.75, 31.75, 23.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63], "mirror": true},
+						{"origin": [12.75, 31.75, -6.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63], "mirror": true},
+						{"origin": [12.75, 32.25, -6.25], "size": [1, 1, 30.5], "inflate": -0.25, "uv": [137, 92], "mirror": true},
+						{"origin": [14.75, 31.75, -6.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63], "mirror": true},
+						{"origin": [14.75, 32.25, -6.25], "size": [1, 1, 30.5], "inflate": -0.25, "uv": [137, 92], "mirror": true},
+						{"origin": [14.75, 31.75, 23.75], "size": [1, 1.5, 1], "inflate": -0.25, "uv": [33, 63], "mirror": true}
+					]
+				}
+			]
+		}
+}

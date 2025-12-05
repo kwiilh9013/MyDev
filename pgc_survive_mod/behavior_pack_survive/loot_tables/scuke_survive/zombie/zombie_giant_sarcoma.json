@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:raw_yttrium",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:ghast_tear",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "scuke_survive:mat_chip_middle",
+                    "type": "item",
+                    "weight": 3
+                }
+            ],
+            "rolls": 3
+        }
+    ]
+}

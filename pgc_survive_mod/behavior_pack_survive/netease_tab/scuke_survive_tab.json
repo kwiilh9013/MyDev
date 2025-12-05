@@ -1,0 +1,9 @@
+{
+    "category": [
+        {
+            "name": "scuke_survive",
+            "labelText": "category_tab.scuke_survive",
+            "icon": "textures/items/scuke_survive/logo"
+        }
+    ]
+}

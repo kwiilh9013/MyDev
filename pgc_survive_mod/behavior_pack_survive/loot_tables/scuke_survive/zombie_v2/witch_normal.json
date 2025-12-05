@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:food_warm_paste",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "scuke_survive:food_spicy_strip",
+                    "type": "item",
+                    "weight": 40
+                },
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 30
+                },
+                {
+                    "name": "minecraft:gunpowder",
+                    "type": "item",
+                    "weight": 40
+                },
+                {
+                    "name": "minecraft:coal",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "minecraft:slime_ball",
+                    "type": "item",
+                    "weight": 20
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

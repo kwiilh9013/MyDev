@@ -1,0 +1,23 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.projectile_random_zombie.switch": {
+			"initial_state": "rotate",
+			"states": {
+				"default": {
+					"animations": ["idle"],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"rotate": {
+					"animations": ["rotate"],
+					"transitions": [
+						{"default": "query.life_time > 1"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

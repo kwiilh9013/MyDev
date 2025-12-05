@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:build_entity",
+            "materials": {
+                "default": "entity"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_null"
+            },
+            "textures": {
+                "default": "textures/entity/chicken"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

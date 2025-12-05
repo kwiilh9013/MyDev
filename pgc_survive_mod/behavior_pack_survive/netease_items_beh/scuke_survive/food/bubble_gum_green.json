@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:use_duration": 32,
+            "minecraft:food": {
+                "nutrition": 2,
+                "saturation_modifier": "poor",
+                "effects": [
+                    {
+                      "amplifier": 0,
+                      "chance": 1.0,
+                      "duration": 180,
+                      "name": "jump_boost"
+                    }
+                ]
+            },
+            "netease:customtips": {
+                "value": "[§a增益§f] 跳跃提升效果 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:food_bubble_gum_green",
+            "register_to_create_menu": true
+        }
+    }
+}

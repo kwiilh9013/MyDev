@@ -1,0 +1,76 @@
+{
+    "scuke_struct_wall_line": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/wall_line_mesh.json"
+    },
+    "scuke_struct_wall_slant": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/wall_slant_mesh.json"
+    },
+    "scuke_struct_fortress_base": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/fortress_base_mesh.json"
+    },
+    "scuke_struct_fortress_hight": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/fortress_hight_mesh.json"
+    },
+    "scuke_struct_fortress_tower": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/fortress_tower_mesh.json"
+    },
+    "scuke_struct_road_line": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/road_line_mesh.json"
+    },
+    "scuke_struct_road_90": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/road_90_mesh.json"
+    },
+    "scuke_struct_road_u": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/road_u_mesh.json"
+    },
+    "scuke_struct_road_uphill": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/road_uphill_mesh.json"
+    },
+    "scuke_struct_tent_small": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/tent_small_mesh.json"
+    },
+    "scuke_struct_tent_large": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/tent_large_mesh.json"
+    },
+    "scuke_struct_refuge": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/refuge_mesh.json"
+    },
+    "scuke_struct_repair_station": {
+        "skeleton": "scuke_survive/struct/struct_skeleton.json",
+        "mesh": "scuke_survive/struct/repair_station_mesh.json"
+    },
+    "scuke_weather_snow": {
+        "mesh": "scuke_survive/weather/falling_mesh.json",
+        "skeleton": "scuke_survive/weather/falling_skeleton.json",
+        "texture": {
+            "tex0": "scuke_survive/weather/uv_noise",
+            "tex1": "scuke_survive/weather/snow"
+        }
+    },
+    "scuke_energy_shield": {
+        "mesh": "scuke_survive/sphere/sphere_mesh.json",
+        "skeleton": "scuke_survive/sphere/sphere_skeleton.json",
+        "texture": {
+            "tex0": "scuke_survive/weather/uv_noise"
+        }
+    },
+    "scuke_battle_area": {
+        "mesh": "scuke_survive/cube/cube_face_mesh.json",
+        "skeleton": "scuke_survive/cube/cube_face_skeleton.json",
+        "texture": {
+            "tex0": "scuke_survive/weather/uv_noise"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:gold_ingot",
+                    "type": "item",
+                    "weight": 90
+                },
+                {
+                    "name": "scuke_survive:raw_rare_earth",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "scuke_survive:mat_phone2",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "scuke_survive:mat_plastic_board",
+                    "type": "item",
+                    "weight": 3
+                }
+            ],
+            "rolls": 2
+        }
+    ]
+}

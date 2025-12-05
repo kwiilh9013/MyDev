@@ -1,0 +1,63 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scuke_survive:projectile_em_missile",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "component_groups": {
+        },
+        "components": {
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "stick_in_ground": {
+                        "shake_time" : 0.35
+                    }
+                },
+                "hit_sound": "",
+                "shoot_sound": "",
+                "power": 0.8,
+                "gravity": 0.01,
+                "liquid_inertia": 1.0,
+                "uncertainty_base": 1,
+                "uncertainty_multiplier": 0,
+                "anchor": 1,
+                "should_bounce": true,
+                "offset": [ 0, -0.1, 0 ]
+            },
+            "minecraft:fire_immune": {},
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.5
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_optimized_distance": 80.0,
+                    "max_dropped_ticks": 7,
+                    "use_motion_prediction_hints": true
+                }
+            }
+        },
+        "events": {
+        }
+    }
+}

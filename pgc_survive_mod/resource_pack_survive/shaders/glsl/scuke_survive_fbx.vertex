@@ -1,0 +1,108 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+precision highp float;
+
+#if __VERSION__ >= 300
+// version 300 code
+#define texture2D texture
+#else
+// version 100 code
+#endif
+
+#include "vertexVersionCentroidUV.h"
+#include "uniformPerFrameConstants.h"
+#include "uniformWorldConstants.h"
+#include "uniformEntityConstants.h"
+#include "uniformShaderConstants.h"
+#ifdef USE_SKINNING
+#include "uniformAnimationConstants.h"
+#endif
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0; // base map
+
+attribute mediump vec4 POSITION;
+attribute vec2 TEXCOORD_0;
+attribute vec4 NORMAL;
+#if defined(USE_SKINNING)
+#ifdef MCPE_PLATFORM_NX
+attribute uint BONEID_0;
+#else
+attribute float BONEID_0;
+#endif
+#endif
+
+const float AMBIENT = 0.45;
+
+const float XFAC = -0.1;
+const float ZFAC = 0.1;
+
+float lightIntensity(vec4 position, vec4 normal) {
+#ifdef FANCY
+#if defined(NETEASE_SKINNING) && defined(USE_SKINNING)
+	MAT4 boneMat = GetBoneMatForNetease(int(BONEID_0));
+    vec3 N = normalize( boneMat * NORMAL ).xyz;
+#else//NETEASE_SKINNING
+	vec3 N = normalize( WORLD * normal ).xyz;
+#endif
+	N.y *= TILE_LIGHT_COLOR.w; //TILE_LIGHT_COLOR.w contains the direction of the light
+
+	//take care of double sided polygons on materials without culling
+#ifdef FLIP_BACKFACES
+#if defined(NETEASE_SKINNING) && defined(USE_SKINNING)
+	vec3 viewDir = normalize( boneMat * POSITION ).xyz;
+#else //NETEASE_SKINNING
+	vec3 viewDir = normalize((WORLD * position).xyz);
+#endif
+	if( dot(N, viewDir) > 0.0 )
+		N *= -1.0;
+#endif
+
+	float yLight = (1.0+N.y) * 0.5;
+	return yLight * (1.0-AMBIENT) + N.x*N.x * XFAC + N.z*N.z * ZFAC + AMBIENT;
+
+#else
+	return 1.0;
+#endif
+}
+
+
+uniform vec4 EXTRA_VECTOR1; // (color)
+uniform vec4 EXTRA_VECTOR2; // (scale, ?)
+
+flat varying vec4 v1;
+flat varying vec4 v2;
+
+void main()
+{
+	vec4 entitySpacePosition;
+	vec4 entitySpaceNormal;
+
+#ifdef USE_SKINNING
+#ifdef NETEASE_SKINNING
+		MAT4 boneMat = GetBoneMatForNetease(int(BONEID_0));
+		entitySpacePosition = boneMat * POSITION;
+		entitySpaceNormal = boneMat * NORMAL;
+#else
+	#if defined(LARGE_VERTEX_SHADER_UNIFORMS)
+		entitySpacePosition = BONES[int(BONEID_0)] * POSITION;
+		entitySpaceNormal = BONES[int(BONEID_0)] * NORMAL;
+	#else
+		entitySpacePosition = BONE * POSITION;
+		entitySpaceNormal = BONE * NORMAL;
+	#endif
+#endif
+#else
+	entitySpacePosition = POSITION * vec4(1.0);
+	entitySpaceNormal = NORMAL * vec4(1.0, 1.0, 1.0, 0.0);
+#endif
+	entitySpacePosition /= entitySpacePosition.w;
+	entitySpacePosition.xyz = entitySpacePosition.xyz * 16.0;
+	entitySpacePosition.x *= EXTRA_VECTOR2.x;
+	entitySpacePosition.y *= EXTRA_VECTOR2.y;
+	entitySpacePosition.z *= EXTRA_VECTOR2.z;
+
+	v1 = EXTRA_VECTOR1;
+	v2 = EXTRA_VECTOR2;
+	uv = TEXCOORD_0;
+	gl_Position = WORLDVIEWPROJ * entitySpacePosition;
+}

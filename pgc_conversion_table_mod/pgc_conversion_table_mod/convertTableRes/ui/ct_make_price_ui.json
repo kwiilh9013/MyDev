@@ -1,0 +1,347 @@
+{
+    "main": {
+        "controls": [
+            {
+                "makePricePanel": {
+                    "controls": [
+                        {
+                            "blackBg": {
+                                "alpha": 0.8,
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "layer": 1,
+                                "nineslice_size": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "size": [
+                                    "100.0%+50.0px",
+                                    "100.0%+50.0px"
+                                ],
+                                "texture": "textures/ui/scuke_ct/common/pixel",
+                                "type": "image"
+                            }
+                        },
+                        {
+                            "maskBtn@scuke_convert_table_widget.emptyBtn": {
+                                "layer": 2
+                            }
+                        },
+                        {
+                            "pricePanel": {
+                                "controls": [
+                                    {
+                                        "headPanel": {
+                                            "layer": 1,
+                                            "size": [
+                                                "80%+0px",
+                                                "100%cm+6px"
+                                            ],
+                                            "type": "panel",
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "controls": [
+                                                {
+                                                    "headTxt": {
+                                                        "anchor_from": "left_middle",
+                                                        "anchor_to": "left_middle",
+                                                        "color": [
+                                                            0.7412,
+                                                            0.7882,
+                                                            1
+                                                        ],
+                                                        "font_scale_factor": 0.8,
+                                                        "font_size": "large",
+                                                        "font_type": "default",
+                                                        "layer": 19,
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "text": "定价",
+                                                        "text_alignment": "center",
+                                                        "type": "label"
+                                                    }
+                                                },
+                                                {
+                                                    "closeBtn@scuke_convert_table_widget.comBtn": {
+                                                        "$default_texture": "textures/ui/scuke_ct/icon_close_01",
+                                                        "$hover_texture": "",
+                                                        "$iconColor": [
+                                                            0.749,
+                                                            0.7922,
+                                                            1
+                                                        ],
+                                                        "$iconImage": "",
+                                                        "$label_text": "",
+                                                        "$pressed_texture": "",
+                                                        "anchor_from": "right_middle",
+                                                        "anchor_to": "right_middle",
+                                                        "layer": 3,
+                                                        "size": [
+                                                            17,
+                                                            17
+                                                        ],
+                                                        "$defaultColor": [
+                                                            0.7412,
+                                                            0.7843,
+                                                            1
+                                                        ],
+                                                        "$nineslice_size": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "image": {
+                                                        "layer": 1,
+                                                        "size": [
+                                                            "default",
+                                                            1
+                                                        ],
+                                                        "texture": "textures/ui/scuke_ct/common/pixel",
+                                                        "type": "image",
+                                                        "anchor_from": "bottom_middle",
+                                                        "anchor_to": "bottom_middle",
+                                                        "color": [
+                                                            0.4902,
+                                                            0.5373,
+                                                            0.7725
+                                                        ],
+                                                        "fill": true,
+                                                        "offset": [
+                                                            0,
+                                                            2
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "max_size": [
+                                                330,
+                                                "default"
+                                            ],
+                                            "offset": [
+                                                0,
+                                                5
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "bgImage": {
+                                            "clip_direction": "left",
+                                            "clip_ratio": 0,
+                                            "color": [
+                                                0.0745,
+                                                0.0745,
+                                                0.1569
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "bg": {
+                                                        "layer": 1,
+                                                        "nineslice_size": [
+                                                            3,
+                                                            3,
+                                                            3,
+                                                            3
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            "100%+2px"
+                                                        ],
+                                                        "texture": "textures/ui/scuke_ct/ui_grid_02",
+                                                        "type": "image"
+                                                    }
+                                                }
+                                            ],
+                                            "layer": 1,
+                                            "nineslice_size": [
+                                                2,
+                                                2,
+                                                2,
+                                                2
+                                            ],
+                                            "size": [
+                                                "100.0%+50.0px",
+                                                "100.0%+0.0px"
+                                            ],
+                                            "texture": "textures/ui/scuke_ct/common/pixel",
+                                            "type": "image"
+                                        }
+                                    },
+                                    {
+                                        "confirmBtn@scuke_convert_table_widget.comBtn": {
+                                            "$default_texture": "textures/ui/scuke_ct/button_02",
+                                            "$hover_texture": "textures/ui/scuke_ct/button_02_press",
+                                            "$iconImage": "",
+                                            "$iconV": false,
+                                            "$labelV": true,
+                                            "$label_color": [
+                                                0.0745,
+                                                0.0745,
+                                                0.1569
+                                            ],
+                                            "$label_font_scale_factor": 1,
+                                            "$label_font_size": "normal",
+                                            "$label_text": "确认",
+                                            "$pressed_texture": "textures/ui/scuke_ct/button_02_press",
+                                            "anchor_from": "bottom_middle",
+                                            "anchor_to": "bottom_middle",
+                                            "layer": 20,
+                                            "offset": [
+                                                0,
+                                                -10
+                                            ],
+                                            "size": [
+                                                80,
+                                                23
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "itemPanel": {
+                                            "controls": [
+                                                {
+                                                    "item@scuke_convert_table_widget.itemPanel": {
+                                                        "anchor_from": "left_middle",
+                                                        "anchor_to": "left_middle",
+                                                        "offset": [
+                                                            5,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "itemNameTxt": {
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "color": [
+                                                            0.7451,
+                                                            0.7882,
+                                                            1
+                                                        ],
+                                                        "font_scale_factor": 1.2,
+                                                        "font_type": "default",
+                                                        "layer": 293,
+                                                        "offset": [
+                                                            40,
+                                                            3
+                                                        ],
+                                                        "text": "金锭 aux：0",
+                                                        "type": "label"
+                                                    }
+                                                },
+                                                {
+                                                    "emcTxt": {
+                                                        "anchor_from": "bottom_left",
+                                                        "anchor_to": "bottom_left",
+                                                        "color": [
+                                                            0.4588,
+                                                            0.4902,
+                                                            0.6784
+                                                        ],
+                                                        "font_scale_factor": 1.1,
+                                                        "font_type": "default",
+                                                        "layer": 294,
+                                                        "offset": [
+                                                            40,
+                                                            -2
+                                                        ],
+                                                        "text": "EMC",
+                                                        "type": "label"
+                                                    }
+                                                },
+                                                {
+                                                    "emcEditBox@common.text_edit_box": {
+                                                        "$edit_box_default_texture": "textures/ui/scuke_ct/ui_grid_02",
+                                                        "$edit_box_hover_texture": "textures/ui/scuke_ct/ui_grid_02",
+                                                        "$font_scale_factor": 1,
+                                                        "$font_size": "normal",
+                                                        "$is_new_nine_slice": false,
+                                                        "$nine_slice_buttom": 0,
+                                                        "$nine_slice_left": 0,
+                                                        "$nine_slice_right": 0,
+                                                        "$nine_slice_top": 0,
+                                                        "$nineslice_size": [
+                                                            2,
+                                                            2,
+                                                            2,
+                                                            2
+                                                        ],
+                                                        "$place_holder_text": "定义EMC值",
+                                                        "$place_holder_text_color": [
+                                                            0.4627,
+                                                            0.4902,
+                                                            0.6863
+                                                        ],
+                                                        "$text_background_default": "netease_editor_template_namespace.edit_box_background_default",
+                                                        "$text_background_hover": "netease_editor_template_namespace.edit_box_background_hover",
+                                                        "$text_box_name": "%netease_editor_template_namespace.message",
+                                                        "$text_box_text_color": [
+                                                            1,
+                                                            1,
+                                                            1
+                                                        ],
+                                                        "$text_edit_box_content_binding_name": "#netease_editor_template_namespace.message_content",
+                                                        "$text_edit_box_label_anchor_point": "right_middle",
+                                                        "$text_edit_box_label_min_size": [
+                                                            "100%",
+                                                            0
+                                                        ],
+                                                        "$text_edit_box_label_size": [
+                                                            "default",
+                                                            "default"
+                                                        ],
+                                                        "anchor_from": "bottom_right",
+                                                        "anchor_to": "bottom_right",
+                                                        "layer": 295,
+                                                        "max_length": 512,
+                                                        "size": [
+                                                            87,
+                                                            15
+                                                        ],
+                                                        "type": "edit_box"
+                                                    }
+                                                }
+                                            ],
+                                            "layer": 36,
+                                            "offset": [
+                                                0,
+                                                -10
+                                            ],
+                                            "size": [
+                                                150,
+                                                35
+                                            ],
+                                            "type": "panel"
+                                        }
+                                    }
+                                ],
+                                "layer": 9,
+                                "size": [
+                                    "100.0%+0.0px",
+                                    140
+                                ],
+                                "type": "panel"
+                            }
+                        }
+                    ],
+                    "layer": 1,
+                    "type": "panel"
+                }
+            }
+        ],
+        "type": "screen"
+    },
+    "namespace": "ct_make_price_ui"
+}

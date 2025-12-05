@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "scuke_survive_scavenging_radiation",
+            "minecraft:particle_color": [
+                255,
+                202,
+                24
+            ]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_scavenging_radiation"
+        }
+    }
+}

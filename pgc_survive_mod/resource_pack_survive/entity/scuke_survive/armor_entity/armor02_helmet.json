@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:entity_armor02_helmet",
+            "materials": {
+                "default": "scuke_survive_entity_light"
+            },
+            "textures": {
+                "default": "textures/models/scuke_survive/armor/armor_armor02"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_armor_armor02_helmet"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "animations": {
+                "ui_correct": "animation.scuke_survive_entity_helmet.scale_correct"
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive_gun_entity"
+            ]
+        }
+    }
+}

@@ -1,0 +1,268 @@
+{
+   "anim_npc_hurt" : {
+      "anim_type" : "color",
+      "duration" : 0.10,
+      "from" : [ 1.0, 1.0, 1.0 ],
+      "next" : "@scuke_survive_battle_event_ui.anim_npc_hurt_back",
+      "to" : [ 1.0, 0.2627450980392157, 0.2627450980392157 ]
+   },
+   "anim_npc_hurt_back" : {
+      "anim_type" : "color",
+      "duration" : 0.20,
+      "from" : [ 1.0, 0.2627450980392157, 0.2627450980392157 ],
+      "next" : "",
+      "to" : [ 1.0, 1.0, 1.0 ]
+   },
+   "anim_outrange_in" : {
+      "anim_type" : "alpha",
+      "duration" : 1.0,
+      "from" : 0.0,
+      "next" : "@scuke_survive_battle_event_ui.anim_outrange_out",
+      "to" : 1.0
+   },
+   "anim_outrange_out" : {
+      "anim_type" : "alpha",
+      "duration" : 1.0,
+      "from" : 1.0,
+      "next" : "@scuke_survive_battle_event_ui.anim_outrange_in",
+      "to" : 0.0
+   },
+   "anim_shield_hurt" : {
+      "anim_type" : "color",
+      "duration" : 0.10,
+      "from" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ],
+      "next" : "@scuke_survive_battle_event_ui.anim_shield_hurt_back",
+      "to" : [ 1.0, 0.5568627450980392, 0.5568627450980392 ]
+   },
+   "anim_shield_hurt_back" : {
+      "anim_type" : "color",
+      "duration" : 0.20,
+      "from" : [ 1.0, 0.5568627450980392, 0.5568627450980392 ],
+      "next" : "",
+      "to" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ]
+   },
+   "main" : {
+      "controls" : [
+         {
+            "panel" : {
+               "controls" : [
+                  {
+                     "guardPlanetBooster" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [
+                                    {
+                                       "shield_bar" : {
+                                          "$clip_direction" : "left",
+                                          "$clip_ratio" : 0.660,
+                                          "$is_new_nine_slice" : false,
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                          "$progress_bar_empty_texture" : "textures/ui/scuke_survive/white",
+                                          "$progress_bar_filled_texture" : "textures/ui/scuke_survive/white",
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle",
+                                          "controls" : [
+                                             {
+                                                "empty_progress_bar@netease_editor_template_namespace.empty_progress_bar" : {
+                                                   "alpha" : 0.70,
+                                                   "color" : [ 0.0, 0.0, 0.0 ],
+                                                   "enabled" : false,
+                                                   "size" : [ "100.0%+2.0px", "100.0%+2.0px" ]
+                                                }
+                                             },
+                                             {
+                                                "filled_progress_bar@netease_editor_template_namespace.filled_progress_bar" : {
+                                                   "color" : "@scuke_survive_battle_event_ui.anim_shield_hurt",
+                                                   "enabled" : false
+                                                }
+                                             },
+                                             {
+                                                "icon" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "color" : "@scuke_survive_battle_event_ui.anim_npc_hurt",
+                                                   "layer" : 3,
+                                                   "offset" : [ 0.0, 1.0 ],
+                                                   "size" : [ 10.0, 13.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/battle_event/guard_pb_icon",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "enabled" : false,
+                                          "layer" : 8,
+                                          "offset" : [ 0.0, -4.0 ],
+                                          "size" : [ 145.0, 2.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "a0" : {
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                          "enabled" : false,
+                                          "layer" : 3,
+                                          "offset" : [ 48.0, 1.0 ],
+                                          "size" : [ 13.0, 25.0 ],
+                                          "texture" : "textures/ui/scuke_survive/numbers/num_a_3",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "a1" : {
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                          "enabled" : false,
+                                          "layer" : 3,
+                                          "offset" : [ 32.0, 1.0 ],
+                                          "size" : [ 13.0, 25.0 ],
+                                          "texture" : "textures/ui/scuke_survive/numbers/num_a_8",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "a2" : {
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.9686274509803922, 0.3176470588235294, 0.2588235294117647 ],
+                                          "layer" : 3,
+                                          "offset" : [ 16.0, 1.0 ],
+                                          "size" : [ 13.0, 25.0 ],
+                                          "texture" : "textures/ui/scuke_survive/numbers/num_a_0",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "warning" : {
+                                          "alpha" : "@scuke_survive_battle_event_ui.anim_outrange_in",
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "top_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "layer" : 1,
+                                          "offset" : [ 0.0, 4.0 ],
+                                          "size" : [ 97.0, 9.0 ],
+                                          "texture" : "textures/ui/scuke_survive/battle_event/out_range_warning",
+                                          "type" : "image"
+                                       }
+                                    }
+                                 ],
+                                 "enabled" : false,
+                                 "layer" : 1,
+                                 "size" : [ 185.0, 38.0 ],
+                                 "texture" : "textures/ui/scuke_survive/battle_event/guard_pb",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "enabled" : false,
+                        "size" : [ 200.0, 60.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "fightSuccess" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 1,
+                                 "size" : [ 185.0, 22.0 ],
+                                 "texture" : "textures/ui/scuke_survive/battle_event/fighting_success_bg",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "info" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 2,
+                                 "offset" : [ 0.0, -2.0 ],
+                                 "size" : [ 127.0, 22.0 ],
+                                 "texture" : "textures/ui/scuke_survive/battle_event/fighting_success",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "size" : [ 100, 60.0 ],
+                        "type" : "panel",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "fightFail" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 1,
+                                 "size" : [ 183.0, 22.0 ],
+                                 "texture" : "textures/ui/scuke_survive/battle_event/fighting_fail_bg",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "info" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 2,
+                                 "offset" : [ 0.0, -2.0 ],
+                                 "size" : [ 99.0, 23.0 ],
+                                 "texture" : "textures/ui/scuke_survive/battle_event/fighting_fail",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "size" : [ 100, 60.0 ],
+                        "type" : "panel",
+                        "visible" : false
+                     }
+                  }
+               ],
+               "layer" : 5,
+               "type" : "panel"
+            }
+         }
+      ],
+      "force_render_below" : true,
+      "offset" : [ -1.0, 0.0 ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_battle_event_ui"
+}

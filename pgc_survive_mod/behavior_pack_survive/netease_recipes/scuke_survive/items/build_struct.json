@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "scuke_survive:build_struct"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_ingot",
+        "count": 2
+      },
+      {
+        "item": "scuke_survive:ingot_lithium",
+        "count": 2
+      },
+      {
+        "item": "minecraft:redstone",
+        "count": 2
+      },
+      {
+        "item": "scuke_survive:mat_chip_small",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:build_struct",
+      "count": 1
+    }
+  }
+}

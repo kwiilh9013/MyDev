@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_mylikes"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat"
+      },
+      {
+        "item": "minecraft:sugar"
+      },
+      {
+        "item": "minecraft:cocoa_beans",
+        "count": 2
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_mylikes",
+      "count": 1
+    }
+  }
+}

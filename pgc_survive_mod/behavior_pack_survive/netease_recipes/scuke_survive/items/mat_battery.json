@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:mat_battery"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "scuke_survive:raw_lithium",
+        "count": 1
+      },
+      {
+        "item": "minecraft:raw_iron",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:mat_battery",
+      "count": 1
+    }
+  }
+}

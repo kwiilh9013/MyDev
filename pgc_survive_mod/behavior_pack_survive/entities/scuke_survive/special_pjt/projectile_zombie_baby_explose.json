@@ -1,0 +1,66 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scuke_survive:projectile_zombie_baby_explose",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "component_groups": {
+        },
+        "components": {
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            },
+            "minecraft:collision_box": {
+                "width": 0.25,
+                "height": 0.25
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 0,
+                        "knockback": false
+                    },
+                    "remove_on_hit": {},
+                    "stick_in_ground": {
+                        "shake_time" : 0.35
+                    },
+                    "spawn_chance": {
+                        "first_spawn_count": 1,
+                        "first_spawn_percent_chance": 100,
+                        "spawn_definition": "scuke_survive:zombie_baby_explose"
+                    }
+                },
+                "anchor": 1,
+                "power": 1.5,
+                "gravity": 0.025,
+                "angle_offset": -30.0,
+                "offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {
+                }
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_optimized_distance": 100.0,
+                    "max_dropped_ticks": 7,
+                    "use_motion_prediction_hints": true
+                }
+            }
+        },
+        "events": {
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:base_car",
+            "materials": {
+                "default": "scuke_survive_car"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/car/base_car",
+                "alloy": "textures/entity/scuke_survive/car/alloy",
+                "bullbar": "textures/entity/scuke_survive/car/bullbar",
+                "emp": "textures/entity/scuke_survive/car/emp",
+                "missile": "textures/entity/scuke_survive/car/missile",
+                "armor_profile": "textures/entity/scuke_survive/car/armor_profile",
+                "spike_profile": "textures/entity/scuke_survive/car/spike_profile",
+                "fly": "textures/entity/scuke_survive/car/fly"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_base_car",
+                "old_bumper": "geometry.scuke_survive_base_car_old_bumper",
+                "alloy_bumper": "geometry.scuke_survive_base_car_alloy_bumper",
+                "bullbar": "geometry.scuke_survive_base_car_bullbar",
+                "safety_cage": "geometry.scuke_survive_base_car_safety_cage",
+                "emp": "geometry.scuke_survive_base_car_emp",
+                "missile": "geometry.scuke_survive_base_car_missile",
+                "armor_profile": "geometry.scuke_survive_base_car_armor_profile",
+                "spike_profile": "geometry.scuke_survive_base_car_spike_profile",
+                "fly": "geometry.scuke_survive_base_car_fly"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                {"controller.render.scuke_survive.car.old_bumper": "variable.remold_front_bumper == 0"},
+                {"controller.render.scuke_survive.car.alloy_bumper": "variable.remold_front_bumper == 1"},
+                {"controller.render.scuke_survive.car.bullbar": "variable.remold_front_bumper == 2"},
+                {"controller.render.scuke_survive.car.safety_cage": "variable.remold_carbody == 1"},
+                {"controller.render.scuke_survive.car.emp": "variable.remold_carbody == 2"},
+                {"controller.render.scuke_survive.car.missile": "variable.remold_carbody == 3"},
+                {"controller.render.scuke_survive.car.armor_profile": "variable.remold_wheel == 1"},
+                {"controller.render.scuke_survive.car.spike_profile": "variable.remold_wheel == 2"},
+                {"controller.render.scuke_survive.car.fly": "variable.remold_fly"}
+            ],
+            "spawn_egg": {
+                "base_color":"#756B5A",
+                "overlay_color":"#433D33"
+            },
+            "animations": {
+                "run": "animation.scuke_survive_car_common.run",
+                "turn": "animation.scuke_survive_car_common.turn",
+                "tilting": "animation.scuke_survive_car_common.tilting",
+
+                "water_run_start": "animation.scuke_survive_car_common.water_run_start",
+                "water_run": "animation.scuke_survive_car_common.water_run",
+                "water_run_end": "animation.scuke_survive_car_common.water_run_end",
+                "water_run_ctrl": "controller.animation.scuke_survive.car.water_run",
+
+                "fly_start": "animation.scuke_survive_car_common.fly_start",
+                "fly": "animation.scuke_survive_car_common.fly",
+                "fly_end": "animation.scuke_survive_car_common.fly_end",
+                "fly_ctrl": "controller.animation.scuke_survive.car.fly",
+
+                "missile_shoot_1": "animation.scuke_survive_car.missile_shoot_1",
+                "missile_shoot_1_ctrl": "controller.animation.scuke_survive.car.missile.shoot_1",
+                "missile_shoot_2": "animation.scuke_survive_car.missile_shoot_2",
+                "missile_shoot_2_ctrl": "controller.animation.scuke_survive.car.missile.shoot_2",
+                "missile_shoot_3": "animation.scuke_survive_car.missile_shoot_3",
+                "missile_shoot_3_ctrl": "controller.animation.scuke_survive.car.missile.shoot_3",
+                "missile_shoot_4": "animation.scuke_survive_car.missile_shoot_4",
+                "missile_shoot_4_ctrl": "controller.animation.scuke_survive.car.missile.shoot_4",
+                "missile_shoot_5": "animation.scuke_survive_car.missile_shoot_5",
+                "missile_shoot_5_ctrl": "controller.animation.scuke_survive.car.missile.shoot_5",
+                "missile_shoot_6": "animation.scuke_survive_car.missile_shoot_6",
+                "missile_shoot_6_ctrl": "controller.animation.scuke_survive.car.missile.shoot_6",
+                "missile_shoot_pre": "animation.scuke_survive_car.missile_shoot_pre",
+                "missile_shoot_end": "animation.scuke_survive_car.missile_shoot_end",
+                "missile_shoot_pre_ctrl": "controller.animation.scuke_survive.car.missile.shoot_pre",
+                
+                "breakdown_particle_ctrl": "controller.animation.scuke_survive.car.breakdown_particle",
+                "cut_sound": "animation.scuke_survive_car_common.cut_sound"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.run_frame_rot_speed = 0.4;",
+                    "variable.tyre_speed_rot = 0.0;",
+                    "variable.tilting_lerp_t = 0.02;",
+                    "variable.tilting_roll = 0.0;",
+                    "variable.tilting_pitch = 0.0;",
+
+                    "variable.remold_run_water = 0.0;",
+                    "variable.remold_fly = 0.0;",
+                    "variable.remold_front_bumper = 0.0;",
+                    "variable.remold_carbody = 0.0;",
+                    "variable.remold_both_sides = 0.0;",
+                    "variable.remold_wheel = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.tyre_speed_rot = variable.tyre_speed_rot + variable.run_frame_rot_speed * query.ground_speed * query.mod.scuke_servive_car_up;",
+                    "variable.turn_rot = math.clamp(query.mod.scuke_servive_car_up > 0 ? query.yaw_speed : -query.yaw_speed, -35, 35);",
+                    "variable.tilting_roll = math.lerp(variable.tilting_roll, query.mod.scuke_servive_car_roll, variable.tilting_lerp_t);",
+                    "variable.tilting_pitch = math.lerp(variable.tilting_pitch, query.mod.scuke_servive_car_pitch, variable.tilting_lerp_t);",
+                    "variable.is_in_water_or_lava = query.mod.scuke_servive_in_water || query.mod.scuke_servive_in_lava;",
+
+                    "variable.breakdown_effect_stage = query.health < 20 ? ( query.health < 10 ? 2 : 1 ) : 0;",
+
+                    "variable.remold_run_water = query.mod.scuke_servive_module_1 == 0 || query.mod.scuke_servive_module_2 == 0;",
+                    "variable.remold_fly = query.mod.scuke_servive_module_1 == 1 || query.mod.scuke_servive_module_2 == 1;",
+                    "variable.remold_front_bumper = query.mod.scuke_servive_front_bumper;",
+                    "variable.remold_carbody = query.mod.scuke_servive_carbody;",
+                    "variable.remold_both_sides = query.mod.scuke_servive_car_both_sides;",
+                    "variable.remold_wheel = query.mod.scuke_servive_car_wheel;",
+                    
+                    "variable.missile_shoot_num = query.mod.scuke_servive_car_missile_shoot_num;",
+                    "variable.fly_state = query.mod.scuke_servive_car_fly;"
+                ],
+                "animate": [
+                    {"run": "!variable.fly_state"},
+                    {"turn": "!variable.is_in_water_or_lava && !variable.fly_state"},
+                    "tilting",
+                    {"water_run_ctrl": "variable.remold_run_water"},
+
+                    "missile_shoot_1_ctrl",
+                    "missile_shoot_2_ctrl",
+                    "missile_shoot_3_ctrl",
+                    "missile_shoot_4_ctrl",
+                    "missile_shoot_5_ctrl",
+                    "missile_shoot_6_ctrl",
+                    "missile_shoot_pre_ctrl",
+                    "fly_ctrl",
+
+                    "breakdown_particle_ctrl",
+                    {"cut_sound": "query.mod.scuke_servive_car_cut_state && query.ground_speed > 0.01"}
+                ]
+            },
+            "particle_effects": {
+                "breakdown_smoke": "scuke_survive:car_breakdown_smoke",
+                "breakdown_fire": "scuke_survive:car_breakdown_fire",
+                "water_run": "scuke_survive:car_flow_water",
+                "fly_fire": "scuke_survive:car_fly_fire",
+                "fly_circle": "scuke_survive:car_fly_circle"
+            },
+            "sound_effects": {
+                "cut": "scuke_survive.car.brake",
+                "missile_shoot": "scuke_survive.skill.missile.shoot"
+            }
+        }
+    }
+}

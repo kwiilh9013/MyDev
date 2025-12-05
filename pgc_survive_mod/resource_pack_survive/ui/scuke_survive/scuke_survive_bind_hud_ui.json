@@ -1,0 +1,30 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "anchor" : {
+               "controls" : [
+                  {
+                     "point" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [],
+                        "enabled" : false,
+                        "layer" : 1,
+                        "size" : [ 1.0, 1.0 ],
+                        "type" : "image"
+                     }
+                  }
+               ],
+               "enabled" : false,
+               "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "force_render_below" : true,
+      "offset" : [ -1.0, 0.0 ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_bind_hud_ui"
+}

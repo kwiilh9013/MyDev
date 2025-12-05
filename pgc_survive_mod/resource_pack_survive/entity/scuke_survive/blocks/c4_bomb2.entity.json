@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:c4_bomb2_entity",
+            "materials": {
+                "default": "scuke_survive_entity_light",
+                "blend": "scuke_survive_npc_golden_creeper_outer"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/c4_bomb"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_c4_bomb"
+            },
+            "animations": {
+                "ui_correct": "animation.scuke_c4_bomb.scale_correct",
+                "init_state": "animation.scuke_c4_bomb.init_state",
+                "time_flowing": "animation.scuke_c4_bomb.time_flowing",
+                "place_anim": "animation.scuke_c4_bomb.place_anim"
+            },
+            "scripts": {
+                "should_update_bones_and_effects_offscreen": true,
+                "initialize": [
+                    "variable.block_type = 1.0;",
+                    "variable.total_time = 0.0;",
+                    "variable.left_time = 0.0;",
+                    "variable.has_set_time = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    "place_anim", "init_state", "time_flowing"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive_c4_bomb"
+            ],
+            "spawn_egg": {
+                "base_color":"#DF7E34",
+                "overlay_color":"#72342A"
+            }
+        }
+    }
+}

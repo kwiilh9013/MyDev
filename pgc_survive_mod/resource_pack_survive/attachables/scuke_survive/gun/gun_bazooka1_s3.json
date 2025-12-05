@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "scuke_survive:gun_bazooka1",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/empty"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_null"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

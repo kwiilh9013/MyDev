@@ -1,0 +1,781 @@
+{
+    "comBtn@common.button": {
+        "$control_alpha": 1,
+        "$default_texture": "textures/ui/scuke_ct/button_01",
+        "$hover_texture": "textures/ui/scuke_ct/button_01",
+        "$iconColor": [
+            1,
+            1,
+            1
+        ],
+        "$iconImage": "textures/ui/scuke_ct/common/forget",
+        "$iconV": true,
+        "$is_new_nine_slice": false,
+        "$labelV": false,
+        "$label_color": [
+            1,
+            1,
+            1
+        ],
+        "$label_font_scale_factor": 0.8,
+        "$label_font_size": "large",
+        "$label_layer": 3,
+        "$label_offset": [
+            0,
+            0
+        ],
+        "$label_text": "购买",
+        "$nine_slice_buttom": 0,
+        "$nine_slice_left": 0,
+        "$nine_slice_right": 0,
+        "$nine_slice_top": 0,
+        "$nineslice_size": [
+            3,
+            3,
+            3,
+            3
+        ],
+        "$pressed_button_name": "%netease_editor_template_namespace.click",
+        "$pressed_texture": "textures/ui/scuke_ct/button_01_press",
+        "$texture_layer": 2,
+        "bindings": [
+            {
+                "binding_collection_name": "",
+                "binding_condition": "always_when_visible",
+                "binding_type": "collection_details"
+            }
+        ],
+        "button_mappings": [],
+        "controls": [
+            {
+                "icon": {
+                    "$iconColor|default": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "$iconImage|default": "",
+                    "$iconV|default": false,
+                    "clip_direction": "left",
+                    "clip_ratio": 0,
+                    "color": "$iconColor",
+                    "layer": 6,
+                    "size": [
+                        "100.0%y+0.0px",
+                        "60.0%+0.0px"
+                    ],
+                    "texture": "$iconImage",
+                    "type": "image",
+                    "visible": "$iconV"
+                }
+            },
+            {
+                "default@netease_editor_template_namespace.default": {
+                    "$defaultColor|default": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "color": "$defaultColor"
+                }
+            },
+            {
+                "hover@netease_editor_template_namespace.hover": {}
+            },
+            {
+                "pressed@netease_editor_template_namespace.pressed": {
+                    "controls": []
+                }
+            },
+            {
+                "label@netease_editor_template_namespace.button_label": {
+                    "$labelV|default": false,
+                    "visible": "$labelV"
+                }
+            }
+        ],
+        "default_control": "default",
+        "hover_control": "hover",
+        "is_handle_button_move_event": true,
+        "layer": 2,
+        "pressed_control": "pressed",
+        "size": [
+            100,
+            35
+        ],
+        "type": "button",
+        "$defaultColor": [
+            1,
+            1,
+            1
+        ]
+    },
+    "emptyBtn@common.button": {
+        "$control_alpha": 0,
+        "$default_texture": "",
+        "$hover_texture": "",
+        "$is_new_nine_slice": false,
+        "$label_layer": 3,
+        "$nine_slice_buttom": 0,
+        "$nine_slice_left": 0,
+        "$nine_slice_right": 0,
+        "$nine_slice_top": 0,
+        "$nineslice_size": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "$pressed_button_name": "%netease_editor_template_namespace.click",
+        "$pressed_texture": "",
+        "$texture_layer": 2,
+        "alpha": 0,
+        "bindings": [
+            {
+                "binding_collection_name": "",
+                "binding_condition": "always_when_visible",
+                "binding_type": "collection_details"
+            }
+        ],
+        "button_mappings": [],
+        "controls": [
+            {
+                "default@netease_editor_template_namespace.default": {}
+            },
+            {
+                "hover@netease_editor_template_namespace.hover": {}
+            },
+            {
+                "pressed@netease_editor_template_namespace.pressed": {}
+            }
+        ],
+        "default_control": "default",
+        "hover_control": "hover",
+        "is_handle_button_move_event": true,
+        "pressed_control": "pressed",
+        "propagate_alpha": true,
+        "size": [
+            "100.0%+0.0px",
+            "100.0%+0.0px"
+        ],
+        "type": "button"
+    },
+    "funcBtn1@common.button": {
+        "$control_alpha": 1,
+        "$default_texture": "",
+        "$disColor": false,
+        "$hover_texture": "",
+        "$iconColor": [
+            1,
+            1,
+            1
+        ],
+        "$iconImage": "textures/ui/scuke_ct/common/forget",
+        "$iconV": true,
+        "$is_new_nine_slice": true,
+        "$labelV": true,
+        "$label_color": [
+            1,
+            1,
+            1
+        ],
+        "$label_font_scale_factor": 1,
+        "$label_font_size": "normal",
+        "$label_layer": 3,
+        "$label_offset": [
+            0,
+            0
+        ],
+        "$label_text": "购买",
+        "$nine_slice_buttom": 3,
+        "$nine_slice_left": 3,
+        "$nine_slice_right": 3,
+        "$nine_slice_top": 3,
+        "$nineslice_size": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "$pressed_button_name": "%netease_editor_template_namespace.click",
+        "$pressed_texture": "",
+        "$texture_layer": 2,
+        "bindings": [
+            {
+                "binding_collection_name": "",
+                "binding_condition": "always_when_visible",
+                "binding_type": "collection_details"
+            }
+        ],
+        "button_mappings": [],
+        "controls": [
+            {
+                "icon": {
+                    "$disColor|default": false,
+                    "$iconColor|default": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "$iconImage|default": "",
+                    "$iconV|default": false,
+                    "clip_direction": "left",
+                    "clip_ratio": 0,
+                    "color": "$iconColor",
+                    "grayscale": "$disColor",
+                    "layer": 6,
+                    "size": [
+                        "100.0%y+0.0px",
+                        "90.0%+0.0px"
+                    ],
+                    "texture": "$iconImage",
+                    "type": "image",
+                    "visible": "$iconV"
+                }
+            },
+            {
+                "default@netease_editor_template_namespace.default": {}
+            },
+            {
+                "hover@netease_editor_template_namespace.hover": {}
+            },
+            {
+                "pressed@netease_editor_template_namespace.pressed": {
+                    "controls": []
+                }
+            },
+            {
+                "label@netease_editor_template_namespace.button_label": {
+                    "$labelV|default": false,
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "top_middle",
+                    "visible": "$labelV"
+                }
+            }
+        ],
+        "default_control": "default",
+        "hover_control": "hover",
+        "is_handle_button_move_event": true,
+        "layer": 2,
+        "pressed_control": "pressed",
+        "size": [
+            20,
+            20
+        ],
+        "type": "button"
+    },
+    "itemDurBar": {
+        "$clip_direction": "left",
+        "$clip_ratio": 0,
+        "$is_new_nine_slice": false,
+        "$nine_slice_buttom": 0,
+        "$nine_slice_left": 0,
+        "$nine_slice_right": 0,
+        "$nine_slice_top": 0,
+        "$nineslice_size": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "$progress_bar_empty_texture": "textures/ui/scuke_ct/common/pixel",
+        "$progress_bar_filled_texture": "textures/ui/scuke_ct/common/pixel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "controls": [
+            {
+                "empty_progress_bar@netease_editor_template_namespace.empty_progress_bar": {
+                    "color": [
+                        0.298,
+                        0.3059,
+                        0.3098
+                    ]
+                }
+            },
+            {
+                "filled_progress_bar@netease_editor_template_namespace.filled_progress_bar": {
+                    "color": [
+                        0,
+                        1,
+                        0
+                    ]
+                }
+            }
+        ],
+        "layer": 1,
+        "size": [
+            "80.0%+0.0px",
+            4
+        ],
+        "type": "panel"
+    },
+    "itemPanel": {
+        "$highlightImage": "textures/ui/scuke_ct/ui_grid_02",
+        "$normalImage": "textures/ui/scuke_ct/ui_grid_01",
+        "$selectBgColor": [
+            0.2275,
+            0.2275,
+            0.2275
+        ],
+        "$selectBgImage": "textures/ui/scuke_ct/common/pixel",
+        "$selectImage": "textures/ui/scuke_ct/ui_grid_white",
+        "controls": [
+            {
+                "bg": {
+                    "controls": [
+                        {
+                            "cell_normal": {
+                                "$normalImage|default": "",
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    0.9451,
+                                    0.9804,
+                                    1
+                                ],
+                                "controls": [
+                                    {
+                                        "normal_bg": {
+                                            "clip_direction": "left",
+                                            "clip_ratio": 0,
+                                            "color": [
+                                                0.2157,
+                                                0.2275,
+                                                0.349
+                                            ],
+                                            "layer": 1,
+                                            "size": [
+                                                10,
+                                                10
+                                            ],
+                                            "texture": "textures/ui/scuke_ct/icon_add",
+                                            "type": "image"
+                                        }
+                                    }
+                                ],
+                                "layer": 1,
+                                "texture": "$normalImage",
+                                "type": "image",
+                                "nineslice_size": [
+                                    2,
+                                    2,
+                                    2,
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "cell_highlight": {
+                                "$highlightImage|default": "",
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "layer": 2,
+                                "texture": "$highlightImage",
+                                "type": "image",
+                                "nineslice_size": [
+                                    2,
+                                    2,
+                                    2,
+                                    2
+                                ],
+                                "visible": false
+                            }
+                        },
+                        {
+                            "cell_select": {
+                                "$selectImage|default": "",
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "controls": [],
+                                "layer": 9,
+                                "size": [
+                                    "100%+2px",
+                                    "100%+2px"
+                                ],
+                                "texture": "$selectImage",
+                                "type": "image",
+                                "nineslice_size": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "visible": false
+                            }
+                        }
+                    ],
+                    "layer": 1,
+                    "type": "panel",
+                    "size": [
+                        "100%+-1px",
+                        "100%+-1px"
+                    ]
+                }
+            },
+            {
+                "renderPanel": {
+                    "controls": [
+                        {
+                            "item": {
+                                "layer": 1,
+                                "property_bag": {
+                                    "#item_id_aux": 2686976
+                                },
+                                "renderer": "inventory_item_renderer",
+                                "size": [
+                                    "80.0%+0.0px",
+                                    "80.0%+0.0px"
+                                ],
+                                "type": "custom"
+                            }
+                        }
+                    ],
+                    "layer": 6,
+                    "type": "panel",
+                    "visible": false,
+                    "size": [
+                        "100%+-2px",
+                        "100%+-2px"
+                    ]
+                }
+            },
+            {
+                "renderPanelFlying": {
+                    "controls": [
+                        {
+                            "item": {
+                                "layer": 1,
+                                "property_bag": {
+                                    "#item_id_aux": 2686976
+                                },
+                                "renderer": "inventory_item_renderer",
+                                "size": [
+                                    "80.0%+0.0px",
+                                    "80.0%+0.0px"
+                                ],
+                                "type": "custom"
+                            }
+                        }
+                    ],
+                    "layer": 230,
+                    "type": "panel",
+                    "visible": false,
+                    "size": [
+                        "100%+-2px",
+                        "100%+-2px"
+                    ]
+                }
+            },
+            {
+                "countTxt": {
+                    "anchor_from": "bottom_right",
+                    "anchor_to": "bottom_right",
+                    "font_type": "default",
+                    "layer": 10,
+                    "max_size": [
+                        "90.0%+0.0px",
+                        "default"
+                    ],
+                    "offset": [
+                        -3,
+                        -2
+                    ],
+                    "shadow": true,
+                    "text": "3",
+                    "text_alignment": "right",
+                    "type": "label",
+                    "visible": false
+                }
+            },
+            {
+                "durBar@scuke_convert_table_widget.itemDurBar": {
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "layer": 11,
+                    "offset": [
+                        0,
+                        2
+                    ],
+                    "visible": false
+                }
+            },
+            {
+                "ctrlBtn@scuke_convert_table_widget.emptyBtn": {
+                    "layer": 15
+                }
+            }
+        ],
+        "layer": 1,
+        "size": [
+            30,
+            30
+        ],
+        "type": "panel"
+    },
+    "itemPanelCircle": {
+        "$highlightImage": "textures/ui/scuke_ct/board/board_02",
+        "$normalImage": "textures/ui/scuke_ct/board/board_02",
+        "$selectBgColor": [
+            0.2275,
+            0.2275,
+            0.2275
+        ],
+        "$selectBgImage": "textures/ui/scuke_ct/common/pixel",
+        "$selectImage": "textures/ui/scuke_ct/board/board_selected",
+        "controls": [
+            {
+                "bg": {
+                    "controls": [
+                        {
+                            "cell_normal": {
+                                "$normalImage|default": "",
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    0.9451,
+                                    0.9686,
+                                    1
+                                ],
+                                "is_new_nine_slice": true,
+                                "layer": 1,
+                                "texture": "$normalImage",
+                                "type": "image",
+                                "controls": [
+                                    {
+                                        "red": {
+                                            "layer": 1,
+                                            "texture": "$normalRedImage",
+                                            "type": "image",
+                                            "$normalRedImage|default": "",
+                                            "visible": false
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "cell_highlight": {
+                                "$highlightImage|default": "",
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "is_new_nine_slice": true,
+                                "layer": 2,
+                                "texture": "$highlightImage",
+                                "type": "image",
+                                "controls": [
+                                    {
+                                        "red": {
+                                            "layer": 1,
+                                            "texture": "$highlightRedImage",
+                                            "type": "image",
+                                            "$highlightRedImage|default": "",
+                                            "visible": false
+                                        }
+                                    }
+                                ],
+                                "visible": false
+                            }
+                        },
+                        {
+                            "cell_select": {
+                                "$selectImage|default": "",
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "controls": [
+                                    {
+                                        "select_bg": {
+                                            "clip_direction": "left",
+                                            "clip_ratio": 0,
+                                            "layer": -1,
+                                            "size": [
+                                                "100.0%+10.0px",
+                                                "100.0%+10.0px"
+                                            ],
+                                            "texture": "textures/ui/scuke_ct/board/board_selected",
+                                            "type": "image",
+                                            "visible": false
+                                        }
+                                    }
+                                ],
+                                "is_new_nine_slice": true,
+                                "layer": 3,
+                                "texture": "$selectImage",
+                                "type": "image",
+                                "size": [
+                                    "100%+1px",
+                                    "100%+1px"
+                                ],
+                                "visible": false
+                            }
+                        }
+                    ],
+                    "layer": 1,
+                    "size": [
+                        "100.0%+10.0px",
+                        "100.0%+10.0px"
+                    ],
+                    "type": "panel"
+                }
+            },
+            {
+                "renderPanel": {
+                    "controls": [
+                        {
+                            "item": {
+                                "layer": 1,
+                                "property_bag": {
+                                    "#item_id_aux": 2686976
+                                },
+                                "renderer": "inventory_item_renderer",
+                                "size": [
+                                    "80.0%+0.0px",
+                                    "80.0%+0.0px"
+                                ],
+                                "type": "custom"
+                            }
+                        }
+                    ],
+                    "layer": 6,
+                    "type": "panel",
+                    "visible": false
+                }
+            },
+            {
+                "renderPanelFlying": {
+                    "controls": [
+                        {
+                            "item": {
+                                "layer": 1,
+                                "property_bag": {
+                                    "#item_id_aux": 2686976
+                                },
+                                "renderer": "inventory_item_renderer",
+                                "size": [
+                                    "80.0%+0.0px",
+                                    "80.0%+0.0px"
+                                ],
+                                "type": "custom"
+                            }
+                        }
+                    ],
+                    "layer": 180,
+                    "type": "panel",
+                    "visible": false
+                }
+            },
+            {
+                "ctrlBtn@scuke_convert_table_widget.emptyBtn": {
+                    "layer": 15
+                }
+            }
+        ],
+        "layer": 1,
+        "size": [
+            30,
+            30
+        ],
+        "type": "panel",
+        "$highlightRedImage": "textures/ui/scuke_ct/redboard/board_red_03",
+        "$normalRedImage": "textures/ui/scuke_ct/redboard/board_red_04"
+    },
+    "main": {
+        "controls": [
+            {
+                "comBtn@scuke_convert_table_widget.funcBtn1": {}
+            }
+        ],
+        "type": "screen"
+    },
+    "namespace": "scuke_convert_table_widget",
+    "pageBtn@common.button": {
+        "$control_alpha": 1,
+        "$default_texture": "textures/ui/scuke_ct/button_01_left",
+        "$hover_texture": "textures/ui/scuke_ct/button_01_left_press",
+        "$iconColor": [
+            1,
+            1,
+            1
+        ],
+        "$iconRotate": 0,
+        "$is_new_nine_slice": false,
+        "$label_layer": 3,
+        "$nine_slice_buttom": 0,
+        "$nine_slice_left": 0,
+        "$nine_slice_right": 0,
+        "$nine_slice_top": 0,
+        "$nineslice_size": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "$pressed_button_name": "%netease_editor_template_namespace.click",
+        "$pressed_texture": "textures/ui/scuke_ct/button_01_left_press",
+        "$texture_layer": 2,
+        "bindings": [
+            {
+                "binding_collection_name": "",
+                "binding_condition": "always_when_visible",
+                "binding_type": "collection_details"
+            }
+        ],
+        "button_mappings": [],
+        "controls": [
+            {
+                "default@netease_editor_template_namespace.default": {}
+            },
+            {
+                "hover@netease_editor_template_namespace.hover": {}
+            },
+            {
+                "pressed@netease_editor_template_namespace.pressed": {}
+            },
+            {
+                "icon": {
+                    "$iconColor|default": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "$iconRotate|default": 0,
+                    "clip_direction": "left",
+                    "clip_ratio": 0,
+                    "color": "$iconColor",
+                    "layer": 1,
+                    "rotate_angle": "$iconRotate",
+                    "size": [
+                        "60.0%+0.0px",
+                        "60.0%+0.0px"
+                    ],
+                    "texture": "textures/ui/scuke_ct/common/arrow_horizontal",
+                    "type": "image",
+                    "visible": false
+                }
+            }
+        ],
+        "default_control": "default",
+        "hover_control": "hover",
+        "is_handle_button_move_event": true,
+        "layer": 2,
+        "pressed_control": "pressed",
+        "size": [
+            28,
+            21
+        ],
+        "type": "button"
+    },
+    "safeZoomPanel": {
+        "layer": 1,
+        "type": "panel"
+    }
+}

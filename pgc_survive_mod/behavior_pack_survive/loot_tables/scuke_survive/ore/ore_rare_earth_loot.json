@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:raw_rare_earth",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

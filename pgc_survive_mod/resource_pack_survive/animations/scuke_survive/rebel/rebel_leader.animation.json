@@ -1,0 +1,66 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive.rebel_leader.summon": {
+			"animation_length": 1,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.375": [-90, 0, -20],
+						"0.5": [-90, 12.5, -20],
+						"0.625": [-90, 0, -20],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"locate_root": {
+					"position": [-10, 31, 0]
+				}
+			}
+		},
+		"animation.scuke_survive.rebel_leader.parachute": {
+			"loop": true,
+			"bones": {
+				"parachute": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.scuke_survive.rebel_leader.parachute_idle": {
+			"loop": true,
+			"bones": {
+				"parachute": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive.rebel_leader.parachute_start": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.0833,
+			"bones": {
+				"parachute": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.0833": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.scuke_survive.rebel_leader.parachute_end": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"parachute": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -26, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

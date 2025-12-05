@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "scuke_survive_energy_shield_v2",
+            "minecraft:particle_color": [200, 255, 255]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_energy_shield_v2"
+        }
+    }
+}

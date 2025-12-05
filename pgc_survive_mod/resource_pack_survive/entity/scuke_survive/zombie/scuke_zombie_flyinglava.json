@@ -1,0 +1,65 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"animations": {
+				"ui_correct": "animation.scuke_zombie_ui.flyinglava_correct",
+				"attack": "animation.scuke_zombie_flyinglava.attack",
+				"move": "animation.scuke_zombie_flyinglava.move",
+				"standby": "animation.scuke_zombie_flyinglava.standby",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"ctl_scuke_zombie_flyinglava": "controller.animation.zombie_flyinglava"
+			},
+			"geometry": {
+				"default": "geometry.scuke_zombie_flyinglava",
+				"armor": "geometry.scuke_zombie_flyinglava_armor"
+			},
+			"spawn_egg": {
+				"base_color": "#cec7b5",
+				"overlay_color": "#b71515"
+			},
+			"identifier": "scuke_survive:zombie_flyinglava",
+			"materials": {
+				"default": "scuke_survive_zombie",
+				"armor": "wither_boss_armor"
+			},
+			"particle_effects": {
+				"charged_flames": "minecraft:mobflame_emitter"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.standby_time = 0;",
+					"variable.moving_time = 0;"
+				],
+				"pre_animation": [
+					"variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+				],
+				"animate": [
+					{
+						"ctl_scuke_zombie_flyinglava": "variable.not_in_ui"
+					},
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "attack": "variable.correct_pos == 1.0"
+                    }
+				]
+			},
+			"render_controllers": [
+				"controller.render.scuke_zombie",
+				{
+					"controller.render.scuke_zombie_armor": "query.health * 2 <= query.max_health"
+				}
+			],
+			"textures": {
+				"default": "textures/entity/scuke_survive/zombie/scuke_zombie_flyinglava",
+				"armor": "textures/entity/scuke_survive/zombie/armor"
+			}
+		}
+	}
+}

@@ -1,0 +1,225 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "scuke_survive:c4_bomb1_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/c4_bomb"
+        },
+        "scuke_survive:c4_bomb1_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/c4_bomb"
+        },
+        "scuke_survive:c4_bomb2_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/c4_bomb"
+        },
+        "scuke_survive:c4_bomb2_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/c4_bomb"
+        },
+        "scuke_survive:c4_bomb3_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/c4_bomb"
+        },
+        "scuke_survive:c4_bomb3_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/c4_bomb"
+        },
+        "scuke_survive:time_bomb1_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/time_bomb"
+        },
+        "scuke_survive:time_bomb1_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/time_bomb"
+        },
+        "scuke_survive:time_bomb2_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/time_bomb"
+        },
+        "scuke_survive:time_bomb2_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/time_bomb"
+        },
+        "scuke_survive:time_bomb3_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/time_bomb"
+        },
+        "scuke_survive:time_bomb3_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/time_bomb"
+        },
+        "scuke_survive:items_barricade_iron": {
+            "textures": "textures/blocks/scuke_survive/items_barricade_iron"
+        },
+        "scuke_survive:items_barricade_iron_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/barricade_iron"
+        },
+        "scuke_survive:items_barricade_wood": {
+            "textures": "textures/blocks/scuke_survive/items_barricade_wood"
+        },
+        "scuke_survive:items_barricade_wood_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/barricade_wood"
+        },
+        "scuke_survive:items_landmine": {
+            "textures": "textures/blocks/scuke_survive/items_landmine"
+        },
+        "scuke_survive:items_landmine_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/landmine"
+        },
+        "scuke_survive:items_trap": {
+            "textures": "textures/blocks/scuke_survive/items_trap"
+        },
+        "scuke_survive:items_trap_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_trap"
+        },
+        "scuke_survive:tombstone_entity": {
+            "textures": "textures/entity/scuke_survive/blocks/tombstone"
+        },
+        "scuke_survive:tombstone_entity_icon": {
+            "textures": "textures/blocks/scuke_survive/tombstone_icon"
+        },
+        "scuke_survive:oil_drum": {
+            "textures": "textures/blocks/scuke_survive/oil_drum"
+        },
+        "scuke_survive:oil_drum_large": {
+            "textures": "textures/blocks/scuke_survive/oil_drum_large"
+        },
+        "scuke_survive:items_wirecloth": {
+            "textures": "textures/blocks/scuke_survive/wirecloth"
+        },
+
+        "scuke_survive:ore_lead": {
+            "textures": "textures/blocks/scuke_survive/ore_lead"
+        },
+        "scuke_survive:ore_lead_deepslate": {
+            "textures": "textures/blocks/scuke_survive/ore_lead_deepslate"
+        },
+        "scuke_survive:ore_lithium": {
+            "textures": "textures/blocks/scuke_survive/ore_lithium"
+        },
+        "scuke_survive:ore_lithium_deepslate": {
+            "textures": "textures/blocks/scuke_survive/ore_lithium_deepslate"
+        },
+        "scuke_survive:ore_rare_earth": {
+            "textures": "textures/blocks/scuke_survive/ore_rare_earth"
+        },
+        "scuke_survive:ore_rare_earth_deepslate": {
+            "textures": "textures/blocks/scuke_survive/ore_rare_earth_deepslate"
+        },
+        "scuke_survive:ore_yttrium": {
+            "textures": "textures/blocks/scuke_survive/ore_yttrium"
+        },
+        "scuke_survive:metal_block_lead": {
+            "textures": "textures/blocks/scuke_survive/metal_block_lead"
+        },
+        "scuke_survive:metal_block_lithium": {
+            "textures": "textures/blocks/scuke_survive/metal_block_lithium"
+        },
+        "scuke_survive:metal_block_rare_earth": {
+            "textures": "textures/blocks/scuke_survive/metal_block_rare_earth"
+        },
+        "scuke_survive:metal_block_yttrium": {
+            "textures": "textures/blocks/scuke_survive/metal_block_yttrium"
+        },
+
+        "scuke_survive:chest_paper": {
+            "textures": "textures/blocks/scuke_survive/chest_paper"
+        },
+        "scuke_survive:chest_paper_tag": {
+            "textures": "textures/blocks/scuke_survive/chest_paper_tag"
+        },
+        "scuke_survive:chest_storage_orange": {
+            "textures": "textures/blocks/scuke_survive/chest_storage_orange"
+        },
+        "scuke_survive:chest_storage_blue": {
+            "textures": "textures/blocks/scuke_survive/chest_storage_blue"
+        },
+        "scuke_survive:chest_storage_red": {
+            "textures": "textures/blocks/scuke_survive/chest_storage_red"
+        },
+
+        "scuke_survive:chest_paper_icon": {
+            "textures": "textures/blocks/scuke_survive/chest_paper_icon"
+        },
+        "scuke_survive:chest_paper_tag_icon": {
+            "textures": "textures/blocks/scuke_survive/chest_paper_tag_icon"
+        },
+        "scuke_survive:chest_storage_blue_icon": {
+            "textures": "textures/blocks/scuke_survive/chest_storage_blue_icon"
+        },
+        "scuke_survive:chest_storage_red_icon": {
+            "textures": "textures/blocks/scuke_survive/chest_storage_red_icon"
+        },
+        "scuke_survive:chest_storage_orange_icon": {
+            "textures": "textures/blocks/scuke_survive/chest_storage_orange_icon"
+        },
+        
+        "scuke_survive:chest_military": {
+            "textures": "textures/blocks/scuke_survive/chest_military"
+        },
+        "scuke_survive:chest_military_model": {
+            "textures": "textures/blocks/scuke_survive/chest_military_model"
+        },
+
+        "scuke_survive:electric_dynamo_small": {
+            "textures": "textures/blocks/scuke_survive/electric_dynamo_small"
+        },
+        "scuke_survive:electric_dynamo_small_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_dynamo_small"
+        },
+        "scuke_survive:electric_dynamo_middle": {
+            "textures": "textures/blocks/scuke_survive/electric_dynamo_middle"
+        },
+        "scuke_survive:electric_dynamo_middle_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_dynamo_middle"
+        },
+        "scuke_survive:electric_dynamo_large": {
+            "textures": "textures/blocks/scuke_survive/electric_dynamo_large"
+        },
+        "scuke_survive:electric_dynamo_large_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_dynamo_large"
+        },
+        "scuke_survive:electric_printer": {
+            "textures": "textures/blocks/scuke_survive/electric_printer"
+        },
+        "scuke_survive:electric_printer_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_printer"
+        },
+        "scuke_survive:electric_photoetching": {
+            "textures": "textures/blocks/scuke_survive/electric_photoetching"
+        },
+        "scuke_survive:electric_photoetching_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_photoetching"
+        },
+        "scuke_survive:electric_machinery": {
+            "textures": "textures/blocks/scuke_survive/electric_machinery"
+        },
+        "scuke_survive:electric_machinery_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_machinery"
+        },
+        "scuke_survive:electric_heater_large": {
+            "textures": "textures/blocks/scuke_survive/electric_heater_large"
+        },
+        "scuke_survive:electric_heater_large_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_heater_large"
+        },
+        "scuke_survive:electric_heater_small": {
+            "textures": "textures/blocks/scuke_survive/electric_heater_small"
+        },
+        "scuke_survive:electric_heater_small_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/electric_heater_small"
+        },
+        "scuke_survive:electric_spike_trap": {
+            "textures": "textures/blocks/scuke_survive/electric_spike_trap"
+        },
+        "scuke_survive:electric_spike_trap_destroyed": {
+            "textures": "textures/entity/scuke_survive/blocks/spike_trap"
+        },
+        "scuke_survive:items_barbed_wire": {
+            "textures": "textures/blocks/scuke_survive/items_barbed_wire"
+        },
+        "scuke_survive:items_oil_drum_small": {
+            "textures": "textures/blocks/scuke_survive/items_oil_drum_small"
+        },
+        "scuke_survive:items_oil_drum_large": {
+            "textures": "textures/blocks/scuke_survive/items_oil_drum_large"
+        },
+
+        "scuke_survive:car_remold": {
+            "textures": "textures/blocks/scuke_survive/car_remold"
+        },
+        "scuke_survive:car_remold_destroyed": {
+            "textures": "textures/blocks/scuke_survive/car_remold"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

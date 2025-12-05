@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:projectile_em_missile",
+            "materials": {
+                "default": "arrow"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/car/missile"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_missile_projectile"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "move": "animation.scuke_survive_arrow_like.look_at",
+                "ctrl_projectile": "controller.animation.scuke_survive.projectile_flyinglava"
+            },
+            "scripts": {
+                "scale": "0.8",
+                "animate": [
+                    "move",
+                    "ctrl_projectile"
+                ]
+            },
+            "particle_effects": {
+                "trail": "scuke_survive:projectile_em_missile"
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_melee_pan_first": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "scuke_survive_melee_pan_first_hold"
+                    ],
+                    "transitions" : [
+                        { "melee_begin": "query.mod.scuke_survive_melee_begin" },
+                        { "melee_attack1": "query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 1" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 2" }
+                    ]
+                },
+                "melee_begin": {
+                    "animations": [
+                        "scuke_survive_melee_pan_first_melee_begin"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_begin" }
+                    ]
+                },
+                "melee_attack1": {
+                    "animations": [
+                        "scuke_survive_melee_pan_first_melee_attack1"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 2" }
+                    ]
+                },
+                "melee_attack2": {
+                    "animations": [
+                        "scuke_survive_melee_pan_first_melee_attack2"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" },
+                        { "melee_attack1": "query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 1" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.scuke_survive_melee_pan_third" : {
+            "initial_state" : "idle",
+            "states" : {
+                "idle": {
+                    "animations": [
+                        "scuke_survive_melee_pan_third_hold"
+                    ],
+                    "transitions" : [
+                        { "melee_begin" : "!query.is_in_ui && query.mod.scuke_survive_melee_begin" },
+                        { "melee_attack1": "!query.is_in_ui && query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 1" },
+                        { "melee_attack2": "!query.is_in_ui && query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 2" }
+                    ]
+                },
+                "melee_begin": {
+                    "animations": [
+                        "scuke_survive_melee_pan_third_melee_begin"
+                    ],
+                    "transitions" : [
+                        { "idle" : "query.all_animations_finished && !query.mod.scuke_survive_melee_begin" }
+                    ]
+                },
+                "melee_attack1": {
+                    "animations": [
+                        "scuke_survive_melee_pan_third_melee_attack1"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 2" }
+                    ]
+                },
+                "melee_attack2": {
+                    "animations": [
+                        "scuke_survive_melee_pan_third_melee_attack2"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" },
+                        { "melee_attack1": "query.mod.scuke_survive_melee_using && query.mod.scuke_survive_melee_attack == 1" }
+                    ]
+                }
+            }
+        }
+    }
+}

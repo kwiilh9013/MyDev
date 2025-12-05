@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:paper",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:honeycomb",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "scuke_survive:mat_game_machine",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:sugar",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

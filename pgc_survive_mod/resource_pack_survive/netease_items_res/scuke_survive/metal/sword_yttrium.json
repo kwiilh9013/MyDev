@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:sword_yttrium"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:sword_yttrium",
+            "register_to_create_menu": true
+        }
+    }
+}

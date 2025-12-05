@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 500,
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "[§a功能§f] 建造道路、营地、堡垒等建筑 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:build_struct",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_dog": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"moving": "variable.is_moving && !query.is_delayed_attacking"
+						},
+						{
+							"attacking": "query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"standby": "!variable.is_moving"
+						},
+						{
+							"attacking": "query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attacking": {
+					"animations": [
+						"attack3"
+					],
+					"transitions": [
+						{
+							"moving": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

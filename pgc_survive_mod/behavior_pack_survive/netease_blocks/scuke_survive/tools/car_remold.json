@@ -1,0 +1,39 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:car_remold",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:aabb": {
+                "collision": {
+                    "min": [ -0.5, 0.0, 0.1 ],
+                    "max": [ 1.5, 2, 0.9 ]
+                },
+                "clip": {
+                    "min": [ -0.5, 0.0, 0.1 ],
+                    "max": [ 1.5, 2, 0.9 ]
+                }
+            },
+            "netease:block_entity": {
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "minecraft:destroy_time": {
+                "value": 2
+            }
+        }
+    }
+}

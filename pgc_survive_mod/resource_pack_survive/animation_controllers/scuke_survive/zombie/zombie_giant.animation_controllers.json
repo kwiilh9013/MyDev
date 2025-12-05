@@ -1,0 +1,85 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_giant": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"attackRemote": "query.mark_variant == 2 "
+						},
+						{
+							"die": "query.mark_variant == 1"
+						},
+						{
+							"walk": "variable.is_moving"
+						},
+						{
+							"attack": "query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"walk": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"attackRemote": "query.mark_variant == 2"
+						},
+						{
+							"die": "query.mark_variant == 1"
+						},
+						{
+							"standby": "!variable.is_moving"
+						},
+						{
+							"attack": "query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attackRemote": {
+					"animations": [
+						"attackRemote"
+					],
+					"transitions": [
+						{
+							"die": "query.mark_variant == 1 "
+						},
+						{
+							"walk": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"attackRemote": "query.mark_variant == 2 "
+						},
+						{
+							"die": "query.mark_variant == 1"
+						},
+						{
+							"walk": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"die": {
+					"animations": [
+						"die"
+					]
+				}
+			}
+		}
+	}
+}

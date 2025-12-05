@@ -1,0 +1,67 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "look_at_target_default": "animation.humanoid.look_at_target.default",
+                "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+                "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+                "idle": "animation.scuke_zombie.idle2",
+                "move": "animation.scuke_zombie.walk",
+                "hunting": "animation.scuke_zombie.hunting",
+                "attack": "animation.scuke_zombie_fat.attack",
+                "death": "animation.scuke_zombie.death",
+                "rest":"animation.scuke_zombie_fat.rest",
+                "ui_correct": "animation.scuke_zombie_ui.fat_correct",
+                "ctl_look_at_target": "controller.animation.humanoid.look_at_target",
+                "hurt_effect": "animation.scuke_zombie.hurt_effect",
+                "ctl_hurt_effect": "controller.animation.scuke_zombie_hurt_effect",
+                "ctl_scuke_zombie_fat":"controller.animation.scuke_zombie_fat"
+            },
+            "geometry": {
+                "default": "geometry.scuke_zombie_fat"
+            },
+            "spawn_egg": {
+                "base_color":"#606779",
+                "overlay_color":"#256853"
+            },
+            "identifier": "scuke_survive:zombie_tons_king",
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie/scuke_zombie_tons_king"
+            },
+            "materials": {
+                "default": "scuke_survive_zombie"
+            },
+            "render_controllers": [
+                "controller.render.scuke_zombie"
+            ],
+            "scripts": {
+                "initialize": [
+					"variable.rest_time = 0;",
+					"variable.is_moving = 0;"
+				],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.is_moving = query.ground_speed >= 0.01;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ctl_scuke_zombie_fat": "variable.not_in_ui"
+                    },
+                    {
+                        "ctl_hurt_effect": "variable.not_in_ui"
+                    },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "attack": "variable.correct_pos == 1.0"
+                    }
+                ]
+            }
+        }
+    }
+}

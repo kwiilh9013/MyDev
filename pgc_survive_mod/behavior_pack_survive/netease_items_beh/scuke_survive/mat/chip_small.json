@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "netease:customtips": {
+                "value": "[§a功能§f] 合成高级道具 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:mat_chip_small",
+            "register_to_create_menu": true
+        }
+    }
+}

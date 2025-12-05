@@ -1,0 +1,294 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "scuke_survive:base_car" : {
+                "events" : {
+                    "ambient" : "",
+                    "death" : "scuke_survive.car.hit",
+                    "hurt" : "scuke_survive.car.hit",
+                    "step" : "scuke_survive.car.walk"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
+            },
+            "scuke_survive:base_car_broken" : {
+                "events" : {
+                    "ambient" : "",
+                    "death" : "scuke_survive.car.hit",
+                    "hurt" : "scuke_survive.car.hit",
+                    "step" : "scuke_survive.car.walk"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
+            },
+
+            "scuke_survive:npc_trader" : {
+                "events" : {
+                    "ambient" : "mob.wanderingtrader.idle",
+                    "death" : "mob.wanderingtrader.death",
+                    "disappeared" : "mob.wanderingtrader.disappeared",
+                    "drink" : "mob.wanderingtrader.drink_potion",
+                    "drink.milk" : "mob.wanderingtrader.drink_milk",
+                    "haggle" : "mob.wanderingtrader.haggle",
+                    "haggle.no" : "mob.wanderingtrader.no",
+                    "haggle.yes" : "mob.wanderingtrader.yes",
+                    "hurt" : "mob.wanderingtrader.hurt",
+                    "reappeared" : "mob.wanderingtrader.reappeared"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
+            },
+            "scuke_survive:npc_golden_creeper" : {
+                "events" : {
+                    "death" : "mob.creeper.death",
+                    "fuse" : {
+                       "pitch" : 0.50,
+                       "sound" : "random.fuse",
+                       "volume" : 1.0
+                    },
+                    "hurt" : "mob.creeper.say"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
+            },
+            "scuke_survive:camel_electric": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "mob.camel.ambient",
+                    "death" : "mob.camel.death",
+                    "eat" : "mob.camel.eat",
+                    "hurt" : "mob.camel.hurt",
+                    "saddle" : "mob.horse.leather",
+                    "step" : "mob.camel.step",
+                    "step_sand" : "mob.camel.step_sand"
+                }
+            },
+            "scuke_survive:npc_iron_golem": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "mob.irongolem.say",
+                    "death" : "mob.irongolem.death",
+                    "hurt" : "mob.irongolem.hit",
+                    "irongolem.crack" : "mob.irongolem.crack",
+                    "irongolem.repair" : "mob.irongolem.repair",
+                    "step" : {
+                       "pitch" : 1.0,
+                       "sound" : "mob.irongolem.walk",
+                       "volume" : 1.0
+                    },
+                    "throw" : {
+                       "pitch" : 1.0,
+                       "sound" : "mob.irongolem.throw",
+                       "volume" : 1.0
+                    }
+                }
+            },
+
+            "scuke_survive:zombie_normal": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_baby": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_chick": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_dog": {
+                "volume": 1.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+                "events": {
+					"ambient": "mob.wolf.bark",
+					"hurt": "mob.wolf.hurt",
+					"death": "mob.wolf.death",
+					"step": {
+						"sound": "mob.wolf.step",
+						"volume": 0.65,
+						"pitch": 1.0
+					},
+					"shake": {
+						"sound": "mob.wolf.shake",
+						"pitch": [
+							0.8,
+							1.2
+						]
+					},
+					"growl": "mob.wolf.growl",
+					"whine": "mob.wolf.whine",
+					"pant": "mob.wolf.panting",
+					"eat": ""
+				}
+            },
+			"scuke_survive:zombie_explosive": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_fat": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_flyinglava": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_gangs": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_giant": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_grandpa": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_guard": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_jocker": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_jocker_barrel": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_jocker_box": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_otaku": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_sarcoma": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_venom": {
+                "volume": 0.8,
+                "pitch": [0.8, 1.2],
+                "events": {
+                    "ambient" : "scuke_survive.zombie.idle_type1",
+                    "death" : "scuke_survive.zombie.idle_type2",
+                    "hurt" : "scuke_survive.zombie.idle_type2",
+                    "step" : "mob.zombie.step"
+                }
+            },
+			"scuke_survive:zombie_witch": {
+                "events": {
+                    "hurt" : ""
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:gunpowder",
+                    "type": "item",
+                    "weight": 30
+                },
+                {
+                    "name": "minecraft:blaze_rod",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "minecraft:redstone",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "scuke_survive:food_eye_drops",
+                    "type": "item",
+                    "weight": 5
+                }
+            ],
+            "rolls": 2
+        }
+    ]
+}

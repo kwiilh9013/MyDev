@@ -1,0 +1,42 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:items_landmine",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:block_entity": {
+            },
+            "netease:aabb": {
+                "collision": {
+                    "min": [ 0.3, 0.0, 0.3 ],
+                    "max": [ 0.7, 0.3, 0.7 ]
+                },
+                "clip": {
+                    "min": [ 0.3, 0.0, 0.3 ],
+                    "max": [ 0.7, 0.3, 0.7 ]
+                }
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "minecraft:destroy_time": {
+                "value": 2
+            },
+            "netease:on_step_on": {
+                "send_python_event": true
+            }
+        }
+    }
+}

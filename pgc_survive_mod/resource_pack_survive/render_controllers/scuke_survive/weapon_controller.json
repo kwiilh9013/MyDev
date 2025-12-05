@@ -1,0 +1,31 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_weaponhands": {
+            "geometry": "Geometry.default",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.default"],
+            "part_visibility": [
+                { "*": false },
+                { "rightArm": true },
+                { "rightSleeve": true },
+                { "leftArm": true },
+                { "leftSleeve": true}
+            ]  
+        },
+        "controller.render.scuke_survive_gun": {
+            "geometry": "Geometry.scuke_survive_gun",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_gun"],
+            "part_visibility": [
+                { "*": true },
+                { "head": false },
+                { "body": false },
+                { "rightArm": false },
+                { "rightSleeve": false },
+                { "leftArm": false },
+                { "leftSleeve": false }
+            ]  
+        }
+    }
+}

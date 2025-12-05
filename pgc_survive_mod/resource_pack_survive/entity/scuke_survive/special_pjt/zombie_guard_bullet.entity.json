@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "scuke_survive:zombie_guard_bullet",
+			"materials": {
+				"default": "arrow"
+			},
+			"textures": {
+				"default": "textures/entity/scuke_survive/projectile/zombie_guard_bullet"
+			},
+			"geometry": {
+				"default": "geometry.zombie_guard_bullet"
+			},
+			"animations": {
+				"move": "animation.arrow.move",
+				"ctl_particle_guard_bullet":"controller.animation.scuke_survive_zombie_guard_bullet.bullet_effect"
+			},
+			"particle_effects": {
+                "bullet_effect": "scuke_survive:particle_guard_bullet"
+            },
+			"scripts": {
+				"pre_animation": [
+					"variable.shake = query.shake_time - query.frame_alpha;",
+					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+				],
+				"animate": [
+					"move",
+					"ctl_particle_guard_bullet"
+				]
+			},
+			"render_controllers": [
+				"controller.render.arrow"
+			]
+		}
+	}
+}

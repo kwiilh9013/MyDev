@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "scuke_survive:car_repair",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/items/car_repair"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_car_repair"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "particle_effects": {
+                "car_repair_particle": "scuke_survive:car_repair_default"
+            },
+            "animations": {
+                "first_idle": "animation.scuke_survive_item.first_idle_default",
+                "ui_correct": "animation.scuke_survive_item.scale_correct",
+                "car_repair_ctl": "controller.animation.scuke_survive.car_repair"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {"ui_correct":"variable.correct_pos == 1.0"},
+                    {"first_idle": "variable.correct_pos != 1.0 && c.is_first_person"},
+                    "car_repair_ctl"
+                ]
+            }
+        }
+    }
+}

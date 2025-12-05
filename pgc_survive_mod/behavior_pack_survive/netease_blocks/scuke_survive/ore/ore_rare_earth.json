@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:ore_rare_earth",
+            "category": "scuke_survive",
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": {
+                "value": 3.0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/scuke_survive/ore/ore_rare_earth_loot.json"
+            },
+            "netease:tier": {
+                "destroy_special": true,
+                "digger": "pickaxe",
+                "level": 2
+            }
+        }
+    }
+}

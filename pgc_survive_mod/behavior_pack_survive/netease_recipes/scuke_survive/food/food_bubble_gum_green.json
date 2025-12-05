@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_bubble_gum_green"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:sugar",
+        "count": 2
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:cactus"
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_bubble_gum_green",
+      "count": 1
+    }
+  }
+}

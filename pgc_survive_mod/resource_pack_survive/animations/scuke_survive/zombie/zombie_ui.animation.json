@@ -1,0 +1,139 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_zombie_ui.baby_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 13, 0],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.gangs_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 8, 0],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.chick_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 10.5, 0],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.guard_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 9, 0],
+					"scale": 1.3
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.dog_correct": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [-1.75, 8, 0],
+					"scale": 1.3
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.explosive_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 7, 0],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.fat_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 6, 0],
+					"scale": 1
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.grandpa_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 7, 0],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.otaku_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 3, 0],
+					"scale": 0.9
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.venom_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 6, 0],
+					"scale": 1.1
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.jocker_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [1, 8, 0],
+					"scale": 1.1
+				},
+				"bone2": {
+					"position": [0, -1, 0],
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.giant_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, -13, 0],
+					"scale": 0.5
+				}
+			}
+		},
+		"animation.scuke_zombie_ui.flyinglava_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, 2, 0],
+					"scale": 0.8
+				}
+			}
+		}
+	}
+}

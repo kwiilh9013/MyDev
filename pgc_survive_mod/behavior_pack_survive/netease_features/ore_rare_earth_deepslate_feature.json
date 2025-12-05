@@ -1,0 +1,17 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "scuke_survive:ore_rare_earth_deepslate_feature"
+    },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "scuke_survive:ore_rare_earth_deepslate",
+        "may_replace": [
+          "minecraft:deepslate"
+        ]
+      }
+    ]
+  }
+}

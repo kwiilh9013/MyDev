@@ -1,0 +1,34 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "scuke_survive:gun_entity_sniper1",
+   "materials": {
+    "default": "scuke_survive_entity_light"
+   },
+   "textures": {
+    "default": "textures/entity/scuke_survive/gun/gun_sniper1_grain"
+   },
+   "geometry": {
+    "default": "geometry.scuke_survive_gun_entity_sniper1"
+   },
+   "scripts": {
+    "scale": "1.0",
+    "pre_animation": [
+     "variable.correct_pos = 0.0;"
+    ],
+    "animate": [
+     {
+      "rotate": "variable.correct_pos == 1.0"
+     }
+    ]
+   },
+   "animations": {
+    "rotate": "animation.scuke_survive_gun_entity.rotate"
+   },
+   "render_controllers": [
+    "controller.render.scuke_survive_gun_entity"
+   ]
+  }
+ }
+}

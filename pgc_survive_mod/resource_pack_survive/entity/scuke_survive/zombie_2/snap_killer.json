@@ -1,0 +1,53 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "standby": "animation.zombie_snap_killer.standby",
+                "run": "animation.zombie_snap_killer.run",
+                "attack1": "animation.zombie_snap_killer.attack1",
+                "attack2": "animation.zombie_snap_killer.attack2",
+                "jump_ready": "animation.zombie_snap_killer.jump_ready",
+                "jump_ready_standby": "animation.zombie_snap_killer.jump_ready_standby",
+				"jump_ready_fly":"animation.zombie_snap_killer.jump_ready_fly",
+				"jump_fly":"animation.zombie_snap_killer.jump_fly",
+                "jump_coerce":"animation.zombie_snap_killer.jump_coerce",
+                "ctl_snap_killer":"controller.animation.scuke_zombie_snap_killer",
+
+                "ui_correct": "animation.scuke_zombie_ui.snap_killer_correct"
+            },
+            "geometry": {
+                "default": "geometry.scuke_zombie_snap_killer"
+            },
+            "spawn_egg": {
+                "base_color":"#2a643a",
+                "overlay_color":"#d8d2c2"
+            },
+            "identifier": "scuke_survive:zombie_snap_killer",
+            "materials": {
+                "default": "scuke_survive_zombie"
+            },
+            "render_controllers": [
+				"controller.render.default"
+			],
+            "scripts": {
+                "pre_animation": [
+                    "variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+				],
+                "animate": [
+                    {
+                        "ctl_snap_killer": "variable.not_in_ui"
+                    },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie_2/scuke_zombie_snap_killer"
+            }
+        }
+    }
+}

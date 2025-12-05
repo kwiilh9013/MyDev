@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:projectile_flyinglava",
+            "materials": {
+                "default": "arrow"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie/scuke_zombie_flyinglava"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_projectile_flyinglava"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "ctrl_projectile": "controller.animation.scuke_survive.projectile_flyinglava"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl_projectile"
+                ]
+            },
+            "particle_effects": {
+                "trail": "scuke_survive:projectile_flylava"
+            }
+        }
+    }
+}

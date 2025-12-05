@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "查看一下游玩流程吧~"
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:game_introduce_book",
+            "register_to_create_menu": true
+        }
+    }
+}

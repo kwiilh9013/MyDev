@@ -1,0 +1,478 @@
+{
+   "anim_dialogue_continue" : {
+      "anim_type" : "offset",
+      "duration" : 1.0,
+      "from" : [ 0.0, -7.0 ],
+      "next" : "@scuke_survive_dialogue_ui.anim_dialogue_continue",
+      "to" : [ 0.0, -6.0 ]
+   },
+   "main" : {
+      "controls" : [
+         {
+            "panel" : {
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "controls" : [
+                  {
+                     "avatar" : {
+                        "anchor_from" : "top_right",
+                        "anchor_to" : "bottom_right",
+                        "controls" : [
+                           {
+                              "image" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "enabled" : false,
+                                 "layer" : 1,
+                                 "texture" : "textures/ui/scuke_survive/avatar/npc_golden_creeper",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "enabled" : false,
+                        "layer" : 2,
+                        "offset" : [ 0.0, 1.0 ],
+                        "size" : [ 92.0, 72.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "bg" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "enabled" : false,
+                        "layer" : 1,
+                        "nineslice_size" : [ 8.0, 8.0, 8.0, 8.0 ],
+                        "texture" : "textures/ui/scuke_survive/dialogue/talk_backboard",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "dialogue_content" : {
+                        "enabled" : false,
+                        "font_type" : "default",
+                        "layer" : 4,
+                        "size" : [ "100.0%+-32.0px", "default" ],
+                        "text" : "我要炸了！我要炸了！我要炸了！我要炸了！我要炸了！我要炸了！\n啊啊啊啊啊",
+                        "text_alignment" : "center",
+                        "type" : "label"
+                     }
+                  },
+                  {
+                     "avatar_bg" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "bottom_left",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [
+                           {
+                              "avatar_name" : {
+                                 "color" : [ 0.9921568627450981, 0.8235294117647058, 0.3176470588235294 ],
+                                 "enabled" : false,
+                                 "font_type" : "default",
+                                 "layer" : 4,
+                                 "size" : [ "100.0%+-10.0px", "default" ],
+                                 "text" : "AvatarName",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "nineslice_size" : [ 4.0, 4.0, 4.0, 6.0 ],
+                        "offset" : [ 0.0, 7.0 ],
+                        "size" : [ 100, 19.0 ],
+                        "texture" : "textures/ui/scuke_survive/dialogue/talk_tag",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "continue" : {
+                        "anchor_from" : "bottom_middle",
+                        "anchor_to" : "bottom_middle",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "layer" : 1,
+                        "offset" : "@scuke_survive_dialogue_ui.anim_dialogue_continue",
+                        "size" : [ 7.0, 4.0 ],
+                        "texture" : "textures/ui/scuke_survive/dialogue/icon_continue_up",
+                        "type" : "image"
+                     }
+                  }
+               ],
+               "layer" : 3,
+               "offset" : [ 0.0, -16.0 ],
+               "size" : [ 300.0, 60.0 ],
+               "type" : "panel"
+            }
+         },
+         {
+            "outter@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "",
+               "$hover_texture" : "",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 3.0, 3.0, 3.0, 3.0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "",
+               "$texture_layer" : 2,
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "pressed_control" : "pressed",
+               "type" : "button"
+            }
+         },
+         {
+            "stack_panel" : {
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "controls" : [
+                  {
+                     "group0" : {
+                        "controls" : [
+                           {
+                              "panel1" : {
+                                 "controls" : [
+                                    {
+                                       "button@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$hover_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "选项",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 8.0, 8.0, 8.0, 8.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$texture_layer" : 2,
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {}
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {}
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "size" : [ "100.0%+-2.0px", "100.0%+-2.0px" ]
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {}
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 100, 20.0 ],
+                                          "type" : "button"
+                                       }
+                                    }
+                                 ],
+                                 "size" : [ 105.0, 25.0 ],
+                                 "type" : "panel"
+                              }
+                           },
+                           {
+                              "panel2" : {
+                                 "controls" : [
+                                    {
+                                       "button@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$hover_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "选项",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 8.0, 8.0, 8.0, 8.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$texture_layer" : 2,
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {}
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {}
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "size" : [ "100.0%+-2.0px", "100.0%+-2.0px" ]
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {}
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 100, 20.0 ],
+                                          "type" : "button"
+                                       }
+                                    }
+                                 ],
+                                 "size" : [ 105.0, 25.0 ],
+                                 "type" : "panel"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ -47.0, -35.0 ],
+                        "size" : [ 105.0, "default" ],
+                        "type" : "stack_panel"
+                     }
+                  },
+                  {
+                     "group1" : {
+                        "controls" : [
+                           {
+                              "panel1" : {
+                                 "controls" : [
+                                    {
+                                       "button@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$hover_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "选项",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 8.0, 8.0, 8.0, 8.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$texture_layer" : 2,
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {}
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {}
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "size" : [ "100.0%+-2.0px", "100.0%+-2.0px" ]
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {}
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 100, 20.0 ],
+                                          "type" : "button"
+                                       }
+                                    }
+                                 ],
+                                 "size" : [ 105.0, 25.0 ],
+                                 "type" : "panel"
+                              }
+                           },
+                           {
+                              "panel2" : {
+                                 "controls" : [
+                                    {
+                                       "button@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$hover_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "选项",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 8.0, 8.0, 8.0, 8.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_texture" : "textures/ui/scuke_survive/dialogue/talk_choose",
+                                          "$texture_layer" : 2,
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {}
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {}
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "size" : [ "100.0%+-2.0px", "100.0%+-2.0px" ]
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {}
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 100, 20.0 ],
+                                          "type" : "button"
+                                       }
+                                    }
+                                 ],
+                                 "size" : [ 105.0, 25.0 ],
+                                 "type" : "panel"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ -47.0, -35.0 ],
+                        "size" : [ 105.0, "default" ],
+                        "type" : "stack_panel"
+                     }
+                  }
+               ],
+               "layer" : 2,
+               "offset" : [ -47.0, -95.0 ],
+               "orientation" : "horizontal",
+               "size" : [ "default", "100.0%cm+0.0px" ],
+               "type" : "stack_panel"
+            }
+         },
+         {
+            "bg" : {
+               "controls" : [
+                  {
+                     "up" : {
+                        "anchor_to" : "bottom_middle",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.0, 0.0, 0.0 ],
+                        "keep_ratio" : false,
+                        "layer" : 1,
+                        "offset" : [ 0.0, "-17.92%x+0.0px" ],
+                        "size" : [ "100.0%+0.0px", "default" ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "down" : {
+                        "anchor_to" : "top_middle",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.0, 0.0, 0.0 ],
+                        "keep_ratio" : false,
+                        "layer" : 1,
+                        "offset" : [ 0.0, "17.92%x+0.0px" ],
+                        "size" : [ "100.0%+0.0px", "default" ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image"
+                     }
+                  }
+               ],
+               "enabled" : false,
+               "type" : "panel"
+            }
+         }
+      ],
+      "offset" : [ -1.0, 0.0 ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_dialogue_ui"
+}

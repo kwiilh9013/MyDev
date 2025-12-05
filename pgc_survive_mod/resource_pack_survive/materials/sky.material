@@ -1,0 +1,27 @@
+{
+    "cubemap": {
+        "states": [
+            "Blending"
+        ],
+        "blendSrc": "SourceAlpha",
+        "blendDst": "OneMinusSrcAlpha",
+        "vertexShader": "shaders/uv.vertex",
+        "vrGeometryShader": "shaders/uv.geometry",
+        "fragmentShader": "shaders/scuke_survive_sky.fragment",
+        "samplerStates": [
+            {
+                "samplerIndex": 0,
+                "textureFilter": "Point"
+            }
+        ],
+        "vertexFields": [
+            {
+                "field": "Position"
+            },
+            {
+                "field": "UV0"
+            }
+        ],
+        "msaaSupport": "Both"
+    }
+}

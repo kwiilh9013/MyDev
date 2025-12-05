@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:camel_electric",
+            "materials": {
+                "default": "villager_v2"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/npc/camel_electric"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_camel_electric"
+            },
+            "animations": {
+                "idle": "animation.meal_camel.idle_electricity",
+                "baby": "animation.meal_camel.baby",
+                "moving": "animation.meal_camel.walk_electricity",
+                "general": "controller.animation.meal_camel.general",
+                "ui_correct": "animation.meal_camel.ui_correct"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.moving = query.modified_move_speed > 0.05 || query.vertical_speed > 0.05;",
+                    "variable.xTargetRot = math.clamp(query.target_x_rotation, -30, 30);",
+                    "variable.xHeadRot = variable.xTargetRot;",
+                    "variable.yHeadRot = math.clamp(query.target_y_rotation, -30, 30);",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    "idle",
+                    { "baby": "query.is_baby" },
+                    { "moving": "variable.moving && math.min(1.0, math.lerp(0.4, 1.25, query.modified_move_speed))" },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#78929A",
+                "overlay_color":"#4D899E"
+            }
+        }
+    }
+}

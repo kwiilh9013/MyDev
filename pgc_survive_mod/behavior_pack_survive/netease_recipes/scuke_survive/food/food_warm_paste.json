@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_warm_paste"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:blaze_rod"
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 2
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_warm_paste",
+      "count": 1
+    }
+  }
+}

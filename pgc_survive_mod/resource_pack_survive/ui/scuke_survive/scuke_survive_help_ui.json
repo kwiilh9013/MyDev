@@ -1,0 +1,600 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "mainPanel" : {
+               "controls" : [
+                  {
+                     "bg" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.05490196078431372, 0.1098039215686274, 0.1098039215686274 ],
+                        "layer" : 1,
+                        "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "size" : [ "100.0%+20.0px", "default" ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "exitBtn@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "",
+                        "$hover_texture" : "",
+                        "$is_new_nine_slice" : false,
+                        "$label_layer" : 3,
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {}
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {}
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {}
+                           },
+                           {
+                              "arrow" : {
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 7,
+                                 "size" : [ "0.0%y+16.0px", 16.0 ],
+                                 "texture" : "textures/ui/scuke_survive/icon/icon_back02",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "txtImage" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 8,
+                                 "size" : [ 23.0, 11.0 ],
+                                 "texture" : "textures/ui/scuke_survive/text/text_email",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "txtImage2" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "left_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 9,
+                                 "offset" : [ -23.0, 0.0 ],
+                                 "size" : [ 69.0, 11.0 ],
+                                 "texture" : "textures/ui/scuke_survive/text/text_game_introduce",
+                                 "type" : "image",
+                                 "visible" : false
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 2,
+                        "offset" : [ 9.0, 7.0 ],
+                        "pressed_control" : "pressed",
+                        "size" : [ 45.0, 30.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "horizontalDivide" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "bottom_left",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.5254901960784314, 0.5254901960784314, 0.5254901960784314 ],
+                        "is_new_nine_slice" : true,
+                        "layer" : 12,
+                        "nine_slice_buttom" : 1,
+                        "nine_slice_left" : 1,
+                        "nine_slice_right" : 1,
+                        "nine_slice_top" : 1,
+                        "offset" : [ 0.0, 38.0 ],
+                        "size" : [ "default", 0.50 ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "verticalDivide" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.5254901960784314, 0.5254901960784314, 0.5254901960784314 ],
+                        "is_new_nine_slice" : true,
+                        "layer" : 13,
+                        "nine_slice_buttom" : 1,
+                        "nine_slice_left" : 1,
+                        "nine_slice_right" : 1,
+                        "nine_slice_top" : 1,
+                        "offset" : [ "35.0%+0.0px", 38.0 ],
+                        "size" : [ 0.50, "100.0%+-3.0px" ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "bgToggle@common_toggles.switch_toggle_collection" : {
+                        "$default_texture" : "textures/ui/toggle_off",
+                        "$hover_texture" : "textures/ui/toggle_on",
+                        "$pressed_no_hover_texture" : "textures/ui/toggle_on_hover",
+                        "$pressed_texture" : "textures/ui/toggle_off_hover",
+                        "$toggle_name" : "#HelpUI.BgToggleChange",
+                        "$toggle_state_binding_name" : "#HelpUI.BgToggleState",
+                        "anchor_from" : "top_right",
+                        "anchor_to" : "top_right",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "layer" : 14,
+                        "offset" : [ -15.0, 7.0 ],
+                        "size" : [ 35.0, 20.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "bgTxt" : {
+                        "anchor_from" : "top_right",
+                        "anchor_to" : "top_right",
+                        "color" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ],
+                        "font_type" : "default",
+                        "layer" : 86,
+                        "offset" : [ -56.0, 12.0 ],
+                        "shadow" : true,
+                        "text" : "背景半透明",
+                        "text_alignment" : "right",
+                        "type" : "label"
+                     }
+                  },
+                  {
+                     "tab1ScrollView@common.scrolling_panel" : {
+                        "$background_nine_slice_buttom" : 1,
+                        "$background_nine_slice_left" : 1,
+                        "$background_nine_slice_right" : 1,
+                        "$background_nine_slice_top" : 1,
+                        "$background_nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$box_nine_slice_buttom" : 0,
+                        "$box_nine_slice_left" : 0,
+                        "$box_nine_slice_right" : 0,
+                        "$box_nine_slice_top" : 0,
+                        "$box_nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$is_background_nine_slice" : true,
+                        "$is_box_nine_slice" : true,
+                        "$is_track_nine_slice" : true,
+                        "$scroll_background_image_control" : "netease_editor_template_namespace.scroll_background_image",
+                        "$scroll_background_texture" : "",
+                        "$scroll_bar_left_padding_size|default" : [ 0.0, 0.0 ],
+                        "$scroll_bar_right_padding_size_touch|default" : [ 0.0, 0.0 ],
+                        "$scroll_bar_right_padding_size|default" : [ 0.0, 0.0 ],
+                        "$scroll_box_mouse_image_control" : "netease_editor_template_namespace.scroll_box_image",
+                        "$scroll_box_texture" : "",
+                        "$scroll_box_touch_image_control" : "netease_editor_template_namespace.scroll_box_image",
+                        "$scroll_box_visible|default" : false,
+                        "$scroll_size_touch|default" : [ 4.0, "100.0%+0.0px" ],
+                        "$scroll_size|default" : [ 0.0, "100.0%+0.0px" ],
+                        "$scroll_track_image_control" : "netease_editor_template_namespace.scroll_track_image",
+                        "$scroll_track_texture" : "",
+                        "$scrolling_content" : "scuke_survive_help_ui.tab1StackPanel",
+                        "$show_background" : true,
+                        "$track_nine_slice_buttom" : 0,
+                        "$track_nine_slice_left" : 0,
+                        "$track_nine_slice_right" : 0,
+                        "$track_nine_slice_top" : 0,
+                        "$track_nineslice_size" : [ 0, 0, 0, 0 ],
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "layer" : 87,
+                        "offset" : [ 0.0, 38.0 ],
+                        "size" : [ "35.0%+-1.0px", "100.0%+-40.0px" ]
+                     }
+                  },
+                  {
+                     "tab2ScrollView@common.scrolling_panel" : {
+                        "$background_nine_slice_buttom" : 1,
+                        "$background_nine_slice_left" : 1,
+                        "$background_nine_slice_right" : 1,
+                        "$background_nine_slice_top" : 1,
+                        "$background_nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$box_nine_slice_buttom" : 0,
+                        "$box_nine_slice_left" : 0,
+                        "$box_nine_slice_right" : 0,
+                        "$box_nine_slice_top" : 0,
+                        "$box_nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$is_background_nine_slice" : true,
+                        "$is_box_nine_slice" : true,
+                        "$is_track_nine_slice" : true,
+                        "$scroll_background_image_control" : "netease_editor_template_namespace.scroll_background_image",
+                        "$scroll_background_texture" : "",
+                        "$scroll_bar_left_padding_size|default" : [ 0.0, 0.0 ],
+                        "$scroll_bar_right_padding_size_touch|default" : [ 0.0, 0.0 ],
+                        "$scroll_bar_right_padding_size|default" : [ 0.0, 0.0 ],
+                        "$scroll_box_mouse_image_control" : "netease_editor_template_namespace.scroll_box_image",
+                        "$scroll_box_texture" : "",
+                        "$scroll_box_touch_image_control" : "netease_editor_template_namespace.scroll_box_image",
+                        "$scroll_box_visible|default" : false,
+                        "$scroll_size_touch|default" : [ 4.0, "100.0%+0.0px" ],
+                        "$scroll_size|default" : [ 0.0, "100.0%+0.0px" ],
+                        "$scroll_track_image_control" : "netease_editor_template_namespace.scroll_track_image",
+                        "$scroll_track_texture" : "",
+                        "$scrolling_content" : "scuke_survive_help_ui.tab2StackPanel",
+                        "$show_background" : true,
+                        "$track_nine_slice_buttom" : 0,
+                        "$track_nine_slice_left" : 0,
+                        "$track_nine_slice_right" : 0,
+                        "$track_nine_slice_top" : 0,
+                        "$track_nineslice_size" : [ 0, 0, 0, 0 ],
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "layer" : 133,
+                        "offset" : [ "35.0%+1.0px", 38.0 ],
+                        "size" : [ "65.0%+-2.0px", "100.0%+-40.0px" ]
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "size" : [ "100.0%+-20.0px", "default" ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_help_ui",
+   "tab1ContentBtn@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "",
+      "$hover_texture" : "",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "Button",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+      "$pressed_button_name" : "%netease_editor_template_namespace.click",
+      "$pressed_texture" : "textures/ui/scuke_survive/white",
+      "$texture_layer" : 2,
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "controls" : [
+         {
+            "selected@netease_editor_template_namespace.pressed" : {
+               "alpha" : 1.0,
+               "anchor_from" : "right_middle",
+               "anchor_to" : "right_middle",
+               "color" : [ 0.6274509803921569, 0.8039215686274510, 0.7568627450980392 ],
+               "offset" : [ -3.0, 0.0 ],
+               "size" : [ "100.0%+-20.0px", "85.0%+0.0px" ],
+               "visible" : false
+            }
+         },
+         {
+            "default@netease_editor_template_namespace.default" : {
+               "alpha" : 1.0,
+               "anchor_from" : "right_middle",
+               "anchor_to" : "right_middle",
+               "color" : [ 0.6274509803921569, 0.8039215686274510, 0.7568627450980392 ],
+               "offset" : [ -3.0, 0.0 ],
+               "size" : [ "100.0%+-20.0px", "85.0%+0.0px" ],
+               "visible" : false
+            }
+         },
+         {
+            "hover@netease_editor_template_namespace.hover" : {
+               "alpha" : 1.0,
+               "anchor_from" : "right_middle",
+               "anchor_to" : "right_middle",
+               "color" : [ 0.6274509803921569, 0.8039215686274510, 0.7568627450980392 ],
+               "offset" : [ -3.0, 0.0 ],
+               "size" : [ "100.0%+-20.0px", "85.0%+0.0px" ],
+               "visible" : false
+            }
+         },
+         {
+            "pressed@netease_editor_template_namespace.pressed" : {
+               "alpha" : 1.0,
+               "anchor_from" : "right_middle",
+               "anchor_to" : "right_middle",
+               "color" : [ 0.6274509803921569, 0.8039215686274510, 0.7568627450980392 ],
+               "offset" : [ -3.0, 0.0 ],
+               "size" : [ "100.0%+-20.0px", "85.0%+0.0px" ],
+               "visible" : false
+            }
+         },
+         {
+            "txt@netease_editor_template_namespace.button_label" : {
+               "alpha" : 1.0,
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "color" : [ 1, 1, 1 ],
+               "font_scale_factor" : 1.0,
+               "font_size" : "normal",
+               "offset" : [ 22.0, 0 ],
+               "shadow" : true,
+               "text" : "文本标题",
+               "text_alignment" : "left"
+            }
+         }
+      ],
+      "default_control" : "default",
+      "hover_control" : "hover",
+      "is_handle_button_move_event" : true,
+      "pressed_control" : "pressed",
+      "size" : [ "100.0%+0.0px", 20.0 ],
+      "type" : "button"
+   },
+   "tab1StackPanel" : {
+      "controls" : [
+         {
+            "mCloneTitleBtn@scuke_survive_help_ui.tab1TitleBtn" : {}
+         },
+         {
+            "mCloneContentBtn@scuke_survive_help_ui.tab1ContentBtn" : {
+               "layer" : 11
+            }
+         }
+      ],
+      "layer" : 1,
+      "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+      "type" : "stack_panel"
+   },
+   "tab1TitleBtn@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/ui/scuke_survive/white",
+      "$hover_texture" : "textures/ui/scuke_survive/white",
+      "$is_new_nine_slice" : false,
+      "$label_layer" : 3,
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+      "$pressed_button_name" : "%netease_editor_template_namespace.click",
+      "$pressed_texture" : "textures/ui/scuke_survive/white",
+      "$texture_layer" : 2,
+      "anchor_from" : "right_middle",
+      "anchor_to" : "right_middle",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "controls" : [
+         {
+            "default@netease_editor_template_namespace.default" : {
+               "color" : [ 0.2470588235294118, 0.3647058823529412, 0.3411764705882353 ],
+               "size" : [ "default", "100.0%+-2.0px" ]
+            }
+         },
+         {
+            "hover@netease_editor_template_namespace.hover" : {
+               "color" : [ 0.2470588235294118, 0.3647058823529412, 0.3411764705882353 ],
+               "size" : [ "default", "100.0%+-2.0px" ]
+            }
+         },
+         {
+            "pressed@netease_editor_template_namespace.pressed" : {
+               "color" : [ 0.2470588235294118, 0.3647058823529412, 0.3411764705882353 ],
+               "size" : [ "default", "100.0%+-2.0px" ]
+            }
+         },
+         {
+            "txt@netease_editor_template_namespace.button_label" : {
+               "alpha" : 1.0,
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "color" : [ 1, 1, 1 ],
+               "font_scale_factor" : 1.20,
+               "font_size" : "normal",
+               "offset" : [ 5.0, 0 ],
+               "shadow" : true,
+               "text" : "标题",
+               "text_alignment" : "left"
+            }
+         }
+      ],
+      "default_control" : "default",
+      "hover_control" : "hover",
+      "is_handle_button_move_event" : true,
+      "pressed_control" : "pressed",
+      "size" : [ "100.0%+0.0px", 21.0 ],
+      "type" : "button"
+   },
+   "tab2StackPanel" : {
+      "controls" : [
+         {
+            "mClonePanel" : {
+               "controls" : [
+                  {
+                     "mLeftTxt" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [
+                           {
+                              "txt" : {
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "font_type" : "default",
+                                 "layer" : 1,
+                                 "line_padding" : 0.7999999999999999,
+                                 "max_size" : [ "100.0%+-20.0px", "default" ],
+                                 "offset" : [ 10.0, 0.0 ],
+                                 "text" : "邮件标题\n ",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "mMiddleTxt" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [
+                           {
+                              "txt" : {
+                                 "font_type" : "default",
+                                 "layer" : 1,
+                                 "line_padding" : 0.7999999999999999,
+                                 "max_size" : [ "100.0%+-20.0px", "default" ],
+                                 "text" : "发送人：老黄瓜\n ",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 3,
+                        "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "mRightTxt" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [
+                           {
+                              "txt" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "font_type" : "default",
+                                 "layer" : 1,
+                                 "line_padding" : 0.7999999999999999,
+                                 "max_size" : [ "100.0%+-35.0px", "default" ],
+                                 "offset" : [ -25.0, 0.0 ],
+                                 "text" : "文本介绍\n ",
+                                 "text_alignment" : "right",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 5,
+                        "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "mPict" : {
+                        "controls" : [
+                           {
+                              "mPicture" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [],
+                                 "layer" : 1,
+                                 "offset" : [ "0.0%+0.0px", 0.0 ],
+                                 "size" : [ "70.0%+0.0px", "57.2%x+0.0px" ],
+                                 "texture" : "textures/blocks/azalea_leaves_flowers_opaque",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "layer" : 7,
+                        "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "mPictSmall" : {
+                        "controls" : [
+                           {
+                              "mPicture" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [],
+                                 "layer" : 1,
+                                 "offset" : [ "0.0%+0.0px", 0.0 ],
+                                 "size" : [ "35.0%+0.0px", "57.2%x+0.0px" ],
+                                 "texture" : "textures/blocks/azalea_leaves_flowers_opaque",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "layer" : 9,
+                        "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "mPictSquare" : {
+                        "controls" : [
+                           {
+                              "mPicture" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "controls" : [],
+                                 "layer" : 1,
+                                 "offset" : [ "0.0%+0.0px", 0.0 ],
+                                 "size" : [ "95.0%+0.0px", "100.0%x+0.0px" ],
+                                 "texture" : "textures/blocks/azalea_leaves_flowers_opaque",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "layer" : 11,
+                        "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+                        "type" : "panel"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+               "type" : "stack_panel"
+            }
+         }
+      ],
+      "layer" : 1,
+      "size" : [ "100.0%+0.0px", "100.0%c+0.0px" ],
+      "type" : "stack_panel"
+   }
+}

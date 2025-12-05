@@ -1,0 +1,42 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:time_bomb1",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:aabb": {
+                "collision": {
+                    "min": [ 0.13, 0.0, 0.25 ],
+                    "max": [ 0.87, 0.625, 0.75 ]
+                },
+                "clip": {
+                    "min": [ 0.13, 0.0, 0.25 ],
+                    "max": [ 0.87, 0.625, 0.75 ]
+                }
+            },
+            "netease:custom_tips": {
+                "value": "连锁爆炸范围约6格"
+            },
+            "netease:block_entity": {
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "minecraft:destroy_time": {
+                "value": 2
+            }
+        }
+    }
+}

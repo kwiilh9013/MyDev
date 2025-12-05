@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "scuke_survive:ingot_lithium",
+                    "weight": 80
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_cloth",
+                    "weight": 20
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_carrot_knife",
+                    "weight": 40
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_drink_can",
+                    "weight": 30
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_battery",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

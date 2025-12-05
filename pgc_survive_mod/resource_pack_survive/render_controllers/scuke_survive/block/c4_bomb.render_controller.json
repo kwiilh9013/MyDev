@@ -1,0 +1,99 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_c4_bomb": {
+            "part_visibility": [
+                {
+                    "*": true
+                }
+            ],
+            "arrays": {
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.default"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.default"
+                    ]
+                },
+                "materials": {
+                    "Array.materials": [
+                        "Material.default",
+                        "Material.blend"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[0]",
+            "materials": [
+                {
+                    "*": "Array.materials[0]"
+                }
+            ],
+            "textures": [
+                "Array.textures[0]"
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0+math.sin(query.life_time)*0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0+math.sin(query.life_time)*0.0"
+            }
+        },
+        "controller.render.scuke_survive_c4_detonator": {
+            "part_visibility": [
+                {
+                    "*": true
+                }
+            ],
+            "arrays": {
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.default"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.default"
+                    ]
+                },
+                "materials": {
+                    "Array.materials": [
+                        "Material.default",
+                        "Material.blend"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[0]",
+            "materials": [
+                {
+                    "*": "Array.materials[0]"
+                }
+            ],
+            "textures": [
+                "Array.textures[0]"
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0+math.sin(query.life_time)*0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0+math.sin(query.life_time)*0.0"
+            }
+        }
+    }
+}

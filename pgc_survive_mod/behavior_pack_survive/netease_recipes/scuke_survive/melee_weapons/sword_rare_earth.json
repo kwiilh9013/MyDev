@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "scuke_survive:sword_rare_earth"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"X",
+			"X",
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:stick"
+			},
+			"X": {
+				"item": "scuke_survive:ingot_rare_earth"
+			}
+		},
+		"unlock": [
+			{
+				"item": "scuke_survive:ingot_rare_earth"
+			}
+		],
+		"result": {
+			"item": "scuke_survive:sword_rare_earth"
+		}
+	}
+}

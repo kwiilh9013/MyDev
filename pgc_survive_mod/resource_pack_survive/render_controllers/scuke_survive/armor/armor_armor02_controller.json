@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": { 
+        "controller.render.scuke_survive_armor_armor02_chest": {
+            "geometry": "Geometry.scuke_survive_armor_armor02_chest",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_armor_armor02_chest"],
+            "part_visibility": [
+                {
+                    "*": "variable.is_first_person"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_gun_bazooka1_s1": {
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "right": false
+                },
+                {
+                    "left": false
+                }
+            ],
+            "arrays": {
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.scuke_survive_gun_bazooka1"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.scuke_survive_gun_bazooka1_s1"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[0]",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.textures[0]"
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        },
+        "controller.render.scuke_survive_gun_bazooka1_s2": {
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "right": false
+                },
+                {
+                    "left": false
+                }
+            ],
+            "arrays": {
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.scuke_survive_gun_bazooka1"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.scuke_survive_gun_bazooka1_s2"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[0]",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.textures[0]"
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        },
+        "controller.render.scuke_survive_gun_bazooka1_s3": {
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "right": false
+                },
+                {
+                    "left": false
+                }
+            ],
+            "arrays": {
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.scuke_survive_gun_bazooka1"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.scuke_survive_gun_bazooka1_s3"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[0]",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.textures[0]"
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        }
+    }
+}

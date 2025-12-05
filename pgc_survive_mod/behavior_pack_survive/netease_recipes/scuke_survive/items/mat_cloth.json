@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:mat_cloth"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:white_wool",
+        "count": 4
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:mat_cloth",
+      "count": 1
+    }
+  }
+}

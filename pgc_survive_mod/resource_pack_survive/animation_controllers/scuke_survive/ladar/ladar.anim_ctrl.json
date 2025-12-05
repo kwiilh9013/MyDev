@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive.ladar": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "scan",
+                        "self_rot",
+                        {"target1_hide": "variable.target1_dist_x == 0 && variable.target1_dist_z == 0"},
+                        {"target1_show": "variable.target1_dist_x != 0 || variable.target1_dist_z != 0"},
+                        {"target2_hide": "variable.target2_dist_x == 0 && variable.target2_dist_z == 0"},
+                        {"target2_show": "variable.target2_dist_x != 0 || variable.target2_dist_z != 0"},
+                        {"target3_hide": "variable.target3_dist_x == 0 && variable.target3_dist_z == 0"},
+                        {"target3_show": "variable.target3_dist_x != 0 || variable.target3_dist_z != 0"},
+
+                        {"engine1_hide": "variable.engine1_dist_x == 0 && variable.engine1_dist_z == 0"},
+                        {"engine1_show": "variable.engine1_dist_x != 0 || variable.engine1_dist_z != 0"},
+                        {"engine2_hide": "variable.engine2_dist_x == 0 && variable.engine2_dist_z == 0"},
+                        {"engine2_show": "variable.engine2_dist_x != 0 || variable.engine2_dist_z != 0"},
+                        {"engine3_hide": "variable.engine3_dist_x == 0 && variable.engine3_dist_z == 0"},
+                        {"engine3_show": "variable.engine3_dist_x != 0 || variable.engine3_dist_z != 0"}
+                    ],
+                    "transitions": [
+                        { "out_of_order": "variable.is_out_of_order || !query.is_local_player" }
+                    ]
+                },
+                "out_of_order": {
+                    "animations": [
+                        "scan_hide",
+                        "self_hide",
+                        "target1_hide",
+                        "target2_hide",
+                        "target3_hide",
+                        "engine1_hide",
+                        "engine2_hide",
+                        "engine3_hide"
+                    ],
+                    "transitions":[
+                        { "default": "!variable.is_out_of_order && query.is_local_player" }
+                    ]
+                }
+            }
+        }
+    }
+}

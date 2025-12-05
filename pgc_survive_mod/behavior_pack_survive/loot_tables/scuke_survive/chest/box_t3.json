@@ -1,0 +1,79 @@
+{
+    "pools": [
+        {
+            "rolls": 4,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_hp_painkiller",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_warm_paste",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_drink_power",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_bubble_gum_yellow",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_bubble_gum_green",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_bubble_gum_red",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_bubble_gum_pink",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:items_barricade_iron",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:items_grenade_small",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:items_trap",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_game_machine",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_read_machine",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_phone1",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_circuit_board",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

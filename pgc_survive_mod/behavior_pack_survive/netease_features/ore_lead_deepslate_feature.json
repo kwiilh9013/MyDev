@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "scuke_survive:ore_lead_deepslate_feature"
+    },
+    "count": 9,
+    "replace_rules": [
+      {
+        "places_block": "scuke_survive:ore_lead_deepslate",
+        "may_replace": [
+          "minecraft:deepslate"
+        ]
+      }
+    ]
+  }
+}

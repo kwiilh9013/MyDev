@@ -1,0 +1,24 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "scuke_survive:metal_block_lead"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "scuke_survive:ingot_lead"
+      }
+    },
+    "result": {
+      "item": "scuke_survive:metal_block_lead"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.chicken"
+            },
+            "identifier": "scuke_survive:attractor",
+            "materials": {
+                "default": "chicken",
+                "legs": "chicken_legs"
+            },
+            "render_controllers": [
+                "controller.render.chicken"
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 0
+            },
+            "textures": {
+                "default": "textures/entity/chicken"
+            }
+        }
+    }
+}

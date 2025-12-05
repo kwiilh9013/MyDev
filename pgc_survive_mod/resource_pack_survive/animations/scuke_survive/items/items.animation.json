@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_item.first_idle_default": {
+			"loop": true,
+			"bones": {
+				"item": {
+					"rotation": [-10.73865, 60.06749, -53.03306]
+				}
+			}
+		},
+		"animation.scuke_survive_item.scale_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [6, 12, 0]
+				}
+			}
+		}
+	}
+}

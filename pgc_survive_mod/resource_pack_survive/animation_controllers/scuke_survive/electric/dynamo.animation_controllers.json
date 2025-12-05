@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_survive_block.dynamo": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"work": "variable.working_state == 1"
+						}
+					]
+				},
+				"work": {
+					"animations": [
+						"work"
+					],
+					"particle_effects": [
+						{
+							"effect": "dynamo_work",
+							"locator": "dynamo"
+						}
+					],
+					"transitions": [
+						{
+							"standby": "variable.working_state == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

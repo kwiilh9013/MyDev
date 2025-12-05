@@ -1,0 +1,286 @@
+{
+    "format_version": [1, 1, 0],
+    "scuke_survive:c4_bomb1": {
+        "client_entity": {
+            "block_icon": "scuke_survive:c4_bomb1_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:c4_bomb1_entity",
+            "destroyed_textures": "scuke_survive:c4_bomb1_entity"
+        },
+        "netease_model": "scuke_survive:c4_bomb_model",
+        "sound": "metal"
+    },
+    "scuke_survive:c4_bomb2": {
+        "client_entity": {
+            "block_icon": "scuke_survive:c4_bomb2_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:c4_bomb2_entity",
+            "destroyed_textures": "scuke_survive:c4_bomb2_entity"
+        },
+        "netease_model": "scuke_survive:c4_bomb_model",
+        "sound": "metal"
+    },
+    "scuke_survive:c4_bomb3": {
+        "client_entity": {
+            "block_icon": "scuke_survive:c4_bomb3_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:c4_bomb3_entity",
+            "destroyed_textures": "scuke_survive:c4_bomb3_entity"
+        },
+        "netease_model": "scuke_survive:c4_bomb_model",
+        "sound": "metal"
+    },
+    "scuke_survive:time_bomb1": {
+        "client_entity": {
+            "block_icon": "scuke_survive:time_bomb1_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:time_bomb1_entity",
+            "destroyed_textures": "scuke_survive:time_bomb1_entity"
+        },
+        "netease_model": "scuke_survive:time_bomb_model",
+        "sound": "metal"
+    },
+    "scuke_survive:time_bomb2": {
+        "client_entity": {
+            "block_icon": "scuke_survive:time_bomb2_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:time_bomb2_entity",
+            "destroyed_textures": "scuke_survive:time_bomb2_entity"
+        },
+        "netease_model": "scuke_survive:time_bomb_model",
+        "sound": "metal"
+    },
+    "scuke_survive:time_bomb3": {
+        "client_entity": {
+            "block_icon": "scuke_survive:time_bomb3_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:time_bomb3_entity",
+            "destroyed_textures": "scuke_survive:time_bomb3_entity"
+        },
+        "netease_model": "scuke_survive:time_bomb_model",
+        "sound": "metal"
+    },
+    "scuke_survive:items_barricade_iron": {
+        "client_entity": {
+            "block_icon": "scuke_survive:items_barricade_iron",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:items_barricade_iron_entity",
+            "destroyed_textures": "scuke_survive:items_barricade_iron_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:items_barricade_wood": {
+        "client_entity": {
+            "block_icon": "scuke_survive:items_barricade_wood",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:items_barricade_wood_entity",
+            "destroyed_textures": "scuke_survive:items_barricade_wood_destroyed"
+        },
+        "sound": "wood"
+    },
+    "scuke_survive:items_landmine": {
+        "client_entity": {
+            "block_icon": "scuke_survive:items_landmine",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:items_landmine_entity",
+            "destroyed_textures": "scuke_survive:items_landmine_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:items_wirecloth": {
+        "netease_model": "scuke_survive:wirecloth_model",
+        "sound": "metal"
+    },
+    "scuke_survive:items_oil_drum_large": {
+        "netease_model": "scuke_survive:items_oil_drum_large_model",
+        "sound": "metal"
+    },
+    "scuke_survive:items_oil_drum_small": {
+        "netease_model": "scuke_survive:items_oil_drum_small_model",
+        "sound": "metal"
+    },
+    "scuke_survive:items_trap": {
+        "client_entity": {
+            "block_icon": "scuke_survive:items_trap",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:items_trap_entity",
+            "destroyed_textures": "scuke_survive:items_trap_destroyed"
+        },
+        "sound": "metal"
+    },
+
+    "scuke_survive:tombstone": {
+        "client_entity": {
+            "block_icon": "scuke_survive:tombstone_entity_icon",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:tombstone_entity",
+            "destroyed_textures": "scuke_survive:tombstone_entity"
+        },
+        "netease_model": "scuke_survive:tombstone_model",
+        "sound": "stone"
+    },
+    "scuke_survive:ore_lead": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_lead"
+    },
+    "scuke_survive:ore_lead_deepslate": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_lead_deepslate"
+    },
+    "scuke_survive:ore_lithium": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_lithium"
+    },
+    "scuke_survive:ore_lithium_deepslate": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_lithium_deepslate"
+    },
+    "scuke_survive:ore_rare_earth": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_rare_earth"
+    },
+    "scuke_survive:ore_rare_earth_deepslate": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_rare_earth_deepslate"
+    },
+    "scuke_survive:ore_yttrium": {
+        "sound": "stone",
+        "textures": "scuke_survive:ore_yttrium"
+    },
+    "scuke_survive:metal_block_lead": {
+        "sound": "metal",
+        "textures": "scuke_survive:metal_block_lead"
+    },
+    "scuke_survive:metal_block_lithium": {
+        "sound": "metal",
+        "textures": "scuke_survive:metal_block_lithium"
+    },
+    "scuke_survive:metal_block_rare_earth": {
+        "sound": "metal",
+        "textures": "scuke_survive:metal_block_rare_earth"
+    },
+    "scuke_survive:metal_block_yttrium": {
+        "sound": "metal",
+        "textures": "scuke_survive:metal_block_yttrium"
+    },
+
+    "scuke_survive:chest_paper": {
+        "netease_model": "scuke_survive:chest_paper_model",
+        "sound": "cloth"
+    },
+    "scuke_survive:chest_paper_tag": {
+        "netease_model": "scuke_survive:chest_paper_tag_model",
+        "sound": "cloth"
+    },
+    "scuke_survive:chest_storage_orange": {
+        "netease_model": "scuke_survive:chest_storage_orange_model",
+        "sound": "cloth"
+    },
+    "scuke_survive:chest_storage_blue": {
+        "netease_model": "scuke_survive:chest_storage_blue_model",
+        "sound": "cloth"
+    },
+    "scuke_survive:chest_storage_red": {
+        "netease_model": "scuke_survive:chest_storage_red_model",
+        "sound": "cloth"
+    },
+    "scuke_survive:chest_military": {
+        "netease_model": "scuke_survive:chest_military_model",
+        "sound": "metal"
+    },
+
+
+    "scuke_survive:electric_dynamo_small": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_dynamo_small",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_dynamo_small_entity",
+            "destroyed_textures": "scuke_survive:electric_dynamo_small_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_dynamo_middle": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_dynamo_middle",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_dynamo_middle_entity",
+            "destroyed_textures": "scuke_survive:electric_dynamo_middle_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_dynamo_large": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_dynamo_large",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_dynamo_large_entity",
+            "destroyed_textures": "scuke_survive:electric_dynamo_large_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_heater_large": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_heater_large",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_heater_large_entity",
+            "destroyed_textures": "scuke_survive:electric_heater_large_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_heater_small": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_heater_small",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_heater_small_entity",
+            "destroyed_textures": "scuke_survive:electric_heater_small_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_machinery": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_machinery",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_machinery_entity",
+            "destroyed_textures": "scuke_survive:electric_machinery_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_spike_trap": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_spike_trap",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:electric_spike_trap_entity",
+            "destroyed_textures": "scuke_survive:electric_spike_trap_destroyed"
+        },
+        "sound": "metal"
+    },
+    "scuke_survive:electric_photoetching": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_photoetching",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:electric_photoetching_entity",
+            "destroyed_textures": "scuke_survive:electric_photoetching_destroyed"
+        },
+        "netease_model": "scuke_survive:electric_photoetching_model",
+        "sound": "metal"
+    },
+    "scuke_survive:electric_printer": {
+        "client_entity": {
+            "block_icon": "scuke_survive:electric_printer",
+            "hand_model_use_client_entity": false,
+            "identifier": "scuke_survive:electric_printer_entity",
+            "destroyed_textures": "scuke_survive:electric_printer_destroyed"
+        },
+        "netease_model": "scuke_survive:electric_printer_model",
+        "sound": "metal"
+    },
+
+    "scuke_survive:car_remold": {
+        "client_entity": {
+            "block_icon": "scuke_survive:car_remold",
+            "hand_model_use_client_entity": true,
+            "identifier": "scuke_survive:car_remold_entity",
+            "destroyed_textures": "scuke_survive:car_remold_destroyed"
+        },
+        "sound": "metal"
+    }
+}

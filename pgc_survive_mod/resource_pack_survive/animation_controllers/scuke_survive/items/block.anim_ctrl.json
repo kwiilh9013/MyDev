@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_block.dynamo.range": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "range": "variable.show_range" }
+                    ]
+                },
+                "range": {
+                    "particle_effects": [
+                        {
+                            "effect": "north",
+                            "locator": "particle_center"
+                        },
+                        {
+                            "effect": "south",
+                            "locator": "particle_center"
+                        },
+                        {
+                            "effect": "east",
+                            "locator": "particle_center"
+                        },
+                        {
+                            "effect": "west",
+                            "locator": "particle_center"
+                        },
+                        {
+                            "effect": "top",
+                            "locator": "particle_center"
+                        },
+                        {
+                            "effect": "buttom",
+                            "locator": "particle_center"
+                        }
+                    ],
+                    "transitions":[
+                        { "default": "!variable.show_range" }
+                    ]
+                }
+            }
+        }
+    }
+}

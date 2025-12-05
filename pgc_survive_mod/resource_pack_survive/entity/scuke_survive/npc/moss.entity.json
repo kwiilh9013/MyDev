@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:npc_moss",
+            "materials": {
+                "default": "villager_v2"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/npc/moss"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_npc_moss"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#C1C1C1",
+                "overlay_color":"#313131"
+            },
+            "animations": {
+                "look_at_target": "animation.humanoid.look_at_target.default",
+                "move": "animation.humanoid.move",
+                "attack.rotations": "animation.humanoid.attack.rotations",
+                "bob": "animation.humanoid.bob",
+                "arms_legs": "animation.enderman.arms_legs",
+                "carrying": "animation.enderman.carrying",
+                "ui_correct": "animation.scuke_survive_npc_moss.ui_correct",
+                "attack_ctrl": "controller.animation.humanoid.attack",
+                "carrying_ctrl": "controller.animation.enderman.carrying"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 28.65;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate":[
+                    "move",
+                    "bob",
+                    {
+                        "look_at_target": "variable.not_in_ui"
+                    },
+                    "arms_legs",
+                    "attack_ctrl",
+                    "carrying_ctrl",
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            }
+        }
+    }
+}

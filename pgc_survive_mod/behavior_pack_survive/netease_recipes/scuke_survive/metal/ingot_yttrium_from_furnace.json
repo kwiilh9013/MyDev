@@ -1,0 +1,14 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "scuke_survive:ingot_yttrium_from_furnace"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "scuke_survive:raw_yttrium",
+    "output": "scuke_survive:ingot_yttrium"
+  }
+}

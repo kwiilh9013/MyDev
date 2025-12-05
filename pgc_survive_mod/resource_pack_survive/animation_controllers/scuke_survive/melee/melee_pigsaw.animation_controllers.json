@@ -1,0 +1,83 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_melee_pigsaw_first": {
+            "initial_state": "idle_begin",
+            "states": {
+                "idle_begin": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_first_hold_begin"
+                    ],
+                    "transitions" : [
+                        { "idle": "query.all_animations_finished || !query.mod.scuke_survive_melee_taking" }
+                    ]
+                },
+                "idle": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_first_hold"
+                    ],
+                    "transitions" : [
+                        { "melee_begin": "query.mod.scuke_survive_melee_begin" },
+                        { "melee_attack": "query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_begin": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_first_melee_begin"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_begin && !query.mod.scuke_survive_melee_using" },
+                        { "melee_attack": "query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_attack": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_first_melee_attack"
+                    ],
+                    "transitions": [
+                        { "idle": "!query.mod.scuke_survive_melee_using" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.scuke_survive_melee_pigsaw_third" : {
+            "initial_state" : "idle_begin",
+            "states" : {
+                "idle_begin": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_third_hold_begin"
+                    ],
+                    "transitions" : [
+                        { "idle": "query.all_animations_finished || !query.mod.scuke_survive_melee_taking" }
+                    ]
+                },
+                "idle": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_third_hold"
+                    ],
+                    "transitions" : [
+                        { "melee_begin" : "!query.is_in_ui && query.mod.scuke_survive_melee_begin" },
+                        { "melee_attack": "!query.is_in_ui && query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_begin": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_third_melee_begin"
+                    ],
+                    "transitions" : [
+                        { "idle" : "query.all_animations_finished && !query.mod.scuke_survive_melee_begin && !query.mod.scuke_survive_melee_using" },
+                        { "melee_attack": "query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_attack": {
+                    "animations": [
+                        "scuke_survive_melee_pigsaw_third_melee_attack"
+                    ],
+                    "transitions": [
+                        { "idle": "!query.mod.scuke_survive_melee_using" }
+                    ]
+                }
+            }
+        }
+    }
+}

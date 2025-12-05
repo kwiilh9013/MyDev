@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_electric_working": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.working"
+                }
+            ],
+            "textures": [
+                "Texture.open"
+            ]
+        }
+    }
+}

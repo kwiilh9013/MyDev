@@ -1,0 +1,968 @@
+{
+    "dy_load_list": [
+        "sounds/gun/gatlin/fire",
+        "sounds/gun/pistol/fire"
+    ],
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "scuke_survive.witch.cry": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "max_distance" : null,
+            "min_distance" : null,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/zombie/witch_cry",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.witch.squeal": {
+            "__use_legacy_max_distance" : "true",
+            "category" : "neutral",
+            "max_distance" : null,
+            "min_distance" : null,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/zombie/witch_squeal",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.block.c4_bomb_boom": {
+            "category": "ambient",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/block/time_bomb_boom",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.block.c4_bomb_build": {
+            "category": "ambient",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/block/time_bomb_build",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.block.time_bomb_boom": {
+            "category": "ambient",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/block/time_bomb_boom",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.block.time_bomb_btn_press": {
+            "category": "ambient",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/block/time_bomb_btn_press",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.block.time_bomb_build": {
+            "category": "ambient",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/block/time_bomb_build",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.block.time_bomb_left_time": {
+            "category": "ambient",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/block/time_bomb_left_time",
+                    "volume": 1.0
+                }
+            ]
+        },
+        "scuke_survive.cutscene.start": {
+            "category": "cutscene",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/cutscene_start",
+                    "stream": true,
+                    "volume": 0.8,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.warning": {
+            "category": "cutscene",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/cutscene_warning",
+                    "stream": true,
+                    "volume": 0.8,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.success": {
+            "category": "cutscene",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/cutscene_success",
+                    "stream": true,
+                    "volume": 0.6,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.failed": {
+            "category": "cutscene",
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/cutscene_failed",
+                    "stream": true,
+                    "volume": 0.6,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.typing": {
+            "category": "cutscene",
+            "max_distance": 6.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/typing1",
+                    "load_on_low_memory": true
+                },
+                "sounds/scuke_survive/cutscene/typing2",
+                "sounds/scuke_survive/cutscene/typing3"
+            ]
+        },
+        "scuke_survive.gun.jammed": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/jammed"
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words01_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words01_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words01_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words01_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words02_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words02_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words03_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words03_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words03_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words03_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words03_3": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words03_3",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words04_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words04_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words04_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words04_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words05_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words05_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words05_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words05_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words06_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words06_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words06_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words06_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words07_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words07_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.words07_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/words07_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.mf100010_words_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/mf100010_words_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.mf100010_words_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/mf100010_words_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.mf100020_words_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/mf100020_words_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.mf100020_words_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/mf100020_words_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.mf100030_words_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/mf100030_words_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.mf100030_words_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/mf100030_words_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.ms100010_words_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/ms100010_words_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.ms100020_words_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/ms100020_words_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.ms100030_words_1": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/ms100030_words_1",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.cutscene.ms100030_words_2": {
+            "category": "cutscene",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/cutscene/ms100030_words_2",
+                    "stream": true,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "scuke_survive.gun.common_hit.hit": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_hit/hit",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "scuke_survive.gun.common_hit.hit_target": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_hit/hit_target",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.heavy_in": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/heavy_in"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.heavy_out": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/heavy_out"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.shotgun_in": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/shotgun_in"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.shotgun_out": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/shotgun_out"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.clip_rot1": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/clip_rot1"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.clip_rot2": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/clip_rot2"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.clip_rot3": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/clip_rot3"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.clip_rot4": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/clip_rot4"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.clip_in": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/clip_in"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.clip_out": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/clip_out"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.light_in": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/light_in"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.light_out": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/light_out"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.charge_loop": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/charge_loop"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.middle_in1": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/middle_in1"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.middle_in2": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/middle_in2"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.middle_out1": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/middle_out1"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.middle_out2": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/middle_out2"
+                }
+            ]
+        },
+        "scuke_survive.gun.common_clip.middle_out3": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/common_clip/middle_out3"
+                }
+            ]
+        },
+        "scuke_survive.gun.bazooka1.fire": {
+            "category": "gun",
+            "max_distance": 32.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/bazooka1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.hmg1.fire": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/hmg1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.lmg1.fire": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/lmg1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.pistol1.fire": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/pistol1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.rifle1.fire": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/rifle1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.shotgun1.fire": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/shotgun1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.smg1.fire": {
+            "category": "gun",
+            "max_distance": 16.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/smg1/fire"
+                }
+            ]
+        },
+        "scuke_survive.gun.sniper1.fire": {
+            "category": "gun",
+            "max_distance": 32.0,
+            "sounds": [
+                {
+                    "name": "sounds/scuke_survive/gun/sniper1/fire"
+                }
+            ]
+        },
+        "scuke_survive.melee.axe.swing1": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/melee/axe/swing1"
+                }
+            ]
+        },
+        "scuke_survive.melee.axe.swing2": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/melee/axe/swing2"
+                }
+            ]
+        },
+        "scuke_survive.melee.axe.swing3": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/melee/axe/swing3"
+                }
+            ]
+        },
+        "scuke_survive.melee.chainsaw.using": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/melee/chainsaw/using",
+                    "volume": 0.9,
+                    "stream": true
+                }
+            ]
+        },
+        "scuke_survive.melee.baseball_bat.swing1": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 0.7,
+                    "name": "sounds/scuke_survive/melee/baseball_bat/swing1"
+                }
+            ]
+        },
+        "scuke_survive.melee.baseball_bat.swing2": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 0.9,
+                    "name": "sounds/scuke_survive/melee/baseball_bat/swing1"
+                }
+            ]
+        },
+        "scuke_survive.melee.baseball_bat.swing3": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 1.1,
+                    "name": "sounds/scuke_survive/melee/baseball_bat/swing1"
+                }
+            ]
+        },
+        "scuke_survive.melee.pan.swing": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 0.7,
+                    "name": "sounds/scuke_survive/melee/pan/swing"
+                }
+            ]
+        },
+        "scuke_survive.melee.pan.hit": {
+            "category": "melee",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 0.7,
+                    "name": "sounds/scuke_survive/melee/pan/hit"
+                },
+                {
+                    "name": "sounds/scuke_survive/melee/pan/hit2",
+                    "volume" : 0.7
+                }
+            ]
+        },
+        "scuke_survive.items.trap": {
+            "category": "items",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 0.7,
+                    "name": "sounds/scuke_survive/items/trap"
+                }
+            ]
+        },
+        "scuke_survive.items.grenada_throw_prepare": {
+            "category": "items",
+            "max_distance": 8.0,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 3,
+                    "name": "sounds/scuke_survive/items/grenada_throw_prepare"
+                }
+            ]
+        },
+
+        "scuke_survive.car.walk": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 10,
+                    "name": "sounds/scuke_survive/car/walk"
+                }
+            ]
+        },
+        "scuke_survive.car.hit": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 2,
+                    "name": "sounds/scuke_survive/car/hit"
+                }
+            ]
+        },
+        "scuke_survive.car.brake": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "volume": 0.6,
+                    "name": "sounds/scuke_survive/car/brake"
+                }
+            ]
+        },
+
+        "scuke_survive.ladar.gold_creeper": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/ladar/gold_creeper",
+                    "pitch" : 1
+                }
+            ]
+        },
+        "scuke_survive.ladar.creeper": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/ladar/creeper",
+                    "pitch" : 0.8
+                }
+            ]
+        },
+        "scuke_survive.ladar.boss": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/ladar/boss",
+                    "pitch" : 1.4
+                }
+            ]
+        },
+        "scuke_survive.ladar.chest": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/ladar/chest",
+                    "pitch" : 0.5
+                }
+            ]
+        },
+
+        "scuke_survive.zombie.idle_type1": {
+            "category": "hostile",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/zombie/idle/idle1_1",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle1_2",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle1_3",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle1_4",
+                    "volume" : 0.5
+                }
+            ]
+        },
+        "scuke_survive.zombie.idle_type2": {
+            "category": "hostile",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/scuke_survive/zombie/idle/idle2_1",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle2_2",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle2_3",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle2_4",
+                    "volume" : 0.5
+                },
+                {
+                    "name": "sounds/scuke_survive/zombie/idle/idle2_5",
+                    "volume" : 0.5
+                }
+            ]
+        },
+        "scuke_survive.skill.missile.shoot": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/scuke_survive/skill/missile_shoot"
+            ]
+        },
+        "scuke_survive.skill.missile.hit": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/scuke_survive/skill/missile_hit"
+            ]
+        },
+        "scuke_survive.skill.fly.hover": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/scuke_survive/skill/fly_hover"
+            ]
+        },
+        "scuke_survive.skill.fly.updown": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/scuke_survive/skill/fly_updown"
+            ]
+        },
+        "scuke_survive.skill.fly.speedup": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/scuke_survive/skill/fly_speedup"
+            ]
+        },
+        "scuke_survive.skill.emp": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/scuke_survive/skill/emp"
+            ]
+        },
+        "scuke_survive.skill.emmissle.shoot": {
+            "category": "neutral",
+            "max_distance" : null,
+            "min_distance" : null,
+            "sounds": [
+                "sounds/scuke_survive/skill/emmissle_shoot"
+            ]
+        }
+    }
+}

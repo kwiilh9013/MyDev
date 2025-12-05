@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:max_damage": 363,
+            "netease:armor":{
+                "defense": 13,
+                "enchantment":0,
+                "armor_slot":0,
+                "toughness":3,
+                "knockback_resistance":1
+            },
+            "netease:customtips": {
+                "value": "[§a增益§f] 无\n[§a护甲§f] +13\n[§b套装效果§f] 无 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "custom_item_type": "armor",
+            "identifier": "scuke_survive:armor_soviet_tig_helmet_gold",
+            "register_to_create_menu": true
+        }
+    }
+}

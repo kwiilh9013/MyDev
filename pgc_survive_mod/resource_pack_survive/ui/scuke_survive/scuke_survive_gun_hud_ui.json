@@ -1,0 +1,1735 @@
+{
+   "main" : {
+      "always_accepts_input" : true,
+      "controls" : [
+         {
+            "Panel_Gun" : {
+               "controls" : [
+                  {
+                     "Button_Fire@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/ui/scuke_survive/gun_hud/probiotic",
+                        "$hover_texture" : "textures/ui/scuke_survive/gun_hud/probiotic",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "large",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "Button",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/ui/scuke_survive/gun_hud/probiotic",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 1,
+                                 "texture" : "textures/ui/scuke_survive/gun_hud/bg_big",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "alpha" : 1.0,
+                                 "color" : [ 0.50, 0.50, 0.50 ],
+                                 "size" : [ "60.0%+0.0px", "60.0%+0.0px" ]
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 2,
+                        "offset" : [ -105.0, -65.0 ],
+                        "pressed_control" : "pressed",
+                        "propagate_alpha" : true,
+                        "size" : [ 50.0, 50 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "Button_Aim@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/ui/scuke_survive/gun_hud/aim",
+                        "$hover_texture" : "textures/ui/scuke_survive/gun_hud/aim",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "large",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/ui/scuke_survive/gun_hud/aim",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "layer" : 1,
+                                 "texture" : "textures/ui/scuke_survive/gun_hud/bg",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "color" : [ 0.50, 0.50, 0.50 ],
+                                 "size" : [ "60.0%+0.0px", "60.0%+0.0px" ]
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 10,
+                        "offset" : [ -90.0, -125.0 ],
+                        "pressed_control" : "pressed",
+                        "propagate_alpha" : true,
+                        "size" : [ 25.0, 25.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "Button_Fire_Left@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/ui/scuke_survive/gun_hud/probiotic",
+                        "$hover_texture" : "textures/ui/scuke_survive/gun_hud/probiotic",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "large",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "Button",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/ui/scuke_survive/gun_hud/probiotic",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "bottom_left",
+                        "anchor_to" : "bottom_left",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 1,
+                                 "texture" : "textures/ui/scuke_survive/gun_hud/bg",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "color" : [ 0.50, 0.50, 0.50 ],
+                                 "size" : [ "60.0%+0.0px", "60.0%+0.0px" ]
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 18,
+                        "offset" : [ 90.0, -125.0 ],
+                        "pressed_control" : "pressed",
+                        "propagate_alpha" : true,
+                        "size" : [ 25.0, 25.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "Button_Reload@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/ui/scuke_survive/gun_hud/reload",
+                        "$hover_texture" : "textures/ui/scuke_survive/gun_hud/reload",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "small",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0.0, 50.0 ],
+                        "$label_text" : "Button",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/ui/scuke_survive/gun_hud/reload",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 1,
+                                 "texture" : "textures/ui/scuke_survive/gun_hud/bg",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "color" : [ 0.50, 0.50, 0.50 ],
+                                 "size" : [ "60.0%+0.0px", "60.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "Ammo_Count" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "top_middle",
+                                 "font_scale_factor" : 0.80,
+                                 "font_type" : "default",
+                                 "layer" : 8,
+                                 "size" : [ 60.0, 20.0 ],
+                                 "text" : "0/0\n",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "Reload_Progress" : {
+                                 "$clip_direction" : "left",
+                                 "$clip_ratio" : 0.0,
+                                 "$is_new_nine_slice" : false,
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0, 0, 0, 0 ],
+                                 "$progress_bar_empty_texture" : "",
+                                 "$progress_bar_filled_texture" : "textures/ui/scuke_survive/gun_hud/bg",
+                                 "controls" : [
+                                    {
+                                       "Reload_Time" : {
+                                          "enabled" : false,
+                                          "font_type" : "default",
+                                          "layer" : 8,
+                                          "offset" : [ 0.0, 1.0 ],
+                                          "shadow" : true,
+                                          "size" : [ 50.0, 10.0 ],
+                                          "text" : "1.7s",
+                                          "text_alignment" : "center",
+                                          "type" : "label"
+                                       }
+                                    },
+                                    {
+                                       "empty_progress_bar@netease_editor_template_namespace.empty_progress_bar" : {
+                                          "color" : [ 1.0, 1.0, 1.0 ]
+                                       }
+                                    },
+                                    {
+                                       "filled_progress_bar@netease_editor_template_namespace.filled_progress_bar" : {
+                                          "color" : [ 0.0, 0.0, 0.0 ]
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 8,
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 26,
+                        "offset" : [ -120.0, -30.0 ],
+                        "pressed_control" : "pressed",
+                        "propagate_alpha" : true,
+                        "size" : [ 25.0, 25.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "Button_Kick@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/ui/scuke_survive/gun_hud/kick",
+                        "$hover_texture" : "textures/ui/scuke_survive/gun_hud/kick",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "large",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "Button",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/ui/scuke_survive/gun_hud/kick",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "layer" : 1,
+                                 "texture" : "textures/ui/scuke_survive/gun_hud/bg",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "size" : [ "70.0%+0.0px", "70.0%+0.0px" ]
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "size" : [ "60.0%+0.0px", "60.0%+0.0px" ]
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "offset" : [ -100.0, -180.0 ],
+                        "pressed_control" : "pressed",
+                        "propagate_alpha" : true,
+                        "size" : [ 25.0, 25.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "Panel_CrossHair" : {
+                        "controls" : [
+                           {
+                              "machine" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "size" : [ 40.0, 40.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_4_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_4_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "bottom_middle",
+                                                   "anchor_to" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_4_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_4_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_4_2",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 50.0, 50.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 48.0, 48.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100.0, 100.0 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "sniper" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "size" : [ 3.0, 3.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_5_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_5_3",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 24.0, 24.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 30.0, 30.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "rifle" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "alpha" : 0.80,
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "size" : [ 16.0, 16.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_1_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_1_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "bottom_middle",
+                                                   "anchor_to" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_1_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_1_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_1_2",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 25.0, 25.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 30.0, 30.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "shot" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "size" : [ 50.0, 50.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_6_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_6_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "bottom_middle",
+                                                   "anchor_to" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_6_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_6_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_6_2",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 55.0, 55.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 52.0, 52.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "submachine" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "size" : [ 46.0, 30.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_2_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_2_2_l",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_2_2_r",
+                                                   "type" : "image",
+                                                   "uv" : [ 0.0, 0.0 ]
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 20.0, 20.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 56.0, 56.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "cannon" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "size" : [ 30.0, 30.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_3_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_middle",
+                                                   "anchor_to" : "top_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_3_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "bottom_middle",
+                                                   "anchor_to" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_3_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_3_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_3_2",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 20.0, 20.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 40.0, 40.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "grenade" : {
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "enabled" : false,
+                                          "layer" : 1,
+                                          "offset" : [ 0.0, 9.0 ],
+                                          "size" : [ 40.0, 80.0 ],
+                                          "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_7_1",
+                                          "type" : "image"
+                                       }
+                                    },
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_7_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "right_middle",
+                                                   "anchor_to" : "right_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 8.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_7_2",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 50.0, 50.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "offset" : [ 0.0, 3.0 ],
+                                          "size" : [ 54.0, 50.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           },
+                           {
+                              "charger" : {
+                                 "controls" : [
+                                    {
+                                       "scatter" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                                                   "size" : [ 5.0, 8.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_1",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "bottom_middle",
+                                                   "anchor_to" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 1,
+                                                   "size" : [ 12.0, 3.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_5",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 1,
+                                                   "offset" : [ "-6.0%+0.0px", "5.0%+0.0px" ],
+                                                   "size" : [ 7.0, 12.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_6",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 1,
+                                                   "offset" : [ "6.0%+0.0px", "5.0%+0.0px" ],
+                                                   "size" : [ 7.0, 12.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_7",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 50.0, 50.0 ],
+                                          "type" : "panel"
+                                       }
+                                    },
+                                    {
+                                       "hit" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "1" : {
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : -90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "2" : {
+                                                   "anchor_from" : "bottom_left",
+                                                   "anchor_to" : "bottom_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 90.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "3" : {
+                                                   "anchor_from" : "bottom_right",
+                                                   "anchor_to" : "bottom_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "rotate_angle" : 180.0,
+                                                   "size" : [ 10.0, 10.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_hit",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 30.0, 30.0 ],
+                                          "type" : "panel",
+                                          "visible" : false
+                                       }
+                                    },
+                                    {
+                                       "kill" : {
+                                          "controls" : [
+                                             {
+                                                "0" : {
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "enabled" : false,
+                                                   "layer" : 1,
+                                                   "size" : [ 24.0, 24.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_kill",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 70.0, 70.0 ],
+                                          "type" : "panel",
+                                          "visible" : false
+                                       }
+                                    },
+                                    {
+                                       "charge" : {
+                                          "controls" : [
+                                             {
+                                                "l0" : {
+                                                   "alpha" : 0.50,
+                                                   "anchor_from" : "bottom_middle",
+                                                   "anchor_to" : "bottom_middle",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "controls" : [],
+                                                   "layer" : 1,
+                                                   "size" : [ 34.0, 13.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_2",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "l1" : {
+                                                   "alpha" : 0.50,
+                                                   "anchor_from" : "top_left",
+                                                   "anchor_to" : "top_left",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 1,
+                                                   "size" : [ 21.0, 22.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_3",
+                                                   "type" : "image"
+                                                }
+                                             },
+                                             {
+                                                "l2" : {
+                                                   "alpha" : 0.50,
+                                                   "anchor_from" : "top_right",
+                                                   "anchor_to" : "top_right",
+                                                   "clip_direction" : "left",
+                                                   "clip_ratio" : 0.0,
+                                                   "layer" : 1,
+                                                   "size" : [ 21.0, 22.0 ],
+                                                   "texture" : "textures/ui/scuke_survive/crosshair/icon_gameplay_sight_8_4",
+                                                   "type" : "image"
+                                                }
+                                             }
+                                          ],
+                                          "layer" : 1,
+                                          "size" : [ 44.0, 37.0 ],
+                                          "type" : "panel"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel",
+                                 "visible" : false
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ -0.50, -0.50 ],
+                        "size" : [ 100, 100 ],
+                        "type" : "panel"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_gun_hud_ui"
+}

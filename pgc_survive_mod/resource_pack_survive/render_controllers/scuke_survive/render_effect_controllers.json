@@ -1,0 +1,115 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_player.tp_low_temp": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "helmet": "variable.helmet_layer_visible"
+                },
+                {
+                    "leftLegging": "variable.leg_layer_visible"
+                },
+                {
+                    "rightLegging": "variable.leg_layer_visible"
+                },
+                {
+                    "leftBoot": "variable.boot_layer_visible"
+                },
+                {
+                    "rightBoot": "variable.boot_layer_visible"
+                },
+                {
+                    "leftSock": "variable.boot_layer_visible && variable.leg_layer_visible"
+                },
+                {
+                    "rightSock": "variable.boot_layer_visible && variable.leg_layer_visible"
+                },
+                {
+                    "bodyArmor": "variable.chest_layer_visible && !query.has_cape"
+                },
+                {
+                    "leftArmArmor": "variable.chest_layer_visible && !query.has_cape"
+                },
+                {
+                    "rightArmArmor": "variable.chest_layer_visible && !query.has_cape"
+                },
+                {
+                    "belt": "variable.chest_layer_visible && variable.leg_layer_visible"
+                }
+            ],
+            "overlay_color": {
+                "r": "0.3",
+                "g": "1.0",
+                "b": "1.0",
+                "a": "Math.sin(Math.mod(query.time_stamp, 40.0)/40.0*180)*0.3"
+            }
+        },
+        "controller.render.scuke_survive_player.tp_high_temp": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "helmet": "variable.helmet_layer_visible"
+                },
+                {
+                    "leftLegging": "variable.leg_layer_visible"
+                },
+                {
+                    "rightLegging": "variable.leg_layer_visible"
+                },
+                {
+                    "leftBoot": "variable.boot_layer_visible"
+                },
+                {
+                    "rightBoot": "variable.boot_layer_visible"
+                },
+                {
+                    "leftSock": "variable.boot_layer_visible && variable.leg_layer_visible"
+                },
+                {
+                    "rightSock": "variable.boot_layer_visible && variable.leg_layer_visible"
+                },
+                {
+                    "bodyArmor": "variable.chest_layer_visible && !query.has_cape"
+                },
+                {
+                    "leftArmArmor": "variable.chest_layer_visible && !query.has_cape"
+                },
+                {
+                    "rightArmArmor": "variable.chest_layer_visible && !query.has_cape"
+                },
+                {
+                    "belt": "variable.chest_layer_visible && variable.leg_layer_visible"
+                }
+            ],
+            "overlay_color": {
+                "r": "1.0",
+                "g": "0.5",
+                "b": "0.2",
+                "a": "Math.sin(Math.mod(query.time_stamp, 40.0)/40.0*180)*0.3"
+            }
+        }
+    }
+}

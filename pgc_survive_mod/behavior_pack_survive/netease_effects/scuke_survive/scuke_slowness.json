@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "slowness",
+            "minecraft:particle_color": [
+                0,
+                0,
+                0
+            ]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_slowness"
+        }
+    }
+}

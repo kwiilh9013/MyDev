@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_weapon_twohand": {
+            "geometry": "Geometry.scuke_survive_weapon_twohand",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "right": "variable.is_first_person"
+                },
+                {
+                    "left": "variable.is_first_person"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_drink_speed1"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:sugar",
+        "count": 1
+      },
+      {
+        "item": "scuke_survive:mat_plastic_board",
+        "count": 1
+      },
+      {
+        "item": "minecraft:snowball",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_drink_speed1",
+      "count": 1
+    }
+  }
+}

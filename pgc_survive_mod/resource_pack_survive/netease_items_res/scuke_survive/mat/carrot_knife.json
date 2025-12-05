@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:mat_carrot_knife"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:mat_carrot_knife",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scuke_survive:projectile_zombie",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "component_groups": {
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.15,
+                "width": 0.15
+            },
+            "minecraft:projectile": {
+                "anchor": 2,
+                "catch_fire": false,
+                "gravity": 0.15,
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "offset": [
+                    0,
+                    0.3,
+                    0
+                ],
+                "on_hit": {
+                    "stick_in_ground": {
+                        "shake_time": 0.35
+                    },
+                    "impact_damage": {
+                        "damage": 4,
+                        "knockback": false,
+                        "destroy_on_hit": false,
+                        "power_multiplier": 1.0
+                    },
+                    "remove_on_hit": {},
+                    "spawn_chance": {
+                        "first_spawn_count": 1,
+                        "first_spawn_percent_chance": 100,
+                        "spawn_definition": "scuke_survive:zombie_normal"
+                    }
+                },
+                "power": 1.2
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            }
+        },
+        "events": {
+            
+        }
+    }
+}

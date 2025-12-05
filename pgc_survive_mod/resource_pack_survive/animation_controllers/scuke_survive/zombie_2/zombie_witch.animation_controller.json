@@ -1,0 +1,204 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_witch": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"sit_down": "query.mod.action == 1 "
+						},
+						{
+							"move_down":"query.mod.action == 4"
+						},
+						{
+							"summon_cry": "query.mod.action == 7"
+						},
+						{
+							"attack1":"query.mod.attack1 == 1"
+						},
+						{
+							"attack2": "query.mod.attack2 == 1"
+						},
+						{
+							"run":"query.is_moving && query.ground_speed >= 0.01 && query.has_target && query.mod.action == 0"
+						}
+					]
+				},
+				"move_down": {
+					"animations": [
+						"move_down"
+					],
+					"transitions": [
+						{
+							"move_up": "query.mod.action == 6 "
+						},
+						{
+							"move_cry_standby":"query.mod.action == 5 && query.ground_speed == 0"
+						},
+						{
+							"move_cry": "query.mod.action == 5 && query.ground_speed >= 0.01"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sit_down": {
+					"animations": [
+						"sit_down"
+					],
+					"transitions": [
+						{
+							"sit_up": "query.mod.action == 3 "
+						},
+						{
+							"sit_cry": "query.mod.action == 2 "
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"move_up": {
+					"animations": [
+						"move_up"
+					],
+					"transitions": [
+						{
+							"attack1": "query.mod.attack1 == 1"
+						},
+						{
+							"attack2": "query.mod.attack2 == 1"
+						},
+						{
+							"standby":"!query.has_target && query.mod.action == 0"
+						},
+						{
+							"run": "query.is_moving && query.ground_speed >= 0.01 && query.has_target && query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sit_up": {
+					"animations": [
+						"sit_up"
+					],
+					"transitions": [
+						{
+							"attack1": "query.mod.action == 0 && query.mod.attack1 == 1"
+						},
+						{
+							"attack2": "query.mod.action == 0 && query.mod.attack2 == 1"
+						},
+						{
+							"standby":"!query.has_target && query.mod.action == 0"
+						},
+						{
+							"run": "query.is_moving && query.ground_speed >= 0.01 && query.has_target && query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"move_cry": {
+					"animations": [
+						"move_cry"
+					],
+					"transitions": [
+						{
+							"move_cry_standby":"query.mod.action == 5 && query.ground_speed == 0"
+						},
+						{
+							"move_up": "query.mod.action == 6"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"move_cry_standby": {
+					"animations": [
+						"move_cry_standby"
+					],
+					"transitions": [
+						{
+							"move_cry": "query.mod.action == 5 && query.ground_speed >= 0.01"
+						},
+						{
+							"move_up": "query.mod.action == 6"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sit_cry": {
+					"animations": [
+						"sit_cry"
+					],
+					"transitions": [
+						{
+							"sit_up": "query.mod.action == 3"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"run":{
+					"animations": [
+						"run"
+					],
+					"transitions": [
+						{
+							"attack1": "query.mod.attack1 == 1"
+						},
+						{
+							"attack2": "query.mod.attack2 == 1"
+						},
+						{
+							"sit_down": "query.mod.action == 1 "
+						},
+						{
+							"move_down":"query.mod.action == 4"
+						},
+						{
+							"summon_cry": "query.mod.action == 7"
+						},
+						{
+							"standby": "!query.has_target && !query.is_moving && query.ground_speed == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"summon_cry":{
+					"animations": [
+						"summon_cry"
+					],
+					"transitions": [
+						{
+							"standby": "query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack1":{
+					"animations": [
+						"attack1"
+					],
+					"transitions": [
+						{
+							"standby": "query.all_animations_finished && query.mod.attack1 == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2":{
+					"animations": [
+						"attack2"
+					],
+					"transitions": [
+						{
+							"standby": "query.all_animations_finished && query.mod.attack2 == 0"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "ui_defs": [
+        "ui/ct_exchange_record_ui.json",
+        "ui/ct_info_notice_ui.json",
+        "ui/ct_make_price_ui.json",
+        "ui/ct_setting_ui.json",
+        "ui/ct_team_manager_ui.json",
+        "ui/ct_timing_ui.json",
+        "ui/scuke_convert_table_hud.json",
+        "ui/scuke_convert_table_main_ui.json",
+        "ui/scuke_convert_table_widget.json",
+        "ui/netease_editor_template_namespace.json"
+    ]
+}

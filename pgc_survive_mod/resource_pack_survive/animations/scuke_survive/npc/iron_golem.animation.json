@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_npc_iron_golem.ui_correct": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, "query.anim_time*30", 0],
+					"position": [0, 2, 0],
+					"scale": 0.9
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:npc_golden_creeper",
+            "min_engine_version": "1.8.0",
+            "materials": {
+                "bone": "scuke_survive_npc_golden_creeper_bone",
+                "outer": "scuke_survive_npc_golden_creeper_outer",
+                "charged": "charged_creeper"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/npc/scuke_npc_golden_creeper",
+                "charged": "textures/entity/scuke_survive/npc/golden_creeper_armor"
+            },
+            "geometry": {
+                "bone": "geometry.scuke_npc_golden_creeper_bone",
+                "outer": "geometry.scuke_npc_golden_creeper_outer",
+                "charged": "geometry.scuke_npc_golden_creeper_charged"
+            },
+            "spawn_egg": {
+                "base_color":"#C6AD19",
+                "overlay_color":"#9C920D"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.wobble = Math.sin(query.swell_amount * 5730) * query.swell_amount * 0.01 + 1.0;",
+                    "variable.swelling_scale1 = (Math.pow(Math.clamp(query.swell_amount, 0.0, 1.0), 4.0) * 0.4 + 1.0) * variable.wobble;",
+                    "variable.swelling_scale2 = (Math.pow(Math.clamp(query.swell_amount, 0.0, 1.0), 4.0) * 0.1 + 1.0) / variable.wobble;",
+                    "variable.leg_rot = Math.cos(query.modified_distance_moved * 38.17326) * 80.22 * query.modified_move_speed;",
+                    "variable.flash = query.is_shaking * Math.mod(Math.Round(query.time_stamp / 2.0), 2.0);",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "creeper_head_ctrl": "variable.not_in_ui"
+                    },
+                    "creeper_legs_ctrl",
+                    "creeper_swelling_ctrl",
+                    "car_ride",
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "animations": {
+                "creeper_head": "animation.common.look_at_target",
+                "creeper_legs": "animation.creeper.legs",
+                "creeper_swelling": "animation.creeper.swelling",
+                "creeper_head_ctrl": "controller.animation.creeper.head",
+                "creeper_legs_ctrl": "controller.animation.creeper.legs",
+                "creeper_swelling_ctrl": "controller.animation.creeper.swelling",
+                "car_ride": "animation.scuke_survive_car_actor.ride",
+                "ui_correct": "animation.scuke_npc_golden_creeper.ui_correct"
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive_npc_golden_creeper_bone",
+                "controller.render.scuke_survive_npc_golden_creeper_outer",
+                "controller.render.scuke_survive_npc_golden_creeper_armor"
+            ]
+        }
+    }
+}

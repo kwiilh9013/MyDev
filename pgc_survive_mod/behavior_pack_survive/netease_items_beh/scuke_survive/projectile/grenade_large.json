@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:use_duration": 7200,
+            "minecraft:food": {
+                "nutrition": 0
+            },
+            "netease:customtips": {
+                "value": "[§a威力§f] 产生5级爆炸 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:items_grenade_large",
+            "register_to_create_menu": true
+        }
+    }
+}

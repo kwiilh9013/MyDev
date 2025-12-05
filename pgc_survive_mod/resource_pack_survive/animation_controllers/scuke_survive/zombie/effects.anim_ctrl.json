@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_survive_zombie_effects.red_eye": {
+			"states": {
+				"default": {
+					"particle_effects": [
+                        {
+                            "effect": "red_eye",
+                            "locator": "headlocator"
+                        }
+                    ]
+				}
+			}
+		},
+		"controller.animation.scuke_survive_zombie_big_giant_effects.water_vapor": {
+			"states": {
+				"default": {
+					"particle_effects": [
+                        {
+                            "effect": "water_vapor",
+                            "locator": "leftarmeffect"
+                        },
+						{
+                            "effect": "water_vapor",
+                            "locator": "leftlegeffect"
+                        },
+						{
+                            "effect": "water_vapor",
+                            "locator": "rightlegeffct"
+                        },
+						{
+                            "effect": "water_vapor",
+                            "locator": "rightarmeffect"
+                        },
+						{
+                            "effect": "water_vapor",
+                            "locator": "rightcornerofmouth"
+                        },
+						{
+                            "effect": "water_vapor",
+                            "locator": "leftcornerofmouth"
+                        }
+                    ]
+				}
+			}
+		},
+		"controller.animation.scuke_survive_zombie_guard_bullet.bullet_effect": {
+			"states": {
+				"default": {
+					"particle_effects": [
+                        {
+                            "effect": "bullet_effect",
+                            "locator": "bulleteffect"
+                        }
+                    ]
+				}
+			}
+		}
+	}
+}

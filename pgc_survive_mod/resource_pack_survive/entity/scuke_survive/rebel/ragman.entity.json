@@ -1,0 +1,70 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:rebel_ragman",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/rebel/ragman",
+                "parachute": "textures/entity/scuke_survive/rebel/parachute"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_rebel_leader",
+                "parachute": "geometry.scuke_survive_parachute"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.scuke_survive.rebel.parachute"
+            ],
+            "spawn_egg": {
+                "base_color":"#2f3a79",
+                "overlay_color":"#cccccc"
+            },
+            "animations": {
+                "look_at_target": "animation.humanoid.look_at_target.default",
+                "move": "animation.humanoid.move",
+                "riding.arms": "animation.humanoid.riding.arms",
+                "riding.legs": "animation.humanoid.riding.legs",
+                "attack.rotations": "animation.player.attack.rotations",
+                "parachute": "animation.scuke_survive.rebel_leader.parachute",
+                "parachute_start": "animation.scuke_survive.rebel_leader.parachute_start",
+                "parachute_end": "animation.scuke_survive.rebel_leader.parachute_end",
+                "parachute_idle": "animation.scuke_survive.rebel_leader.parachute_idle",
+                "parachute_ctrl": "controller.animation.scuke_survive.rebel_leader.parachute",
+                "ui_correct": "animation.scuke_survive_npc.ui_correct_root"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;"
+                ],
+                "animate":[
+                    "move",
+                    "parachute_ctrl",
+                    {
+                        "riding.arms" : "query.is_riding"
+                    },
+                    {
+                        "riding.legs" : "query.is_riding"
+                    },
+                    {
+                        "attack.rotations" : "variable.attack_time >= 0.0"
+                    },
+                    {
+                        "look_at_target": "variable.not_in_ui"
+                    },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "enable_attachables": true
+        }
+    }
+}

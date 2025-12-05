@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_entity_chest_suit.scale_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, -4.0, 0],
+					"scale": 1.75
+				},
+				"leftArm": {
+					"position": [1, 0, 0]
+				},
+				"rightArm": {
+					"position": [-1, 0, 0]
+				}
+			}
+		}
+	}
+}

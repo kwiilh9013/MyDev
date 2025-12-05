@@ -1,0 +1,378 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "panel_energy" : {
+               "controls" : [
+                  {
+                     "bg" : {
+                        "alpha" : 0.50,
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.0, 0.0, 0.0 ],
+                        "controls" : [
+                           {
+                              "line2" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "bottom_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "keep_ratio" : false,
+                                 "layer" : 1,
+                                 "nineslice_size" : [ 5.0, 0.0, 5.0, 0.0 ],
+                                 "offset" : [ 0.0, -4.0 ],
+                                 "rotate_angle" : 180.0,
+                                 "size" : [ "90.0%+0.0px", 4.0 ],
+                                 "texture" : "textures/ui/scuke_survive/common/img_s02",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "line" : {
+                                 "anchor_from" : "top_middle",
+                                 "anchor_to" : "top_middle",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "controls" : [],
+                                 "keep_ratio" : false,
+                                 "layer" : 1,
+                                 "nineslice_size" : [ 5.0, 0.0, 5.0, 0.0 ],
+                                 "offset" : [ 0.0, 4.0 ],
+                                 "size" : [ "90.0%+0.0px", 4.0 ],
+                                 "texture" : "textures/ui/scuke_survive/common/img_s02",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "keep_ratio" : false,
+                        "nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "btn_close@scuke_survive_base_ui.button_base" : {
+                        "$default_texture" : "textures/ui/scuke_survive/icon/icon_close01",
+                        "$default_texture_color" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ],
+                        "$hover_texture" : "textures/ui/scuke_survive/icon/icon_close01",
+                        "$hover_texture_color" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ],
+                        "$pressed_texture" : "textures/ui/scuke_survive/icon/icon_close01",
+                        "$pressed_texture_color" : [ 0.3960784313725490, 0.5686274509803921, 0.5176470588235295 ],
+                        "anchor_from" : "top_right",
+                        "anchor_to" : "top_right",
+                        "offset" : [ "-7.0%+0.0px", 14.0 ],
+                        "size" : [ 12.0, 12.0 ]
+                     }
+                  },
+                  {
+                     "panel_top" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.1215686274509804, 0.2156862745098039, 0.20 ],
+                                 "controls" : [],
+                                 "keep_ratio" : false,
+                                 "nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                 "texture" : "textures/ui/scuke_survive/common/border05",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "energy" : {
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "left_middle",
+                                 "color" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ],
+                                 "controls" : [],
+                                 "font_size" : "large",
+                                 "font_type" : "default",
+                                 "offset" : [ "20.0%+0.0px", "25.0%+0.0px" ],
+                                 "text" : "076%%",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "add_energy" : {
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "color" : [ 0.2196078431372549, 0.6941176470588235, 0.6392156862745098 ],
+                                 "controls" : [],
+                                 "font_type" : "default",
+                                 "offset" : [ "20.0%+0.0px", 0.0 ],
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "icon" : {
+                                 "anchor_from" : "bottom_left",
+                                 "anchor_to" : "bottom_left",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.07843137254901961, 0.1450980392156863, 0.1372549019607843 ],
+                                 "controls" : [],
+                                 "offset" : [ "16.0%+-14.0px", "-13.0%+0.0px" ],
+                                 "size" : [ 20.0, 20.0 ],
+                                 "texture" : "textures/ui/scuke_survive/icon/icon_refuel",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "bar_energy@scuke_survive_base_ui.three_bar_base" : {
+                                 "$current_color" : [ 1.0, 1.0, 1.0 ],
+                                 "$current_texture" : "textures/ui/scuke_survive/progress_bar/bar_oil_full",
+                                 "$next_color" : [ 0.4078431372549020, 0.6078431372549019, 0.5529411764705883 ],
+                                 "$next_texture" : "textures/ui/scuke_survive/progress_bar/bar_oil_full",
+                                 "alpha" : 1.0,
+                                 "anchor_from" : "bottom_left",
+                                 "anchor_to" : "bottom_left",
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "offset" : [ "16.0%+0.0px", "-10.0%+0.0px" ],
+                                 "size" : [ "76.0%+0.0px", "30.0%+0.0px" ],
+                                 "texture" : "textures/ui/scuke_survive/progress_bar/bar_oil_empty"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ "0.0%+0.0px", "18.0%+0.0px" ],
+                        "size" : [ 320.0, 100.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "panel_bottom" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "tips" : {
+                                 "anchor_from" : "bottom_middle",
+                                 "anchor_to" : "top_middle",
+                                 "color" : [ 0.6980392156862745, 1.0, 0.9098039215686274 ],
+                                 "controls" : [
+                                    {
+                                       "bg" : {
+                                          "alpha" : 0.630,
+                                          "clip_direction" : "center",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 0.05490196078431372, 0.09803921568627451, 0.09019607843137255 ],
+                                          "controls" : [],
+                                          "keep_ratio" : false,
+                                          "layer" : -1,
+                                          "size" : [ "120.0%+0.0px", "120.0%+0.0px" ],
+                                          "texture" : "textures/ui/scuke_survive/white",
+                                          "type" : "image"
+                                       }
+                                    }
+                                 ],
+                                 "font_type" : "default",
+                                 "layer" : 1,
+                                 "offset" : [ 0.0, "0.0%+4.0px" ],
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "bg" : {
+                                 "anchor_from" : "top_right",
+                                 "anchor_to" : "bottom_right",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.2666666666666667, 0.3882352941176471, 0.3411764705882353 ],
+                                 "keep_ratio" : false,
+                                 "offset" : [ 0.0, "-10.0%+0.0px" ],
+                                 "size" : [ "78.0%+0.0px", 1.0 ],
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "bg2" : {
+                                 "alpha" : 0.50,
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.2666666666666667, 0.3882352941176471, 0.3411764705882353 ],
+                                 "keep_ratio" : false,
+                                 "layer" : -1,
+                                 "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "title" : {
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "bottom_left",
+                                 "color" : [ 0.4941176470588236, 0.7607843137254902, 0.6862745098039216 ],
+                                 "controls" : [],
+                                 "font_type" : "default",
+                                 "offset" : [ "0.0%+0.0px", "0.0%+0.0px" ],
+                                 "text" : "点击选择燃料",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "btn_add_energy@scuke_survive_base_ui.button_base" : {
+                                 "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                                 "$default_texture_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                                 "$hover_texture_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$label_color" : [ 0.5137254901960784, 1.0, 0.9215686274509803 ],
+                                 "$label_text" : "添加",
+                                 "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                 "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                 "$pressed_texture_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "offset" : [ "-2.0%+0.0px", "-15.0%+0.0px" ],
+                                 "size" : [ 40.0, 16.0 ]
+                              }
+                           },
+                           {
+                              "panel_materials" : {
+                                 "anchor_from" : "bottom_left",
+                                 "anchor_to" : "bottom_left",
+                                 "clips_children" : true,
+                                 "controls" : [
+                                    {
+                                       "btn_drag@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_texture" : "",
+                                          "$hover_texture" : "",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1, 1, 1 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "large",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 0, 0, 0, 0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_texture" : "",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "left_middle",
+                                          "anchor_to" : "left_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "panel" : {
+                                                   "anchor_from" : "left_middle",
+                                                   "anchor_to" : "left_middle",
+                                                   "controls" : [
+                                                      {
+                                                         "material_1@scuke_survive_base_ui.materials_slot_image_base" : {
+                                                            "anchor_from" : "left_middle",
+                                                            "anchor_to" : "left_middle",
+                                                            "layer" : 0
+                                                         }
+                                                      }
+                                                   ],
+                                                   "layer" : 0,
+                                                   "size" : [ 10.0, "100.0%cm+0.0px" ],
+                                                   "type" : "panel"
+                                                }
+                                             },
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "size" : [ 0.0, 0.0 ],
+                                                   "visible" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "size" : [ 0.0, 0.0 ],
+                                                   "visible" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "size" : [ 0.0, 0.0 ],
+                                                   "visible" : false
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 0,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ "100.0%c+0.0px", "100.0%cm+0.0px" ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "next" : {
+                                          "anchor_from" : "right_middle",
+                                          "anchor_to" : "right_middle",
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "color" : [ 1.0, 0.9843137254901960, 0.9882352941176471 ],
+                                          "keep_ratio" : false,
+                                          "layer" : 2,
+                                          "offset" : [ "0.0%+0.0px", 0.0 ],
+                                          "rotate_angle" : 180.0,
+                                          "size" : [ 4.0, 7.0 ],
+                                          "texture" : "textures/ui/scuke_survive/icon/icon_back01",
+                                          "type" : "image"
+                                       }
+                                    }
+                                 ],
+                                 "size" : [ "80.0%+0.0px", "100.0%cm+0.0px" ],
+                                 "type" : "panel",
+                                 "visible" : true
+                              }
+                           },
+                           {
+                              "btn_automatic_select_energy@scuke_survive_base_ui.button_base" : {
+                                 "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                                 "$default_texture_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                                 "$hover_texture_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$label_color" : [ 0.5137254901960784, 1.0, 0.9215686274509803 ],
+                                 "$label_text" : "一键选择",
+                                 "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                 "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                 "$pressed_texture_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "offset" : [ "-2.0%+0.0px", "25.0%+0.0px" ],
+                                 "size" : [ 40.0, 16.0 ]
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "offset" : [ "0.0%+0.0px", "18.0%+120.0px" ],
+                        "size" : [ 320.0, 50.0 ],
+                        "type" : "panel"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "offset" : [ "0.0%+0.0px", 0.0 ],
+               "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_car_energy_ui"
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:flyingdrone_boom",
+            "materials": {
+                "default": "entity"
+            },
+            "geometry": {
+                "default": "geometry.scuke_flyingdrone_boom"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/rebel/flyingdron_boom"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#2f3a79",
+                "overlay_color":"#cccccc"
+            },
+            "animations": {
+                "idle": "animation.scuke_flyingdrone_boom.idle"
+            },
+            "scripts": {
+                "animate": [
+                    "idle"
+                ]
+            }
+        }
+    }
+}

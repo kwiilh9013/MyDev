@@ -1,0 +1,18 @@
+{
+    "materials": {
+        "version": "1.0.0",
+        "particles_lighting:particles_base": {
+            "+states": [
+                "Blending",
+                "DisableCulling",
+                "DisableDepthWrite"
+            ]
+        },
+        "scuke_particle_deeptest:particles_blend": {
+            "depthFunc": "Always"
+        },
+        "scuke_particles_range:particles_blend" : {
+            "vertexShader": "shaders/scuke_range_uv.vertex"
+        }
+    }
+}

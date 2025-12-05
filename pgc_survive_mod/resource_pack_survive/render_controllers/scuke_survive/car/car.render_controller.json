@@ -1,0 +1,50 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive.car.old_bumper": {
+            "geometry": "Geometry.old_bumper",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.default" ]
+        },
+        "controller.render.scuke_survive.car.alloy_bumper": {
+            "geometry": "Geometry.alloy_bumper",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.alloy" ]
+        },
+        "controller.render.scuke_survive.car.bullbar": {
+            "geometry": "Geometry.bullbar",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.bullbar" ]
+        },
+        "controller.render.scuke_survive.car.safety_cage": {
+            "geometry": "Geometry.safety_cage",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.alloy" ]
+        },
+        "controller.render.scuke_survive.car.emp": {
+            "geometry": "Geometry.emp",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.emp" ]
+        },
+        "controller.render.scuke_survive.car.missile": {
+            "geometry": "Geometry.missile",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.missile" ]
+        },
+        "controller.render.scuke_survive.car.armor_profile": {
+            "geometry": "Geometry.armor_profile",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.armor_profile" ]
+        },
+        "controller.render.scuke_survive.car.spike_profile": {
+            "geometry": "Geometry.spike_profile",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.spike_profile" ]
+        },
+        "controller.render.scuke_survive.car.fly": {
+            "geometry": "Geometry.fly",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.fly" ]
+        }
+    }
+}

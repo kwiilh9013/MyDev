@@ -1,0 +1,156 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_snap_killer": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"run": "query.is_moving && query.ground_speed >= 0.01 && query.mod.action == 0"
+						},
+						{
+							"attack1": "query.mod.attack1 == 1"
+						},
+						{
+							"attack2": "query.mod.attack2 == 1"
+						},
+						{
+							"jump_ready": "query.mod.action == 1"
+						},
+						{
+							"jump_ready_standby": "query.mod.action == 2"
+						},
+						{
+							"jump_ready_fly": "query.mod.action == 3 "
+						},
+						{
+							"jump_fly": "query.mod.action == 4"
+						},
+						{
+							"jump_coerce": "query.mod.action == 5"
+						}
+					]
+				},
+				"jump_ready": {
+					"animations": [
+						"jump_ready"
+					],
+					"transitions": [
+						{
+							"jump_ready_standby": "query.all_animations_finished && query.mod.action == 2"
+						},
+						{
+							"standby": "query.all_animations_finished && query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"jump_ready_standby": {
+					"animations": [
+						"jump_ready_standby"
+					],
+					"transitions": [
+						{
+							"jump_ready_fly": "query.mod.action == 3 "
+						},
+						{
+							"standby": "query.all_animations_finished && query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"jump_ready_fly": {
+					"animations": [
+						"jump_ready_fly"
+					],
+					"transitions": [
+						{
+							"jump_fly": "query.all_animations_finished && query.mod.action == 4"
+						},
+						{
+							"standby": "query.all_animations_finished && query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"jump_fly": {
+					"animations": [
+						"jump_fly"
+					],
+					"transitions": [
+						{
+							"standby": "query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"jump_coerce": {
+					"animations": [
+						"jump_coerce"
+					],
+					"transitions": [
+						{
+							"standby": "query.mod.action == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"run": {
+					"animations": [
+						"run"
+					],
+					"transitions": [
+						{
+							"attack1": "query.mod.attack1 == 1"
+						},
+						{
+							"attack2": "query.mod.attack2 == 1"
+						},
+						{
+							"jump_ready": "query.mod.action == 1"
+						},
+						{
+							"jump_ready_standby": "query.mod.action == 2"
+						},
+						{
+							"jump_ready_fly": "query.mod.action == 3 "
+						},
+						{
+							"jump_fly": "query.mod.action == 4"
+						},
+						{
+							"standby": "!query.is_moving && query.ground_speed == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack1": {
+					"animations": [
+						"attack1"
+					],
+					"transitions": [
+						{
+							"standby": "query.all_animations_finished && query.mod.attack1 == 0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+						"attack2"
+					],
+					"transitions": [
+						{
+							"standby": "query.all_animations_finished && query.mod.attack2 == 0"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

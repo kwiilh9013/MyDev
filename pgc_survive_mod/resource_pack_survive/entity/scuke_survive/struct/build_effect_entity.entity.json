@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:build_effect_entity",
+            "materials": {
+                "default": "entity"
+            },
+            "geometry": {
+                "default": "geometry.scuek_survive_flyingdrone"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/struct/flyingdrone"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "idle": "animation.scuke_survive_item.flyingdrone.idle",
+                "track_particle_ctrl": "controller.animation.scuke_survive.building.track"
+            },
+            "scripts": {
+                "animate": [
+                    "idle",
+                    "track_particle_ctrl"
+                ]
+            },
+            "particle_effects": {
+                "track": "scuke_survive:build_struct_track"
+            }
+        }
+    }
+}

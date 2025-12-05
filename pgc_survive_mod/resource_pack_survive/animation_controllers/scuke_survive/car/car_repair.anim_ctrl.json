@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive.car_repair": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions":[
+                        {
+                            "work":"query.mod.scuke_servive_use_item ==1"
+                        }
+                    ]
+                },
+                "work":{
+                    "particle_effects": [
+                        {
+                            "effect": "car_repair_particle",
+                            "locator": "car_repair_particle"
+                        }
+                    ],
+                    "transitions":[
+                        {
+                            "default":"query.mod.scuke_servive_use_item == 0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "animations": {
+        "animation.scuke_survive_weapon.cancel_empty_hand": {
+            "loop": true,
+            "anim_time_update": "query.anim_time + query.delta_time",
+            "blend_weight": "1.0",
+            "bones": {
+                "leftItem": {
+                    "position": [0, "-q.get_default_bone_pivot('leftarm',1) + q.get_default_bone_pivot('leftitem',1) + 7.0", "q.get_default_bone_pivot('leftitem',2)"]
+                },
+                "rightArm": {
+                    "rotation": ["-this", "-this", "-this"],
+                    "position": [-13.5, 10, -12]
+                },
+                "rightItem": {
+                    "position": [0, "-q.get_default_bone_pivot('rightarm',1) + q.get_default_bone_pivot('rightitem',1) + 7.0", "q.get_default_bone_pivot('rightitem',2)"]
+                }
+            }
+        },
+        "animation.scuke_survive_weapon.cancel_swap_item": {
+            "loop": true,
+            "bones": {
+                "leftarm": {
+                    "position": [
+                        0.0,
+                        "(query.get_equipped_item_name('off_hand') == 'filled_map' || query.get_equipped_item_name('off_hand') == 'shield') ? 0.0 : 10.0 * (1.0 - context.player_offhand_arm_height)",
+                        0.0
+                    ]
+                },
+                "rightarm": {
+                    "position": [
+                        0.0,
+                        "10.0 * (1.0 - variable.player_arm_height)",
+                        0.0
+                    ]
+                }
+            }
+        },
+        "animation.scuke_survive_weapon.cancel_attack": {
+			"loop": true,
+			"anim_time_update": "query.anim_time + query.delta_time",
+			"blend_weight": "1.0",
+			"bones": {
+				"rightArm": {
+					"rotation": [
+						"math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 60.0",
+						"-math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 40.0",
+						"-math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 20.0"
+					],
+					"position": [
+						"-math.clamp(-15.5 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0), -7.0, 999.0) * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0)",
+						"-math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 7.5 + variable.first_person_rotation_factor * variable.attack_time * 15.0 - variable.short_arm_offset_right",
+						"-math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 1.75"
+					]
+				}
+			}
+		},
+        "animation.scuke_survive_weapon.cancel_walk_hand": {
+            "loop": true,
+            "anim_time_update": "query.anim_time + query.delta_time",
+            "blend_weight": "1.0",
+            "bones": {
+                "leftarm": {
+                    "rotation": [
+                        "-this",
+                        "-this",
+                        "-this"
+                    ]
+                },
+                "rightarm": {
+                    "rotation": [
+                        "-this",
+                        "-this",
+                        "-this"
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.8.0"
+}

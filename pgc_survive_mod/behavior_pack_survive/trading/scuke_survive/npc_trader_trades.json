@@ -1,0 +1,198 @@
+{
+    "tiers": [
+        {
+            "groups": [
+                {
+                    "num_to_select": 6,
+                    "trades": [
+                        {
+                            "weight":30,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_sand_hammer",
+                                    "quantity": 1
+                                },
+                                {
+                                    "item": "scuke_survive:mat_carrot_knife",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:items_wirecloth",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        {
+                            "weight":30,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_iron_wire",
+                                    "quantity": 1
+                                },
+                                {
+                                    "item": "scuke_survive:mat_can",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:car_repair",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        {
+                            "weight":30,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_battery",
+                                    "quantity": 1
+                                },
+                                {
+                                    "item": "scuke_survive:mat_screw",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:food_drink_power",
+                                    "quantity": 3
+                                }
+                            ]
+                        },
+                        {
+                            "weight":30,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_duck",
+                                    "quantity": 1
+                                },
+                                {
+                                    "item": "scuke_survive:mat_drink_can",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:items_barricade_iron",
+                                    "quantity": 3
+                                }
+                            ]
+                        },
+                        {
+                            "weight":30,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_frog",
+                                    "quantity": 1
+                                },
+                                {
+                                    "item": "scuke_survive:mat_spinning_top",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:items_grenade_small",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        {
+                            "weight":30,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_phone1",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:melee_baseball_bat_m",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "weight":20,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_read_machine",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:items_landmine",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        {
+                            "weight":10,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_phone3",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:food_eye_drops",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        {
+                            "weight":10,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_phone2",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:golden_apple",
+                                    "quantity": 16
+                                }
+                            ]
+                        },
+                        {
+                            "weight":20,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_game_machine",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:items_grenade_large",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        {
+                            "weight":20,
+                            "wants": [
+                                {
+                                    "item": "scuke_survive:mat_phone_watch",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "scuke_survive:items_grenade_large",
+                                    "quantity": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

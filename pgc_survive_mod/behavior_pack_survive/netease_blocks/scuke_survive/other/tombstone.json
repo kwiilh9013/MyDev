@@ -1,0 +1,39 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": {
+                "value": 2.5
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:block_entity": {
+            },
+            "netease:aabb": {
+                "collision": {
+                    "min": [ 0.0, 0.0, 0.3 ],
+                    "max": [ 1.0, 1.7, 0.75 ]
+                },
+                "clip": {
+                    "min": [ 0.0, 0.0, 0.3 ],
+                    "max": [ 1.0, 1.7, 0.75 ]
+                }
+            },
+            "netease:custom_tips": {
+                "value": "...佚名...墓碑..."
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:tombstone",
+            "register_to_creative_menu": true
+        }
+    }
+}

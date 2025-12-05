@@ -1,0 +1,31 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_melee_chainsaw": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.scuke_survive_melee_chainsaw0",
+                        "Texture.scuke_survive_melee_chainsaw1"
+                    ]
+                }
+            },
+            "geometry": "Geometry.scuke_survive_melee_chainsaw",
+            "materials": [{"*": "Material.default"}],
+            "textures": [
+                "Array.skins[query.mod.scuke_survive_melee_using * Math.mod(Math.round(query.time_stamp), 2.0)]"
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "right": false
+                },
+                {
+                    "left": false
+                }
+            ]
+        }
+    }
+}

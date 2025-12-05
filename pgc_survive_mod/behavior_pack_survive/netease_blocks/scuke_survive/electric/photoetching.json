@@ -1,0 +1,42 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:electric_photoetching",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:aabb": {
+                "collision": {
+                    "min": [ -1, 0.0, -0.5],
+                    "max": [ 2, 2, 1.5 ]
+                },
+                "clip": {
+                    "min": [ -1, 0.0, -0.5],
+                    "max": [ 2, 2, 1.5 ]
+                }
+            },
+            "netease:block_entity": {
+            },
+            "netease:custom_tips": {
+                "value": "可制作电子芯片"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "minecraft:destroy_time": {
+                "value": 2
+            }
+        }
+    }
+}

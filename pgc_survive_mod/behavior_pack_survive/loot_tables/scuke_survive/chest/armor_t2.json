@@ -1,0 +1,121 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_rare_earth_chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_rare_earth_helmet",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_rare_earth_legs",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_rare_earth_boots",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_snow02_helmet",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_snow02_chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_snow02_legs",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:armor_snow02_boots",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.5
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

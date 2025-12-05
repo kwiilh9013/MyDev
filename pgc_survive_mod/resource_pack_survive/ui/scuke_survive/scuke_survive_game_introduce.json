@@ -1,0 +1,90 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "panel_item" : {
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "controls" : [
+                  {
+                     "btn_open@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                        "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                        "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                        "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1.0, 1.0, 1.0 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "normal",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "游戏介绍",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                        "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                        "$texture_layer" : 2,
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "$default_image_color|default" : [ 1, 1, 1 ],
+                                 "color" : "$default_image_color",
+                                 "controls" : [],
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "$hover_image_color|default" : [ 1, 1, 1 ],
+                                 "color" : "$hover_image_color",
+                                 "controls" : [],
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                 "color" : "$pressed_image_color",
+                                 "controls" : [],
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {
+                                 "controls" : []
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "pressed_control" : "pressed",
+                        "size" : [ 50.0, 20.0 ],
+                        "type" : "button"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "offset" : [ 0.0, "-25.0%+0.0px" ],
+               "size" : [ 60.0, 20.0 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_game_introduce"
+}

@@ -1,0 +1,54 @@
+{
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_hp_firstaid_pack",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_epinephrine",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_eye_drops",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_drink_aim",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:food_chocolate",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:items_grenade_middle",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:items_landmine",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_phone_watch",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "scuke_survive:mat_chip_small",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

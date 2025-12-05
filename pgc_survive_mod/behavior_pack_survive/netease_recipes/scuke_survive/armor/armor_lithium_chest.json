@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "scuke_survive:armor_lithium_chest"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "X X",
+            "XXX",
+            "XXX"
+        ],
+        "key": {
+            "X": {
+                "item": "scuke_survive:ingot_lithium"
+            }
+        },
+        "unlock": [
+            {
+                "item": "scuke_survive:ingot_lithium"
+            }
+        ],
+        "result": {
+            "item": "scuke_survive:armor_lithium_chest"
+        }
+    }
+}

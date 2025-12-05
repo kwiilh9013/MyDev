@@ -1,0 +1,199 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_ladar.first_idle": {
+			"loop": true,
+			"bones": {
+				"lader": {
+					"rotation": [97, 16.75287, -154.96593],
+					"position": [-6, -18, 1],
+					"scale": 0.8
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.third_idle": {
+			"loop": true,
+			"bones": {
+				"lader": {
+					"rotation": [46, -9, -12],
+					"position": [-3, -10, 10],
+					"scale": 0.25
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.scan": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"ladar_scan": {
+					"rotation": [180, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 29]
+					},
+					"scale": 1
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.scan_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_scan": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.self_rot": {
+			"loop": true,
+			"bones": {
+				"lader_self": {
+					"rotation": [0, "variable.player_body_rot + 90", 0],
+					"scale": 1
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.self_hide": {
+			"loop": true,
+			"bones": {
+				"lader_self": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.target1_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_target1": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.target1_show": {
+			"loop": true,
+			"bones": {
+				"ladar_target1": {
+					"position": ["-variable.target1_dist_x", 0, "variable.target1_dist_z"]
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.target2_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_target2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.target2_show": {
+			"loop": true,
+			"bones": {
+				"ladar_target2": {
+					"position": ["-variable.target2_dist_x", 0, "variable.target2_dist_z"]
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.target3_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_target3": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.target3_show": {
+			"loop": true,
+			"bones": {
+				"ladar_target3": {
+					"position": ["-variable.target3_dist_x", 0, "variable.target3_dist_z"]
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.engine1_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_engine1": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.engine1_show": {
+			"loop": true,
+			"bones": {
+				"ladar_engine1": {
+					"position": ["-variable.engine1_dist_x", 0, "variable.engine1_dist_z"],
+					"scale": "variable.engine1_scale"
+				},
+				"notfound1": {
+					"scale": "variable.engine1_state == 0 ? 1 : 0"
+				},
+				"notactivate1": {
+					"scale": "variable.engine1_state == 1 ? 1 : 0"
+				},
+				"activate1": {
+					"scale": "variable.engine1_state == 2 ? 1 : 0"
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.engine2_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_engine2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.engine2_show": {
+			"loop": true,
+			"bones": {
+				"ladar_engine2": {
+					"position": ["-variable.engine2_dist_x", 0, "variable.engine2_dist_z"],
+					"scale": "variable.engine2_scale"
+				},
+				"notfound2": {
+					"scale": "variable.engine2_state == 0 ? 1 : 0"
+				},
+				"notactivate2": {
+					"scale": "variable.engine2_state == 1 ? 1 : 0"
+				},
+				"activate2": {
+					"scale": "variable.engine2_state == 2 ? 1 : 0"
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.engine3_hide": {
+			"loop": true,
+			"bones": {
+				"ladar_engine3": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.engine3_show": {
+			"loop": true,
+			"bones": {
+				"ladar_engine3": {
+					"position": ["-variable.engine3_dist_x", 0, "variable.engine3_dist_z"],
+					"scale": "variable.engine3_scale"
+				},
+				"notfound3": {
+					"scale": "variable.engine3_state == 0 ? 1 : 0"
+				},
+				"notactivate3": {
+					"scale": "variable.engine3_state == 1 ? 1 : 0"
+				},
+				"activate3": {
+					"scale": "variable.engine3_state == 2 ? 1 : 0"
+				}
+			}
+		},
+		"animation.scuke_survive_ladar.scale_correct": {
+			"loop": true,
+			"bones": {
+				"lader": {
+					"rotation": ["170+query.anim_time*40", 45, 0],
+					"position": [-3, 6, 16]
+				}
+			}
+		}
+	}
+}

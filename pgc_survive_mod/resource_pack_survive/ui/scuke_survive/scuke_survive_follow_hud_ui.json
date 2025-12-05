@@ -1,0 +1,186 @@
+{
+    "main": {
+        "controls": [
+            {
+                "anchor": {
+                    "controls": [
+                        {
+                            "npc": {
+                                "controls": [
+                                    {
+                                        "talk01": {
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "controls": [
+                                                {
+                                                    "bg": {
+                                                        "anchor_to": "bottom_left",
+                                                        "clip_direction": "left",
+                                                        "clip_ratio": 0,
+                                                        "controls": [
+                                                            {
+                                                                "label": {
+                                                                    "clip_offset": [
+                                                                        0,
+                                                                        0
+                                                                    ],
+                                                                    "color": [
+                                                                        0,
+                                                                        0,
+                                                                        0
+                                                                    ],
+                                                                    "controls": [],
+                                                                    "enabled": false,
+                                                                    "font_scale_factor": 1,
+                                                                    "font_type": "default",
+                                                                    "layer": 2,
+                                                                    "text": "Hello World!",
+                                                                    "text_alignment": "center",
+                                                                    "type": "label"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "enabled": false,
+                                                        "keep_ratio": false,
+                                                        "layer": 1,
+                                                        "nineslice_size": [
+                                                            17,
+                                                            10,
+                                                            17,
+                                                            10
+                                                        ],
+                                                        "offset": [
+                                                            -10,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            "100.0%c+34.0px",
+                                                            "100.0%c+20.0px"
+                                                        ],
+                                                        "texture": "textures/ui/scuke_survive/dialogue/talk01",
+                                                        "type": "image",
+                                                        "uv_size": [
+                                                            0,
+                                                            0
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "enabled": false,
+                                            "offset": [
+                                                100,
+                                                100
+                                            ],
+                                            "size": [
+                                                2,
+                                                2
+                                            ],
+                                            "type": "panel",
+                                            "visible": false
+                                        }
+                                    }
+                                ],
+                                "enabled": false,
+                                "type": "panel"
+                            }
+                        },
+                        {
+                            "pos": {
+                                "controls": [
+                                    {
+                                        "talk01": {
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "controls": [
+                                                {
+                                                    "bg": {
+                                                        "anchor_to": "bottom_left",
+                                                        "clip_direction": "left",
+                                                        "clip_ratio": 0,
+                                                        "controls": [
+                                                            {
+                                                                "label": {
+                                                                    "clip_offset": [
+                                                                        0,
+                                                                        0
+                                                                    ],
+                                                                    "color": [
+                                                                        0,
+                                                                        0,
+                                                                        0
+                                                                    ],
+                                                                    "controls": [],
+                                                                    "enabled": false,
+                                                                    "font_scale_factor": 1,
+                                                                    "font_type": "default",
+                                                                    "layer": 2,
+                                                                    "text": "Hello World!",
+                                                                    "text_alignment": "center",
+                                                                    "type": "label"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "enabled": false,
+                                                        "keep_ratio": false,
+                                                        "layer": 1,
+                                                        "nineslice_size": [
+                                                            17,
+                                                            10,
+                                                            17,
+                                                            10
+                                                        ],
+                                                        "offset": [
+                                                            -10,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            "100.0%c+34.0px",
+                                                            "100.0%c+20.0px"
+                                                        ],
+                                                        "texture": "textures/ui/scuke_survive/dialogue/talk01",
+                                                        "type": "image",
+                                                        "uv_size": [
+                                                            0,
+                                                            0
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "enabled": false,
+                                            "offset": [
+                                                100,
+                                                100
+                                            ],
+                                            "size": [
+                                                2,
+                                                2
+                                            ],
+                                            "type": "panel",
+                                            "visible": false
+                                        }
+                                    }
+                                ],
+                                "enabled": false,
+                                "type": "panel"
+                            }
+                        }
+                    ],
+                    "enabled": false,
+                    "layer": -1000,
+                    "size": [
+                        "100.0%+0.0px",
+                        "100.0%+0.0px"
+                    ],
+                    "type": "panel"
+                }
+            }
+        ],
+        "force_render_below": true,
+        "offset": [
+            -1,
+            0
+        ],
+        "type": "screen"
+    },
+    "namespace": "scuke_survive_follow_hud_ui"
+}

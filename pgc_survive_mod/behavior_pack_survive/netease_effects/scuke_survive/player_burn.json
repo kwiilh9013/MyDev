@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "scuke_survive_player_burn",
+            "minecraft:particle_color": [
+                120,
+                30,
+                47
+            ]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_player_burn"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:food_hp_firstaid_pack",
+            "minecraft:use_animation": "eat"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:food_hp_firstaid_pack",
+            "register_to_create_menu": true
+        }
+    }
+}

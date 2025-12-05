@@ -1,0 +1,96 @@
+{
+	"animations": {
+		"animation.scuke_survive_gun.onehand_first_hold": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"gun": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1.5
+				},
+				"arm": {
+					"rotation": [-9.60109, 61.07873, -54.31031]
+				}
+			}
+		},
+		"animation.scuke_survive_gun.onehand_third_hold": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["-75 + query.body_x_rotation", 0, 0]
+				}
+			}
+		},
+		"animation.scuke_survive_gun.onehand_first_zoomin": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"gun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [11.09174, -7.68218, 46.96554]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0.13463, -0.1449, 0.02962]
+					},
+					"scale": 1.5
+				},
+				"arm": {
+					"rotation": {
+						"0.0": [-9.60109, 61.07873, -54.31031],
+						"0.25": [-67.73754, 31.77833, -110.43014]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [-1.75162, 6.85133, -10.68022]
+					}
+				}
+			}
+		},
+		"animation.scuke_survive_gun.onehand_first_zoom": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"gun": {
+					"rotation": [11.09174, -7.68218, 46.96554],
+					"position": [0.13463, -0.1449, 0.02962],
+					"scale": 1.5
+				},
+				"arm": {
+					"rotation": [-67.73754, 31.77833, -110.43014],
+					"position": [-1.75162, 6.85133, -10.68022]
+				}
+			}
+		},
+		"animation.scuke_survive_gun.onehand_first_zoomout": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"gun": {
+					"rotation": {
+						"0.0": [11.09174, -7.68218, 46.96554],
+						"0.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0.13463, -0.1449, 0.02962],
+						"0.25": [0, 0, 0]
+					},
+					"scale": 1.5
+				},
+				"arm": {
+					"rotation": {
+						"0.0": [-67.73754, 31.77833, -110.43014],
+						"0.25": [-9.60109, 61.07873, -54.31031]
+					},
+					"position": {
+						"0.0": [-1.75162, 6.85133, -10.68022],
+						"0.25": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"format_version": "1.8.0"
+}

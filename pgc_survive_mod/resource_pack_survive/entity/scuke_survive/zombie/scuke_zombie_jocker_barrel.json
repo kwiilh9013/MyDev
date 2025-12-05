@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations":  {
+                "roll": "animation.scuke_zombie_barrel.roll"
+            },
+            "geometry": {
+                "default": "geometry.scuke_zombie_jocker_barrel"
+            },
+            "spawn_egg": {
+                "base_color":"#92644d",
+                "overlay_color":"#8d99a8"
+            },
+            "identifier": "scuke_survive:zombie_jocker_barrel",
+            "materials": {
+                "default": "scuke_survive_zombie"
+            },
+            "render_controllers": [
+                "controller.render.scuke_zombie"
+            ],
+            "scripts": {
+                "pre_animation": [
+                    "variable.hurt_effect = 0;"
+                ],
+                "animate": [
+                    "roll"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie/scuke_zombie_jocker"
+            }
+        }
+    }
+}

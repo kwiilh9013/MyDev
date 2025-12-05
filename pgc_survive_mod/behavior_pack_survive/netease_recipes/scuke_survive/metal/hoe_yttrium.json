@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "scuke_survive:hoe_yttrium"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XX",
+			" #",
+			" #"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:stick"
+			},
+			"X": {
+				"item": "scuke_survive:ingot_yttrium"
+			}
+		},
+		"unlock": [
+			{
+				"item": "scuke_survive:ingot_yttrium"
+			}
+		],
+		"result": {
+			"item": "scuke_survive:hoe_yttrium"
+		}
+	}
+}

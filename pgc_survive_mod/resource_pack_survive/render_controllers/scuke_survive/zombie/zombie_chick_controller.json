@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_zombie_chick": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.variant0",
+                        "Texture.variant1"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.skins[query.variant]"
+            ],
+            "overlay_color": {
+                "r": "1.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "variable.hurt_effect * 0.7"
+            }
+        }
+    }
+}

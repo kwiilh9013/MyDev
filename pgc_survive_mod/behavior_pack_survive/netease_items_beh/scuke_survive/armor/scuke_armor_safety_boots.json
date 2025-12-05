@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:max_damage": 195,
+            "netease:armor":{
+                "defense": 6,
+                "enchantment":0,
+                "armor_slot":3
+            },
+            "netease:customtips": {
+                "value": "[§a增益§f] 耐热\n[§a护甲§f] +6\n[§b套装效果§f] 伤害吸收 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "custom_item_type": "armor",
+            "identifier": "scuke_survive:armor_safety_boots",
+            "register_to_create_menu": true
+        }
+    }
+}

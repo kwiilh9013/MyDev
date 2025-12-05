@@ -1,0 +1,47 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_melee_pigsaw": {
+            "geometry": "Geometry.scuke_survive_melee_pigsaw",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_melee_pigsaw"],
+            "part_visibility": [
+                { "*": true },
+                { "head": false },
+                { "body": false },
+                { "rightArm": false },
+                { "rightSleeve": false },
+                { "leftArm": false },
+                { "leftSleeve": false }
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        },
+        "controller.render.scuke_survive_melee_pigsaw_golden": {
+            "geometry": "Geometry.scuke_survive_melee_pigsaw",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.scuke_survive_melee_pigsaw_golden"],
+            "part_visibility": [
+                { "*": true },
+                { "head": false },
+                { "body": false },
+                { "rightArm": false },
+                { "rightSleeve": false },
+                { "leftArm": false },
+                { "leftSleeve": false }
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0", "g": "0.0", "b": "0.0", "a": "0.0"
+            }
+        }
+    }
+}

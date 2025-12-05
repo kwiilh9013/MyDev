@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:raw_iron",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "scuke_survive:food_nougat",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:mutton",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "scuke_survive:food_senbei",
+                    "type": "item",
+                    "weight": 3
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

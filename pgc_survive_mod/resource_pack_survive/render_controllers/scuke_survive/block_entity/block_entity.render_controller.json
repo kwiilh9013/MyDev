@@ -1,0 +1,82 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_survive_block_entity": {
+            "part_visibility": [
+                {
+                    "*": true
+                }
+            ],
+            "arrays": {
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.default"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.block1",
+                        "Texture.block2",
+                        "Texture.block3",
+                        "Texture.block4",
+                        "Texture.block5",
+                        "Texture.block6",
+                        "Texture.block7",
+                        "Texture.block8",
+                        "Texture.block9",
+                        "Texture.block10",
+                        "Texture.block11",
+                        "Texture.block12"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[0]",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.textures[variable.block_index]"
+            ],
+            "light_color_multiplier": 1.0,
+            "is_hurt_color": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0+math.sin(query.life_time)*0.0"
+            },
+            "on_fire_color": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0+math.sin(query.life_time)*0.0"
+            }
+        },
+        "controller.render.scuke_survive_electric_block_entity":{
+            "arrays": {
+                "textures": {
+                    "Array.textures": [
+                        "Texture.default",
+                        "Texture.open"
+                    ]
+                },
+                "materials": {
+                    "Array.materials": [
+                        "Material.default",
+                        "Material.working"
+                    ]
+                }
+            },
+            "materials": [
+                {
+                    "*": "Array.materials[variable.working_state]"
+                }
+            ],
+            "geometry": "Geometry.default",
+            "textures": [
+                "Array.textures[variable.working_state]"
+            ]
+        }
+    }
+}

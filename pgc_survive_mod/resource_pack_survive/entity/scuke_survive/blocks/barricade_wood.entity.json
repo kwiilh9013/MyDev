@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:items_barricade_wood_entity",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/barricade_wood"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_barricade_wood"
+            },
+            "animations": {
+                "ui_correct": "animation.electric_dynamo.scale_correct"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#DF7E34",
+                "overlay_color":"#72342A"
+            }
+        }
+    }
+}

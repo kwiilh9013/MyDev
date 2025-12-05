@@ -1,0 +1,112 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scuke_survive:projectile_flyinglava",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 1,
+                    "causes_fire": false,
+                    "destroy_affected_by_griefing": true
+                }
+            },
+            "scuke_survive:disapper_timer": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 5,
+                    "time_down_event": {
+                        "event": "scuke_survive:disapper"
+                    }
+                }
+            },
+            "scuke_survive:disapper": {
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": true
+                }
+            }
+        },
+        "components": {
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            },
+            "minecraft:collision_box": {
+                "width": 0.15,
+                "height": 0.15
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                      "damage": 15,
+                      "knockback": false
+                    },
+                    "definition_event": {
+                        "affect_projectile": true,
+                        "event_trigger": {
+                            "event": "minecraft:explode",
+                            "target": "self"
+                        }
+                    },
+                    "mob_effect": {
+                        "effect": "wither",
+                        "durationeasy": 60,
+                        "durationnormal": 200,
+                        "durationhard": 800,
+                        "amplifier": 1
+                    }
+                },
+                "power": 1.6,
+                "gravity": 0.00,
+                "uncertainty_base": 1,
+                "uncertainty_multiplier": 0,
+                "anchor": 1,
+                "offset": [ 0, -0.1, 0 ]
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {
+                }
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_optimized_distance": 80.0,
+                    "max_dropped_ticks": 7,
+                    "use_motion_prediction_hints": true
+                }
+            }
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            },
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "scuke_survive:disapper_timer"
+                    ]
+                }
+            },
+            "scuke_survive:disapper":{
+                "add": {
+                    "component_groups": [
+                        "scuke_survive:disapper"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:mat_plastic_board",
+                    "type": "item",
+                    "weight": 30
+                },
+                {
+                    "name": "scuke_survive:raw_lead",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "minecraft:raw_copper",
+                    "type": "item",
+                    "weight": 10
+                },
+                {
+                    "name": "scuke_survive:food_hp_bandage",
+                    "type": "item",
+                    "weight": 15
+                },
+                {
+                    "name": "scuke_survive:food_rice_crust",
+                    "type": "item",
+                    "weight": 10
+                },
+                {
+                    "name": "scuke_survive:mat_duck",
+                    "type": "item",
+                    "weight": 10
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:items_wirecloth",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:aabb": {
+                "collision": {
+                    "min": [
+                        -0.5,
+                        0,
+                        0.4
+                    ],
+                    "max": [
+                        1.5,
+                        2,
+                        0.6
+                    ]
+                },
+                "clip": {
+                    "min": [
+                        -0.5,
+                        0.0,
+                        0.4
+                    ],
+                    "max": [
+                        1.5,
+                        2,
+                        0.6
+                    ]
+                }
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "netease:render_layer": {
+                "value": "blend"
+            },
+            "minecraft:destroy_time": {
+                "value": 1
+            }
+        }
+    }
+}

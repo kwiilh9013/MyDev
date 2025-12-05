@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:melee_axe"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_ingot",
+        "count": 4
+      },
+      {
+        "item": "scuke_survive:ingot_lithium",
+        "count": 2
+      },
+      {
+        "item": "minecraft:stick",
+        "count": 2
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:melee_axe",
+      "count": 1
+    }
+  }
+}

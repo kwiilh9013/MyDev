@@ -1,0 +1,145 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_melee_baseball_bat_first": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_hold"
+                    ],
+                    "transitions" : [
+                        { "melee_begin": "query.mod.scuke_survive_melee_begin" },
+                        { "melee_charge": "query.mod.scuke_survive_melee_using" },
+                        { "melee_attack1": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 1" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 2" },
+                        { "melee_attack3": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 3" }
+                    ]
+                },
+                "melee_begin": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_melee_begin"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_begin" }
+                    ]
+                },
+                "melee_charge": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_melee_charge"
+                    ],
+                    "transitions": [
+                        { "melee_chargeshake": "query.all_animations_finished" },
+                        { "melee_attack1": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 1" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 2" },
+                        { "melee_attack3": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 3" }
+                    ]
+                },
+                "melee_chargeshake": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_melee_chargeshake"
+                    ],
+                    "transitions": [
+                        { "melee_attack1": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 1" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 2" },
+                        { "melee_attack3": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 3" }
+                    ]
+                },
+                "melee_attack1": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_melee_attack1"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_attack2": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_melee_attack2"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_attack3": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_first_melee_attack3"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.scuke_survive_melee_baseball_bat_third" : {
+            "initial_state" : "idle",
+            "states" : {
+                "idle": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_hold"
+                    ],
+                    "transitions" : [
+                        { "melee_begin" : "!query.is_in_ui && query.mod.scuke_survive_melee_begin" },
+                        { "melee_charge": "!query.is_in_ui && query.mod.scuke_survive_melee_using" },
+                        { "melee_attack1": "!query.is_in_ui && query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 1" },
+                        { "melee_attack2": "!query.is_in_ui && query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 2" },
+                        { "melee_attack3": "!query.is_in_ui && query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 3" }
+                    ]
+                },
+                "melee_begin": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_melee_begin"
+                    ],
+                    "transitions" : [
+                        { "idle" : "query.all_animations_finished && !query.mod.scuke_survive_melee_begin" }
+                    ]
+                },
+                "melee_charge": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_melee_charge"
+                    ],
+                    "transitions": [
+                        { "melee_chargeshake": "query.all_animations_finished" },
+                        { "melee_attack1": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 1" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 2" },
+                        { "melee_attack3": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 3" }
+                    ]
+                },
+                "melee_chargeshake": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_melee_chargeshake"
+                    ],
+                    "transitions": [
+                        { "melee_attack1": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 1" },
+                        { "melee_attack2": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 2" },
+                        { "melee_attack3": "query.mod.scuke_survive_melee_attack == 1 && query.mod.scuke_survive_melee_level == 3" }
+                    ]
+                },
+                "melee_attack1": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_melee_attack1"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_attack2": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_melee_attack2"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" }
+                    ]
+                },
+                "melee_attack3": {
+                    "animations": [
+                        "scuke_survive_melee_baseball_bat_third_melee_attack3"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_melee_using" }
+                    ]
+                }
+            }
+        }
+    }
+}

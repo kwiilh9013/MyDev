@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 40
+                },
+                {
+                    "name": "minecraft:raw_gold",
+                    "type": "item",
+                    "weight": 50
+                },
+                {
+                    "name": "scuke_survive:raw_lithium",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "scuke_survive:food_bubble_gum_yellow",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "scuke_survive:food_bubble_gum_green",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "scuke_survive:food_bubble_gum_red",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "scuke_survive:food_bubble_gum_pink",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:honeycomb",
+                    "type": "item",
+                    "weight": 20
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

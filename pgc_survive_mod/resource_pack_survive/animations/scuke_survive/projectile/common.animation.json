@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive.projectile_entity.move" : {
+			"loop" : true,
+			"bones" : {
+				"root" : {
+					"rotation" : [ "variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0.0 ]
+				}
+			}
+		},
+		"animation.scuke_survive.projectile_grenade.rotate": {
+			"loop": true,
+			"bones": {
+				"grenade": {
+					"rotation": ["query.anim_time * 1500", 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_armor": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "scuke_survive_armor_helmet",
+                        "scuke_survive_armor_chest",
+                        "scuke_survive_armor_legs",
+                        "scuke_survive_armor_boots"
+                    ],
+                    "transitions" : []
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:mat_plastic_board",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:raw_iron",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:dried_kelp_block",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "scuke_survive:mat_screw",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

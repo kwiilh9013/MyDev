@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "scuke_survive:game_introduce_book"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:oak_log",
+        "count": 2
+      },
+      {
+        "item": "scuke_survive:mat_plastic_board",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:game_introduce_book",
+      "count": 1
+    }
+  }
+}

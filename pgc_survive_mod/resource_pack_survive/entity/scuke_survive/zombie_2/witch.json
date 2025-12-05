@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"animations": {
+				"sit_cry":"animation.zombie_witch.sit_cry",
+				"sit_up":"animation.zombie_witch.sit_up",
+				"sit_down":"animation.zombie_witch.sit_down",
+				"move_cry":"animation.zombie_witch.move_cry",
+				"move_cry_standby":"animation.zombie_witch.move_cry_standby",
+				"move_up":"animation.zombie_witch.move_up",
+				"move_down":"animation.zombie_witch.move_down",
+				"run":"animation.zombie_witch.run",
+				"standby":"animation.zombie_witch.standby",
+				"summon_cry":"animation.zombie_witch.summon_cry",
+				"attack1":"animation.zombie_witch.attack1",
+				"attack2":"animation.zombie_witch.attack2",
+				"cry_sound":"animation.zombie_witch.cry_sound",
+				"ctl_witch":"controller.animation.scuke_zombie_witch",
+
+				"ui_correct": "animation.scuke_zombie_ui.witch_correct"
+			},
+			"geometry": {
+				"default": "geometry.scuke_zombie_witch"
+			},
+			"spawn_egg": {
+				"base_color":"#413b36",
+                "overlay_color":"#afc176"
+			},
+			"identifier": "scuke_survive:zombie_witch",
+			"materials": {
+				"default": "scuke_survive_zombie"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"pre_animation": [
+                    "variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+				],
+				"animate": [
+					{
+						"ctl_witch": "variable.not_in_ui"
+					},
+					{
+						"cry_sound": "variable.not_in_ui"
+					},
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+				]
+			},
+			"textures": {
+				"default": "textures/entity/scuke_survive/zombie_2/witch"
+			},
+            "particle_effects": {
+                "smoke": "scuke_survive:witch_smoke"
+            },
+            "sound_effects": {
+                "witch_cry": "scuke_survive.witch.cry",
+                "witch_squeal": "scuke_survive.witch.squeal"
+            }
+		}
+	}
+}

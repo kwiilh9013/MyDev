@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "scuke_survive_high_radiation",
+            "minecraft:particle_color": [
+                14,
+                209,
+                69
+            ]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_high_radiation"
+        }
+    }
+}

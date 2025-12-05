@@ -1,0 +1,65 @@
+{
+	"animations": {
+		"animation.scuke_survive_melee.onehand_first_hold": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"melee": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"arm": {
+					"rotation": [-10.7049, 64.02961, -55.47514]
+				}
+			}
+		},
+		"animation.scuke_survive_melee.onehand_third_hold": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["-75 + query.body_x_rotation", 0, 0]
+				}
+			}
+		},
+		"animation.scuke_survive_melee.twohand_first_hold": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"melee": {
+					"rotation": [1.51269, 23.90649, 0.40963],
+					"position": [1, 0, 4.7],
+					"scale": 1
+				},
+				"arm": {
+					"rotation": [4.11361, 61.46191, -38.69017]
+				},
+				"right": {
+					"rotation": [-4.61232, 25.65219, 0.5403],
+					"position": [-0.99392, -0.10466, -1.00059]
+				},
+				"left": {
+					"rotation": [16.6721, 15.49037, 47.23194],
+					"position": [-3.501, 11.88312, 7.03212]
+				}
+			}
+		},
+		"animation.scuke_survive_melee.twohand_third_hold": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-85.0431, 6.70065, -31.4974],
+					"position": [0, 0.25882, 0.96593]
+				},
+				"rightItem": {
+					"position": [0.21176, -0.36689, 5.36848]
+				},
+				"leftArm": {
+					"rotation": [-45, 45, 15],
+					"position": [-1, 0, 0]
+				}
+			}
+		}
+	},
+	"format_version": "1.8.0"
+}

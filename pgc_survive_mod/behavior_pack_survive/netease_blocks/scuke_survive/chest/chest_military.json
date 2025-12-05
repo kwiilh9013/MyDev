@@ -1,0 +1,35 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "components": {
+            "netease:aabb": {
+                "collision": {
+                    "min": [ -0.5, 0.0, 0.0 ],
+                    "max": [ 1.5, 1, 1.0 ]
+                },
+                "clip": {
+                    "min": [ -0.5, 0.0, 0.0 ],
+                    "max": [ 1.5, 1, 1.0 ]
+                }
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "minecraft:destroy_time": {
+                "value": 2.5
+            },
+            "netease:block_chest": {
+                "chest_capacity": 6,
+                "custom_description": "title.chest.scuke_survive:chest_military.name"
+            },
+            "netease:tier": {
+                "digger": "hatchet"
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:chest_military",
+            "register_to_creative_menu": true
+        }
+    }
+}

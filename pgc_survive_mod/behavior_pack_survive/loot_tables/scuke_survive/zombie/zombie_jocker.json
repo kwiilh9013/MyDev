@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:gunpowder",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:blaze_rod",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:redstone",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:beef",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "scuke_survive:food_drink_aim",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 2
+        }
+    ]
+}

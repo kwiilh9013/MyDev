@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:use_duration": 32,
+            "minecraft:food": {
+                "nutrition": 0,
+                "can_always_eat": true,
+                "effects": [
+                    {
+                        "name": "scuke_survive:effect_debuff_immunity",
+                        "chance": 1.0,
+                        "duration": 120,
+                        "amplifier": 0
+                    }
+                ]
+            },
+            "netease:customtips": {
+                "value": "[§a增益§f] 免疫所有负面debuff "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:food_antibiotic",
+            "register_to_create_menu": true
+        }
+    }
+}

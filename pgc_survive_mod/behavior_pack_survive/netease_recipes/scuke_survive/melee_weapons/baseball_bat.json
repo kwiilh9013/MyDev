@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:melee_baseball_bat"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:iron_ingot",
+        "count": 1
+      },
+      {
+        "item": "minecraft:stick",
+        "count": 4
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:melee_baseball_bat",
+      "count": 1
+    }
+  }
+}

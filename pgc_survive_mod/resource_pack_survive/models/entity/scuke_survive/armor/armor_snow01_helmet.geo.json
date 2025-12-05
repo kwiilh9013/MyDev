@@ -1,0 +1,146 @@
+{
+	"format_version": "1.10.0",
+	"geometry.scuke_survive_armor_snow01_helmet": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "waist",
+				"parent": "root",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "snow01_hat",
+				"parent": "hat",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4.6, 23.4, -2.6], "size": [9.2, 9.2, 7.2], "uv": [0, 0]},
+					{"origin": [-5.6, 22.4, -5.6], "size": [2.2, 11.2, 3.2], "uv": [0, 47]},
+					{"origin": [-3.4, 30.4, -5.6], "size": [6.8, 3.2, 3.2], "uv": [12, 45]},
+					{"origin": [3.4, 22.4, -5.6], "size": [2.2, 11.2, 3.2], "uv": [46, 43]}
+				]
+			},
+			{
+				"name": "glasses",
+				"parent": "snow01_hat",
+				"pivot": [1.5, -3, -0.1],
+				"cubes": [
+					{"origin": [-3.5, 28, -4.35], "size": [3, 1, 1], "uv": [21, 17], "mirror": true},
+					{"origin": [-3.5, 27, -4.35], "size": [1, 1, 1], "uv": [0, 0], "mirror": true},
+					{"origin": [-1.5, 27, -4.35], "size": [1, 1, 1], "uv": [0, 3], "mirror": true},
+					{"origin": [-3.5, 26, -4.35], "size": [3, 1, 1], "uv": [26, 0], "mirror": true},
+					{"origin": [-0.5, 27, -4.35], "size": [1, 1, 1], "uv": [25, 25]},
+					{"origin": [0.5, 28, -4.35], "size": [3, 1, 1], "uv": [21, 17]},
+					{"origin": [0.5, 27, -4.35], "size": [1, 1, 1], "uv": [0, 3]},
+					{"origin": [2.5, 27, -4.35], "size": [1, 1, 1], "uv": [0, 0]},
+					{"origin": [0.5, 26, -4.35], "size": [3, 1, 1], "uv": [26, 0]},
+					{"origin": [1.5, 27, -4.1], "size": [1, 1, 1], "uv": [25, 20]},
+					{"origin": [-2.5, 27, -4.1], "size": [1, 1, 1], "uv": [25, 20], "mirror": true}
+				]
+			},
+			{
+				"name": "bone",
+				"parent": "snow01_hat",
+				"pivot": [-4.6, 32.6, 0.1],
+				"rotation": [0, 0, 12.5],
+				"cubes": [
+					{"origin": [-4.6, 27.6, -2.4], "size": [0, 5, 7], "uv": [31, 38]}
+				]
+			},
+			{
+				"name": "bone70",
+				"parent": "snow01_hat",
+				"pivot": [4.6, 32.6, 0.1],
+				"rotation": [0, 0, -12.5],
+				"cubes": [
+					{"origin": [4.6, 27.6, -2.4], "size": [0, 5, 7], "uv": [31, 38], "mirror": true}
+				]
+			},
+			{
+				"name": "bone48",
+				"parent": "snow01_hat",
+				"pivot": [-4.6, 28.6, 0.1],
+				"rotation": [0, 0, 12.5],
+				"cubes": [
+					{"origin": [-4.6, 23.6, -2.4], "size": [0, 5, 7], "uv": [0, 34]}
+				]
+			},
+			{
+				"name": "bone71",
+				"parent": "snow01_hat",
+				"pivot": [4.6, 28.6, 0.1],
+				"rotation": [0, 0, -12.5],
+				"cubes": [
+					{"origin": [4.6, 23.6, -2.4], "size": [0, 5, 7], "uv": [0, 34], "mirror": true}
+				]
+			},
+			{
+				"name": "bone47",
+				"parent": "snow01_hat",
+				"pivot": [3.1, 33, -0.1],
+				"rotation": [7.5, 0, 0],
+				"cubes": [
+					{"origin": [-4.4, 32.78356, -3.6237], "size": [9, 0, 7], "uv": [25, 17]}
+				]
+			},
+			{
+				"name": "bone2",
+				"parent": "snow01_hat",
+				"pivot": [3.1, 33.1, 2.9],
+				"rotation": [7.5, 0, 0],
+				"cubes": [
+					{"origin": [-4.4, 32.66712, 0.35259], "size": [9, 0, 7], "uv": [25, 25]}
+				]
+			},
+			{
+				"name": "bone45",
+				"parent": "snow01_hat",
+				"pivot": [-3, 33.1, 4.6],
+				"rotation": [-12.5, 180, 0],
+				"cubes": [
+					{"origin": [-10.5, 28.1, 4.6], "size": [9, 5, 0], "uv": [11, 52]}
+				]
+			},
+			{
+				"name": "bone46",
+				"parent": "snow01_hat",
+				"pivot": [-3, 30.1, 4.6],
+				"rotation": [-12.5, 180, 0],
+				"cubes": [
+					{"origin": [-10.5, 25.1, 4.6], "size": [9, 5, 0], "uv": [50, 6]}
+				]
+			},
+			{
+				"name": "bone73",
+				"parent": "snow01_hat",
+				"pivot": [-3, 27.6, 4.6],
+				"rotation": [-12.5, 180, 0],
+				"cubes": [
+					{"origin": [-10.5, 22.6, 4.6], "size": [9, 5, 0], "uv": [50, 6]}
+				]
+			}
+		]
+	}
+}

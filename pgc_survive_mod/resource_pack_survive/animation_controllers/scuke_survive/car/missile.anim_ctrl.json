@@ -1,0 +1,151 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive.car.missile.shoot_1": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "shoot": "variable.missile_shoot_num == 1" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "shoot": {
+                    "animations": [
+                        "missile_shoot_1"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.missile.shoot_2": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "shoot": "variable.missile_shoot_num == 2" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "shoot": {
+                    "animations": [
+                        "missile_shoot_2"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.missile.shoot_3": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "shoot": "variable.missile_shoot_num == 3" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "shoot": {
+                    "animations": [
+                        "missile_shoot_3"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.missile.shoot_4": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "shoot": "variable.missile_shoot_num == 4" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "shoot": {
+                    "animations": [
+                        "missile_shoot_4"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.missile.shoot_5": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "shoot": "variable.missile_shoot_num == 5" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "shoot": {
+                    "animations": [
+                        "missile_shoot_5"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.missile.shoot_6": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "shoot": "variable.missile_shoot_num == 6" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "shoot": {
+                    "animations": [
+                        "missile_shoot_6"
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.missile.shoot_pre": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "pre": "variable.missile_shoot_num > 0" }
+                    ]
+                },
+                "pre": {
+                    "animations": [
+                        "missile_shoot_pre"
+                    ],
+                    "transitions": [
+                        { "end": "variable.missile_shoot_num == 0" }
+                    ]
+                },
+                "end": {
+                    "animations": [
+                        "missile_shoot_end"
+                    ],
+                    "transitions": [
+                        { "default": "query.any_animation_finished" }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1053 @@
+{
+   "anim_btn_lock_size_add" : {
+      "anim_type" : "size",
+      "duration" : 0.30,
+      "from" : [ "100.0%y+0.0px", "70.0%+0.0px" ],
+      "next" : "@scuke_survive_build_struct_ui.anim_btn_lock_size_reduce",
+      "to" : [ "100.0%y+0.0px", "80.0%+0.0px" ]
+   },
+   "anim_btn_lock_size_reduce" : {
+      "anim_type" : "size",
+      "duration" : 0.30,
+      "from" : [ "100.0%y+0.0px", "80.0%+0.0px" ],
+      "next" : "",
+      "to" : [ "100.0%y+0.0px", "70.0%+0.0px" ]
+   },
+   "image_line_base" : {
+      "clip_direction" : "left",
+      "clip_ratio" : 0.0,
+      "keep_ratio" : false,
+      "offset" : [ "-30.0%+0.0px", 0.0 ],
+      "size" : [ 1.0, "50.0%+0.0px" ],
+      "texture" : "textures/ui/scuke_survive/white",
+      "type" : "image"
+   },
+   "main" : {
+      "controls" : [
+         {
+            "panel_item" : {
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "controls" : [
+                  {
+                     "btn_open@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                        "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                        "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                        "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1.0, 1.0, 1.0 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "normal",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "打开菜单",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                        "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                        "$texture_layer" : 2,
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "$default_image_color|default" : [ 1, 1, 1 ],
+                                 "color" : "$default_image_color",
+                                 "controls" : [],
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "$hover_image_color|default" : [ 1, 1, 1 ],
+                                 "color" : "$hover_image_color",
+                                 "controls" : [],
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                 "color" : "$pressed_image_color",
+                                 "controls" : [],
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {
+                                 "controls" : []
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 2,
+                        "pressed_control" : "pressed",
+                        "size" : [ 40.0, 15.0 ],
+                        "type" : "button"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "offset" : [ 0.0, "-25.0%+0.0px" ],
+               "size" : [ 60.0, 20.0 ],
+               "type" : "panel",
+               "visible" : false
+            }
+         },
+         {
+            "panel_view" : {
+               "controls" : [
+                  {
+                     "panel_move" : {
+                        "anchor_from" : "left_middle",
+                        "anchor_to" : "bottom_left",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "alpha" : 0.230,
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.0, 0.0, 0.0 ],
+                                 "keep_ratio" : false,
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "left" : {
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "controls" : [
+                                    {
+                                       "btn_front@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "前",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 16.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "btn_back@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "后",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 16.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "btn_left@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "左",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "left_middle",
+                                          "anchor_to" : "left_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 16.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "btn_right@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "右",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "right_middle",
+                                          "anchor_to" : "right_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 16.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "bg" : {
+                                          "clip_direction" : "left",
+                                          "clip_ratio" : 0.0,
+                                          "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                          "texture" : "textures/ui/scuke_survive/icon/icon_board",
+                                          "type" : "image"
+                                       }
+                                    }
+                                 ],
+                                 "offset" : [ "5.0%+0.0px", 0.0 ],
+                                 "size" : [ "59.0%+0.0px", "77.0%+0.0px" ],
+                                 "type" : "panel"
+                              }
+                           },
+                           {
+                              "right" : {
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "controls" : [
+                                    {
+                                       "btn_up@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "上",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 16.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "btn_rotate@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "旋转",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 22.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    },
+                                    {
+                                       "btn_down@common.button" : {
+                                          "$control_alpha" : 1.0,
+                                          "$default_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$default_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$hover_image_color" : [ 0.1215686274509804, 0.2117647058823529, 0.20 ],
+                                          "$hover_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$is_new_nine_slice" : false,
+                                          "$label_color" : [ 1.0, 1.0, 1.0 ],
+                                          "$label_font_scale_factor" : 1.0,
+                                          "$label_font_size" : "normal",
+                                          "$label_layer" : 3,
+                                          "$label_offset" : [ 0, 0 ],
+                                          "$label_text" : "下",
+                                          "$nine_slice_buttom" : 0,
+                                          "$nine_slice_left" : 0,
+                                          "$nine_slice_right" : 0,
+                                          "$nine_slice_top" : 0,
+                                          "$nineslice_size" : [ 2.0, 2.0, 2.0, 2.0 ],
+                                          "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                          "$pressed_image_color" : [ 0.007843137254901961, 0.1058823529411765, 0.1215686274509804 ],
+                                          "$pressed_texture" : "textures/ui/scuke_survive/common/border05",
+                                          "$texture_layer" : 2,
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle",
+                                          "bindings" : [
+                                             {
+                                                "binding_collection_name" : "",
+                                                "binding_condition" : "always_when_visible",
+                                                "binding_type" : "collection_details"
+                                             }
+                                          ],
+                                          "button_mappings" : [],
+                                          "controls" : [
+                                             {
+                                                "default@netease_editor_template_namespace.default" : {
+                                                   "$default_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$default_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "hover@netease_editor_template_namespace.hover" : {
+                                                   "$hover_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$hover_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "pressed@netease_editor_template_namespace.pressed" : {
+                                                   "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                                   "color" : "$pressed_image_color",
+                                                   "controls" : [],
+                                                   "keep_ratio" : false
+                                                }
+                                             },
+                                             {
+                                                "button_label@netease_editor_template_namespace.button_label" : {
+                                                   "controls" : []
+                                                }
+                                             }
+                                          ],
+                                          "default_control" : "default",
+                                          "hover_control" : "hover",
+                                          "is_handle_button_move_event" : true,
+                                          "layer" : 2,
+                                          "pressed_control" : "pressed",
+                                          "size" : [ 16.0, 16.0 ],
+                                          "type" : "button"
+                                       }
+                                    }
+                                 ],
+                                 "offset" : [ "-4.0%+0.0px", 0.0 ],
+                                 "size" : [ "100.0%cm+0.0px", "86.0%+0.0px" ],
+                                 "type" : "panel"
+                              }
+                           }
+                        ],
+                        "offset" : [ 36.0, -10.0 ],
+                        "size" : [ 80.0, 60.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "panel_ctrl" : {
+                        "anchor_from" : "bottom_middle",
+                        "anchor_to" : "bottom_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "alpha" : 0.230,
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.0, 0.0, 0.0 ],
+                                 "keep_ratio" : false,
+                                 "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "btn_close@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$default_texture" : "textures/ui/scuke_survive/icon/icon_close02",
+                                 "$hover_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$hover_texture" : "textures/ui/scuke_survive/icon/icon_close02",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 1, 1, 1 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "normal",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "关闭",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_image_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                 "$pressed_texture" : "textures/ui/scuke_survive/icon/icon_close02",
+                                 "$texture_layer" : 2,
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {
+                                          "$default_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$default_image_color",
+                                          "size" : [ "100.0%+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {
+                                          "$hover_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$hover_image_color",
+                                          "size" : [ "10.0%+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {
+                                          "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$pressed_image_color",
+                                          "size" : [ "100.0%+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "button_label@netease_editor_template_namespace.button_label" : {
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle"
+                                       }
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "layer" : 2,
+                                 "offset" : [ "-38.0%+0.0px", 0.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ "100.0%y+0.0px", "70.0%+0.0px" ],
+                                 "type" : "button"
+                              }
+                           },
+                           {
+                              "bg_line_1@scuke_survive_build_struct_ui.image_line_base" : {
+                                 "offset" : [ "-27.0%+0.0px", 0.0 ]
+                              }
+                           },
+                           {
+                              "btn_wheel@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$default_texture" : "textures/ui/scuke_survive/icon/icon_wheel",
+                                 "$hover_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$hover_texture" : "textures/ui/scuke_survive/icon/icon_wheel",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 1, 1, 1 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "normal",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "轮盘",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_image_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                 "$pressed_texture" : "textures/ui/scuke_survive/icon/icon_wheel",
+                                 "$texture_layer" : 2,
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {
+                                          "$default_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$default_image_color",
+                                          "size" : [ "100.0%y+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {
+                                          "$hover_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$hover_image_color",
+                                          "size" : [ "100.0%y+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {
+                                          "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$pressed_image_color",
+                                          "size" : [ "100.0%y+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "button_label@netease_editor_template_namespace.button_label" : {
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle"
+                                       }
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "layer" : 2,
+                                 "offset" : [ "-16.0%+0.0px", 0.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ "100.0%y+0.0px", "70.0%+0.0px" ],
+                                 "type" : "button"
+                              }
+                           },
+                           {
+                              "bg_line_2@scuke_survive_build_struct_ui.image_line_base" : {
+                                 "offset" : [ "-4.0%+0.0px", 0.0 ]
+                              }
+                           },
+                           {
+                              "btn_lock@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$default_texture" : "textures/ui/scuke_survive/icon/icon_lock",
+                                 "$hover_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$hover_texture" : "textures/ui/scuke_survive/icon/icon_lock",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 1, 1, 1 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "normal",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "锁定",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_image_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                 "$pressed_texture" : "textures/ui/scuke_survive/icon/icon_lock",
+                                 "$texture_layer" : 2,
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {
+                                          "$default_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$default_image_color",
+                                          "size" : [ "100.0%y+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {
+                                          "$hover_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$hover_image_color",
+                                          "size" : [ "100.0%y+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {
+                                          "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$pressed_image_color",
+                                          "size" : [ "100.0%y+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "button_label@netease_editor_template_namespace.button_label" : {
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle"
+                                       }
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "layer" : 2,
+                                 "offset" : [ "8.0%+0.0px", 0.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ "100.0%y+0.0px", "70.0%+0.0px" ],
+                                 "type" : "button"
+                              }
+                           },
+                           {
+                              "bg_line_4@scuke_survive_build_struct_ui.image_line_base" : {
+                                 "offset" : [ "20.0%+0.0px", 0.0 ]
+                              }
+                           },
+                           {
+                              "btn_build@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$default_texture" : "textures/ui/scuke_survive/icon/icon_start",
+                                 "$hover_image_color" : [ 0.3882352941176471, 0.6235294117647059, 0.5450980392156862 ],
+                                 "$hover_texture" : "textures/ui/scuke_survive/icon/icon_start",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 1, 1, 1 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "normal",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "开始建造",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_image_color" : [ 0.2274509803921569, 0.3686274509803922, 0.3215686274509804 ],
+                                 "$pressed_texture" : "textures/ui/scuke_survive/icon/icon_start",
+                                 "$texture_layer" : 2,
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {
+                                          "$default_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$default_image_color",
+                                          "size" : [ "100.0%+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {
+                                          "$hover_image_color|default" : [ 1, 1, 1 ],
+                                          "anchor_from" : "top_middle",
+                                          "anchor_to" : "top_middle",
+                                          "color" : "$hover_image_color",
+                                          "size" : [ "100.0%+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {
+                                          "$pressed_image_color|default" : [ 1, 1, 1 ],
+                                          "color" : "$pressed_image_color",
+                                          "size" : [ "100.0%+0.0px", "56.0%+0.0px" ]
+                                       }
+                                    },
+                                    {
+                                       "button_label@netease_editor_template_namespace.button_label" : {
+                                          "anchor_from" : "bottom_middle",
+                                          "anchor_to" : "bottom_middle"
+                                       }
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "layer" : 2,
+                                 "offset" : [ "35.0%+0.0px", 0.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ "150.0%y+0.0px", "76.0%+0.0px" ],
+                                 "type" : "button"
+                              }
+                           }
+                        ],
+                        "offset" : [ 0.0, "-15.0%+0.0px" ],
+                        "size" : [ "36.0%+0.0px", 30.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "tips" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "color" : [ 1.0, 0.2509803921568627, 0.06666666666666667 ],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "alpha" : 0.30,
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.0, 0.0, 0.0 ],
+                                 "keep_ratio" : false,
+                                 "layer" : -1,
+                                 "size" : [ "110.0%+0.0px", "110.0%+0.0px" ],
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "font_type" : "default",
+                        "offset" : [ 0.0, "15.0%+0.0px" ],
+                        "shadow" : true,
+                        "text_alignment" : "center",
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+               "type" : "panel",
+               "visible" : false
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_build_struct_ui"
+}

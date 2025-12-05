@@ -1,0 +1,33 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+precision mediump float;
+
+#include "fragmentVersionCentroidUV.h"
+#include "uniformWorldConstants.h"
+
+#include "uniformPerFrameConstants.h"
+#include "uniformShaderConstants.h"
+#include "util.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0; // noise
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1; // tex
+
+const float uv_x_total = 8.0;
+const float uv_x_step = 1.0 / uv_x_total;
+
+flat varying vec4 noiseColor;
+flat varying vec4 texColor;
+varying vec4 fogColor;
+
+void main() {
+	vec2 tex_uv;
+	tex_uv.x = (floor(noiseColor.g * uv_x_total)+uv.x) * uv_x_step;
+	tex_uv.y = uv.y;
+	vec4 color = texture2D(TEXTURE_1, tex_uv);
+	if (noiseColor.b > 0.0 || color.a <= 0.2) {
+		discard;
+	}
+	color = color * texColor;
+	color.rgb = mix(color.rgb, fogColor.rgb, fogColor.a);
+	gl_FragColor = color;
+}

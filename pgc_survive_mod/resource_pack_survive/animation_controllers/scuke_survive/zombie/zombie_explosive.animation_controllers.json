@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_zombie_exploding": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "exploding": "query.is_shaking"
+                        }
+                    ]
+                },
+                "exploding": {
+                    "particle_effects": [
+                        {
+                            "effect": "exploding_flames"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_shaking || !query.is_alive"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

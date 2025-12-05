@@ -1,0 +1,60 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_zombie_sarcoma": {
+            "initial_state": "default",
+            "states": {
+                "walk": {
+                    "animations": [
+                        "walk",
+                        {"attack_remote": "query.mark_variant == 2 && query.has_target && query.facing_target_to_range_attack"},
+                        {"attack_bump": "query.mark_variant == 0 && query.has_target && query.is_delayed_attacking"}
+                    ],
+                    "blend_transition": 0.15,
+                    "transitions": [
+                        {
+                            "default": "query.ground_speed < 0.07 && query.life_time - variable.walk_time > 0.4"
+                        },
+                        {
+                            "death": "query.mark_variant == 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "variable.walk_time = query.life_time;"
+                    ],
+                    "on_exit": [
+
+                    ]
+                },
+                "default": {
+                    "animations": [
+                        "idle",
+                        {"attack_remote": "query.mark_variant == 2 && query.has_target && query.facing_target_to_range_attack"},
+                        {"attack_bump": "query.mark_variant == 0 && query.has_target && query.is_delayed_attacking"}
+                    ],
+                    "blend_transition": 0.15,
+                    "transitions": [
+                        {
+                            "walk": "query.ground_speed > 0.07 && query.life_time - variable.default_time > 0.4"
+                        },
+                        {
+                            "death": "query.mark_variant == 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "variable.default_time = query.life_time;"
+                    ],
+                    "on_exit": [
+
+                    ]
+                },
+                "death": {
+                    "animations": [
+                        "death"
+                    ],
+                     "blend_transition": 0.25
+                }
+            }
+        }
+    }
+}

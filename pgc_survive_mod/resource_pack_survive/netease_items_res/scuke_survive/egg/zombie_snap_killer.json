@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:zombie_snap_killer"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:zombie_snap_killer",
+            "register_to_create_menu": true
+        }
+    }
+}

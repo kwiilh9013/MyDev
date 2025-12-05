@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "default": "animation.scuke_bullet.default_fly",
+                "flying": "animation.scuke_bullet.bazooka_fly",
+                "meteorite_ctl": "controller.animation.scuke_survive.meteorite.normal"
+            },
+            "geometry": {
+                "default": "geometry.meteorite_normal"
+            },
+            "identifier": "scuke_survive:meteorite_normal",
+            "materials": {
+                "default": "scuke_survive_meteorite"
+            },
+            "render_controllers": [
+                "controller.render.scuke_bullet_default"
+            ],
+            "scripts": {
+                "animate": [
+                    "default",
+                    "flying",
+                    "meteorite_ctl"
+                ]
+            },
+            "particle_effects": {
+                "trail_smoke": "scuke_survive:meteorite_trail_smoke"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/meteorite/meteorite_normal"
+            }
+        }
+    }
+}

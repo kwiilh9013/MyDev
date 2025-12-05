@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "scuke_survive:axe_lithium",
+            "category": "scuke_survive",
+            "register_to_create_menu": true
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:max_damage": 131,
+            "netease:weapon": {
+                "type": "hatchet",
+                "level": 1,
+                "speed": 4,
+                "attack_damage": 5,
+                "enchantment": 5
+            }
+        }
+    }
+}

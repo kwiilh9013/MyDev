@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.zombie_flyinglava": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"attacking": "query.has_target && variable.ischarging"
+						},
+						{
+							"moving": "query.ground_speed >= 0.01 "
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"attacking": "query.has_target && variable.ischarging"
+						},
+						{
+							"standby": "query.ground_speed < 0.01"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attacking": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"moving": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

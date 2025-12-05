@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:electric_photoetching_entity",
+            "materials": {
+                "default": "entity_alphatest",
+                "working": "scuke_survive_electric_working"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/electric_photoetching",
+                "open": "textures/entity/scuke_survive/blocks/electric_photoetching_open"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_electric_photoetching"
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive_electric_block_entity"
+            ],
+            "animations": {
+                "work": "animation.scuke_survive_electric_photoetching.work",
+                "ui_correct": "animation.scuke_survive_electric_photoetching.scale_correct"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.working_state = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "work":"variable.working_state == 1"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "main": {
+        "controls": [
+            {
+                "infoNoticePanel": {
+                    "controls": [
+                        {
+                            "blackBg": {
+                                "alpha": 0.8,
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "layer": 2,
+                                "nineslice_size": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "size": [
+                                    "100.0%+50.0px",
+                                    "100.0%+50.0px"
+                                ],
+                                "texture": "textures/ui/scuke_ct/common/pixel",
+                                "type": "image"
+                            }
+                        },
+                        {
+                            "maskBtn@scuke_convert_table_widget.emptyBtn": {
+                                "layer": 3
+                            }
+                        },
+                        {
+                            "noticePanel": {
+                                "controls": [
+                                    {
+                                        "bgImage": {
+                                            "clip_direction": "left",
+                                            "clip_ratio": 0,
+                                            "color": [
+                                                0.0706,
+                                                0.0706,
+                                                0.1529
+                                            ],
+                                            "layer": 3,
+                                            "nineslice_size": [
+                                                2,
+                                                2,
+                                                2,
+                                                2
+                                            ],
+                                            "size": [
+                                                "100.0%+50.0px",
+                                                "100.0%+0.0px"
+                                            ],
+                                            "texture": "textures/ui/scuke_ct/common/pixel",
+                                            "type": "image",
+                                            "controls": [
+                                                {
+                                                    "bg": {
+                                                        "layer": -1,
+                                                        "nineslice_size": [
+                                                            3,
+                                                            3,
+                                                            3,
+                                                            3
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            "100%+2px"
+                                                        ],
+                                                        "texture": "textures/ui/scuke_ct/ui_grid_02",
+                                                        "type": "image"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "infoTxt": {
+                                            "anchor_to": "top_middle",
+                                            "color": [
+                                                0.7451,
+                                                0.7882,
+                                                1
+                                            ],
+                                            "font_type": "default",
+                                            "layer": 6,
+                                            "max_size": [
+                                                "65.0%+0.0px",
+                                                "default"
+                                            ],
+                                            "offset": [
+                                                0,
+                                                -25
+                                            ],
+                                            "text": "提示文本123",
+                                            "text_alignment": "center",
+                                            "type": "label"
+                                        }
+                                    },
+                                    {
+                                        "confirmBtn@scuke_convert_table_widget.comBtn": {
+                                            "$default_texture": "textures/ui/scuke_ct/button_02",
+                                            "$hover_texture": "textures/ui/scuke_ct/button_02_press",
+                                            "$iconImage": "",
+                                            "$iconV": false,
+                                            "$labelV": true,
+                                            "$label_color": [
+                                                0.0706,
+                                                0.0706,
+                                                0.1529
+                                            ],
+                                            "$label_font_scale_factor": 1,
+                                            "$label_font_size": "normal",
+                                            "$label_text": "确认",
+                                            "$pressed_texture": "textures/ui/scuke_ct/button_02_press",
+                                            "anchor_from": "bottom_middle",
+                                            "anchor_to": "bottom_middle",
+                                            "offset": [
+                                                -60,
+                                                -10
+                                            ],
+                                            "size": [
+                                                80,
+                                                23
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "cancelBtn@scuke_convert_table_widget.comBtn": {
+                                            "$default_texture": "textures/ui/scuke_ct/button_02",
+                                            "$hover_texture": "textures/ui/scuke_ct/button_02_press",
+                                            "$iconImage": "",
+                                            "$iconV": false,
+                                            "$labelV": true,
+                                            "$label_color": [
+                                                0.0706,
+                                                0.0706,
+                                                0.1529
+                                            ],
+                                            "$label_font_scale_factor": 1,
+                                            "$label_font_size": "normal",
+                                            "$label_text": "取消",
+                                            "$pressed_texture": "textures/ui/scuke_ct/button_02_press",
+                                            "anchor_from": "bottom_middle",
+                                            "anchor_to": "bottom_middle",
+                                            "offset": [
+                                                60,
+                                                -10
+                                            ],
+                                            "size": [
+                                                80,
+                                                23
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "headPanel": {
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "controls": [
+                                                {
+                                                    "headTxt": {
+                                                        "anchor_from": "left_middle",
+                                                        "anchor_to": "left_middle",
+                                                        "color": [
+                                                            0.7412,
+                                                            0.7882,
+                                                            1
+                                                        ],
+                                                        "font_scale_factor": 0.8,
+                                                        "font_size": "large",
+                                                        "font_type": "default",
+                                                        "layer": 19,
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "text": "提示",
+                                                        "text_alignment": "center",
+                                                        "type": "label"
+                                                    }
+                                                },
+                                                {
+                                                    "closeBtn@scuke_convert_table_widget.comBtn": {
+                                                        "$defaultColor": [
+                                                            0.7412,
+                                                            0.7843,
+                                                            1
+                                                        ],
+                                                        "$default_texture": "textures/ui/scuke_ct/icon_close_01",
+                                                        "$hover_texture": "",
+                                                        "$iconColor": [
+                                                            0.749,
+                                                            0.7922,
+                                                            1
+                                                        ],
+                                                        "$iconImage": "",
+                                                        "$label_text": "",
+                                                        "$nineslice_size": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "$pressed_texture": "",
+                                                        "anchor_from": "right_middle",
+                                                        "anchor_to": "right_middle",
+                                                        "layer": 3,
+                                                        "size": [
+                                                            17,
+                                                            17
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "image": {
+                                                        "anchor_from": "bottom_middle",
+                                                        "anchor_to": "bottom_middle",
+                                                        "color": [
+                                                            0.6667,
+                                                            0.698,
+                                                            0.8902
+                                                        ],
+                                                        "fill": true,
+                                                        "layer": 1,
+                                                        "offset": [
+                                                            0,
+                                                            2
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            1
+                                                        ],
+                                                        "texture": "textures/ui/scuke_ct/common/pixel",
+                                                        "type": "image"
+                                                    }
+                                                }
+                                            ],
+                                            "layer": 4,
+                                            "max_size": [
+                                                330,
+                                                "default"
+                                            ],
+                                            "offset": [
+                                                0,
+                                                5
+                                            ],
+                                            "size": [
+                                                "80%+0px",
+                                                "100%cm+6px"
+                                            ],
+                                            "type": "panel"
+                                        }
+                                    }
+                                ],
+                                "layer": 11,
+                                "size": [
+                                    "100.0%+0.0px",
+                                    140
+                                ],
+                                "type": "panel"
+                            }
+                        }
+                    ],
+                    "layer": 2400,
+                    "type": "panel"
+                }
+            }
+        ],
+        "type": "screen"
+    },
+    "namespace": "ct_info_notice_ui"
+}

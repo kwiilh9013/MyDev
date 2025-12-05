@@ -1,0 +1,144 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_cancrawl.normal": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						},
+						{
+							"crawl_notmove": "variable.mutilated_blood"
+						},
+						{
+							"attacking": "query.is_delayed_attacking"
+						},
+						{
+							"moving": "variable.is_moving"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"crawl_notmove": {
+					"animations": [
+						"crawl_notmove"
+					],
+					"transitions": [
+						{
+							"idle": "!variable.mutilated_blood"
+						},
+						{
+							"crawl": "variable.mutilated_blood && variable.is_moving"
+						},
+						{
+							"crawl_attacking":"variable.mutilated_blood && query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"crawl": {
+					"animations": [
+						"crawl"
+					],
+					"transitions": [
+						{
+							"moving": "!variable.mutilated_blood"
+						},
+						{
+							"crawl_notmove": "!variable.is_moving && variable.mutilated_blood"
+						},
+						{
+							"crawl_attacking":"variable.mutilated_blood && query.has_target && query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						},
+						{
+							"attacking": "query.is_delayed_attacking"
+						},
+						{
+							"hunting": "query.has_target"
+						},
+						{
+							"idle": "!variable.is_moving"
+						},
+						{
+							"crawl": "variable.mutilated_blood"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"hunting": {
+					"animations": [
+						"hunting"
+					],
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						},
+						{
+							"attacking": "query.is_delayed_attacking"
+						},
+						{
+							"moving": "!query.has_target"
+						},
+						{
+							"idle": "!variable.is_moving"
+						},
+						{
+							"crawl": "variable.mutilated_blood"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"crawl_attacking":{
+					"animations": [
+						"crawl_attack"
+					],
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						},
+						{
+							"crawl": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attacking": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						},
+						{
+							"hunting": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"death": {
+					"animations": [
+						"death"
+					]
+				}
+			}
+		}
+	}
+}

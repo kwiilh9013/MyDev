@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:golden_carrot",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:golden_apple",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:beef",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:mutton",
+                    "type": "item",
+                    "weight": 2
+                }
+            ],
+            "rolls": 2
+        }
+    ]
+}

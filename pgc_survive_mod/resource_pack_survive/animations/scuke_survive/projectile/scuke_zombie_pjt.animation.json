@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_zombie_pjt.idle": {
+			"loop": true,
+			"bones": {
+				"leftItem": {
+					"scale": 1
+				},
+				"rightForeArm": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.scuke_zombie_pjt.rotate": {
+			"loop": true,
+			"animation_length": 0.625,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.625": [360, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -5, 3],
+						"0.625": [0, -5, 7]
+					}
+				},
+				"waist": {
+					"rotation": [55, 0, 0],
+					"position": [0, 2, 2]
+				},
+				"head": {
+					"rotation": [62.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-30, 0, 0]
+				},
+				"leftForeArm": {
+					"rotation": [-85, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-32.5, 0, 0]
+				},
+				"rightForeArm": {
+					"rotation": [-70, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [-85, 0, 0]
+				},
+				"leftForeLeg": {
+					"rotation": [85, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [-100, 0, 0]
+				},
+				"rightForeLeg": {
+					"rotation": [82.5, 0, 0]
+				}
+			}
+		}
+	}
+}

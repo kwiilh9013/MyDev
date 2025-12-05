@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "scuke_survive:armor_soviet_tig_helmet_black",
+            "materials": {
+                "default": "scuke_survive_armor",
+                "enchanted": "scuke_survive_armor_enchanted"
+            },
+            "textures": {
+                "default": "textures/models/scuke_survive/armor/armor_soviet_tig_helmet_black",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_armor_soviet_tig_helmet"
+            },
+            "scripts": {
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "render_controllers": [
+                "controller.render.armor"
+            ]
+        }
+    }
+}

@@ -1,0 +1,211 @@
+{
+  "materials": {
+    "scuke_survive_gun_normal:entity_nocull": {
+      "+defines": [
+        "USE_EMISSIVE",
+        "ALPHA_TEST"
+      ],
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        }
+      ]
+    },
+    "scuke_survive_entity_light:entity_nocull": {
+      "+defines": [
+        "USE_EMISSIVE",
+        "ALPHA_TEST"
+      ],
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "scuke_survive_zombie:entity_nocull": {
+      "fragmentShader": "shaders/glsl/scuke_survive_zombie.fragment",
+      "vertexShader": "shaders/glsl/scuke_survive_zombie.vertex"
+    },
+    "scuke_survive_car:entity_alphatest": {
+      "+defines": [
+        "USE_EMISSIVE"
+      ],
+      "-defines": [
+        "USE_OVERLAY"
+      ]
+    },
+    "scuke_survive_armor:entity_alphatest": {
+      "fragmentShader": "shaders/glsl/scuke_survive_equip.fragment",
+      "+states": [
+        "Blending"
+      ]
+    },
+    "scuke_survive_armor_enchanted:entity_alphatest_glint": {
+      "fragmentShader": "shaders/glsl/scuke_survive_equip.fragment",
+      "+states": [
+        "Blending"
+      ]
+    },
+    "scuke_survive_ladar_breathing_light:entity_alphatest": {
+      "fragmentShader": "shaders/glsl/scuke_survive_entity.fragment",
+      "+defines": [
+        "USE_EMISSIVE",
+        "BREATHING_LIGHT",
+        "LADAR"
+      ]
+    },
+    "scuke_survive_ladar_out_of_order:entity_alphatest": {
+      "fragmentShader": "shaders/glsl/scuke_survive_entity.fragment",
+      "+defines": [
+        "USE_EMISSIVE",
+        "BREATHING_LIGHT",
+        "LADAR",
+        "OUT_OF_ORDER"
+      ]
+    },
+    "scuke_survive_meteorite:entity_alphatest": {
+      "fragmentShader": "shaders/glsl/scuke_survive_entity.fragment",
+      "+defines": [
+        "USE_EMISSIVE"
+      ]
+    },
+    "scuke_survive_npc_golden_creeper_bone:entity_alphatest": {},
+    "scuke_survive_npc_golden_creeper_outer:entity": {
+      "+states": [
+        "Blending"
+      ],
+      "+defines": [
+        "USE_EMISSIVE"
+      ]
+    },
+    "scuke_survive_electric_working:entity_alphatest": {
+      "+defines": [
+        "USE_EMISSIVE"
+      ]
+    },
+    "scuke_survive_weather": {
+      "vertexShader": "shaders/glsl/scuke_survive_falling.vertex",
+      "fragmentShader": "shaders/glsl/scuke_survive_falling.fragment",
+      "vrGeometryShader": "shaders/entity.geometry",
+      "msaaSupport": "Both",
+      "+states": [
+        "DisableCulling"
+      ],
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        },
+        {
+          "samplerIndex": 1,
+          "textureFilter": "Point"
+        }
+      ],
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "BoneId0"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "+defines": [
+        "FANCY",
+        "USE_OVERLAY",
+        "USE_SKINNING",
+        "NETEASE_SKINNING"
+      ]
+    },
+    "scuke_survive_energy_shield": {
+      "vertexShader": "shaders/glsl/scuke_survive_fbx.vertex",
+      "fragmentShader": "shaders/glsl/scuke_survive_energy_shield.fragment",
+      "vrGeometryShader": "shaders/entity.geometry",
+      "msaaSupport": "Both",
+      "+states": [
+        "DisableCulling",
+        "DisableDepthWrite",
+        "Blending"
+      ],
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        },
+        {
+          "samplerIndex": 1,
+          "textureFilter": "Point"
+        }
+      ],
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "BoneId0"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "+defines": [
+        "FANCY",
+        "USE_OVERLAY",
+        "USE_SKINNING",
+        "NETEASE_SKINNING"
+      ]
+    },
+    "scuke_survive_battle_area": {
+      "vertexShader": "shaders/glsl/scuke_survive_fbx.vertex",
+      "fragmentShader": "shaders/glsl/scuke_survive_battle_area.fragment",
+      "vrGeometryShader": "shaders/entity.geometry",
+      "msaaSupport": "Both",
+      "+states": [
+        "DisableCulling",
+        "DisableDepthWrite",
+        "Blending"
+      ],
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        },
+        {
+          "samplerIndex": 1,
+          "textureFilter": "Point"
+        }
+      ],
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "BoneId0"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "+defines": [
+        "FANCY",
+        "USE_OVERLAY",
+        "USE_SKINNING",
+        "NETEASE_SKINNING"
+      ]
+    }
+  }
+}

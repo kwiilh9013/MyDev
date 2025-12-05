@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:mat_phone_watch",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "scuke_survive:food_hawthorn",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 8
+                },
+                {
+                    "name": "minecraft:carrot",
+                    "type": "item",
+                    "weight": 2
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

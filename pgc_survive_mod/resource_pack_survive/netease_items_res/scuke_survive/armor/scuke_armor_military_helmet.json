@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:armor_military_helmet"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:armor_military_helmet"
+        }
+    }
+}

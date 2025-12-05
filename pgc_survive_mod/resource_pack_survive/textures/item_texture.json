@@ -1,0 +1,763 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "scuke_survive:game_introduce_book": {
+            "textures": "textures/items/scuke_survive/game_introduce_book"
+        },
+        "scuke_survive:car_repair": {
+            "textures": "textures/items/scuke_survive/car_repair"
+        },
+        "scuke_survive:c4_detonator": {
+            "textures": "textures/items/scuke_survive/c4_detonator"
+        },
+        "scuke_survive:car_rescue": {
+            "textures": "textures/items/scuke_survive/car_rescue"
+        },
+        "scuke_survive:build_struct": {
+            "textures": "textures/items/scuke_survive/build_struct"
+        },
+        "scuke_survive:items_ladar": {
+            "textures": "textures/items/scuke_survive/ladar"
+        },
+        "scuke_survive:items_grenade_small": {
+            "textures": "textures/items/scuke_survive/grenade_small"
+        },
+        "scuke_survive:items_grenade_middle": {
+            "textures": "textures/items/scuke_survive/grenade_middle"
+        },
+        "scuke_survive:items_grenade_large": {
+            "textures": "textures/items/scuke_survive/grenade_large"
+        },
+        "scuke_survive:egg_zombie": {
+            "textures": "textures/items/scuke_survive/zombie/egg_zombie"
+        },
+        "scuke_survive:egg_zombie_item": {
+            "textures": "textures/items/scuke_survive/zombie/egg_zombie_item"
+        },
+        "scuke_survive:clip_normal": {
+            "textures": "textures/items/scuke_survive/gun/normal"
+        },
+        "scuke_survive:clip_advanced": {
+            "textures": "textures/items/scuke_survive/gun/advanced"
+        },
+        "scuke_survive:clip_energy": {
+            "textures": "textures/items/scuke_survive/gun/energy"
+        },
+        "scuke_survive:clip_explosion": {
+            "textures": "textures/items/scuke_survive/gun/explosion"
+        },
+        
+        "scuke_survive:gun_bazooka1_s1": {
+            "textures": "textures/items/scuke_survive/gun/gun_bazooka1_s1_icon"
+        },
+        "scuke_survive:gun_bazooka1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_bazooka1_s2_icon"
+        },
+        "scuke_survive:gun_bazooka1": {
+            "textures": "textures/items/scuke_survive/gun/gun_bazooka1_icon"
+        },
+        "scuke_survive:gun_hmg1_s1": {
+            "textures": "textures/items/scuke_survive/gun/gun_hmg1_s1_icon"
+        },
+        "scuke_survive:gun_hmg1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_hmg1_s2_icon"
+        },
+        "scuke_survive:gun_hmg1": {
+            "textures": "textures/items/scuke_survive/gun/gun_hmg1_icon"
+        },
+        "scuke_survive:gun_lmg1_s1": {
+            "textures": "textures/items/scuke_survive/gun/gun_lmg1_s1_icon"
+        },
+        "scuke_survive:gun_lmg1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_lmg1_s2_icon"
+        },
+        "scuke_survive:gun_lmg1": {
+            "textures": "textures/items/scuke_survive/gun/gun_lmg1_icon"
+        },
+        "scuke_survive:gun_pistol1": {
+            "textures": "textures/items/scuke_survive/gun/gun_pistol1_icon"
+        },
+        "scuke_survive:gun_pistol1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_pistol1_s2_icon"
+        },
+        "scuke_survive:gun_pistol1_s3": {
+            "textures": "textures/items/scuke_survive/gun/gun_pistol1_s3_icon"
+        },
+        "scuke_survive:gun_rifle1_s1": {
+            "textures": "textures/items/scuke_survive/gun/gun_rifle1_s1_icon"
+        },
+        "scuke_survive:gun_rifle1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_rifle1_s2_icon"
+        },
+        "scuke_survive:gun_rifle1": {
+            "textures": "textures/items/scuke_survive/gun/gun_rifle1_icon"
+        },
+        "scuke_survive:gun_shotgun1": {
+            "textures": "textures/items/scuke_survive/gun/gun_shotgun1_icon"
+        },
+        "scuke_survive:gun_shotgun1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_shotgun1_s2_icon"
+        },
+        "scuke_survive:gun_shotgun1_s3": {
+            "textures": "textures/items/scuke_survive/gun/gun_shotgun1_s3_icon"
+        },
+        "scuke_survive:gun_smg1": {
+            "textures": "textures/items/scuke_survive/gun/gun_smg1_icon"
+        },
+        "scuke_survive:gun_smg1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_smg1_s2_icon"
+        },
+        "scuke_survive:gun_smg1_s3": {
+            "textures": "textures/items/scuke_survive/gun/gun_smg1_s3_icon"
+        },
+        "scuke_survive:gun_sniper1_s1": {
+            "textures": "textures/items/scuke_survive/gun/gun_sniper1_s1_icon"
+        },
+        "scuke_survive:gun_sniper1_s2": {
+            "textures": "textures/items/scuke_survive/gun/gun_sniper1_s2_icon"
+        },
+        "scuke_survive:gun_sniper1": {
+            "textures": "textures/items/scuke_survive/gun/gun_sniper1_icon"
+        },
+
+        "scuke_survive:melee_axe": {
+            "textures": "textures/items/scuke_survive/melee/axe"
+        },
+        "scuke_survive:melee_axe_red": {
+            "textures": "textures/items/scuke_survive/melee/axe_red"
+        },
+        "scuke_survive:melee_axe_golden": {
+            "textures": "textures/items/scuke_survive/melee/axe_golden"
+        },
+        "scuke_survive:melee_chainsaw": {
+            "textures": "textures/items/scuke_survive/melee/chainsaw"
+        },
+        "scuke_survive:melee_chainsaw_old": {
+            "textures": "textures/items/scuke_survive/melee/chainsaw_old"
+        },
+        "scuke_survive:melee_chainsaw_golden": {
+            "textures": "textures/items/scuke_survive/melee/chainsaw_golden"
+        },
+        "scuke_survive:melee_baseball_bat": {
+            "textures": "textures/items/scuke_survive/melee/baseball_bat"
+        },
+        "scuke_survive:melee_baseball_bat_m": {
+            "textures": "textures/items/scuke_survive/melee/baseball_bat_m"
+        },
+        "scuke_survive:melee_baseball_bat_golden": {
+            "textures": "textures/items/scuke_survive/melee/baseball_bat_golden"
+        },
+        "scuke_survive:melee_pigsaw": {
+            "textures": "textures/items/scuke_survive/melee/pigsaw"
+        },
+        "scuke_survive:melee_pigsaw_golden": {
+            "textures": "textures/items/scuke_survive/melee/pigsaw_golden"
+        },
+        "scuke_survive:melee_pan": {
+            "textures": "textures/items/scuke_survive/melee/pan"
+        },
+        "scuke_survive:melee_pan_copper": {
+            "textures": "textures/items/scuke_survive/melee/pan_copper"
+        },
+        "scuke_survive:melee_pan_golden": {
+            "textures": "textures/items/scuke_survive/melee/pan_golden"
+        },
+
+        "scuke_survive:armor_armor02_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor02_helmet"
+        },
+        "scuke_survive:armor_armor02_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor02_chest"
+        },
+        "scuke_survive:armor_armor02_legs": {
+            "textures": "textures/items/scuke_survive/armor/armor02_legs"
+        },
+        "scuke_survive:armor_armor02_boots": {
+            "textures": "textures/items/scuke_survive/armor/armor02_boots"
+        },
+        "scuke_survive:armor_armor01_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor01_helmet"
+        },
+        "scuke_survive:armor_armor01_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor01_chest"
+        },
+        "scuke_survive:armor_armor01_legs": {
+            "textures": "textures/items/scuke_survive/armor/armor01_legs"
+        },
+        "scuke_survive:armor_armor01_boots": {
+            "textures": "textures/items/scuke_survive/armor/armor01_boots"
+        },
+        "scuke_survive:armor_black_rescue_helmet": {
+            "textures": "textures/items/scuke_survive/armor/black_rescue_helmet"
+        },
+        "scuke_survive:armor_black_rescue_chest": {
+            "textures": "textures/items/scuke_survive/armor/black_rescue_chest"
+        },
+        "scuke_survive:armor_black_rescue_legs": {
+            "textures": "textures/items/scuke_survive/armor/black_rescue_legs"
+        },
+        "scuke_survive:armor_black_rescue_boots": {
+            "textures": "textures/items/scuke_survive/armor/black_rescue_boots"
+        },
+        "scuke_survive:armor_red_rescue_helmet": {
+            "textures": "textures/items/scuke_survive/armor/red_rescue_helmet"
+        },
+        "scuke_survive:armor_red_rescue_chest": {
+            "textures": "textures/items/scuke_survive/armor/red_rescue_chest"
+        },
+        "scuke_survive:armor_red_rescue_legs": {
+            "textures": "textures/items/scuke_survive/armor/red_rescue_legs"
+        },
+        "scuke_survive:armor_red_rescue_boots": {
+            "textures": "textures/items/scuke_survive/armor/red_rescue_boots"
+        },
+        "scuke_survive:armor_safety_helmet": {
+            "textures": "textures/items/scuke_survive/armor/safety_helmet"
+        },
+        "scuke_survive:armor_safety_chest": {
+            "textures": "textures/items/scuke_survive/armor/safety_chest"
+        },
+        "scuke_survive:armor_safety_legs": {
+            "textures": "textures/items/scuke_survive/armor/safety_legs"
+        },
+        "scuke_survive:armor_safety_boots": {
+            "textures": "textures/items/scuke_survive/armor/safety_boots"
+        },
+        "scuke_survive:armor_snow01_helmet": {
+            "textures": "textures/items/scuke_survive/armor/snow01_helmet"
+        },
+        "scuke_survive:armor_snow01_chest": {
+            "textures": "textures/items/scuke_survive/armor/snow01_chest"
+        },
+        "scuke_survive:armor_snow01_legs": {
+            "textures": "textures/items/scuke_survive/armor/snow01_legs"
+        },
+        "scuke_survive:armor_snow01_boots": {
+            "textures": "textures/items/scuke_survive/armor/snow01_boots"
+        },
+        "scuke_survive:armor_snow02_helmet": {
+            "textures": "textures/items/scuke_survive/armor/snow02_helmet"
+        },
+        "scuke_survive:armor_snow02_chest": {
+            "textures": "textures/items/scuke_survive/armor/snow02_chest"
+        },
+        "scuke_survive:armor_snow02_legs": {
+            "textures": "textures/items/scuke_survive/armor/snow02_legs"
+        },
+        "scuke_survive:armor_snow02_boots": {
+            "textures": "textures/items/scuke_survive/armor/snow02_boots"
+        },
+        "scuke_survive:armor_soviet_tig_helmet_black": {
+            "textures": "textures/items/scuke_survive/armor/soviet_tig_helmet_black"
+        },
+        "scuke_survive:armor_soviet_tig_helmet_silver": {
+            "textures": "textures/items/scuke_survive/armor/soviet_tig_helmet_silver"
+        },
+        "scuke_survive:armor_soviet_tig_helmet_gold": {
+            "textures": "textures/items/scuke_survive/armor/soviet_tig_helmet_gold"
+        },
+
+        "scuke_survive:armor_green_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_green_helmet"
+        },
+        "scuke_survive:armor_tattered_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_tattered_helmet"
+        },
+        "scuke_survive:armor_tattered_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor_tattered_chest"
+        },
+        "scuke_survive:armor_red_mask_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_red_mask_helmet"
+        },
+        "scuke_survive:armor_red_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_red_helmet"
+        },
+        "scuke_survive:armor_military_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_military_helmet"
+        },
+        "scuke_survive:armor_military_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor_military_chest"
+        },
+        "scuke_survive:armor_skull_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_skull_helmet"
+        },
+        "scuke_survive:armor_skull_mask_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_skull_mask_helmet"
+        },
+        "scuke_survive:armor_skull_hood_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_skull_hood_helmet"
+        },
+
+        "scuke_survive:armor_lead_boots": {
+            "textures": "textures/items/scuke_survive/armor/armor_lead_boots"
+        },"scuke_survive:armor_lead_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor_lead_chest"
+        },"scuke_survive:armor_lead_helme": {
+            "textures": "textures/items/scuke_survive/armor/armor_lead_helme"
+        },"scuke_survive:armor_lead_legs": {
+            "textures": "textures/items/scuke_survive/armor/armor_lead_legs"
+        },"scuke_survive:armor_lithium_boots": {
+            "textures": "textures/items/scuke_survive/armor/armor_lithium_boots"
+        },"scuke_survive:armor_lithium_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor_lithium_chest"
+        },"scuke_survive:armor_lithium_helme": {
+            "textures": "textures/items/scuke_survive/armor/armor_lithium_helme"
+        },"scuke_survive:armor_lithium_legs": {
+            "textures": "textures/items/scuke_survive/armor/armor_lithium_legs"
+        },"scuke_survive:armor_rare_earth_boots": {
+            "textures": "textures/items/scuke_survive/armor/armor_rare_earth_boots"
+        },"scuke_survive:armor_rare_earth_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor_rare_earth_chest"
+        },"scuke_survive:armor_rare_earth_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_rare_earth_helmet"
+        },"scuke_survive:armor_rare_earth_legs": {
+            "textures": "textures/items/scuke_survive/armor/armor_rare_earth_legs"
+        },"scuke_survive:armor_yttrium_boots": {
+            "textures": "textures/items/scuke_survive/armor/armor_yttrium_boots"
+        },"scuke_survive:armor_yttrium_chest": {
+            "textures": "textures/items/scuke_survive/armor/armor_yttrium_chest"
+        },"scuke_survive:armor_yttrium_helmet": {
+            "textures": "textures/items/scuke_survive/armor/armor_yttrium_helmet"
+        },"scuke_survive:armor_yttrium_legs": {
+            "textures": "textures/items/scuke_survive/armor/armor_yttrium_legs"
+        },
+
+
+        "scuke_survive:axe_lead": {
+            "textures": "textures/items/scuke_survive/metal/axe_lead"
+        },
+        "scuke_survive:axe_lithium": {
+            "textures": "textures/items/scuke_survive/metal/axe_lithium"
+        },
+        "scuke_survive:axe_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/axe_rare_earth"
+        },
+        "scuke_survive:axe_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/axe_yttrium"
+        },
+        "scuke_survive:hoe_lead": {
+            "textures": "textures/items/scuke_survive/metal/hoe_lead"
+        },
+        "scuke_survive:hoe_lithium": {
+            "textures": "textures/items/scuke_survive/metal/hoe_lithium"
+        },
+        "scuke_survive:hoe_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/hoe_rare_earth"
+        },
+        "scuke_survive:hoe_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/hoe_yttrium"
+        },
+        "scuke_survive:pickaxe_lead": {
+            "textures": "textures/items/scuke_survive/metal/pickaxe_lead"
+        },
+        "scuke_survive:pickaxe_lithium": {
+            "textures": "textures/items/scuke_survive/metal/pickaxe_lithium"
+        },
+        "scuke_survive:pickaxe_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/pickaxe_rare_earth"
+        },
+        "scuke_survive:pickaxe_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/pickaxe_yttrium"
+        },
+        "scuke_survive:shovel_lead": {
+            "textures": "textures/items/scuke_survive/metal/shovel_lead"
+        },
+        "scuke_survive:shovel_lithium": {
+            "textures": "textures/items/scuke_survive/metal/shovel_lithium"
+        },
+        "scuke_survive:shovel_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/shovel_rare_earth"
+        },
+        "scuke_survive:shovel_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/shovel_yttrium"
+        },
+        "scuke_survive:sword_lead": {
+            "textures": "textures/items/scuke_survive/metal/sword_lead"
+        },
+        "scuke_survive:sword_lithium": {
+            "textures": "textures/items/scuke_survive/metal/sword_lithium"
+        },
+        "scuke_survive:sword_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/sword_rare_earth"
+        },
+        "scuke_survive:sword_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/sword_yttrium"
+        },
+
+
+
+
+
+        "scuke_survive:raw_lead": {
+            "textures": "textures/items/scuke_survive/metal/raw_lead"
+        },
+        "scuke_survive:raw_lithium": {
+            "textures": "textures/items/scuke_survive/metal/raw_lithium"
+        },
+        "scuke_survive:raw_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/raw_rare_earth"
+        },
+        "scuke_survive:raw_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/raw_yttrium"
+        },
+        "scuke_survive:ingot_lead": {
+            "textures": "textures/items/scuke_survive/metal/ingot_lead"
+        },
+        "scuke_survive:ingot_lithium": {
+            "textures": "textures/items/scuke_survive/metal/ingot_lithium"
+        },
+        "scuke_survive:ingot_rare_earth": {
+            "textures": "textures/items/scuke_survive/metal/ingot_rare_earth"
+        },
+        "scuke_survive:ingot_yttrium": {
+            "textures": "textures/items/scuke_survive/metal/ingot_yttrium"
+        },
+
+        "scuke_survive:food_hp_painkiller": {
+            "textures": "textures/items/scuke_survive/food/hp_painkiller"
+        },
+        "scuke_survive:food_hp_firstaid_pack": {
+            "textures": "textures/items/scuke_survive/food/hp_firstaid_pack"
+        },
+        "scuke_survive:food_hp_bandage": {
+            "textures": "textures/items/scuke_survive/food/hp_bandage"
+        },
+        "scuke_survive:food_drink_aim": {
+            "textures": "textures/items/scuke_survive/food/drink_aim"
+        },
+        "scuke_survive:food_drink_power": {
+            "textures": "textures/items/scuke_survive/food/drink_power"
+        },
+        "scuke_survive:food_drink_speed1": {
+            "textures": "textures/items/scuke_survive/food/drink_speed1"
+        },
+        "scuke_survive:food_drink_speed2": {
+            "textures": "textures/items/scuke_survive/food/drink_speed2"
+        },
+        "scuke_survive:food_hotwater_small": {
+            "textures": "textures/items/scuke_survive/food/hotwater_small"
+        },
+        "scuke_survive:food_hotwater_large": {
+            "textures": "textures/items/scuke_survive/food/hotwater_large"
+        },
+        "scuke_survive:food_coldwater_small": {
+            "textures": "textures/items/scuke_survive/food/coldwater_small"
+        },
+        "scuke_survive:food_coldwater_large": {
+            "textures": "textures/items/scuke_survive/food/coldwater_large"
+        },
+        "scuke_survive:food_radiation_small": {
+            "textures": "textures/items/scuke_survive/food/radiation_small"
+        },
+        "scuke_survive:food_radiation_middle": {
+            "textures": "textures/items/scuke_survive/food/radiation_middle"
+        },
+        "scuke_survive:food_radiation_large": {
+            "textures": "textures/items/scuke_survive/food/radiation_large"
+        },
+
+        "scuke_survive:food_warm_paste":{"textures": "textures/items/scuke_survive/food/warm_paste"},
+        "scuke_survive:food_cold_paste":{"textures": "textures/items/scuke_survive/food/cold_paste"},
+
+        "scuke_survive:food_radiation_serum": {
+            "textures": "textures/items/scuke_survive/food/radiation_serum"
+        },
+        "scuke_survive:food_epinephrine": {
+            "textures": "textures/items/scuke_survive/food/epinephrine"
+        },
+        "scuke_survive:food_antibiotic": {
+            "textures": "textures/items/scuke_survive/food/antibiotic"
+        },
+        "scuke_survive:food_eye_drops": {
+            "textures": "textures/items/scuke_survive/food/eye_drops"
+        },
+        "scuke_survive:food_spicy_strip": {
+            "textures": "textures/items/scuke_survive/food/spicy_strip"
+        },
+        "scuke_survive:food_beef": {
+            "textures": "textures/items/scuke_survive/food/beef"
+        },
+        "scuke_survive:food_senbei": {
+            "textures": "textures/items/scuke_survive/food/senbei"
+        },
+        "scuke_survive:food_nougat": {
+            "textures": "textures/items/scuke_survive/food/nougat"
+        },
+        "scuke_survive:food_bubble_gum_yellow": {
+            "textures": "textures/items/scuke_survive/food/bubble_gum_yellow"
+        },
+        "scuke_survive:food_bubble_gum_green": {
+            "textures": "textures/items/scuke_survive/food/bubble_gum_green"
+        },
+        "scuke_survive:food_bubble_gum_red": {
+            "textures": "textures/items/scuke_survive/food/bubble_gum_red"
+        },
+        "scuke_survive:food_bubble_gum_pink": {
+            "textures": "textures/items/scuke_survive/food/bubble_gum_pink"
+        },
+        "scuke_survive:food_hawthorn": {
+            "textures": "textures/items/scuke_survive/food/hawthorn"
+        },
+        "scuke_survive:food_mylikes": {
+            "textures": "textures/items/scuke_survive/food/mylikes"
+        },
+        "scuke_survive:food_rice_crust": {
+            "textures": "textures/items/scuke_survive/food/rice_crust"
+        },
+        "scuke_survive:food_chocolate": {
+            "textures": "textures/items/scuke_survive/food/chocolate"
+        },
+        "scuke_survive:food_redbull": {
+            "textures": "textures/items/scuke_survive/food/redbull"
+        },
+        "scuke_survive:food_iced_black_tea": {
+            "textures": "textures/items/scuke_survive/food/iced_black_tea"
+        },
+        "scuke_survive:food_iced_black_tea_large": {
+            "textures": "textures/items/scuke_survive/food/iced_black_tea_large"
+        },
+        "scuke_survive:mat_phone1": {
+            "textures": "textures/items/scuke_survive/material/phone1"
+        },
+        "scuke_survive:mat_phone2": {
+            "textures": "textures/items/scuke_survive/material/phone2"
+        },
+        "scuke_survive:mat_phone3": {
+            "textures": "textures/items/scuke_survive/material/phone3"
+        },
+        "scuke_survive:mat_phone_watch": {
+            "textures": "textures/items/scuke_survive/material/phone_watch"
+        },
+        "scuke_survive:mat_read_machine": {
+            "textures": "textures/items/scuke_survive/material/read_machine"
+        },
+        "scuke_survive:mat_game_machine": {
+            "textures": "textures/items/scuke_survive/material/game_machine"
+        },
+        "scuke_survive:mat_circuit_board": {
+            "textures": "textures/items/scuke_survive/material/circuit_board"
+        },
+        "scuke_survive:mat_drink_can": {
+            "textures": "textures/items/scuke_survive/material/drink_can"
+        },
+        "scuke_survive:mat_battery": {
+            "textures": "textures/items/scuke_survive/material/battery"
+        },
+        "scuke_survive:mat_can": {
+            "textures": "textures/items/scuke_survive/material/can"
+        },
+        "scuke_survive:mat_frog": {
+            "textures": "textures/items/scuke_survive/material/frog"
+        },
+        "scuke_survive:mat_duck": {
+            "textures": "textures/items/scuke_survive/material/duck"
+        },
+        "scuke_survive:mat_sand_hammer": {
+            "textures": "textures/items/scuke_survive/material/sand_hammer"
+        },
+        "scuke_survive:mat_spinning_top": {
+            "textures": "textures/items/scuke_survive/material/spinning_top"
+        },
+        "scuke_survive:mat_carrot_knife": {
+            "textures": "textures/items/scuke_survive/material/carrot_knife"
+        },
+        "scuke_survive:mat_screw": {
+            "textures": "textures/items/scuke_survive/material/screw"
+        },
+        "scuke_survive:mat_clothes": {
+            "textures": "textures/items/scuke_survive/material/clothes"
+        },
+        "scuke_survive:mat_chip_small": {
+            "textures": "textures/items/scuke_survive/material/chip_small"
+        },
+        "scuke_survive:mat_chip_middle": {
+            "textures": "textures/items/scuke_survive/material/chip_middle"
+        },
+        "scuke_survive:mat_chip_large": {
+            "textures": "textures/items/scuke_survive/material/chip_large"
+        },
+        "scuke_survive:mat_cloth": {
+            "textures": "textures/items/scuke_survive/material/cloth"
+        },
+        "scuke_survive:mat_plastic_board": {
+            "textures": "textures/items/scuke_survive/material/plastic_board"
+        },
+        "scuke_survive:mat_iron_wire": {
+            "textures": "textures/items/scuke_survive/material/iron_wire"
+        },
+        "scuke_survive:key_mars": {
+            "textures": "textures/items/scuke_survive/item/key_mars"
+        },
+        "scuke_survive:key_asteroid": {
+            "textures": "textures/items/scuke_survive/item/key_asteroid"
+        },
+        "scuke_survive:key_jupiter": {
+            "textures": "textures/items/scuke_survive/item/key_jupiter"
+        },
+
+        "scuke_survive:carpart_old_engine": {
+            "textures": "textures/items/scuke_survive/carpart/old_engine"
+        },
+        "scuke_survive:carpart_efficient_engine": {
+            "textures": "textures/items/scuke_survive/carpart/efficient_engine"
+        },
+        "scuke_survive:carpart_red_engine": {
+            "textures": "textures/items/scuke_survive/carpart/red_engine"
+        },
+        "scuke_survive:carpart_old_bumper": {
+            "textures": "textures/items/scuke_survive/carpart/old_bumper"
+        },
+        "scuke_survive:carpart_alloy_bumper": {
+            "textures": "textures/items/scuke_survive/carpart/alloy_bumper"
+        },
+        "scuke_survive:carpart_bullbar": {
+            "textures": "textures/items/scuke_survive/carpart/bullbar"
+        },
+        "scuke_survive:carpart_safety_cage": {
+            "textures": "textures/items/scuke_survive/carpart/safety_cage"
+        },
+        "scuke_survive:carpart_emp": {
+            "textures": "textures/items/scuke_survive/carpart/emp"
+        },
+        "scuke_survive:carpart_missile": {
+            "textures": "textures/items/scuke_survive/carpart/missile"
+        },
+        "scuke_survive:carpart_armor_profile": {
+            "textures": "textures/items/scuke_survive/carpart/armor_profile"
+        },
+        "scuke_survive:carpart_spike_profile": {
+            "textures": "textures/items/scuke_survive/carpart/spike_profile"
+        },
+        "scuke_survive:carpart_thruster": {
+            "textures": "textures/items/scuke_survive/carpart/thruster"
+        },
+        "scuke_survive:carpart_run_water": {
+            "textures": "textures/items/scuke_survive/carpart/run_water"
+        },
+        "scuke_survive:carpart_fly": {
+            "textures": "textures/items/scuke_survive/carpart/fly"
+        },
+
+        "scuke_survive:zombie_baby": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_baby"
+        },
+        "scuke_survive:zombie_big_dog": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_big_dog"
+        },
+        "scuke_survive:zombie_big_giant": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_big_giant"
+        },
+        "scuke_survive:zombie_big": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_big"
+        },
+        "scuke_survive:zombie_black_venom": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_black_venom"
+        },
+        "scuke_survive:zombie_captain": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_captain"
+        },
+        "scuke_survive:zombie_chick": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_chick"
+        },
+        "scuke_survive:zombie_dog": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_dog"
+        },
+        "scuke_survive:zombie_explosive": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_explosive"
+        },
+        "scuke_survive:zombie_fat": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_fat"
+        },
+        "scuke_survive:zombie_flame_venom": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_flame_venom"
+        },
+        "scuke_survive:zombie_flyinglava": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_flyinglava"
+        },
+        "scuke_survive:zombie_gangs_captain": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_gangs_captain"
+        },
+        "scuke_survive:zombie_gangs": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_gangs"
+        },
+        "scuke_survive:zombie_giant_king": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_giant_king"
+        },
+        "scuke_survive:zombie_giant_sarcoma": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_giant_sarcoma"
+        },
+        "scuke_survive:zombie_giant": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_giant"
+        },
+        "scuke_survive:zombie_golden_chick": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_golden_chick"
+        },
+        "scuke_survive:zombie_grandpa": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_grandpa"
+        },
+        "scuke_survive:zombie_guard_special": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_guard_special"
+        },
+        "scuke_survive:zombie_guard": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_guard"
+        },
+        "scuke_survive:zombie_hypertension_grandpa": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_hypertension_grandpa"
+        },
+        "scuke_survive:zombie_jocker_king": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_jocker_king"
+        },
+        "scuke_survive:zombie_jocker": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_jocker"
+        },
+        "scuke_survive:zombie_normal": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_normal"
+        },
+        "scuke_survive:zombie_otaku_black": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_otaku_black"
+        },
+        "scuke_survive:zombie_otaku": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_otaku"
+        },
+        "scuke_survive:zombie_sarcoma": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_sarcoma"
+        },
+        "scuke_survive:zombie_special_guard": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_special_guard"
+        },
+        "scuke_survive:zombie_spicy_chick": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_spicy_chick"
+        },
+        "scuke_survive:zombie_supertnt": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_supertnt"
+        },
+        "scuke_survive:zombie_tons_king": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_tons_king"
+        },
+        "scuke_survive:zombie_venom": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_venom"
+        },
+        "scuke_survive:zombie_witch": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_witch"
+        },
+        "scuke_survive:zombie_witch_normal": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_witch_normal"
+        },
+        "scuke_survive:zombie_snap_killer": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_zombie_snap_killer"
+        },
+        "scuke_survive:rebel_ragman": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_rebel_ragman"
+        },
+        "scuke_survive:rebel_vagrant": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_rebel_vagrant"
+        },
+        "scuke_survive:rebel_soldier": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_rebel_soldier"
+        },
+        "scuke_survive:rebel_leader": {
+            "textures": "textures/ui/scuke_survive/head_icon/scuke_rebel_leader"
+        }
+    },
+    "texture_name": "atlas.items"
+}

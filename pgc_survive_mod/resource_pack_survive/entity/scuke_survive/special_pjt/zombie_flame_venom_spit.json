@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"animations": {
+				"ctl_venom_spit_effect": "controller.animation.scuke_zombie_venom_spit.effect"
+			},
+			"identifier": "scuke_survive:projectile_flame_venom",
+			"materials": {
+				"default": "llama_spit"
+			},
+			"textures": {
+				"default": "textures/entity/scuke_survive/projectile/zombie_flame_venom_spit"
+			},
+			"geometry": {
+				"default": "geometry.scuke_zombie_venom_spit"
+			},
+			"scripts": {
+				"animate": [
+					"ctl_venom_spit_effect"
+				]
+			},
+			"render_controllers": [
+				"controller.render.llama_spit"
+			],
+			"particle_effects": {
+				"zombie_venom_particles": "scuke_survive:zombie_flame_venom_particles"
+			}
+		}
+	}
+}

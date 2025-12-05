@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:gun_pistol1_s2"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:gun_pistol1_s2",
+            "register_to_create_menu": true
+        }
+    }
+}

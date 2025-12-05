@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.scuke_survive_projectile_flyinglava",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 15.669, 0],
+					"cubes": [
+						{
+							"origin": [-4, -4, -4],
+							"size": [8, 8, 8],
+							"uv": {
+								"north": {"uv": [42, 35], "uv_size": [6, 6]},
+								"east": {"uv": [25, 29], "uv_size": [6, 6]},
+								"south": {"uv": [48, 18], "uv_size": [6, 6]},
+								"west": {"uv": [22, 47], "uv_size": [6, 6]},
+								"up": {"uv": [6, 53], "uv_size": [6, 6]},
+								"down": {"uv": [62, 11], "uv_size": [6, -6]}
+							}
+						}
+					],
+					"locators": {
+						"projectile": [0, 0, 0]
+					}
+				}
+			]
+		}
+	]
+}

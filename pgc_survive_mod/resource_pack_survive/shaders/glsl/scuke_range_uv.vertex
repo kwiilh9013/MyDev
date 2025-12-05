@@ -1,0 +1,72 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "vertexVersionCentroidUV.h"
+
+#include "uniformWorldConstants.h"
+#include "uniformEntityConstants.h"
+#include "uniformPerFrameConstants.h"
+
+#if __VERSION__ >= 300
+// version 300 code
+#define texture2D texture
+#else
+// version 100 code
+#endif
+
+attribute mediump vec4 POSITION;
+attribute vec4 COLOR;
+attribute vec2 TEXCOORD_0;
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0; // base map
+
+varying vec4 color;
+
+#ifdef ENABLE_FOG
+varying vec4 fogColor;
+#endif
+
+#ifdef GLINT
+varying vec2 layer1UV;
+varying vec2 layer2UV;
+
+vec2 calculateLayerUV(float offset, float rotation) {
+	vec2 uv = TEXCOORD_0;
+	uv -= 0.5;
+	float rsin = sin(rotation);
+	float rcos = cos(rotation);
+	uv = mat2(rcos, -rsin, rsin, rcos) * uv;
+	uv.x += offset;
+	uv += 0.5;
+
+	return uv * GLINT_UV_SCALE;
+}
+#endif
+
+void main()
+{
+	gl_Position = WORLDVIEWPROJ * POSITION;
+	vec3 pos = POSITION.xyz/POSITION.w;
+	color = COLOR;
+	vec2 d_uv = TEXCOORD_0;
+	vec2 p_uv = vec2(0.5,0.0)+TEXCOORD_0*0.5;
+	vec4 params = texture2D(TEXTURE_0, p_uv); //r:边缘像素uv占比1/16, g:1/半径格数, b:空, a:边缘宽度格数占比
+	float k = params.r*params.g*8.0*params.a;
+	d_uv.x += sign(0.5-d_uv.x)*params.r-sign(0.5-d_uv.x)*k;
+	d_uv.y += sign(0.5-d_uv.y)*params.r-sign(0.5-d_uv.y)*k;
+	uv = d_uv * 0.5;
+#ifdef ENABLE_FOG
+	//fog
+    fogColor.rgb = FOG_COLOR.rgb;
+	fogColor.a = clamp(((gl_Position.z / RENDER_DISTANCE) - FOG_CONTROL.x) / (FOG_CONTROL.y - FOG_CONTROL.x), 0.0, 1.0);
+#endif
+
+#ifdef USE_LIGHTING
+	color *= vec4(TILE_LIGHT_COLOR.xyz, 1.0);
+#endif
+
+#ifdef GLINT
+	layer1UV = calculateLayerUV(UV_OFFSET.x, UV_ROTATION.x);
+	layer2UV = calculateLayerUV(UV_OFFSET.y, UV_ROTATION.y);
+#endif
+}

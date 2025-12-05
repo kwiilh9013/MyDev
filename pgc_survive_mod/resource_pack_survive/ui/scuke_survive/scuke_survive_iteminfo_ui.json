@@ -1,0 +1,99 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "button@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "",
+               "$hover_texture" : "",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "",
+               "$texture_layer" : 2,
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "controls" : [
+                  {
+                     "panel" : {
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "top_left",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.4588235294117647, 0.5882352941176471, 0.5529411764705883 ],
+                                 "controls" : [
+                                    {
+                                       "label" : {
+                                          "font_type" : "default",
+                                          "text" : "[§a增益§f] 耐热\n[§a护甲§f] +9",
+                                          "type" : "label"
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "nineslice_size" : [ 3.0, 3.0, 3.0, 3.0 ],
+                                 "size" : [ "100.0%c+10.0px", "100.0%c+10.0px" ],
+                                 "texture" : "textures/ui/scuke_survive/common/btn_pressed",
+                                 "type" : "image"
+                              }
+                           }
+                        ],
+                        "enabled" : false,
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "default@netease_editor_template_namespace.default" : {
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {
+                        "visible" : false
+                     }
+                  }
+               ],
+               "default_control" : "default",
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 2,
+               "pressed_control" : "pressed",
+               "type" : "button"
+            }
+         }
+      ],
+      "force_render_below" : true,
+      "offset" : [ -1.0, 0.0 ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_iteminfo_ui"
+}

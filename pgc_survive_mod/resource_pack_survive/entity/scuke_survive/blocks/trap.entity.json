@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:items_trap_entity",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/electric_trap"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_trap"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#DF7E34",
+                "overlay_color":"#72342A"
+            },
+            "animations": {
+                "bite": "animation.scuke_survive_blocks.trap_bite",
+                "ui_correct":"animation.scuke_survive_blocks.scale_correct"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.working_state = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {"bite": "variable.working_state > 0"},
+                    {"ui_correct":"variable.correct_pos == 1.0"}
+                ]
+            },
+            "sound_effects": {
+                "trap":"scuke_survive.items.trap"
+            }
+        }
+    }
+}

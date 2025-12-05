@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:items_landmine_entity",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/landmine"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_landmine"
+            },
+            "animations": {
+                "ui_correct": "animation.scuke_survive_electric_spike_trap.scale_correct"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.working_state = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    {"ui_correct":"variable.correct_pos == 1.0"}
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#DF7E34",
+                "overlay_color":"#72342A"
+            }
+        }
+    }
+}

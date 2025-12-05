@@ -1,0 +1,257 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_car.missile_shoot_1": {
+			"animation_length": 0.75,
+			"bones": {
+				"rs1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.25": [0, 0, 5],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"smaillsheild1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [-180, 0, 0],
+						"0.5": [-180, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"rocket1": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1],
+						"0.5": [0, 0, 0],
+						"0.75": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "missile_shoot"
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_2": {
+			"animation_length": 0.75,
+			"bones": {
+				"rs2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.25": [0, 0, 5],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"smaillsheild2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [-180, 0, 0],
+						"0.5": [-180, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"rocket2": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1],
+						"0.5": [0, 0, 0],
+						"0.75": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "missile_shoot"
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_3": {
+			"animation_length": 0.75,
+			"bones": {
+				"rs3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.25": [0, 0, 5],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"smaillsheild3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [-180, 0, 0],
+						"0.5": [-180, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"rocket3": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1],
+						"0.5": [0, 0, 0],
+						"0.75": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "missile_shoot"
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_4": {
+			"animation_length": 0.75,
+			"bones": {
+				"rs4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.25": [0, 0, 5],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"smaillsheild4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [-180, 0, 0],
+						"0.5": [-180, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"rocket4": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1],
+						"0.5": [0, 0, 0],
+						"0.75": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "missile_shoot"
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_5": {
+			"animation_length": 0.75,
+			"bones": {
+				"rs5": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.25": [0, 0, 5],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"smaillsheild5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [-180, 0, 0],
+						"0.5": [-180, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"rocket5": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1],
+						"0.5": [0, 0, 0],
+						"0.75": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "missile_shoot"
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_6": {
+			"animation_length": 0.75,
+			"bones": {
+				"rs6": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0],
+						"0.25": [0, 0, 5],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"smaillsheild6": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [-180, 0, 0],
+						"0.5": [-180, 0, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"rocket6": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1],
+						"0.5": [0, 0, 0],
+						"0.75": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "missile_shoot"
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_pre": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"rocketlauncher": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": ["-70 - variable.tilting_pitch", 0, "-variable.tilting_roll"]
+					}
+				},
+				"rocketlauncher2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": ["-70 - variable.tilting_pitch", 0, "-variable.tilting_roll"]
+					}
+				}
+			}
+		},
+		"animation.scuke_survive_car.missile_shoot_end": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"rocketlauncher": {
+					"rotation": {
+						"0.0": ["-70 - variable.tilting_pitch", 0, "-variable.tilting_roll"],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"rocketlauncher2": {
+					"rotation": {
+						"0.0": ["-70 - variable.tilting_pitch", 0, "-variable.tilting_roll"],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

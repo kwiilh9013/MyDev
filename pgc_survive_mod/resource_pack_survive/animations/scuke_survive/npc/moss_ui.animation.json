@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_npc_moss.ui_correct": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [0, -4, 0],
+					"scale": 0.8
+				}
+			}
+		}
+	}
+}

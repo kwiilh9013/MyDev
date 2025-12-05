@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.electric_spike_trap": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+							{"standby":"variable.correct_pos != 1.0"}
+					],
+					"transitions": [
+						{
+							"touch_off": "variable.working_state > 0"
+						}
+					]
+				},
+				"touch_off": {
+					"animations": [
+							"touch_off"
+					],
+					"transitions": [
+						{
+							"standby": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scuke_survive:zombie_jocker_box",
+            "runtime_identifier": "minecraft:evocation_fang",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "component_groups": {},
+        "components": {
+            "minecraft:movement": {
+                "value": 0.33
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "zombie_item",
+                    "undead",
+                    "monster",
+                    "mob"
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "deals_damage":false,
+                    "on_damage": {
+                        "filters": {
+                            "test": "has_damage",
+                            "value": "fatal"
+                        },
+                        "target": "self"
+                    }
+                }
+            }
+        },
+        "events": {}
+    }
+}

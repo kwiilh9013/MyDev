@@ -1,0 +1,20 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "scuke_survive:ingot_lead_from_block"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "scuke_survive:metal_block_lead"
+      }
+    ],
+    "result": {
+      "count": 9,
+      "item": "scuke_survive:ingot_lead"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "[§a功能§f] 用于寻找发动机\n如遇死机的情况，请轻拍（点击屏幕/左键）雷达"
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:items_ladar",
+            "register_to_create_menu": true
+        }
+    }
+}

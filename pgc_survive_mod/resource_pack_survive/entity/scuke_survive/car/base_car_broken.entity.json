@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:base_car_broken",
+            "materials": {
+                "default": "scuke_survive_car"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/car/base_car_broken"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_base_car_broken"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color":"#756B5A",
+                "overlay_color":"#433D33"
+            },
+            "animations": {
+                "breakdown_particle_ctrl": "controller.animation.scuke_survive.car.breakdown_particle"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.breakdown_effect_stage = 2;"
+                ],
+                "animate": [
+                    "breakdown_particle_ctrl"
+                ]
+            },
+            "particle_effects": {
+                "breakdown_smoke": "scuke_survive:car_breakdown_smoke",
+                "breakdown_fire": "scuke_survive:car_breakdown_fire",
+                "water_run": "scuke_survive:car_flow_water"
+            }
+        }
+    }
+}

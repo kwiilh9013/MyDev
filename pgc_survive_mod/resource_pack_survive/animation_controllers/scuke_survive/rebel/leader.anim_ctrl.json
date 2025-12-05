@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive.rebel_leader.summon": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "summon": "query.mod.attack1" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "summon": {
+                    "animations": [ "summon" ],
+                    "transitions":[
+                        { "default": "!query.mod.attack1" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.rebel_leader.parachute": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [ "parachute_idle" ],
+                    "transitions": [
+                        { "start": "query.mod.attack2" }
+                    ]
+                },
+                "start": {
+                    "animations": [ "parachute_start" ],
+                    "transitions":[
+                        { "hover": "query.any_animation_finished" }
+                    ]
+                },
+                "hover": {
+                    "animations": [ "parachute" ],
+                    "transitions":[
+                        { "end": "query.mod.attack2 == 0" }
+                    ]
+                },
+                "end": {
+                    "animations": [ "parachute_end" ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ]
+                }
+            }
+        }
+    }
+}

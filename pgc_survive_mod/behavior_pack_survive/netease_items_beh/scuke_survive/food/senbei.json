@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:use_duration": 32,
+            "minecraft:food": {
+                "nutrition": 2,
+                "saturation_modifier": "low",
+                "effects": [
+                    {
+                      "amplifier": 0,
+                      "chance": 1.0,
+                      "duration": 180,
+                      "name": "water_breathing"
+                    }
+                ]
+            },
+            "netease:customtips": {
+                "value": "[§a增益§f] 水下呼吸 "
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:food_senbei",
+            "register_to_create_menu": true
+        }
+    }
+}

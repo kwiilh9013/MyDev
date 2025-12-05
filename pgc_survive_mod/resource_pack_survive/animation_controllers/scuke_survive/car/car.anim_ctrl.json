@@ -1,0 +1,183 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive.car.water_run": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "water_run": "variable.is_in_water_or_lava && !variable.fly_state" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "water_run": {
+                    "animations": [
+                        "water_run_start",
+                        "water_run"
+                    ],
+                    "particle_effects": [
+                        {
+                            "effect": "water_run",
+                            "locator": "particle_water1"
+                        },
+                        {
+                            "effect": "water_run",
+                            "locator": "particle_water2"
+                        }
+                    ],
+                    "transitions":[
+                        { "default": "variable.fly_state" },
+                        { "water_run_end": "!variable.is_in_water_or_lava" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "water_run_end": {
+                    "animations": [
+                        "water_run_end"
+                    ],
+                    "transitions": [
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.breakdown_particle": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "small": "variable.breakdown_effect_stage == 1" },
+                        { "large": "variable.breakdown_effect_stage == 2" }
+                    ]
+                },
+                "small": {
+                    "particle_effects": [
+						{
+							"effect": "breakdown_smoke",
+							"locator": "back"
+						}
+					],
+                    "transitions": [
+                        { "default": "variable.breakdown_effect_stage != 1" }
+                    ]
+                },
+                "large": {
+                    "particle_effects": [
+						{
+							"effect": "breakdown_smoke",
+							"locator": "back"
+						},
+						{
+							"effect": "breakdown_fire",
+							"locator": "back"
+						}
+					],
+                    "transitions":[
+                        { "default": "variable.breakdown_effect_stage != 2" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.scuke_survive.car.fly": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "fly_start": "variable.fly_state == 1" }
+                    ]
+                },
+                "fly_start": {
+                    "animations": [
+                        "fly_start"
+                    ],
+                    "transitions": [
+                        { "fly": "query.any_animation_finished" }
+                    ]
+                },
+                "fly": {
+                    "animations": [
+                        "fly"
+                    ],
+                    "particle_effects": [
+						{
+							"effect": "fly_fire",
+							"locator": "tire1"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire2"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire3"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire4"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire5"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire6"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire7"
+						},
+						{
+							"effect": "fly_fire",
+							"locator": "tire8"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire1"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire2"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire3"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire4"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire5"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire6"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire7"
+						},
+						{
+							"effect": "fly_circle",
+							"locator": "tire8"
+						}
+					],
+                    "transitions": [
+                        { "fly_end": "variable.fly_state == 0" }
+                    ]
+                },
+                "fly_end": {
+                    "animations": [
+                        "fly_end"
+                    ],
+                    "transitions": [
+                        { "default": "query.any_animation_finished" }
+                    ]
+                }
+            }
+        }
+    }
+}

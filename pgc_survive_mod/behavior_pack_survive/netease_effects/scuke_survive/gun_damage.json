@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "scuke_survive_gun_damage",
+            "minecraft:particle_color": [
+                195,
+                195,
+                195
+            ]
+        },
+        "description": {
+            "identifier": "scuke_survive:effect_gun_damage"
+        }
+    }
+}

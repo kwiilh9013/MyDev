@@ -1,0 +1,100 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+_centroid in vec2 uv;
+#else
+varying vec2 uv;
+#endif
+
+#include "uniformShaderConstants.h"
+#include "uniformPerFrameConstants.h"
+#include "uniformExtraVectorConstants.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+
+void main()
+{
+    // get approach daytime
+    float day_time = 0.0;
+    if (SUN_DIR.a > 0.0)
+    {
+        day_time += 0.958; // 23/24
+        if (SUN_DIR.r > 0.0)
+            day_time += SUN_DIR.g*0.292; // 7/24
+        else
+            day_time += 0.583-SUN_DIR.g*0.292; // 14/24, 7/24
+        if (day_time > 1.0)
+            day_time -= 1.0;
+    }
+    else
+    {
+        day_time += 0.542; // 13/24
+        if (SUN_DIR.r > 0.0)
+            day_time += SUN_DIR.g*0.208; // 5/24
+        else
+            day_time += 0.417-SUN_DIR.g*0.208; // 10/24, 5/24
+    }
+    /////////////////////////////////////缩放过渡
+    vec2 uv_params = uv*0.5 + vec2(0.5);
+    vec4 scale_params = texture2D(TEXTURE_0, uv_params);
+    float scale_from = scale_params.z;
+    float scale_to = scale_params.w;
+    float scale = scale_from;
+    if (scale_to != scale_from)
+    {
+        float scale_time_begin = scale_params.x;
+        float scale_time_end = scale_params.y;
+        float scale_time_delta = scale_time_end - scale_time_begin;
+        if (day_time >= scale_time_begin)
+        {
+            if (day_time < scale_time_end)
+                scale += (day_time-scale_time_begin)/scale_time_delta*(scale_to-scale_from);
+            else
+                scale = scale_to;
+        }
+    }
+    /////////////////////////////////////缩放
+    vec2 uv_diffuse = uv;
+    vec2 uv_scale_pivot = vec2(0.5);
+    uv_diffuse -= uv_scale_pivot;
+    uv_diffuse /= scale; // scale
+    uv_diffuse += uv_scale_pivot;
+    uv_diffuse = clamp(uv_diffuse, vec2(0.0), vec2(0.999));
+    uv_diffuse *= 0.5;
+    vec4 diffuse = texture2D(TEXTURE_0, uv_diffuse);
+    /////////////////////////////////////法线叠加
+    vec4 normal = texture2D(TEXTURE_0, uv_diffuse+vec2(0.5, 0.0));
+    if (normal.a>0.01)
+    {
+        float angle = day_time * 360.0;
+        float x = cos(radians(angle));
+        float y = -sin(radians(angle));
+        float lighting = max(0.0, FOG_COLOR.r+FOG_COLOR.b);
+        vec3 light_dir = normalize(vec3(x, y, -1.0/max(0.5,scale)-lighting)); //缩放远近调整光源方向
+        float ndotl = max(dot(light_dir, -normalize(normal.xyz-vec3(0.5))), 0.0);
+        float d = clamp(pow(ndotl+lighting*0.3+0.5, 2.0), 0.0, 1.0);  //天光亮度调整明暗度
+        diffuse.rgb *= d;
+    }
+    /////////////////////////////////////背景叠加
+    vec4 bg = texture2D(TEXTURE_0, uv*0.5+vec2(0.0, 0.5));
+    if (diffuse.a<0.01)
+    {
+        diffuse = bg;
+    }
+    /////////////////////////////////////雾效大气混合
+    if(diffuse.a<=0.01)
+    {
+        gl_FragColor = diffuse;
+    }
+    else
+    {
+        float lighting = FOG_COLOR.b;
+        float darkness = 1.0 - lighting;
+        float a1 = diffuse.a*clamp(1.0+cos(radians((uv.y+(0.1+lighting*0.1))*180.0))*scale, 0.0, 1.0); //缩放远近uv透明混合区域增强
+        diffuse.a = 0.6+darkness*0.4;
+        vec4 blendColor = mix(FOG_COLOR, diffuse, a1*max(0.5,scale)*(0.3+darkness)); //缩放远近混合雾色
+        gl_FragColor = blendColor;
+    }
+}

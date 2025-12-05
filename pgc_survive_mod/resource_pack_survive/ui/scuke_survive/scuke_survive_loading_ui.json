@@ -1,0 +1,41 @@
+{
+   "main" : {
+      "always_accepts_input" : true,
+      "controls" : [
+         {
+            "panel" : {
+               "controls" : [
+                  {
+                     "bg" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.0, 0.0, 0.0 ],
+                        "controls" : [],
+                        "keep_ratio" : false,
+                        "layer" : 1,
+                        "nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "label" : {
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "font_type" : "default",
+                        "layer" : 1,
+                        "offset" : [ -20.0, -20.0 ],
+                        "text" : "Loading...",
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "layer" : 1000,
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_loading_ui"
+}

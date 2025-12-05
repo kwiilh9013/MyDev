@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "scuke_survive:build_struct",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/items/buildgun"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_buildgun"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "first_idle": "animation.scuke_survive_item.first_idle_default"
+            },
+            "scripts": {
+                "animate": [
+                    {"first_idle": "c.is_first_person"}
+                ]
+            }
+        }
+    }
+}

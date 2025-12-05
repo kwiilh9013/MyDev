@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_rice_crust"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_rice_crust",
+      "count": 1
+    }
+  }
+}

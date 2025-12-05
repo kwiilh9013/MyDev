@@ -1,0 +1,631 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "PanelMain" : {
+               "button_mappings" : [
+                  {
+                     "from_button_id" : "button.menu_select",
+                     "mapping_type" : "pressed",
+                     "to_button_id" : "#netease_to_button_id"
+                  }
+               ],
+               "controls" : [
+                  {
+                     "panel_speedup" : {
+                        "anchor_from" : "bottom_right",
+                        "anchor_to" : "bottom_right",
+                        "controls" : [
+                           {
+                              "btn_up@scuke_survive_car_ui.btn_icon_base" : {
+                                 "$icon_anchor_from" : "top_middle",
+                                 "$icon_anchor_to" : "top_middle",
+                                 "$icon_offset" : [ 0.0, "10.0%+0.0px" ],
+                                 "$icon_size" : [ "46.0%+0.0px", "46.0%+0.0px" ],
+                                 "$icon_texture" : "textures/ui/scuke_survive/icon/icon_car_accelerator",
+                                 "$label_text" : "油门",
+                                 "anchor_from" : "bottom_right",
+                                 "anchor_to" : "bottom_right",
+                                 "size" : [ 40.0, 40.0 ]
+                              }
+                           },
+                           {
+                              "btn_cut@scuke_survive_car_ui.btn_icon_base" : {
+                                 "$icon_anchor_from" : "top_middle",
+                                 "$icon_anchor_to" : "top_middle",
+                                 "$icon_offset" : [ 0.0, "10.0%+0.0px" ],
+                                 "$icon_size" : [ "46.0%+0.0px", "46.0%+0.0px" ],
+                                 "$icon_texture" : "textures/ui/scuke_survive/icon/icon_car_brake",
+                                 "$label_text" : "刹车",
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "top_left",
+                                 "layer" : 108,
+                                 "size" : [ 27.0, 27.0 ]
+                              }
+                           }
+                        ],
+                        "layer" : 2,
+                        "offset" : [ "-5.0%+0.0px", "-10.0%+0.0px" ],
+                        "size" : [ 70.0, 70.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "panel_turn" : {
+                        "anchor_from" : "bottom_left",
+                        "anchor_to" : "bottom_left",
+                        "controls" : [
+                           {
+                              "btn_turn_left@scuke_survive_car_ui.btn_icon_base" : {
+                                 "$icon_offset" : [ 0.0, 0.0 ],
+                                 "$icon_size" : [ "70.0%+0.0px", "70.0%+0.0px" ],
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "offset" : [ 0.0, 0.0 ]
+                              }
+                           },
+                           {
+                              "btn_turn_right@scuke_survive_car_ui.btn_icon_base" : {
+                                 "$icon_offset" : [ 0.0, 0.0 ],
+                                 "$icon_rotate_angle" : 180,
+                                 "$icon_size" : [ "70.0%+0.0px", "70.0%+0.0px" ],
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "layer" : 108
+                              }
+                           }
+                        ],
+                        "layer" : 216,
+                        "offset" : [ "5.0%+0.0px", "-10.0%+0.0px" ],
+                        "size" : [ 80.0, 40.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "btn_geton@scuke_survive_car_ui.btn_icon_base" : {
+                        "$icon_anchor_from" : "top_middle",
+                        "$icon_anchor_to" : "top_middle",
+                        "$icon_offset" : [ 0.0, "4.0%+0.0px" ],
+                        "$icon_size" : [ "70.0%+0.0px", "70.0%+0.0px" ],
+                        "$icon_texture" : "textures/ui/scuke_survive/icon/icon_car_opendoor",
+                        "$label_text" : "上车",
+                        "anchor_from" : "left_middle",
+                        "anchor_to" : "left_middle",
+                        "layer" : 431,
+                        "offset" : [ "5.0%+0.0px", 0.0 ]
+                     }
+                  },
+                  {
+                     "btn_energy@scuke_survive_car_ui.btn_icon_base" : {
+                        "$icon_anchor_from" : "top_middle",
+                        "$icon_anchor_to" : "top_middle",
+                        "$icon_offset" : [ 0.0, "8.0%+0.0px" ],
+                        "$icon_size" : [ "50.0%+0.0px", "50.0%+0.0px" ],
+                        "$icon_texture" : "textures/ui/scuke_survive/icon/icon_comeon",
+                        "$label_text" : "充能",
+                        "anchor_from" : "left_middle",
+                        "anchor_to" : "left_middle",
+                        "layer" : 538,
+                        "offset" : [ "15.0%+0.0px", 0.0 ]
+                     }
+                  },
+                  {
+                     "sizeSliderPanel" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "alpha" : 0.40,
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.0, 0.0, 0.0 ],
+                                 "layer" : 1,
+                                 "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "slider@common.slider" : {
+                                 "$background_default_control" : "common.slider_background",
+                                 "$background_hover_control" : "common.slider_background_hover",
+                                 "$progress_default_clip_direction" : "left",
+                                 "$progress_default_control" : "common.slider_progress",
+                                 "$progress_hover_clip_direction" : "left",
+                                 "$progress_hover_control" : "common.slider_progress_hover",
+                                 "$slider_box_hover_layout" : "common.slider_button_hover_layout",
+                                 "$slider_box_indent_layout" : "common.slider_button_indent_layout",
+                                 "$slider_box_layout" : "common.slider_button_layout",
+                                 "$slider_box_locked_layout" : "common.slider_button_locked_layout",
+                                 "$slider_box_size" : [ 10, 16 ],
+                                 "$slider_direction" : "horizontal",
+                                 "$slider_name" : "#CarBtnSetting.SizeSliderChange",
+                                 "$slider_name|default" : "netease_slider_name",
+                                 "$slider_step_factory_control_ids" : {
+                                    "slider_step" : "@common.slider_step",
+                                    "slider_step_hover" : "@common.slider_step_hover",
+                                    "slider_step_progress" : "@common.slider_step_progress",
+                                    "slider_step_progress_hover" : "@common.slider_step_progress_hover"
+                                 },
+                                 "$slider_steps_binding_name" : "#CarBtnSetting.SizeSliderStep",
+                                 "$slider_tts_text_value" : "#netease_tts_text_value",
+                                 "$slider_value_binding_name" : "#CarBtnSetting.SizeSliderValue",
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "layer" : 2,
+                                 "offset" : [ -5.0, 0.0 ],
+                                 "size" : [ 110.0, 10 ]
+                              }
+                           },
+                           {
+                              "label" : {
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "font_type" : "default",
+                                 "layer" : 38,
+                                 "offset" : [ 5.0, 0.0 ],
+                                 "text" : "尺寸大小",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 645,
+                        "offset" : [ 0.0, 27.0 ],
+                        "size" : [ 180.0, 20.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "alphaSliderPanel" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "alpha" : 0.40,
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 0.0, 0.0, 0.0 ],
+                                 "layer" : 1,
+                                 "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "texture" : "textures/ui/scuke_survive/white",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "slider@common.slider" : {
+                                 "$background_default_control" : "common.slider_background",
+                                 "$background_hover_control" : "common.slider_background_hover",
+                                 "$progress_default_clip_direction" : "left",
+                                 "$progress_default_control" : "common.slider_progress",
+                                 "$progress_hover_clip_direction" : "left",
+                                 "$progress_hover_control" : "common.slider_progress_hover",
+                                 "$slider_box_hover_layout" : "common.slider_button_hover_layout",
+                                 "$slider_box_indent_layout" : "common.slider_button_indent_layout",
+                                 "$slider_box_layout" : "common.slider_button_layout",
+                                 "$slider_box_locked_layout" : "common.slider_button_locked_layout",
+                                 "$slider_box_size" : [ 10, 16 ],
+                                 "$slider_direction" : "horizontal",
+                                 "$slider_name" : "#CarBtnSetting.AlphaSliderChange",
+                                 "$slider_name|default" : "netease_slider_name",
+                                 "$slider_step_factory_control_ids" : {
+                                    "slider_step" : "@common.slider_step",
+                                    "slider_step_hover" : "@common.slider_step_hover",
+                                    "slider_step_progress" : "@common.slider_step_progress",
+                                    "slider_step_progress_hover" : "@common.slider_step_progress_hover"
+                                 },
+                                 "$slider_steps_binding_name" : "#CarBtnSetting.AlphaSliderStep",
+                                 "$slider_tts_text_value" : "#netease_tts_text_value",
+                                 "$slider_value_binding_name" : "#CarBtnSetting.AlphaSliderValue",
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "layer" : 2,
+                                 "offset" : [ -5.0, 0.0 ],
+                                 "size" : [ 110.0, 10 ]
+                              }
+                           },
+                           {
+                              "label" : {
+                                 "anchor_from" : "left_middle",
+                                 "anchor_to" : "left_middle",
+                                 "font_type" : "default",
+                                 "layer" : 38,
+                                 "offset" : [ 5.0, 0.0 ],
+                                 "text" : "不透明度",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 684,
+                        "offset" : [ 0.0, 5.0 ],
+                        "size" : [ 180.0, 20.0 ],
+                        "type" : "panel"
+                     }
+                  },
+                  {
+                     "resetBtn@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/netease/common/button/default",
+                        "$hover_texture" : "textures/netease/common/button/hover",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 0.0, 0.0, 0.0 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "normal",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "重置",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/netease/common/button/pressed",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {}
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {}
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {}
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {}
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 723,
+                        "offset" : [ -42.0, 48.0 ],
+                        "pressed_control" : "pressed",
+                        "size" : [ 40.0, 20.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "quitBtn@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/netease/common/button/default",
+                        "$hover_texture" : "textures/netease/common/button/hover",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 0.0, 0.0, 0.0 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "normal",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "取消",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/netease/common/button/pressed",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {}
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {}
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {}
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {}
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 733,
+                        "offset" : [ 0.0, 48.0 ],
+                        "pressed_control" : "pressed",
+                        "size" : [ 40.0, 20.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "saveBtn@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/netease/common/button/default",
+                        "$hover_texture" : "textures/netease/common/button/hover",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 0.0, 0.0, 0.0 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "normal",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "保存",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/netease/common/button/pressed",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {}
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {}
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {}
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {}
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "layer" : 743,
+                        "offset" : [ 42.0, 48.0 ],
+                        "pressed_control" : "pressed",
+                        "size" : [ 40.0, 20.0 ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "confirmBg" : {
+                        "alpha" : 0.60,
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 0.0, 0.0, 0.0 ],
+                        "controls" : [
+                           {
+                              "yesBtn@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_texture" : "textures/netease/common/button/default",
+                                 "$hover_texture" : "textures/netease/common/button/hover",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 0.0, 0.0, 0.0 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "normal",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "确认",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0, 0, 0, 0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_texture" : "textures/netease/common/button/pressed",
+                                 "$texture_layer" : 2,
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {}
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {}
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {}
+                                    },
+                                    {
+                                       "button_label@netease_editor_template_namespace.button_label" : {}
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "offset" : [ -40.0, 38.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ 40.0, 20.0 ],
+                                 "type" : "button"
+                              }
+                           },
+                           {
+                              "noBtn@common.button" : {
+                                 "$control_alpha" : 1.0,
+                                 "$default_texture" : "textures/netease/common/button/default",
+                                 "$hover_texture" : "textures/netease/common/button/hover",
+                                 "$is_new_nine_slice" : false,
+                                 "$label_color" : [ 0.0, 0.0, 0.0 ],
+                                 "$label_font_scale_factor" : 1.0,
+                                 "$label_font_size" : "normal",
+                                 "$label_layer" : 3,
+                                 "$label_offset" : [ 0, 0 ],
+                                 "$label_text" : "取消",
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0, 0, 0, 0 ],
+                                 "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                                 "$pressed_texture" : "textures/netease/common/button/pressed",
+                                 "$texture_layer" : 2,
+                                 "bindings" : [
+                                    {
+                                       "binding_collection_name" : "",
+                                       "binding_condition" : "always_when_visible",
+                                       "binding_type" : "collection_details"
+                                    }
+                                 ],
+                                 "button_mappings" : [],
+                                 "controls" : [
+                                    {
+                                       "default@netease_editor_template_namespace.default" : {}
+                                    },
+                                    {
+                                       "hover@netease_editor_template_namespace.hover" : {}
+                                    },
+                                    {
+                                       "pressed@netease_editor_template_namespace.pressed" : {}
+                                    },
+                                    {
+                                       "button_label@netease_editor_template_namespace.button_label" : {}
+                                    }
+                                 ],
+                                 "default_control" : "default",
+                                 "hover_control" : "hover",
+                                 "is_handle_button_move_event" : true,
+                                 "layer" : 11,
+                                 "offset" : [ 40.0, 38.0 ],
+                                 "pressed_control" : "pressed",
+                                 "size" : [ 40.0, 20.0 ],
+                                 "type" : "button"
+                              }
+                           },
+                           {
+                              "label" : {
+                                 "font_type" : "default",
+                                 "layer" : 21,
+                                 "text" : "确定要保存当前设置吗？",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           }
+                        ],
+                        "layer" : 753,
+                        "nineslice_size" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "texture" : "textures/ui/scuke_survive/white",
+                        "type" : "image",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "panel_skill" : {
+                        "controls" : [
+                           {
+                              "btn_skill1@scuke_survive_car_ui.btn_icon_base" : {
+                                 "$icon_anchor_from" : "top_middle",
+                                 "$icon_anchor_to" : "top_middle",
+                                 "$icon_offset" : [ 0.0, "4.0%+0.0px" ],
+                                 "$icon_size" : [ "70.0%+0.0px", "70.0%+0.0px" ],
+                                 "$icon_texture" : "textures/ui/scuke_survive/icon/icon_car_opendoor",
+                                 "$label_text" : "技能1",
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "offset" : [ "-10.0%+0.0px", 20.0 ]
+                              }
+                           },
+                           {
+                              "btn_skill2@scuke_survive_car_ui.btn_icon_base" : {
+                                 "$icon_anchor_from" : "top_middle",
+                                 "$icon_anchor_to" : "top_middle",
+                                 "$icon_offset" : [ 0.0, "8.0%+0.0px" ],
+                                 "$icon_size" : [ "50.0%+0.0px", "50.0%+0.0px" ],
+                                 "$icon_texture" : "textures/ui/scuke_survive/icon/icon_creeper",
+                                 "$label_text" : "技能2",
+                                 "anchor_from" : "right_middle",
+                                 "anchor_to" : "right_middle",
+                                 "offset" : [ "-20.0%+0.0px", 20.0 ]
+                              }
+                           },
+                           {
+                              "skill_fly" : {
+                                 "controls" : [
+                                    {
+                                       "btn_fly@scuke_survive_car_ui.btn_icon_base" : {
+                                          "$icon_anchor_from" : "top_middle",
+                                          "$icon_anchor_to" : "top_middle",
+                                          "$icon_offset" : [ 0.0, "8.0%+0.0px" ],
+                                          "$icon_size" : [ "55.0%+0.0px", "55.0%+0.0px" ],
+                                          "$icon_texture" : "textures/ui/scuke_survive/icon/icon_fly",
+                                          "$label_text" : "飞行",
+                                          "anchor_from" : "left_middle",
+                                          "anchor_to" : "left_middle",
+                                          "offset" : [ "10.0%+0.0px", -40.0 ]
+                                       }
+                                    },
+                                    {
+                                       "btn_up@scuke_survive_car_ui.btn_icon_base" : {
+                                          "$icon_anchor_from" : "top_middle",
+                                          "$icon_anchor_to" : "top_middle",
+                                          "$icon_offset" : [ -1.0, 2.0 ],
+                                          "$icon_rotate_angle" : -90.0,
+                                          "$label_text" : "上升",
+                                          "anchor_from" : "bottom_right",
+                                          "anchor_to" : "bottom_right",
+                                          "offset" : [ "-23.0%+0.0px", "-20.0%+0.0px" ],
+                                          "size" : [ 26.0, 26.0 ]
+                                       }
+                                    },
+                                    {
+                                       "btn_down@scuke_survive_car_ui.btn_icon_base" : {
+                                          "$icon_anchor_from" : "top_middle",
+                                          "$icon_anchor_to" : "top_middle",
+                                          "$icon_offset" : [ 0.0, 2.0 ],
+                                          "$icon_rotate_angle" : 90.0,
+                                          "$icon_size" : [ "55.0%+0.0px", "55.0%+0.0px" ],
+                                          "$label_text" : "下降",
+                                          "anchor_from" : "bottom_right",
+                                          "anchor_to" : "bottom_right",
+                                          "offset" : [ "-23.0%+0.0px", "-20.0%+32.0px" ],
+                                          "size" : [ 26.0, 26.0 ]
+                                       }
+                                    }
+                                 ],
+                                 "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                 "type" : "panel"
+                              }
+                           }
+                        ],
+                        "layer" : 1,
+                        "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                        "type" : "panel"
+                     }
+                  }
+               ],
+               "is_swallow" : true,
+               "layer" : 1,
+               "modal" : true,
+               "type" : "input_panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "scuke_survive_car_setting"
+}

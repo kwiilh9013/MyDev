@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_npc.ui_correct": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, "query.anim_time*30", 0],
+					"position": [0, 5, 0]
+				}
+			}
+		},
+		"animation.scuke_survive_npc.ui_correct_root": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*30", 0],
+					"position": [0, 5, 0]
+				}
+			}
+		}
+	}
+}

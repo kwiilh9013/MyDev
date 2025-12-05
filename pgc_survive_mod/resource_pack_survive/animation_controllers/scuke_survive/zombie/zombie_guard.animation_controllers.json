@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_guard": {
+			"initial_state": "standby",
+			"states": {
+				"standby": {
+					"animations": [
+						"standby"
+					],
+					"transitions": [
+						{
+							"attacking": "variable.ischarging"
+						},
+						{
+							"moving": "variable.is_moving"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attacking": {
+					"animations": [
+						"attacking"
+					],
+					"transitions": [
+						{
+							"moving": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"moving": {
+					"animations": [
+						"moving"
+					],
+					"transitions": [
+						{
+							"attacking": "variable.ischarging"
+						},
+						{
+							"standby": "!variable.is_moving"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

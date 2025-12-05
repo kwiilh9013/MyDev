@@ -1,0 +1,511 @@
+{
+    "groups": [
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_lead",
+            "icon": "scuke_survive:armor_lead_helme",
+            "list": [
+                "scuke_survive:armor_lead_boots",
+                "scuke_survive:armor_lead_chest",
+                "scuke_survive:armor_lead_helme",
+                "scuke_survive:armor_lead_legs"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_lithium",
+            "icon": "scuke_survive:armor_lithium_helme",
+            "list": [
+                "scuke_survive:armor_lithium_boots",
+                "scuke_survive:armor_lithium_chest",
+                "scuke_survive:armor_lithium_helme",
+                "scuke_survive:armor_lithium_legs"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_rare_earth",
+            "icon": "scuke_survive:armor_rare_earth_helmet",
+            "list": [
+                "scuke_survive:armor_rare_earth_boots",
+                "scuke_survive:armor_rare_earth_chest",
+                "scuke_survive:armor_rare_earth_helmet",
+                "scuke_survive:armor_rare_earth_legs"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_yttrium",
+            "icon": "scuke_survive:armor_yttrium_helmet",
+            "list": [
+                "scuke_survive:armor_yttrium_boots",
+                "scuke_survive:armor_yttrium_chest",
+                "scuke_survive:armor_yttrium_helmet",
+                "scuke_survive:armor_yttrium_legs"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_snow01",
+            "icon": "scuke_survive:armor_snow01_helmet",
+            "list": [
+                "scuke_survive:armor_snow01_helmet",
+                "scuke_survive:armor_snow01_chest",
+                "scuke_survive:armor_snow01_legs",
+                "scuke_survive:armor_snow01_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_snow02",
+            "icon": "scuke_survive:armor_snow02_helmet",
+            "list": [
+                "scuke_survive:armor_snow02_helmet",
+                "scuke_survive:armor_snow02_chest",
+                "scuke_survive:armor_snow02_legs",
+                "scuke_survive:armor_snow02_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_safety",
+            "icon": "scuke_survive:armor_safety_helmet",
+            "list": [
+                "scuke_survive:armor_safety_helmet",
+                "scuke_survive:armor_safety_chest",
+                "scuke_survive:armor_safety_legs",
+                "scuke_survive:armor_safety_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_red_rescue",
+            "icon": "scuke_survive:armor_red_rescue_helmet",
+            "list": [
+                "scuke_survive:armor_red_rescue_helmet",
+                "scuke_survive:armor_red_rescue_chest",
+                "scuke_survive:armor_red_rescue_legs",
+                "scuke_survive:armor_red_rescue_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_black_rescue",
+            "icon": "scuke_survive:armor_black_rescue_helmet",
+            "list": [
+                "scuke_survive:armor_black_rescue_helmet",
+                "scuke_survive:armor_black_rescue_chest",
+                "scuke_survive:armor_black_rescue_legs",
+                "scuke_survive:armor_black_rescue_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_armor01",
+            "icon": "scuke_survive:armor_armor01_helmet",
+            "list": [
+                "scuke_survive:armor_armor01_helmet",
+                "scuke_survive:armor_armor01_chest",
+                "scuke_survive:armor_armor01_legs",
+                "scuke_survive:armor_armor01_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_armor02",
+            "icon": "scuke_survive:armor_armor02_helmet",
+            "list": [
+                "scuke_survive:armor_armor02_helmet",
+                "scuke_survive:armor_armor02_chest",
+                "scuke_survive:armor_armor02_legs",
+                "scuke_survive:armor_armor02_boots"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_soviet_tig_helmet",
+            "icon": "scuke_survive:armor_soviet_tig_helmet_black",
+            "list": [
+                "scuke_survive:armor_soviet_tig_helmet_black",
+                "scuke_survive:armor_soviet_tig_helmet_silver",
+                "scuke_survive:armor_soviet_tig_helmet_gold"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.clip",
+            "icon": "scuke_survive:clip_normal",
+            "list": [
+                "scuke_survive:clip_normal",
+                "scuke_survive:clip_advanced",
+                "scuke_survive:clip_energy",
+                "scuke_survive:clip_explosion"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_bazooka1",
+            "icon": "scuke_survive:gun_bazooka1",
+            "list": [
+                "scuke_survive:gun_bazooka1_s1",
+                "scuke_survive:gun_bazooka1_s2",
+                "scuke_survive:gun_bazooka1"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_hmg1",
+            "icon": "scuke_survive:gun_hmg1",
+            "list": [
+                "scuke_survive:gun_hmg1_s1",
+                "scuke_survive:gun_hmg1_s2",
+                "scuke_survive:gun_hmg1"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_lmg1",
+            "icon": "scuke_survive:gun_lmg1",
+            "list": [
+                "scuke_survive:gun_lmg1_s1",
+                "scuke_survive:gun_lmg1_s2",
+                "scuke_survive:gun_lmg1"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_pistol1",
+            "icon": "scuke_survive:gun_pistol1",
+            "list": [
+                "scuke_survive:gun_pistol1",
+                "scuke_survive:gun_pistol1_s2",
+                "scuke_survive:gun_pistol1_s3"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_rifle1",
+            "icon": "scuke_survive:gun_rifle1",
+            "list": [
+                "scuke_survive:gun_rifle1_s1",
+                "scuke_survive:gun_rifle1_s2",
+                "scuke_survive:gun_rifle1"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_shotgun1",
+            "icon": "scuke_survive:gun_shotgun1",
+            "list": [
+                "scuke_survive:gun_shotgun1",
+                "scuke_survive:gun_shotgun1_s2",
+                "scuke_survive:gun_shotgun1_s3"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_smg1",
+            "icon": "scuke_survive:gun_smg1",
+            "list": [
+                "scuke_survive:gun_smg1",
+                "scuke_survive:gun_smg1_s2",
+                "scuke_survive:gun_smg1_s3"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_gun_sniper1",
+            "icon": "scuke_survive:gun_sniper1",
+            "list": [
+                "scuke_survive:gun_sniper1_s1",
+                "scuke_survive:gun_sniper1_s2",
+                "scuke_survive:gun_sniper1"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_melee_axe",
+            "icon": "scuke_survive:melee_axe",
+            "list": [
+                "scuke_survive:melee_axe_red",
+                "scuke_survive:melee_axe",
+                "scuke_survive:melee_axe_golden"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_melee_chainsaw",
+            "icon": "scuke_survive:melee_chainsaw",
+            "list": [
+                "scuke_survive:melee_chainsaw_old",
+                "scuke_survive:melee_chainsaw",
+                "scuke_survive:melee_chainsaw_golden"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_melee_baseball_bat",
+            "icon": "scuke_survive:melee_baseball_bat",
+            "list": [
+                "scuke_survive:melee_baseball_bat",
+                "scuke_survive:melee_baseball_bat_m",
+                "scuke_survive:melee_baseball_bat_golden"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_melee_pigsaw",
+            "icon": "scuke_survive:melee_pigsaw",
+            "list": [
+                "scuke_survive:melee_pigsaw",
+                "scuke_survive:melee_pigsaw_golden"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_melee_pan",
+            "icon": "scuke_survive:melee_pan",
+            "list": [
+                "scuke_survive:melee_pan_copper",
+                "scuke_survive:melee_pan",
+                "scuke_survive:melee_pan_golden"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_food_medicine",
+            "icon": "scuke_survive:food_hp_firstaid_pack",
+            "list": [
+                "scuke_survive:food_hp_painkiller",
+                "scuke_survive:food_hp_firstaid_pack",
+                "scuke_survive:food_hp_bandage",
+                "scuke_survive:food_radiation_small",
+                "scuke_survive:food_radiation_middle",
+                "scuke_survive:food_radiation_large",
+                "scuke_survive:food_radiation_serum",
+                "scuke_survive:food_epinephrine",
+                "scuke_survive:food_antibiotic",
+                "scuke_survive:food_eye_drops"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_food",
+            "icon": "scuke_survive:food_mylikes",
+            "list": [
+                "scuke_survive:food_drink_aim",
+                "scuke_survive:food_drink_power",
+                "scuke_survive:food_drink_speed1",
+                "scuke_survive:food_drink_speed2",
+                "scuke_survive:food_hotwater_small",
+                "scuke_survive:food_hotwater_large",
+                "scuke_survive:food_coldwater_small",
+                "scuke_survive:food_coldwater_large",
+                "scuke_survive:food_spicy_strip",
+                "scuke_survive:food_beef",
+                "scuke_survive:food_senbei",
+                "scuke_survive:food_nougat",
+                "scuke_survive:food_bubble_gum_yellow",
+                "scuke_survive:food_bubble_gum_green",
+                "scuke_survive:food_bubble_gum_red",
+                "scuke_survive:food_bubble_gum_pink",
+                "scuke_survive:food_hawthorn",
+                "scuke_survive:food_mylikes",
+                "scuke_survive:food_rice_crust",
+                "scuke_survive:food_chocolate",
+                "scuke_survive:food_warm_paste",
+                "scuke_survive:food_cold_paste",
+                "scuke_survive:food_radiation_serum"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_mat_device",
+            "icon": "scuke_survive:mat_game_machine",
+            "list": [
+                "scuke_survive:mat_phone1",
+                "scuke_survive:mat_phone2",
+                "scuke_survive:mat_phone3",
+                "scuke_survive:mat_phone_watch",
+                "scuke_survive:mat_read_machine",
+                "scuke_survive:mat_game_machine"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_mat_toy",
+            "icon": "scuke_survive:mat_duck",
+            "list": [
+                "scuke_survive:mat_frog",
+                "scuke_survive:mat_duck",
+                "scuke_survive:mat_sand_hammer",
+                "scuke_survive:mat_spinning_top",
+                "scuke_survive:mat_carrot_knife"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_mat_garbage",
+            "icon": "scuke_survive:mat_drink_can",
+            "list": [
+                "scuke_survive:mat_circuit_board",
+                "scuke_survive:mat_drink_can",
+                "scuke_survive:mat_battery",
+                "scuke_survive:mat_can",
+                "scuke_survive:mat_clothes"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_mat",
+            "icon": "scuke_survive:mat_chip_middle",
+            "list": [
+                "scuke_survive:mat_chip_small",
+                "scuke_survive:mat_chip_middle",
+                "scuke_survive:mat_chip_large",
+                "scuke_survive:mat_cloth",
+                "scuke_survive:mat_plastic_board",
+                "scuke_survive:mat_iron_wire",
+                "scuke_survive:mat_screw"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_axe",
+            "icon": "scuke_survive:axe_lead",
+            "list": [
+                "scuke_survive:axe_lead",
+                "scuke_survive:axe_lithium",
+                "scuke_survive:axe_rare_earth",
+                "scuke_survive:axe_yttrium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_hoe",
+            "icon": "scuke_survive:hoe_lead",
+            "list": [
+                "scuke_survive:hoe_lead",
+                "scuke_survive:hoe_lithium",
+                "scuke_survive:hoe_rare_earth",
+                "scuke_survive:hoe_yttrium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_pickaxe",
+            "icon": "scuke_survive:pickaxe_lead",
+            "list": [
+                "scuke_survive:pickaxe_lead",
+                "scuke_survive:pickaxe_lithium",
+                "scuke_survive:pickaxe_rare_earth",
+                "scuke_survive:pickaxe_yttrium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_shovel",
+            "icon": "scuke_survive:shovel_lead",
+            "list": [
+                "scuke_survive:shovel_lead",
+                "scuke_survive:shovel_lithium",
+                "scuke_survive:shovel_rare_earth",
+                "scuke_survive:shovel_yttrium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_sword",
+            "icon": "scuke_survive:sword_lead",
+            "list": [
+                "scuke_survive:sword_lead",
+                "scuke_survive:sword_lithium",
+                "scuke_survive:sword_rare_earth",
+                "scuke_survive:sword_yttrium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_ore",
+            "icon": "scuke_survive:ore_lead",
+            "list": [
+                "scuke_survive:ore_lead",
+                "scuke_survive:ore_lead_deepslate",
+                "scuke_survive:ore_lithium",
+                "scuke_survive:ore_lithium_deepslate",
+                "scuke_survive:ore_rare_earth",
+                "scuke_survive:ore_rare_earth_deepslate",
+                "scuke_survive:ore_yttrium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_egg",
+            "icon": "scuke_survive:zombie_normal",
+            "list": [
+                "scuke_survive:zombie_baby",
+                "scuke_survive:zombie_big_dog",
+                "scuke_survive:zombie_big_giant",
+                "scuke_survive:zombie_big",
+                "scuke_survive:zombie_black_venom",
+                "scuke_survive:zombie_captain",
+                "scuke_survive:zombie_chick",
+                "scuke_survive:zombie_dog",
+                "scuke_survive:zombie_explosive",
+                "scuke_survive:zombie_fat",
+                "scuke_survive:zombie_flame_venom",
+                "scuke_survive:zombie_flyinglava",
+                "scuke_survive:zombie_gangs_captain",
+                "scuke_survive:zombie_gangs",
+                "scuke_survive:zombie_giant_king",
+                "scuke_survive:zombie_giant_sarcoma",
+                "scuke_survive:zombie_giant",
+                "scuke_survive:zombie_golden_chick",
+                "scuke_survive:zombie_grandpa",
+                "scuke_survive:zombie_guard",
+                "scuke_survive:zombie_hypertension_grandpa",
+                "scuke_survive:zombie_jocker_king",
+                "scuke_survive:zombie_jocker",
+                "scuke_survive:zombie_normal",
+                "scuke_survive:zombie_otaku_black",
+                "scuke_survive:zombie_otaku",
+                "scuke_survive:zombie_sarcoma",
+                "scuke_survive:zombie_special_guard",
+                "scuke_survive:zombie_spicy_chick",
+                "scuke_survive:zombie_supertnt",
+                "scuke_survive:zombie_tons_king",
+                "scuke_survive:zombie_venom",
+                "scuke_survive:zombie_witch_normal",
+                "scuke_survive:zombie_witch",
+                "scuke_survive:zombie_snap_killer"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_rebel_egg",
+            "icon": "scuke_survive:rebel_leader",
+            "list": [
+                "scuke_survive:rebel_ragman",
+                "scuke_survive:rebel_vagrant",
+                "scuke_survive:rebel_soldier",
+                "scuke_survive:rebel_leader"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_carpart",
+            "icon": "scuke_survive:carpart_efficient_engine",
+            "list": [
+                "scuke_survive:carpart_old_engine",
+                "scuke_survive:carpart_efficient_engine",
+                "scuke_survive:carpart_red_engine",
+                "scuke_survive:carpart_old_bumper",
+                "scuke_survive:carpart_alloy_bumper",
+                "scuke_survive:carpart_bullbar",
+                "scuke_survive:carpart_safety_cage",
+                "scuke_survive:carpart_emp",
+                "scuke_survive:carpart_missile",
+                "scuke_survive:carpart_armor_profile",
+                "scuke_survive:carpart_spike_profile",
+                "scuke_survive:carpart_thruster",
+                "scuke_survive:carpart_run_water",
+                "scuke_survive:carpart_fly"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_bomb",
+            "icon": "scuke_survive:c4_detonator",
+            "list": [
+                "scuke_survive:c4_detonator",
+                "scuke_survive:c4_bomb1",
+                "scuke_survive:time_bomb1"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_military",
+            "icon": "scuke_survive:armor_military_chest",
+            "list": [
+                "scuke_survive:armor_military_helmet",
+                "scuke_survive:armor_military_chest",
+                "scuke_survive:armor_tattered_helmet",
+                "scuke_survive:armor_tattered_chest"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_red_helmet",
+            "icon": "scuke_survive:armor_red_helmet",
+            "list": [
+                "scuke_survive:armor_red_helmet",
+                "scuke_survive:armor_red_mask_helmet"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.scuke_survive_armor_skull_hood",
+            "icon": "scuke_survive:armor_skull_hood_helmet",
+            "list": [
+                "scuke_survive:armor_skull_helmet",
+                "scuke_survive:armor_skull_mask_helmet",
+                "scuke_survive:armor_skull_hood_helmet"
+            ]
+        }
+    ]
+}

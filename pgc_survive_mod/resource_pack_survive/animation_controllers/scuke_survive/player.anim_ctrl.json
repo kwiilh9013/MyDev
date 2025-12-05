@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_grenade.throw": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        {"first_idle": "v.is_first_person"}
+                    ],
+                    "transitions": [
+                        { "throw_prepare": "query.main_hand_item_use_duration" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "throw_prepare": {
+                    "animations": [
+                        {"first_idle": "v.is_first_person"},
+                        {"first_throw_prepare": "v.is_first_person"},
+                        {"throw_prepare": "!v.is_first_person"}
+                    ],
+                    "transitions":[
+                        { "throw_release": "!query.main_hand_item_use_duration" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "throw_release": {
+                    "animations": [
+                        {"first_throw_release": "v.is_first_person"},
+                        {"throw_release": "!v.is_first_person"}
+                    ],
+                    "transitions":[
+                        { "default": "query.any_animation_finished" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        }
+    }
+}

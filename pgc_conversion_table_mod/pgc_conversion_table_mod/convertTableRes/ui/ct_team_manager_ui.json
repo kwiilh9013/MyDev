@@ -1,0 +1,280 @@
+{
+    "main": {
+        "controls": [
+            {
+                "teamManagerPanel": {
+                    "controls": [
+                        {
+                            "blackBg": {
+                                "alpha": 0.8,
+                                "clip_direction": "left",
+                                "clip_ratio": 0,
+                                "color": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "layer": 2,
+                                "nineslice_size": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "size": [
+                                    "100.0%+50.0px",
+                                    "100.0%+50.0px"
+                                ],
+                                "texture": "textures/ui/scuke_ct/common/pixel",
+                                "type": "image"
+                            }
+                        },
+                        {
+                            "maskBtn@scuke_convert_table_widget.emptyBtn": {
+                                "layer": 3
+                            }
+                        },
+                        {
+                            "teamPanel": {
+                                "controls": [
+                                    {
+                                        "headPanel": {
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "controls": [
+                                                {
+                                                    "closeBtn@scuke_convert_table_widget.comBtn": {
+                                                        "$default_texture": "textures/ui/scuke_ct/icon_close_01",
+                                                        "$hover_texture": "",
+                                                        "$iconColor": [
+                                                            0.6667,
+                                                            0.702,
+                                                            0.8941
+                                                        ],
+                                                        "$iconImage": "",
+                                                        "$label_text": "",
+                                                        "$pressed_texture": "",
+                                                        "anchor_from": "right_middle",
+                                                        "anchor_to": "right_middle",
+                                                        "layer": 5,
+                                                        "size": [
+                                                            17,
+                                                            17
+                                                        ],
+                                                        "$nineslice_size": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "$defaultColor": [
+                                                            0.6667,
+                                                            0.702,
+                                                            0.8941
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "headTxt": {
+                                                        "anchor_from": "left_middle",
+                                                        "anchor_to": "left_middle",
+                                                        "color": [
+                                                            0.7451,
+                                                            0.7922,
+                                                            1
+                                                        ],
+                                                        "font_scale_factor": 0.8,
+                                                        "font_size": "large",
+                                                        "font_type": "default",
+                                                        "layer": 4,
+                                                        "text": "团队管理",
+                                                        "text_alignment": "center",
+                                                        "type": "label"
+                                                    }
+                                                },
+                                                {
+                                                    "image": {
+                                                        "layer": 1,
+                                                        "size": [
+                                                            "default",
+                                                            1
+                                                        ],
+                                                        "texture": "textures/ui/scuke_ct/common/pixel",
+                                                        "type": "image",
+                                                        "anchor_from": "bottom_middle",
+                                                        "anchor_to": "bottom_middle",
+                                                        "color": [
+                                                            0.4902,
+                                                            0.5373,
+                                                            0.7725
+                                                        ],
+                                                        "fill": true,
+                                                        "offset": [
+                                                            0,
+                                                            2
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "layer": 10,
+                                            "max_size": [
+                                                330,
+                                                "default"
+                                            ],
+                                            "size": [
+                                                "80%+0px",
+                                                "100%cm+6px"
+                                            ],
+                                            "type": "panel",
+                                            "offset": [
+                                                0,
+                                                7
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "bgImage": {
+                                            "clip_direction": "left",
+                                            "clip_ratio": 0,
+                                            "color": [
+                                                0.0706,
+                                                0.0706,
+                                                0.1529
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "bg": {
+                                                        "layer": -1,
+                                                        "nineslice_size": [
+                                                            3,
+                                                            3,
+                                                            3,
+                                                            3
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            "100%+2px"
+                                                        ],
+                                                        "texture": "textures/ui/scuke_ct/ui_grid_02",
+                                                        "type": "image"
+                                                    }
+                                                }
+                                            ],
+                                            "layer": 3,
+                                            "nineslice_size": [
+                                                2,
+                                                2,
+                                                2,
+                                                2
+                                            ],
+                                            "size": [
+                                                "100.0%+50.0px",
+                                                "100.0%+0.0px"
+                                            ],
+                                            "texture": "textures/ui/scuke_ct/common/pixel",
+                                            "type": "image"
+                                        }
+                                    },
+                                    {
+                                        "mbGroupScrollView@common.scrolling_panel": {
+                                            "$background_nine_slice_buttom": 0,
+                                            "$background_nine_slice_left": 0,
+                                            "$background_nine_slice_right": 0,
+                                            "$background_nine_slice_top": 0,
+                                            "$background_nineslice_size": [
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "$box_nine_slice_buttom": 0,
+                                            "$box_nine_slice_left": 0,
+                                            "$box_nine_slice_right": 0,
+                                            "$box_nine_slice_top": 0,
+                                            "$box_nineslice_size": [
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "$is_background_nine_slice": false,
+                                            "$is_box_nine_slice": false,
+                                            "$is_track_nine_slice": false,
+                                            "$scroll_background_image_control": "netease_editor_template_namespace.scroll_background_image",
+                                            "$scroll_background_texture": "",
+                                            "$scroll_bar_left_padding_size|default": [
+                                                0,
+                                                0
+                                            ],
+                                            "$scroll_bar_right_padding_size|default": [
+                                                0,
+                                                0
+                                            ],
+                                            "$scroll_box_mouse_image_control": "netease_editor_template_namespace.scroll_box_image",
+                                            "$scroll_box_texture": "textures/ui/newTouchScrollBox",
+                                            "$scroll_box_touch_image_control": "netease_editor_template_namespace.scroll_box_image",
+                                            "$scroll_track_image_control": "netease_editor_template_namespace.scroll_track_image",
+                                            "$scroll_track_texture": "textures/ui/ScrollRail",
+                                            "$scrolling_content": "scuke_convert_table_main_ui.memberGroupStackPanel",
+                                            "$show_background": false,
+                                            "$track_nine_slice_buttom": 0,
+                                            "$track_nine_slice_left": 0,
+                                            "$track_nine_slice_right": 0,
+                                            "$track_nine_slice_top": 0,
+                                            "$track_nineslice_size": [
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "layer": 9,
+                                            "max_size": [
+                                                330,
+                                                "default"
+                                            ],
+                                            "offset": [
+                                                0,
+                                                35
+                                            ],
+                                            "size": [
+                                                "80.0%+0.0px",
+                                                "100%+-50px"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "getInviteBtn@scuke_convert_table_main_ui.beInvitedBtn": {
+                                            "$label_color": [
+                                                0.749,
+                                                0.7882,
+                                                1
+                                            ],
+                                            "anchor_from": "bottom_left",
+                                            "anchor_to": "bottom_left",
+                                            "offset": [
+                                                15,
+                                                -15
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "layer": 11,
+                                "size": [
+                                    "100.0%+0.0px",
+                                    170
+                                ],
+                                "type": "panel"
+                            }
+                        }
+                    ],
+                    "layer": 2200,
+                    "type": "panel"
+                }
+            }
+        ],
+        "type": "screen"
+    },
+    "namespace": "ct_team_manager_ui"
+}

@@ -1,0 +1,45 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scuke_survive:items_barricade_iron",
+            "register_to_creative_menu": true,
+            "category": "scuke_survive"
+        },
+        "components": {
+            "netease:aabb": {
+                "collision": {
+                    "min": [ 0.05, 0.0, 0.1 ],
+                    "max": [ 0.95, 0.9, 0.9 ]
+                },
+                "clip": {
+                    "min": [ 0.05, 0.0, 0.1 ],
+                    "max": [ 0.95, 0.9, 0.9 ]
+                }
+            },
+            "netease:block_entity": {
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "netease:render_layer":{
+                "value":"blend"
+            },
+            "minecraft:block_light_absorption": {
+                "value": 1
+            },
+            "netease:tier": {
+                "digger": "pickaxe"
+            },
+            "minecraft:destroy_time": {
+                "value": 2
+            },
+            "netease:on_entity_inside": {
+                "send_python_event": true
+            }
+        }
+    }
+}

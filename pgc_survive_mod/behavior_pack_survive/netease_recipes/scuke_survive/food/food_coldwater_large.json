@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_coldwater_large"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "scuke_survive:mat_plastic_board",
+        "count": 4
+      },
+      {
+        "item": "minecraft:snowball",
+        "count": 5
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_coldwater_large",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_electric_machinery.scale_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [8, 8, -8]
+				}
+			}
+		},
+		"animation.scuke_survive_electric_machinery.scale_correct2": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0],
+					"position": [8, 8, -8]
+				}
+			}
+		}
+	}
+}

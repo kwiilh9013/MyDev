@@ -1,0 +1,58 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.scuke_zombie": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "overlay_color": {
+                "r": "1.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "variable.hurt_effect * 0.7"
+            }
+        },
+        "controller.render.scuke_sarcoma": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "query.mark_variant == 0 ? Material.default : Material.light"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "overlay_color": {
+                "r": "query.mark_variant == 0 ? 1.0 : 0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "query.mark_variant == 0 ? variable.hurt_effect * 0.7 : 0.5"
+            }
+        },
+        "controller.render.scuke_zombie_armor": {
+            "geometry": "Geometry.armor",
+            "materials": [
+                {
+                    "*": "Material.armor"
+                }
+            ],
+            "textures": [
+                "Texture.armor"
+            ],
+            "uv_anim": {
+                "offset": [
+                "(Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.01",
+                "(Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.01"
+                ],
+                "scale": [ 1.0, 1.0 ]
+            },
+            "ignore_lighting": true
+        }
+    }
+}

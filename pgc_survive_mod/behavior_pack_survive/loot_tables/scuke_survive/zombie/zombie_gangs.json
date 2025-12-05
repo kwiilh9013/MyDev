@@ -1,0 +1,44 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 6
+                },
+                {
+                    "name": "minecraft:sugar",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:coal",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:lapis_lazuli",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "minecraft:wool",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "scuke_survive:food_beef",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "scuke_survive:mat_plastic_board",
+                    "type": "item",
+                    "weight": 3
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

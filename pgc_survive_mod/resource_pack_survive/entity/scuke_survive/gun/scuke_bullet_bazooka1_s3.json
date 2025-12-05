@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "default": "animation.scuke_bullet.default_fly",
+                "flying": "animation.scuke_bullet.bazooka_fly"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_bullet_bazooka1"
+            },
+            "identifier": "scuke_survive:bullet_bazooka1",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.scuke_bullet_default"
+            ],
+            "scripts": {
+                "animate": [
+                    "default",
+                    "flying"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/gun/gun_bazooka1_grain"
+            }
+        }
+    }
+}

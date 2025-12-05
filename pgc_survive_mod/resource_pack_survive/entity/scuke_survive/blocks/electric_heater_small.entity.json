@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:electric_heater_small_entity",
+            "materials": {
+                "default": "entity",
+                "working": "scuke_survive_electric_working"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/electric_heater_small",
+                "open": "textures/entity/scuke_survive/blocks/electric_heater_small_open"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_electric_heater_small"
+            },
+            "render_controllers": [
+                "controller.render.scuke_survive_electric_block_entity"
+            ],
+            "animations": {
+                "range_ctrl": "controller.animation.scuke_survive_block.dynamo.range",
+                "ui_correct": "animation.electric_dynamo.scale_correct"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.working_state = 0.0;",
+                    "variable.show_range = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    "range_ctrl",
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "particle_effects": {
+                "north": "scuke_survive:electric_heater_range_3_north",
+                "south": "scuke_survive:electric_heater_range_3_south",
+                "east": "scuke_survive:electric_heater_range_3_east",
+                "west": "scuke_survive:electric_heater_range_3_west",
+                "top": "scuke_survive:electric_heater_range_3_top",
+                "buttom": "scuke_survive:electric_heater_range_3_buttom"
+            }
+        }
+    }
+}

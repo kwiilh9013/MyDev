@@ -1,0 +1,51 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "look_at_target_default": "animation.humanoid.look_at_target.default",
+                "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+                "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+                "swimming": "animation.zombie.swimming",
+                "idle": "animation.scuke_zombie.idle3",
+                "move": "animation.scuke_zombie.walk",
+                "hunting": "animation.scuke_zombie.hunting",
+                "attack": "animation.scuke_zombie.attack",
+                "death": "animation.scuke_zombie.death",
+
+                "ctl_look_at_target": "controller.animation.humanoid.look_at_target",
+                "ctl_scuke_zombie": "controller.animation.scuke_zombie.normal",
+                "hurt_effect": "animation.scuke_zombie.hurt_effect",
+                "ctl_hurt_effect": "controller.animation.scuke_zombie_hurt_effect"
+            },
+            "geometry": {
+                "default": "geometry.scuke_zombie_baby"
+            },
+            "identifier": "scuke_survive:zombie_baby_explose",
+            "materials": {
+                "default": "scuke_survive_zombie"
+            },
+            "spawn_egg": {
+                "base_color":"#796d64",
+                "overlay_color":"#b44343"
+            },
+            "render_controllers": [
+                "controller.render.scuke_zombie"
+            ],
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie/scuke_zombie_baby"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;"
+                ],
+                "animate": [
+                    "ctl_look_at_target",
+                    "ctl_scuke_zombie",
+                    "ctl_hurt_effect"
+                ]
+            }
+        }
+    }
+}

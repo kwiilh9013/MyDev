@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:rotten_flesh",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "scuke_survive:raw_rare_earth",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "minecraft:redstone",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "name": "scuke_survive:food_senbei",
+                    "type": "item",
+                    "weight": 2
+                }
+            ],
+            "rolls": 2
+        }
+    ]
+}

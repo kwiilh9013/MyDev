@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:electric_dynamo_large_entity",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/electric_dynamo_large"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_electric_dynamo"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "range_ctrl": "controller.animation.scuke_survive_block.dynamo.range",
+                "work": "animation.electric_dynamo.work",
+                "standby":"animation.electric_dynamo.standby",
+                "ui_correct": "animation.electric_dynamo.scale_correct",
+                "dynamo_ctl":"controller.animation.scuke_survive_block.dynamo"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.working_state = 0.0;",
+                    "variable.show_range = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    "range_ctrl",
+                    "dynamo_ctl",
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    }
+                ]
+            },
+            "particle_effects": {
+                "dynamo_work": "scuke_survive:dynamo_work",
+                "north": "scuke_survive:electric_dynamo_range_20_north",
+                "south": "scuke_survive:electric_dynamo_range_20_south",
+                "east": "scuke_survive:electric_dynamo_range_20_east",
+                "west": "scuke_survive:electric_dynamo_range_20_west",
+                "top": "scuke_survive:electric_dynamo_range_20_top",
+                "buttom": "scuke_survive:electric_dynamo_range_20_buttom"
+            }
+        }
+    }
+}

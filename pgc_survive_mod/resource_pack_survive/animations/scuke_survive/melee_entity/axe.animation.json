@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scuke_survive_axe_entity.scale_correct": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.anim_time*40", 0]
+				}
+			}
+		}
+	}
+}

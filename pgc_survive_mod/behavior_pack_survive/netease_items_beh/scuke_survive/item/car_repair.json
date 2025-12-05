@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 200,
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "[§a功能§f] 维修载具，如基地车 "
+            },
+            "minecraft:use_duration": 72000,
+            "minecraft:food": {
+                "nutrition": 0,
+                "can_always_eat": true
+            }
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:car_repair",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "scuke_survive:axe_rare_earth",
+            "category": "scuke_survive",
+            "register_to_create_menu": true
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:max_damage": 250,
+            "netease:weapon": {
+                "type": "hatchet",
+                "level": 2,
+                "speed": 6,
+                "attack_damage": 6,
+                "enchantment": 14
+            }
+        }
+    }
+}

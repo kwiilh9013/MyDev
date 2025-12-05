@@ -1,0 +1,46 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "scuke_survive:block_entity",
+   "materials": {
+    "default": "scuke_survive_entity_light"
+   },
+   "textures": {
+    "block1": "textures/blocks/scuke_survive/metal_block_lead",
+    "block2": "textures/blocks/scuke_survive/metal_block_lithium",
+    "block3": "textures/blocks/scuke_survive/metal_block_rare_earth",
+    "block4": "textures/blocks/scuke_survive/metal_block_yttrium",
+    "block5": "textures/blocks/scuke_survive/ore_lead",
+    "block6": "textures/blocks/scuke_survive/ore_lithium",
+    "block7": "textures/blocks/scuke_survive/ore_rare_earth",
+    "block8": "textures/blocks/scuke_survive/ore_yttrium",
+    "block9": "textures/blocks/scuke_survive/ore_lead_deepslate",
+    "block10": "textures/blocks/scuke_survive/ore_lithium_deepslate",
+    "block11": "textures/blocks/scuke_survive/ore_rare_earth_deepslate",
+    "block12": "textures/blocks/scuke_survive/ore_yttrium_deepslate"
+   },
+   "geometry": {
+    "default": "geometry.scuke_survive_block_ety"
+   },
+   "scripts": {
+    "scale": "1.0",
+    "pre_animation": [
+     "variable.correct_pos = 0.0;",
+     "variable.block_index = 0.0;"
+    ],
+    "animate": [
+     {
+      "ui_correct": "variable.correct_pos == 1.0"
+     }
+    ]
+   },
+   "animations": {
+    "ui_correct": "animation.scuke_survive_block_entity.scale_correct"
+   },
+   "render_controllers": [
+    "controller.render.scuke_survive_block_entity"
+   ]
+  }
+ }
+}

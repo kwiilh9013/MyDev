@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"animations": {
+				"ui_correct": "animation.scuke_zombie_ui.venom_correct",
+				"idle3": "animation.scuke_zombie_venom.idle3",
+				"idle1": "animation.scuke_zombie_venom.idle1",
+				"idle2": "animation.scuke_zombie_venom.idle2",
+				"move": "animation.scuke_zombie_venom.walk",
+				"hunting": "animation.scuke_zombie_venom.hunting",
+				"attack": "animation.scuke_zombie_venom.attack",
+				"death": "animation.scuke_zombie.death",
+				"attack_remote": "animation.scuke_zombie_venom.attack_remote",
+				"ctl_scuke_zombie_venom": "controller.animation.scuke_zombie_venom",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+                "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+                "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+                "ctl_look_at_target": "controller.animation.humanoid.look_at_target"
+			},
+			"geometry": {
+				"default": "geometry.scuke_zombie_venom"
+			},
+			"spawn_egg": {
+				"base_color":"#413b36",
+                "overlay_color":"#afc176"
+			},
+			"identifier": "scuke_survive:zombie_venom",
+			"materials": {
+				"default": "scuke_survive_zombie"
+			},
+			"render_controllers": [
+				"controller.render.scuke_zombie"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.idle1_value = 0;",
+					"variable.is_moving = 0;"
+				],
+				"pre_animation": [
+					"variable.idle1_value = math.random(0,1);",
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+					"variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+				],
+				"animate": [
+					{
+						"ctl_scuke_zombie_venom": "variable.not_in_ui"
+					},
+					{
+						"ctl_look_at_target": "variable.not_in_ui"
+					},
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "hunting": "variable.correct_pos == 1.0"
+                    }
+				]
+			},
+			"textures": {
+				"default": "textures/entity/scuke_survive/zombie/scuke_zombie_venom"
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "scuke_survive:zombie_jocker_king",
+			"materials": {
+				"default": "scuke_survive_zombie"
+			},
+			"particle_effects": {
+				"spell": "minecraft:evoker_spell"
+			},
+			"render_controllers": [
+				"controller.render.scuke_zombie"
+			],
+			"scripts": {"initialize": [
+					"variable.standby_time = 0;",
+					"variable.casting_time = 0;"
+				],
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+					"variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;"
+				],
+				"animate": [
+					{
+						"ctl_humanoid_base_pose": "variable.not_in_ui"
+					},
+					{
+						"ctl_zombie_jocker": "variable.not_in_ui"
+					},
+					{
+						"ctl_move": "variable.not_in_ui"
+					},
+					{
+						"ctl_attack": "variable.not_in_ui"
+					},
+					{
+						"ctl_hurt_effect": "variable.not_in_ui"
+					},
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "standby": "variable.correct_pos == 1.0"
+                    }
+				]
+			},
+			"textures": {
+				"default": "textures/entity/scuke_survive/zombie/scuke_zombie_jocker_king"
+			},
+			"animations": {
+				"ui_correct": "animation.scuke_zombie_ui.jocker_correct",
+				"casting": "animation.scuke_zombie_joker.casting",
+				"look_at_target": "animation.humanoid.look_at_target.default",
+				"move": "animation.humanoid.move",
+				"attack.rotations": "animation.humanoid.attack.rotations",
+				"humanoid_base_pose": "animation.humanoid.base_pose",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"standby": "animation.scuke_zombie_joker.standby",
+				"ranged_attack": "animation.scuke_zombie_joker.ranged_attack",
+				"ctl_humanoid_base_pose": "controller.animation.humanoid.base_pose",
+				"ctl_zombie_jocker": "controller.animation.scuke_zombie_jocker",
+				"ctl_move": "controller.animation.humanoid.move",
+				"ctl_attack": "controller.animation.humanoid.attack",
+				"hurt_effect": "animation.scuke_zombie.hurt_effect",
+				"ctl_hurt_effect": "controller.animation.scuke_zombie_hurt_effect"
+			},
+			"geometry": {
+				"default": "geometry.scuke_zombie_jocker"
+			},
+			"spawn_egg": {
+				"base_color": "#931414",
+				"overlay_color": "#ffcb29"
+			}
+		}
+	}
+}

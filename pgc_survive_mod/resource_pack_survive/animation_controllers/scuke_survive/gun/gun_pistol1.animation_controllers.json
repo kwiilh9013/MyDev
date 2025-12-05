@@ -1,0 +1,152 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.scuke_survive_gun_pistol1_third" : {
+            "initial_state": "pick",
+            "states": {
+                "pick": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_pick"
+                    ],
+                    "transitions" : [
+                        { "idle": "query.all_animations_finished || query.mod.scuke_survive_gun_pick_exit" }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "idle": {
+                    "animations": [
+                        { "scuke_survive_gun_pistol1_third_idle": "!query.mod.scuke_survive_gun_zoom && !query.mod.scuke_survive_gun_shooting_hold" },
+                        { "scuke_survive_gun_pistol1_third_shoot_bullet_hold": "!query.mod.scuke_survive_gun_zoom && query.mod.scuke_survive_gun_shooting_hold" },
+                        { "scuke_survive_gun_pistol1_third_zoom": "query.mod.scuke_survive_gun_zoom" }
+                    ],
+                    "transitions" : [
+                        { "zoomin": "!query.is_in_ui && query.mod.scuke_survive_gun_zoomin" },
+                        { "zoomout": "!query.is_in_ui && query.mod.scuke_survive_gun_zoomout" },
+                        { "walk": "!query.is_in_ui && query.mod.scuke_survive_gun_walk && !query.mod.scuke_survive_gun_zoom" },
+                        { "sprint_in": "!query.is_in_ui && query.mod.scuke_survive_gun_sprint && !query.mod.scuke_survive_gun_zoom" },
+                        { "reload": "!query.is_in_ui && query.mod.scuke_survive_gun_reload && !query.mod.scuke_survive_gun_zoom" },
+                        { "reload_zoom": "!query.is_in_ui && query.mod.scuke_survive_gun_reload && query.mod.scuke_survive_gun_zoom" },
+                        { "shoot_begin": "!query.is_in_ui && query.mod.scuke_survive_gun_shoot_begin && !query.mod.scuke_survive_gun_zoom" },
+                        { "shoot_begin_zoom": "!query.is_in_ui && query.mod.scuke_survive_gun_shoot_begin && query.mod.scuke_survive_gun_zoom" },
+                        { "shoot_bullet": "!query.is_in_ui && query.mod.scuke_survive_gun_shoot_bullet && !query.mod.scuke_survive_gun_zoom" },
+                        { "shoot_bullet_zoom": "!query.is_in_ui && query.mod.scuke_survive_gun_shoot_bullet && query.mod.scuke_survive_gun_zoom" },
+                        { "kick": "!query.is_in_ui && query.mod.scuke_survive_gun_kick" }
+                    ],
+                    "blend_transition": 0.05
+                },
+                "walk": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_walk"
+                    ],
+                    "transitions": [
+                        { "idle": "!query.mod.scuke_survive_gun_walk || query.mod.scuke_survive_gun_walk_exit" }
+                    ],
+                    "blend_transition": 0.05
+                },
+                "sprint_in": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_sprint_in"
+                    ],
+                    "transitions": [
+                        { "sprint_loop": "query.all_animations_finished && !query.mod.scuke_survive_gun_sprint_exit" },
+                        { "idle": "query.mod.scuke_survive_gun_sprint_exit" }
+                    ],
+                    "blend_transition": 0.05
+                },
+                "sprint_loop": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_sprint_loop"
+                    ],
+                    "transitions": [
+                        { "sprint_out": "!query.mod.scuke_survive_gun_sprint && !query.mod.scuke_survive_gun_sprint_exit" },
+                        { "idle": "query.mod.scuke_survive_gun_sprint_exit" }
+                    ],
+                    "blend_transition": 0.05
+                },
+                "sprint_out": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_sprint_out"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished || query.mod.scuke_survive_gun_sprint_exit" }
+                    ],
+                    "blend_transition": 0.05
+                },
+                "reload": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_reload"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_gun_reload" }
+                    ]
+                },
+                "reload_zoom": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_reload_zoom"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_gun_reload" }
+                    ]
+                },
+                "shoot_begin": {
+                    "animations": [
+                        { "scuke_survive_gun_pistol1_third_shoot_begin_hold": "query.mod.scuke_survive_gun_shooting_hold" },
+                        { "scuke_survive_gun_pistol1_third_shoot_begin": "!query.mod.scuke_survive_gun_shooting_hold"}
+                    ],
+                    "transitions": [
+                        { "idle": "query.any_animation_finished && !query.mod.scuke_survive_gun_shoot_begin" }
+                    ]
+                },
+                "shoot_begin_zoom": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_shoot_begin_zoom"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_gun_shoot_begin" }
+                    ]
+                },
+                "shoot_bullet": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_shoot_bullet"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_gun_shoot_bullet" }
+                    ]
+                },
+                "shoot_bullet_zoom": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_shoot_bullet_zoom"
+                    ],
+                    "transitions": [
+                        { "idle" : "query.all_animations_finished && !query.mod.scuke_survive_gun_shoot_bullet" }
+                    ]
+                },
+                "zoomin": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_zoomin"
+                    ],
+                    "transitions": [
+                        { "idle": "!query.mod.scuke_survive_gun_zoomin" }
+                    ]
+                },
+                "zoomout": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_zoomout"
+                    ],
+                    "transitions": [
+                        { "idle": "!query.mod.scuke_survive_gun_zoomout" }
+                    ]
+                },
+                "kick": {
+                    "animations": [
+                        "scuke_survive_gun_pistol1_third_kick"
+                    ],
+                    "transitions": [
+                        { "idle": "query.all_animations_finished && !query.mod.scuke_survive_gun_kick" }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        }
+    }
+}

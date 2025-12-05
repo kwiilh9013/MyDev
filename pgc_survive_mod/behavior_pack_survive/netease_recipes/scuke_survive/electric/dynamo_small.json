@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:electric_dynamo_small"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "scuke_survive:ingot_lead"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "scuke_survive:ingot_lithium"
+      },
+      {
+        "item": "scuke_survive:mat_screw"
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:electric_dynamo_small",
+      "count": 1
+    }
+  }
+}
+

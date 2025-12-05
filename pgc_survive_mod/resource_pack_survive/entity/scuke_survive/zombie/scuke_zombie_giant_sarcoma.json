@@ -1,0 +1,63 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "idle": "animation.scuke_zombie_sarcoma.idle",
+                "walk": "animation.scuke_zombie_sarcoma.walk",
+                "death": "animation.scuke_zombie_sarcoma.death",
+                "look": "animation.scuke_zombie_sarcoma.look_at_target.default",
+                "look_gliding": "animation.scuke_zombie_sarcoma.look_at_target.gliding",
+                "attack_remote": "animation.scuke_zombie_sarcoma.attack_remote",
+                "attack_bump": "animation.scuke_zombie_sarcoma.attack_bump",
+                "ctrl_main": "controller.animation.scuke_zombie_sarcoma",
+                "ui_correct": "animation.scuke_zombie_sarcoma.ui_correct"
+            },
+            "geometry": {
+                "default": "geometry.scuke_zombie_sarcoma"
+            },
+            "spawn_egg": {
+                "base_color":"#778aa2",
+                "overlay_color":"#285177"
+            },
+            "identifier": "scuke_survive:zombie_giant_sarcoma",
+            "materials": {
+                "default": "scuke_survive_zombie",
+                "light": "scuke_survive_entity_light"
+            },
+            "render_controllers": [
+                "controller.render.scuke_sarcoma"
+            ],
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.hurt_effect = (query.time_stamp - query.mod.hurt_time) < query.mod.hurt_duration;",
+                    "variable.not_in_ui = 1.0;",
+                    "variable.correct_pos = 0.0;",
+                    "variable.default_time = 0.0;",
+                    "variable.walk_time = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "look": "variable.not_in_ui"
+                    },
+                    {
+                        "ui_correct": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "attack_remote": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "idle": "variable.correct_pos == 1.0"
+                    },
+                    {
+                        "ctrl_main": "variable.not_in_ui"
+                    }
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/zombie/scuke_zombie_giant_sarcoma"
+            }
+        }
+    }
+}

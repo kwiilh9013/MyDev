@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scuke_survive:electric_spike_trap_entity",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/scuke_survive/blocks/spike_trap"
+            },
+            "geometry": {
+                "default": "geometry.scuke_survive_electric_spike_trap"
+            },
+            "animations": {
+                "touch_off": "animation.scuke_survive_electric_spike_trap.touch_off",
+                "standby": "animation.scuke_survive_electric_spike_trap.standby",
+                "ui_correct": "animation.scuke_survive_electric_spike_trap.scale_correct",
+                "ctl_spike_trap":"controller.animation.electric_spike_trap"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.working_state = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.correct_pos = 0.0;"
+                ],
+                "animate": [
+                    "ctl_spike_trap",
+                    {"ui_correct":"variable.correct_pos == 1.0"}
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "base_color": "#DF7E34",
+                "overlay_color": "#72342A"
+            }
+        }
+    }
+}

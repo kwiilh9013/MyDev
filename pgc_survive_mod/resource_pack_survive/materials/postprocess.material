@@ -1,0 +1,47 @@
+{
+  "scuke_survive_bloom": {
+    "vertexShader": "shaders/uv_fullscreen.vertex",
+    "fragmentShader": "shaders/scuke_survive_bloom.fragment",
+    "vertexFields": [
+      {
+        "field": "Position"
+      },
+      {
+        "field": "UV0"
+      }
+    ],
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureWrap": "Clamp",
+        "textureFilter": "Bilinear"
+      },
+      {
+        "samplerIndex": 1,
+        "textureWrap": "Clamp",
+        "textureFilter": "Point"
+      }
+    ],
+    "states": [
+      "DisableDepthTest"
+    ],
+    "msaaSupport": "Both"
+  },
+  "scuke_survive_bloom_start:scuke_survive_bloom": {
+    "+defines": [
+      "BLOOM_START"
+    ],
+    "+samplerStates": [
+      {
+        "samplerIndex": 2,
+        "textureWrap": "Clamp",
+        "textureFilter": "Point"
+      }
+    ]
+  },
+  "scuke_survive_bloom_end:scuke_survive_bloom": {
+    "+defines": [
+      "BLOOM_END"
+    ]
+  }
+}

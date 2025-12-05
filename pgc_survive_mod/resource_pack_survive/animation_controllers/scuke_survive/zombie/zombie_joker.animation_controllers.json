@@ -1,0 +1,71 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.scuke_zombie_jocker": {
+			"initial_state": "default",
+			"states": {
+				"casting": {
+					"animations": [
+						"look_at_target",
+						"casting"
+					],
+					"particle_effects": [
+						{
+							"effect": "spell",
+							"locator": "left_hand"
+						},
+						{
+							"effect": "spell",
+							"locator": "right_hand"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						},
+						{
+							"ranged_attack": "query.mark_variant == 1 && query.life_time - variable.casting_time > 2.33"
+						}
+					],
+					"on_entry": [
+						"variable.casting_time = query.life_time;"
+					],
+					"on_exit": [],
+					"blend_transition": 0.1
+				},
+				"ranged_attack": {
+					"animations": [
+						"ranged_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						},
+						{
+							"casting": "query.is_casting"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default": {
+					"animations": [
+							"standby"
+					],
+					"transitions": [
+						{
+							"casting": "query.is_casting"
+						},
+						{
+							"ranged_attack": "query.mark_variant == 1 && query.life_time - variable.standby_time > 2.33"
+						}
+					],
+					"on_entry": [
+						"variable.standby_time = query.life_time;"
+					],
+					"on_exit": [],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_hp_bandage"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wool",
+        "count": 3
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_hp_bandage",
+      "count": 1
+    }
+  }
+}

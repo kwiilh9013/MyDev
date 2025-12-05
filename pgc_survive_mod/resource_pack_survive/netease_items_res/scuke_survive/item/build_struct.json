@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "scuke_survive:build_struct"
+        },
+        "description": {
+            "category": "scuke_survive",
+            "identifier": "scuke_survive:build_struct",
+            "register_to_create_menu": true
+        }
+    }
+}

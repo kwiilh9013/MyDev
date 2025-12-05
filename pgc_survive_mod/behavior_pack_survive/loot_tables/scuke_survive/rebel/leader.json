@@ -1,0 +1,93 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "scuke_survive:gun_shotgun1_s3",
+                    "type": "item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scuke_survive:melee_axe_golden",
+                    "type": "item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scuke_survive:gun_rifle1",
+                    "type": "item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scuke_survive:armor_red_rescue_legs",
+                    "type": "item",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scuke_survive:armor_red_rescue_helmet",
+                    "type": "item",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scuke_survive:armor_red_rescue_chest",
+                    "type": "item",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

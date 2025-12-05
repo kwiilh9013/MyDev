@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "scuke_survive:food_hp_painkiller"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:golden_apple",
+        "count": 2
+      },
+      {
+        "item": "scuke_survive:mat_plastic_board"
+      }
+    ],
+    "result": {
+      "item": "scuke_survive:food_hp_painkiller",
+      "count": 1
+    }
+  }
+}
